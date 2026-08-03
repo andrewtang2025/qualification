@@ -1,0 +1,107 @@
+#!/bin/sh
+##########################################################
+# Standard Windows 2000 Server Backup for Voyager 200x.X.X
+# Make Certain that the "DB_TO_BACKUP" Parm is both the
+# Voyager Directory Name & the Oracle Schema name or it's
+# back to the drawing board for us!
+##########################################################
+
+DB_TO_BACKUP="kilgoredb"
+BACKUP_LOCATION="d:/backup"
+EXPORT_BACKUP="Y"
+TAPE_BACKUP="N"
+TAPE_DEVICE="4mm DDS"
+RESTART="N"
+
+export ORACLE_HOME=d:/oracle
+export ORACLE_SID=VGER
+
+##########################################################
+function EVENTLOG {
+  $SystemRoot/system32/eventcreate /so "ExLibris Backup" /l system /t $1 /id 100 /d "$2" > /dev/null
+}
+
+##########################################################
+# End of Parameters
+##########################################################
+
+mkdir -p $BACKUP_LOCATION 2> /dev/null
+
+if [[ ! -d "$BACKUP_LOCATION" ]];then
+  EVENTLOG error "Backup ($0) could not find backup directory, ${BACKUP_LOCATION}.  HALTED."
+  exit 1
+fi
+
+EVENTLOG information "Starting Exlibris Backup"
+
+c:/etc/init.d/httpd.ksh stop
+
+c:/etc/init.d/voyager.ksh stop
+if [[ "$?" != "0" ]];then
+  print "BACKUP HALTED, VOYAGER COULD NOT SHUTDOWN"
+  EVENTLOG error "BACKUP FAILED"
+  exit 1
+fi
+
+if [[ "$EXPORT_BACKUP" = "Y" ]]
+then
+	print -n "Beginning Export...." >> $BACKUP_LOCATION/backup.log
+
+	USER_PASS=`grep "export USERPASS=" d:/voyager/$DB_TO_BACKUP/ini/voyager.env | awk -F/ '{print $2}'`
+	print "$DB_TO_BACKUP/$USER_PASS"
+	exp $DB_TO_BACKUP/$USER_PASS FILE=$BACKUP_LOCATION/temp.exp COMPRESS=N Owner=$DB_TO_BACKUP BUFFER=1024000 Log=d:/backup/Export.log
+	EXP_RES="$?"
+
+	if [[ "$EXP_RES" = "0" ]]
+	then
+		rm $BACKUP_LOCATION/${DB_TO_BACKUP}3_backup.exp
+		mv $BACKUP_LOCATION/${DB_TO_BACKUP}2_backup.exp $BACKUP_LOCATION/${DB_TO_BACKUP}3_backup.exp
+		mv $BACKUP_LOCATION/${DB_TO_BACKUP}1_backup.exp $BACKUP_LOCATION/${DB_TO_BACKUP}2_backup.exp
+		mv $BACKUP_LOCATION/temp.exp $BACKUP_LOCATION/${DB_TO_BACKUP}1_backup.exp
+		print "OK" >> $BACKUP_LOCATION/backup.log
+	else
+		print "FAILURE" >> $BACKUP_LOCATION/backup.log
+	fi
+else
+	print -n "No Export Requested...." >> $BACKUP_LOCATION/backup.log
+	print "OK" >> $BACKUP_LOCATION/backup.log
+fi
+
+if [[ "$TAPE_BACKUP" = "Y" ]]
+then
+	c:/etc/init.d/dbora stop
+	print -n "Stoping Oracle Services...." >> $BACKUP_LOCATION/backup.log
+	print "OK" >> $BACKUP_LOCATION/backup.log
+	print -n "Beginning Tape Backup...." >> $BACKUP_LOCATION/backup.log
+	ntbackup backup c:\\ d:\\ /D "%ComputerName%" /M normal /P "$TAPE_DEVICE" /UM
+	C_BACK_RES="$?"
+	if [[ "$C_BACK_RES" = "0" ]]
+	then
+		print "OK" >> $BACKUP_LOCATION/backup.log
+	else
+		print "FAILURE (C & D Drive:$C_BACK_RES)" >> $BACKUP_LOCATION/backup.log
+	fi
+else
+	print -n "No Tape Backup Requested...." >> $BACKUP_LOCATION/backup.log
+	print "OK" >> $BACKUP_LOCATION/backup.log
+fi
+
+if [[ "$RESTART" != "Y" ]]
+then
+	print -n "Starting Voyager Services...." >> $BACKUP_LOCATION/backup.log
+	c:/etc/init.d/voyager.ksh start
+	c:/etc/init.d/httpd.ksh start
+	print "OK" >> $BACKUP_LOCATION/backup.log
+	print -n "No Reboot Requested...." >> $BACKUP_LOCATION/backup.log
+	print "OK" >> $BACKUP_LOCATION/backup.log
+else
+	EVENTLOG information "Completed Exlibris Backup, Rebooting"
+	print -n "Reboot Requested...." >> $BACKUP_LOCATION/backup.log
+	print "OK" >> $BACKUP_LOCATION/backup.log
+	print -n "Attempting to Reboot..." >> $BACKUP_LOCATION/backup.log
+	echo y | d:\\m1\\utility\\shutdown.exe /L /R /Y /C /T:05
+	print "OK" >> $BACKUP_LOCATION/backup.log
+
+fi
+
+EVENTLOG information "Completed Exlibris Backup"

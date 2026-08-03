@@ -1,0 +1,83 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="robots" content="noarchive">
+
+<meta name="description"
+content="The IN function helps reduce the need to use multiple OR conditions">
+<meta name="keywords"
+content="tech on the net, sql, in function">
+<meta name="title" content="SQL: IN Function">
+<title>SQL: IN Function</title>
+
+<link rel="stylesheet" type="text/css" href="stylesheets/screen.css"  media="screen" />
+<link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+</head>
+<body>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td align="left"><div id="content">
+      <h1>SQL: &quot;IN&quot; Function</h1>
+        <hr>
+        <p>The IN function helps reduce the need to use multiple <i>OR</i> conditions.</p>
+        <p>The syntax for the IN function is:</p>
+        <blockquote class="definition">
+          <p>SELECT columns<br>
+            FROM tables<br>
+            WHERE column1 in (value1, value2, .... value_n);</p>
+        </blockquote>
+        <p>This SQL statement will return the records where column1 is value1, value2..., or value_n. The IN function can be used in any valid SQL statement - select, insert, update, or delete.</p>
+        <br>
+        <p class="example_heading">Example #1</p>
+        <p>The following is an SQL statement that uses the IN function:</p>
+        <blockquote class="sql_command">
+          <p>SELECT *<br>
+            FROM suppliers<br>
+            WHERE supplier_name in ( 'IBM', 'Hewlett Packard', 'Microsoft');</p>
+        </blockquote>
+        <p>This would return all rows where the supplier_name is either IBM, Hewlett Packard, or Microsoft. Because the * is used in the select, all fields from the suppliers table would appear in the result set.</p>
+        <p>It is equivalent to the following statement:</p>
+        <blockquote class="sql_command">
+          <p>SELECT *<br>
+            FROM suppliers<br>
+            WHERE supplier_name = 'IBM'<br>
+            OR supplier_name = 'Hewlett Packard'<br>
+            OR supplier_name = 'Microsoft';</p>
+        </blockquote>
+        <p>As you can see, using the IN function makes the statement easier to read and more efficient.</p>
+        <br>
+        <p class="example_heading">Example #2</p>
+        <p>You can also use the IN function with numeric values.</p>
+        <blockquote class="sql_command">
+          <p>SELECT *<br>
+            FROM orders<br>
+            WHERE order_id in (10000, 10001, 10003, 10005);</p>
+        </blockquote>
+        <p>This SQL statement would return all orders where the order_id is either 10000, 10001, 10003, or 10005.</p>
+        <p>It is equivalent to the following statement:</p>
+        <blockquote class="sql_command">
+          <p>SELECT *<br>
+            FROM orders<br>
+            WHERE order_id = 10000<br>
+            OR order_id = 10001<br>
+            OR order_id = 10003<br>
+            OR order_id = 10005;</p>
+        </blockquote>
+        <br>
+        <p class="example_heading">Example #3 using &quot;NOT IN&quot;</p>
+        <p>The IN function can also be combined with the NOT operator.</p>
+        <p>For example,</p>
+        <blockquote class="sql_command">
+          <p>SELECT *<br>
+            FROM suppliers<br>
+            WHERE supplier_name not in ( 'IBM', 'Hewlett Packard', 'Microsoft');</p>
+        </blockquote>
+        <p>This would return all rows where the supplier_name is <b>neither</b> IBM, Hewlett Packard, or Microsoft. Sometimes, it is more efficient to list the values that you do <b>not</b> want, as opposed to the values that you do want.</p>
+    </div>
+     </td>
+  </tr>
+</table>
+
+</body>
+</html>

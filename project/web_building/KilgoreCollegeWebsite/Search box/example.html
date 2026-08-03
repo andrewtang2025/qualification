@@ -1,0 +1,352 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Simple Tabber Example</title>
+
+<script type="text/javascript" src="tabber.js"></script>
+<link rel="stylesheet" href="example.css" TYPE="text/css" MEDIA="screen">
+
+
+<script type="text/javascript">
+
+/* Optional: Temporarily hide the "tabber" class so it does not "flash"
+   on the page as plain HTML. After tabber runs, the class is changed
+   to "tabberlive" and it will appear. */
+
+document.write('<style type="text/css">.tabber{display:none;}<\/style>');
+
+
+function openwin()
+{ window.open 
+("page.html", "newwindow", "height=100, width=400, toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, status=no") 
+}
+
+</script>
+<!--code for jump menu begins -->
+<script language="JavaScript" type="text/javascript">
+<!--
+function load1(form)
+{
+var temp = form.menu1.options[form.menu1.selectedIndex].value;
+if (temp != "NoGo")
+	{
+	window.location.href = temp;
+	}
+	}
+//-->
+</script>
+
+</head>
+<body  onload="myFunction()">
+
+<h1 style="color:blue;">Search Resources</h1>
+
+
+
+<div class="tabber">
+
+     <div class="tabbertab">
+           <h2>Catalog</h2>
+                       <div class="lib_searchBox"> 
+                                <form id="bibsearch1" action="http://ezproxy.wildcatter.kilgore.edu/vwebv/search?searchArg=" method="get"  target="_blank"> 
+                                Search for Books and other Resources in Library
+                                          <p class="lul_input"> 
+                                            <input maxlength="200" size="24" name="searchArg"></input> 
+                                            <select style="visibility: visible;font-size:9pt;" name="searchCode"> 
+ 	                                             <option value="TKEY^" selected="selected">Title keyword *</option> 
+                                                 <option value="GKEY^*">All fields *</option> 
+                                                 <option value="JKEY^">Journal Title keyword *</option> 
+                                                 <option value="TALL">First word(s) in any title</option> 
+                                                 <option value="JALL">First word(s) in journal title</option> 
+                                                 <option value="NAME">Author</option>
+                                                  <option value="ISBT">ISBN</option>
+                                                  <option value="ISST">ISSN</option>
+                                                 <option value="SUBJ">Subject Heading</option> 
+                                                 <option value="CALL">Call Number</option> 
+                                                 <option value="FT*">Keyword Relevance *</option> 
+                                            </select> 
+                                                            
+                                            <input name="recCount" value="10" type="hidden" ></input> 
+                                            <input name="searchType" value="1" type="hidden" ></input> 
+                                            <input name="page.search.search.button" value="Search" type="submit"></input> 
+                                            
+                                            <span class="lib_searchtext" style="padding:0px;border-bottom:1px dotted #759b3b;margin-left: 3px;font-size:9pt"><a href="http://ezproxy.wildcatter.kilgore.edu/vwebv/searchBasic" target="_blank">More Options</a></span> 
+                                          </p> 
+                                        </form> 
+  
+                        </div><!-- end of lib_searchBox --> 
+     </div>
+
+    	<div class="tabbertab">
+              <h2>Databases</h2>
+              <div class="lib_searchBox"> 
+                          <form name="ListBoxForm">
+                          
+                            <div align="left">
+                              <span class="title">Click Arrow to Select a Database</span>
+                              <br/>
+                              <p class="lul_input"> 
+                              <select name="menu1" onChange="load1(this.form)" size="1">
+                                <option selected value="database.htm"> -- Databases & Indexes -- </option>
+                                <option class="blue" value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=a9h">Academic Search Complete</option>
+                                <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip&amp;profile=ehost&amp;defaultdb=agr">AGRICOLA</option>
+                                <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip&amp;profile=ehost&amp;defaultdb=awh">Alt HealthWatch</option>
+                                <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://cellbio.AnnualReviews.org/">AR:Cell &amp; Developmental Biology</option>
+                                <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://arjournals.annualreviews.org/loi/immunol">AR:Immunology</option>
+                                <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://physiol.AnnualReviews.org/">AR:Physiology</option>
+                                "http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://firstsearch.oclc.org/dbname=ArticleFirst;done=referer;FSIP">ArticleFirst
+                                      
+                                          
+                                <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://www.artstor.org">ARTstor</option>
+                                <!-- Databases - B -->
+                                <option class="blue" value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip&amp;profile=ehost&amp;defaultdb=fph">Biblio. of Native North Americans</option>
+                                <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip&amp;profile=ehost&amp;defaultdb=bth">Business Source Complete </option>
+                                <!-- Databases - C -->
+                                <option class="blue" value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://proquest.umi.com/login">Career and Technical Education </option>
+                                <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://cellbio.AnnualReviews.org/">Cell &amp; Developmental Biology: AR </option>
+                                <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip&amp;profile=ehost&amp;defaultdb=rzh ">CINAHL Plus</option>
+                                <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://firstsearch.oclc.org/dbname=ClasePeriodica;done=referer;FSIP">ClasePeriodica</option>
+                                <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://kilgore.classical.com/">Classical Music Library</option>
+                                <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login/political">Clements Encyc. of World Governments</option>
+                                <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip&amp;profile=ehost&amp;defaultdb=czh">Clinical Pharmacology</option>
+                                <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip&amp;profile=ehost&amp;defaultdb=cph">Computer Source </option>
+                                <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip&amp;profile=chc">Consumer Health Complete</option>
+                                <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://infotrac.galegroup.com/itweb/txshracd2518?db=GLD-1">Contemporary Authors</option>
+                                <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://infotrac.galegroup.com/itweb/txshracd2518?db=GLD-2">Contemporary Literary Criticism Select</option>
+                                <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://www.credoreference.com/">Credo Reference</option>
+                                <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://library.cqpress.com/cqresearcher">CQ Researcher </option>
+                                <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://library.cqpress.com/cqweekly">CQ Weekly </option>
+                                <!-- Databases - D -->
+                                <option class="blue" value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://infotrac.galegroup.com/itweb/txshracd2518?db=GLD-4">Dictionary of Literary Biography </option>
+                                <!-- Databases - E -->
+                                <option class="blue" value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip&amp;profile=ehost&amp;defaultdb=agh">Economia y Negocios</option>
+                                <option value="http://www.eduref.org/">Educator's Reference Desk </option>
+                                <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://firstsearch.oclc.org/dbname=ECO;done=referer;FSIP">Electronic Collections Online</option>
+                                <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://elibrary.bigchalk.com/ce">eLibrary Curriculum</option>
+                                <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://www.els.net">Encyclopedia of Life Science</option>
+                                <option value="http://www.utm.edu/research/iep/">Encyclopedia of Philosophy, Internet </option>
+                                <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip&amp;profile=ehost&amp;defaultdb=eric">ERIC (EBSCO)</option>
+                                <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://firstsearch.oclc.org/dbname=ERIC;done=referer;FSIP">ERIC (FirstSearch)</option>
+                                <!-- Databases - F -->
+                                <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip&amp;profile=ehost&amp;defaultdb=zbh">Fuente Academica </option>
+                                <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip&amp;profile=ehost&amp;defaultdb=funk">Funk &amp; Wagnalls Encyclopedia</option>
+                                <!-- Databases - G -->
+                                <option class="blue" value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://infotrac.galegroup.com/itweb/txshracd2518?db=GLD">Gale Literature Databases</option>
+                                <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://find.galegroup.com/menu/commonmenu.do?userGroupName=txshracd2518">Gale Power Search</option>
+                                <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://infotrac.galegroup.com/itweb/txshracd2518?db=GVRL">Gale Virtual Reference Library</option>
+                                <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://firstsearch.oclc.org/dbname=GPO;done=referer;FSIP">GPO Monthly Catalog </option>
+                                <!-- Databases - H -->
+                                <option class="blue" value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://infotrac.galegroup.com/itweb/txshracd2518?db=HWRC">Health &amp; Wellness Resource Center</option>
+                                <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://infotrac.galegroup.com/itweb/txshracd2518?db=HRCA">Health Reference Center: Academic</option>
+                                <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip&amp;profile=ehost&amp;defaultdb=hxh">Health Source: Consumer </option>
+                                <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip&amp;profile=ehost&amp;defaultdb=hch">Health Source: Nursing/Academic </option>
+                                <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://www.heritagequestonline.com/">HeritageQuest Online</option>
+                                <!-- Databases - I -->
+                                <option class="blue" value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://immunol.AnnualReviews.org/">Immunology: AR </option>
+                                <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip&amp;profile=ehost&amp;defaultdb=izh">Info. Sci. &amp; Technology Abstracts </option>
+                                <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://infotrac.galegroup.com/itweb/txshracd2518?db=SP00">InfoTrac Newspapers </option>
+                                <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip&amp;profile=ehost&amp;defaultdb=iqh">Internet &amp; Personal Computing Abstracts</option>
+                                <option value="http://www.utm.edu/research/iep/">Internet Encyclopedia of Philosophy </option>
+                                <!-- Databases - L -->
+                                <option class="blue" value="http://www.LearningExpressLibrary.com?HR=http://www.kilgore.edu/">Learning Express Library</option>
+                                <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip&amp;profile=ehost&amp;defaultdb=lgh">Legal Collection</option>
+                                <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://www.lexisnexis.com/us/lnacademic">Lexis Nexis</option>
+                                <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip&amp;profile=lrc">Literary Reference Center</option>
+                                <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://infotrac.galegroup.com/itweb/txshracd2518?db=LCO">Literature Criticism Online</option>
+                                <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://infotrac.galegroup.com/itweb/txshracd2518?db=LitRC">Literature Resource Center</option>
+                                <!-- Databases - M -->
+                                <option class="blue" value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip&amp;profile=ehost&amp;defaultdb=ulh">MAS Ultra: School Edition</option>
+                                <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip&amp;profile=ehost&amp;defaultdb=f5h">MasterFILE Premier</option>
+                                <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip&amp;profile=ehost&amp;defaultdb=lth">MedicLatina</option>
+                                <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip&amp;profile=ehost&amp;defaultdb=cmedm">MEDLINE (EBSCO)</option>
+                                <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://firstsearch.oclc.org/dbname=MEDLINE;done=referer;FSIP">MEDLINE (FirstSearch)</option>
+                                <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip&amp;profile=ehost&amp;defaultdb=mih">Middle Search Plus </option>
+                                <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip&amp;profile=ehost&amp;defaultdb=mth">Military &amp; Government Collection</option>
+                                <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://firstsearch.oclc.org/dbname=GPO;done=referer;FSIP">Monthly Catalog</option>
+                                <!-- Databases - N -->
+                                <option class="blue" value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip&amp;profile=wfh&amp;return=y&amp;group=natural">Natural &amp; Alternative TreatmentsPlace 1 </option>
+                                <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://www.netlibrary.com">netLibrary</option>
+                                <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip&amp;profile=ehost&amp;defaultdb=nfh">Newspaper Source</option>
+                                <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://infotrac.galegroup.com/itweb/txshracd2518?db=SP00">Newspapers, InfoTrac</option>
+                                <!-- Databases - O -->
+                                <option class="blue" value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://infotrac.galegroup.com/itweb/txshracd2518?db=OVRC">Opposing Viewpoints 
+                                  <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://www.oxfordartonline.com">Oxford Art Online </option>
+                                    <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://www.oxfordmusiconline.com">Oxford Music Online </option>
+                                    <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://www.oxfordreference.com">Oxford Reference Online</option>
+                                    <!-- Databases - P -->
+                                    <option class="blue" value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://firstsearch.oclc.org/dbname=PapersFirst;done=referer;FSIP">PapersFirst</option>
+                                    <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://physiol.AnnualReviews.org/">Physiology: AR </option>
+                                    <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip&amp;profile=ehost&amp;defaultdb=prh">Primary Search </option>
+                                    <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://firstsearch.oclc.org/dbname=Proceedings;done=referer;FSIP">ProceedingsFirst</option>
+                                    <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip&amp;profile=ehost&amp;defaultdb=tfh">Professional Development Collection </option>
+                                    <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip&amp;profile=ehost&amp;defaultdb=pbh">Psychology &amp; Behavioral Sci. Collection </option>
+                                    <!-- Databases - R -->
+                                    <option class="blue" value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip&amp;profile=ehost&amp;defaultdb=bwh">Regional Business News</option>
+                                    <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip&amp;profile=ehost&amp;defaultdb=rlh">Religion &amp; Philosophy </option>
+                                    <!-- Databases - S -->
+                                    <option class="blue" value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://sanborn.umi.com/">Sanborn Maps of Texas </option>
+                                    <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip&amp;profile=ehost&amp;defaultdb=syh">Science &amp; Technology Collection</option>
+                                    <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip&amp;profile=scimed">Scientific &amp; Medical ART Imagebase</option>
+                                    <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://infotrac.galegroup.com/itweb/txshracd2518?db=Scribner">Scribner Writers </option>
+                                    <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip&amp;profile=ehost&amp;defaultdb=ser">Serials Directory </option>
+                                    <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://online.statref.com/default.asp?grpalias=TEX">STAT!Ref</option>
+                                    <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip&amp;profile=src">Student Research Center</option>
+                                    <!-- Databases - T -->
+                                    <option class="blue" value="http://ezproxy.wildcatter.kilgore.edu:2048/login/political">Taylor's Encyc. Gov. Officials:Fed./State</option>
+                                    <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip&amp;profile=ehost&amp;defaultdb=tih">Texas Reference Center </option>
+                                    <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip&amp;profile=ehost&amp;defaultdb=tth">TOPICsearch </option>
+                                    <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://infotrac.galegroup.com/itweb/txshracd2518?db=Twayne">Twayne's Authors Series</option>
+                                    <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://collections.chadwyck.com/20ampo/htxview?template=basic.htx&content=frameset.htx">20th Century American Poetry</option>
+                                    <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://collections.chadwyck.com/20enpo/htxview?template=basic.htx&amp;content=frameset.htx">20th Century English Poetry</option>
+                                    <!-- Databases - V -->
+                                    <option class="blue" value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip&amp;profile=ehost&amp;defaultdb=voh">Vocational &amp; Career Collection</option>
+                                    <!-- Databases - W-->
+                                    <option class="blue"  value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://www.westlaw.com/signon/default.wl?rs=imp1.0&vr=2.0&sp=kilgore%2d2000">Westlaw Campus </option>
+                                    <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://firstsearch.oclc.org/dbname=WorldAlmanac;done=referer;FSIP">World Almanac</option>
+                                    <option value="http://ezproxy.wildcatter.kilgore.edu:2048/loggedin/_worldatlas.htm">World Atlas</option>
+                                    <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip&amp;profile=ehost&amp;defaultdb=wdh">World History Collection</option>
+                                    <option value="http://ezproxy.wildcatter.kilgore.edu:2048/login?url=http://firstsearch.oclc.org/dbname=WorldCat;done=referer;FSIP">WorldCat</option>
+                              </select>
+                            </div>
+                          </form>
+              
+              </p>
+          </div>
+              
+     </div>   
+
+     <div class="tabbertab">
+	      <h2>Journals</h2>
+	  	       <div class="lib_searchBox"> 
+                          <form id="bibsearch2" action="http://ezproxy.wildcatter.kilgore.edu/vwebv/search?searchArg=" method="get"target="_blank"> 
+                          Search for Journals in the Library
+                                          <p class="lul_input"> 
+                                            <input maxlength="200" size="24" name="searchArg"></input> 
+
+                                            <select style="visibility: visible;font-size:9pt;" name="searchCode"> 
+                                                 <option value="JKEY^"  selected="selected">Journal Title keyword *</option>  
+                                                 <option value="JALL">First word(s) in journal title</option> 
+
+                                            </select> 
+                                         
+                                            <input name="recCount" value="10" type="hidden" ></input> 
+                                            <input name="searchType" value="1" type="hidden" ></input> 
+                                            <input name="page.search.search.button" value="Search" type="submit" ></input> 
+                                            
+                                            <span class="lib_searchtext" style="padding:0px;border-bottom:1px dotted #759b3b;margin-left: 3px;font-size:9pt"><a href="http://ezproxy.wildcatter.kilgore.edu/vwebv/searchBasic" target="_blank">More Options</a></span> 
+                                          </p> 
+                           </form> 
+             </div><!-- end of lib_searchBox --> 
+     </div>
+
+     <div class="tabbertab">
+	      <h2>Videos</h2>
+	  	       <div class="lib_searchBox"> 
+                          <form id="bibsearch2" action="http://ezproxy.wildcatter.kilgore.edu/vwebv/search?" method="get" target="_blank"> 
+                          Search for Videos in the Library
+                                          <p class="lul_input"> 
+                                            <input name="searchArg"  maxlength="200" size="24" style="width: 275px;"></input> 
+                                            <input name="searchCode" value="GKEY^*" type="hidden" ></input> 
+                                            <input name="limitTo" value="MEDI=v" type="hidden" ></input> 
+                                            <input name="recCount" value="10" type="hidden" ></input> 
+                                            <input name="searchType" value="1" type="hidden" ></input> 
+                                            <input name="page.search.search.button" value="Search" type="submit" ></input> 
+                                            
+                                            <span class="lib_searchtext" style="padding:0px;border-bottom:1px dotted #759b3b;margin-left: 3px;font-size:9pt"><a href="http://ezproxy.wildcatter.kilgore.edu/vwebv/searchBasic" target="_blank">More Options</a></span> 
+                                          </p> 
+                           </form> 
+             </div><!-- end of lib_searchBox --> 
+     </div>
+
+     <div class="tabbertab">
+	         <h2>Ebsco ATOZ</h2>
+      			 <div class="lib_searchBox"> 
+                              <form id="bibsearch3" action="http://atoz.ebsco.com/titles.asp?" method="get" target="_blank"> 
+                              Search for Electronic Journals in the Library
+                              
+                                          <p class="lul_input"> 
+                                            <input maxlength="300" size="24" name="txtKeyword" style="width: 275px;"></input> 
+                                            <input name="SF" value="title" type="hidden" ></input> 
+                                            <input name="id" value="2774" type="hidden" ></input>
+                                            <input name="lang" value="en" type="hidden" ></input>  
+                                            <input name="sid" value="96083428" type="hidden" ></input> 
+                                            <input name="optPages" value="1" type="hidden" ></input> 
+                                            <input name="cmdSearchSubmit" value="Search" type="submit" ></input> 
+                                            
+                                            <span class="lib_searchtext" style="padding:0px;border-bottom:1px dotted #759b3b;margin-left: 3px;font-size:9pt"><a href="http://atoz.ebsco.com/Search.asp?id=2774&amp;sid=96083428&amp;lang=en" class="ResourceLink" target="_blank">Advanced search</a>
+                                           </span> 
+                                          </p> 
+                              </form> 
+                </div><!-- end of lib_searchBox --> 
+	  			
+     </div>
+
+	 
+	 <div class="tabbertab">
+           <h2>Catalog Beta</h2>
+                       <div class="lib_searchBox"> 
+                                <form id="bibsearch4" action="http://library.kilgore.edu/vufind/Search/Results?" method="get"  target="_blank"> 
+                                Search for Books and other Resources in Catalog Beta
+                                          <p class="lul_input"> 
+                                            <input maxlength="200" size="24" name="lookfor"></input> 
+                                            <!--<select style="visibility: visible;font-size:9pt;" name="type"> -->
+											<select style="visibility: visible;font-size:9pt;" name="type" >
+
+												 <option value="Title" selected="selected">Title</option>
+                                                 <option  value="AllFields">All fields *</option> 
+                                                 <option  value="Author">Author</option> 
+                                                 <option  value="Subject">Subject</option> 
+                                                 <option  value="CallNumber">Call Number</option> 
+                                                 <option  value="ISN">ISBN/ISSN</option>
+
+                                                 <option  value="JournalTitle">JournalTitle</option> 
+                                                 <option  value="publisher">Publisher</option> 
+												 <option value="Series">Series</option>
+ 										 		 <option  value="tag">Tag</option>	
+												 <option value="AllFields">Electronic<input name="filter" value="format:Electronic" type="hidden" ></option>
+	
+                                            </select> 
+                                                            
+                                            <input name="submit" value="Find" type="submit" ></input> 
+                                              
+
+                                            
+                                            <span class="lib_searchtext" style="padding:0px;border-bottom:1px dotted #759b3b;margin-left: 3px;font-size:9pt"><a href="http://library.kilgore.edu/vufind" target="_blank">More Options</a></span> 
+                                          </p> 
+                                        </form> 
+  
+                        </div><!-- end of lib_searchBox --> 
+     </div>
+	 
+	 
+ <div class="tabbertab">	 
+       <h2>KCLibrary Website</h2>
+
+              <div class="lib_searchBox"> 
+              		<form id="bibsearch5" onsubmit="ffresults.show(0);"  accept-charset="utf-8" style="margin: 4px 0px 0px;" action="http://search.freefind.com/find.html" method="get" target="ffresult_frame"> 
+                    Search for Information in this Website (ie. Circulation Policy, Finds, etc...)
+                    	<p class="lul_input"> 
+                        		<input type="hidden" value="89478992" name="si">
+                                <input type="hidden" value="r" name="pid">
+                                <input type="hidden" value="0" name="n">
+                                <input type="hidden" value="" name="_charset_">
+                                <input type="hidden" value="? name="bcd">
+                                <input type="hidden" value="j1" name="sbv">
+                                <input type="text" maxlength="255" name="query" style="width: 275px;">
+                                <input type="submit" value="search" name="submit">
+                        
+                        </p>
+                    
+                    </form> 
+              
+              </div>
+              
+     </div>
+	 
+
+
+</div>
+
+</body>
+</html>

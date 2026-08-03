@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <url>
+
+      <loc>http://librarysysworld.com:81/qualification</loc>
+
+      <lastmod>2021-04-01</lastmod>
+
+      <priority>0.3</priority>
+
+   </url>
+
+   <url>
+
+      <loc>http://librarysysworld.com:81/marc035</loc>
+
+      <lastmod>2020-04-01</lastmod>
+
+   </url>
+      <url>
+
+      <loc>http://librarysysworld.com:81/Marccombine</loc>
+	  <changefreq>monthly</changefreq>
+
+      <lastmod>2020-07-21</lastmod>
+
+   </url>
+   
+
+</urlset>

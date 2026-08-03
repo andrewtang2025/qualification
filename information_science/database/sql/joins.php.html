@@ -1,0 +1,214 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="robots" content="noarchive">
+
+<meta name="description"
+content="A join is used to combine rows from multiple tables (2 or more tables).">
+<meta name="keywords"
+content="tech on the net, sql, joins, outer join, inner join">
+<meta name="title" content="SQL: Joins">
+<title>SQL: Joins</title>
+
+<link rel="stylesheet" type="text/css" href="stylesheets/screen.css"  media="screen" />
+<link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+</head>
+<body>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td align="left"><div id="content">
+      <h1>SQL: Joins</h1>
+        <hr>
+        <p>A <b>join</b> is used to combine rows from multiple tables. A join is performed whenever two or more tables is listed in the FROM clause of an SQL statement.</p>
+        <p>There are different kinds of joins. Let's take a look at a few examples.</p>
+        <br>
+        <h2>Inner Join (simple join)</h2>
+        <p>Chances are, you've already written an SQL statement that uses an inner join. It is the most common type of join. Inner joins return all rows from multiple tables where the join condition is met.</p>
+        <p>For example,</p>
+        <blockquote class="sql_command">
+          <p>SELECT suppliers.supplier_id, suppliers.supplier_name, orders.order_date<br>
+            FROM suppliers, orders<br>
+            WHERE suppliers.supplier_id = orders.supplier_id;</p>
+        </blockquote>
+        <p>This SQL statement would return all rows from the suppliers and orders tables where there is a matching supplier_id value in both the suppliers and orders tables.</p>
+        <br>
+        <p>Let's look at some data to explain how inner joins work:</p>
+        <p>We have a table called <b>suppliers</b> with two fields (supplier_id and supplier_ name).<br>
+          It contains the following data:</p>
+        <table class="parm_values" border="1" cellpadding="4" cellspacing="0" width="200">
+          <tr class="th_left_top">
+            <th width="80">supplier_id</th>
+            <th width="120">supplier_name</th>
+          </tr>
+          <tr class="tr_left_top">
+            <td>10000</td>
+            <td>IBM</td>
+          </tr>
+          <tr class="tr_left_top">
+            <td>10001</td>
+            <td>Hewlett Packard</td>
+          </tr>
+          <tr class="tr_left_top">
+            <td>10002</td>
+            <td>Microsoft</td>
+          </tr>
+          <tr class="tr_left_top">
+            <td>10003</td>
+            <td>NVIDIA</td>
+          </tr>
+        </table>
+        <br>
+        <p>We have another table called <b>orders</b> with three fields (order_id, supplier_id, and order_date).<br>
+          It contains the following data:</p>
+        <table class="parm_values" border="1" cellpadding="4" cellspacing="0" width="250">
+          <tr class="th_left_top">
+            <th><b>order_id</b></th>
+            <th><b>supplier_id</b></th>
+            <th><b>order_date</b></th>
+          </tr>
+          <tr class="tr_left_top">
+            <td>500125</td>
+            <td>10000</td>
+            <td>2003/05/12</td>
+          </tr>
+          <tr class="tr_left_top">
+            <td>500126</td>
+            <td>10001</td>
+            <td>2003/05/13</td>
+          </tr>
+        </table>
+        <br>
+        <p>If we run the SQL statement below:</p>
+        <blockquote class="sql_command">
+          <p>SELECT suppliers.supplier_id, suppliers.supplier_name, orders.order_date<br>
+            FROM suppliers, orders<br>
+            WHERE suppliers.supplier_id = orders.supplier_id;</p>
+        </blockquote>
+        <br>
+        <p>Our result set would look like this:</p>
+        <table class="parm_values" border="1" cellpadding="4" cellspacing="0" width="400">
+          <tr class="th_left_top">
+            <th width="110">supplier_id</th>
+            <th width="128">name</th>
+            <th>order_date</th>
+          </tr>
+          <tr class="tr_left_top">
+            <td>10000</td>
+            <td>IBM</td>
+            <td>2003/05/12</td>
+          </tr>
+          <tr class="tr_left_top">
+            <td>10001</td>
+            <td>Hewlett Packard</td>
+            <td>2003/05/13</td>
+          </tr>
+        </table>
+        <p>The rows for <i>Microsoft</i> and <i>NVIDIA</i> from the supplier table would be omitted, since the supplier_id's 10002 and 10003 do not exist in both tables.</p>
+        <br>
+        <h2>Outer Join</h2>
+        <p>Another type of join is called an outer join. This type of join returns all rows from one table and <b>only</b> those rows from a secondary table where the joined fields are equal (join condition is met).</p>
+        <p>For example,</p>
+        <blockquote class="sql_command">
+          <p>select suppliers.supplier_id, suppliers.supplier_name, orders.order_date<br>
+            from suppliers, orders<br>
+            where suppliers.supplier_id = orders.supplier_id(+);</p>
+        </blockquote>
+        <p>This SQL statement would return all rows from the suppliers table and only those rows from the orders table where the joined fields are equal.</p>
+        <p>The (+) after the orders.supplier_id field indicates that, if a supplier_id value in the suppliers table does not exist in the orders table, all fields in the orders table will display as &lt;null<i>&gt;</i> in the result set.</p>
+        <p>The above SQL statement could also be written as follows:</p>
+        <blockquote class="sql_command">
+          <p>select suppliers.supplier_id, suppliers.supplier_name, orders.order_date<br>
+            from suppliers, orders<br>
+            where orders.supplier_id(+) = suppliers.supplier_id</p>
+        </blockquote>
+        <br>
+        <p>Let's look at some data to explain how outer joins work:</p>
+        <p>We have a table called <b>suppliers</b> with two fields (supplier_id and name).<br>
+          It contains the following data:</p>
+        <table class="parm_values" border="1" cellpadding="4" cellspacing="0" width="200">
+          <tr class="th_left_top">
+            <th>supplier_id</th>
+            <th>supplier_name</th>
+          </tr>
+          <tr class="tr_left_top">
+            <td>10000</td>
+            <td>IBM</td>
+          </tr>
+          <tr class="tr_left_top">
+            <td>10001</td>
+            <td>Hewlett Packard</td>
+          </tr>
+          <tr class="tr_left_top">
+            <td>10002</td>
+            <td>Microsoft</td>
+          </tr>
+          <tr class="tr_left_top">
+            <td>10003</td>
+            <td>NVIDIA</td>
+          </tr>
+        </table>
+        <br>
+        <p>We have a second table called <b>orders</b> with three fields (order_id, supplier_id, and order_date).<br>
+          It contains the following data:</p>
+        <table class="parm_values" border="1" cellpadding="4" cellspacing="0" width="250">
+          <tr class="th_left_top">
+            <th>order_id</th>
+            <th>supplier_id</th>
+            <th>order_date</th>
+          </tr>
+          <tr class="tr_left_top">
+            <td>500125</td>
+            <td>10000</td>
+            <td>2003/05/12</td>
+          </tr>
+          <tr class="tr_left_top">
+            <td>500126</td>
+            <td>10001</td>
+            <td>2003/05/13</td>
+          </tr>
+        </table>
+        <br>
+        <p>If we run the SQL statement below:</p>
+        <blockquote class="sql_command">
+          <p>select suppliers.supplier_id, suppliers.supplier_name, orders.order_date<br>
+            from suppliers, orders<br>
+            where suppliers.supplier_id = orders.supplier_id(+);</p>
+        </blockquote>
+        <br>
+        <p>Our result set would look like this:</p>
+        <table class="parm_values" border="1" cellpadding="4" cellspacing="0" width="400">
+          <tr class="th_left_top">
+            <th>supplier_id</th>
+            <th>supplier_name</th>
+            <th>order_date</th>
+          </tr>
+          <tr class="tr_left_top">
+            <td>10000</td>
+            <td>IBM</td>
+            <td>2003/05/12</td>
+          </tr>
+          <tr class="tr_left_top">
+            <td>10001</td>
+            <td>Hewlett Packard</td>
+            <td>2003/05/13</td>
+          </tr>
+          <tr class="tr_left_top">
+            <td>10002</td>
+            <td>Microsoft</td>
+            <td>&lt;null&gt;</td>
+          </tr>
+          <tr class="tr_left_top">
+            <td>10003</td>
+            <td>NVIDIA</td>
+            <td>&lt;null&gt;</td>
+          </tr>
+        </table>
+        <p>The rows for <i>Microsoft</i> and <i>NVIDIA</i> would be included because an outer join was used. However, you will notice that the order_date field for those records contains a &lt;null&gt; value.</p>
+    </div>
+     </td>
+  </tr>
+</table>
+
+</body>
+</html>

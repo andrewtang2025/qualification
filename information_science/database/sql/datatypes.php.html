@@ -1,0 +1,136 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="robots" content="noarchive">
+
+<meta name="description"
+content="The following is a list of general SQL datatypes that may not be supported by all relational databases.">
+<meta name="keywords"
+content="tech on the net, sql, data types, datatypes">
+<meta name="title" content="SQL: Data Types">
+<title>SQL: Data Types</title>
+
+<link rel="stylesheet" type="text/css" href="stylesheets/screen.css"  media="screen" />
+<link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+</head>
+<body>
+<table id="header" width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    
+    
+  </tr>
+</table>
+
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+
+    <td align="left"><div id="content">
+	
+        
+        <h1>SQL: Data Types</h1>
+        <hr>
+        <p>The following is a list of general SQL datatypes that may not be supported by all relational databases.</p>
+        <table class="parm_values" border="1" cellspacing="0" cellpadding="4" width="498">
+          <tr class="th_left_top">
+            <th width="104">Data Type</th>
+            <th width="107">Syntax</th>
+            <th>Explanation (if applicable)</th>
+          </tr>
+          <tr class="tr_left_top">
+            <td>integer</td>
+            <td>integer</td>
+            <td></td>
+          </tr>
+          <tr class="tr_left_top">
+            <td>smallint</td>
+            <td>smallint</td>
+            <td></td>
+          </tr>
+          <tr class="tr_left_top">
+            <td>numeric</td>
+            <td>numeric(p,s)</td>
+            <td>Where <i><b>p</b></i> is a precision value; <i><b>s</b></i> is a scale value. For example, numeric(6,2) is a number that has 4 digits before the decimal and 2 digits after the decimal.</td>
+          </tr>
+          <tr class="tr_left_top">
+            <td>decimal</td>
+            <td>decimal(p,s)</td>
+            <td> Where <b><i>p</i></b> is a precision value; <b><i>s</i></b> is a scale value.</td>
+          </tr>
+          <tr class="tr_left_top">
+            <td>real</td>
+            <td>real</td>
+            <td>Single-precision floating point number</td>
+          </tr>
+          <tr class="tr_left_top">
+            <td>double precision</td>
+            <td>double precision</td>
+            <td>Double-precision floating point number</td>
+          </tr>
+          <tr class="tr_left_top">
+            <td>float</td>
+            <td>float(p)</td>
+            <td>Where <b><i>p</i></b> is a precision value.</td>
+          </tr>
+          <tr class="tr_left_top">
+            <td>character</td>
+            <td>char(x)</td>
+            <td>Where <b><i>x</i></b> is the number of characters to store. This data type is space padded to fill the number of characters specified.</td>
+          </tr>
+          <tr class="tr_left_top">
+            <td>character varying</td>
+            <td>varchar2(x)</td>
+            <td>Where <b><i>x</i></b> is the number of characters to store. This data type does NOT space pad.</td>
+          </tr>
+          <tr class="tr_left_top">
+            <td>bit</td>
+            <td>bit(x)</td>
+            <td>Where <b><i>x</i></b> is the number of bits to store.</td>
+          </tr>
+          <tr class="tr_left_top">
+            <td>bit varying</td>
+            <td>bit varying(x)</td>
+            <td>Where <b><i>x</i></b> is the number of bits to store. The length can vary up to x.</td>
+          </tr>
+          <tr class="tr_left_top">
+            <td>date</td>
+            <td>date</td>
+            <td>Stores year, month, and day values.</td>
+          </tr>
+          <tr class="tr_left_top">
+            <td>time</td>
+            <td>time</td>
+            <td>Stores the hour, minute, and second values.</td>
+          </tr>
+          <tr class="tr_left_top">
+            <td>timestamp</td>
+            <td>timestamp</td>
+            <td>Stores year, month, day, hour, minute, and second values.</td>
+          </tr>
+          <tr class="tr_left_top">
+            <td>time with time zone</td>
+            <td>time with time zone</td>
+            <td>Exactly the same as time, but also stores an offset from UTC of the time specified.</td>
+          </tr>
+          <tr class="tr_left_top">
+            <td>timestamp with time zone</td>
+            <td>timestamp with time zone</td>
+            <td>Exactly the same as timestamp, but also stores an offset from UTC of the time specified.</td>
+          </tr>
+          <tr class="tr_left_top">
+            <td>year-month interval</td>
+            <td></td>
+            <td>Contains a year value, a month value, or both.</td>
+          </tr>
+          <tr class="tr_left_top">
+            <td>day-time interval</td>
+            <td></td>
+            <td>Contains a day value, an hour value, a minute value, and/or a second value.</td>
+          </tr>
+        </table>
+    </div>    </td>
+  </tr>
+</table>
+
+</body>
+</html>

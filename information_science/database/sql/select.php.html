@@ -1,0 +1,76 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="robots" content="noarchive">
+
+<meta name="description"
+content="The SELECT statement allows you to retrieve records from one or more tables in your database">
+<meta name="keywords"
+content="tech on the net, sql, select statement">
+<meta name="title" content="SQL: SELECT Statement">
+<title>SQL: SELECT Statement</title>
+
+<link rel="stylesheet" type="text/css" href="stylesheets/screen.css"  media="screen" />
+<link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+</head>
+<body>
+<table id="header" width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    
+    
+  </tr>
+</table>
+
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+
+    <td align="left"><div id="content">
+	
+        
+        <h1>SQL: SELECT Statement</h1>
+        <hr>
+        <p>The SELECT statement allows you to retrieve records from one or more tables in your database.</p>
+        <p>The syntax for the SELECT statement is:</p>
+        <blockquote class="definition">
+          <p>SELECT columns<br>
+            FROM tables<br>
+            WHERE predicates;</p>
+        </blockquote>
+        <br>
+        <p class="example_heading">Example #1</p>
+        <p>Let's take a look at how to select all fields from a table.</p>
+        <blockquote class="sql_command">
+          <p>SELECT *<br>
+            FROM suppliers<br>
+            WHERE city = 'Newark';</p>
+        </blockquote>
+        <p>In our example, we've used * to signify that we wish to view all fields from the suppliers table where the supplier resides in Newark.</p>
+        <br>
+        <p class="example_heading">Example #2</p>
+        <p>You can also choose to select individual fields as opposed to all fields in the table.</p>
+        <p>For example:</p>
+        <blockquote class="sql_command">
+          <p>SELECT name, city, state<br>
+            FROM suppliers<br>
+            WHERE supplier_id &gt; 1000;</p>
+        </blockquote>
+        <p>This select statement would return all name, city, and state values from the suppliers table where the supplier_id value is greater than 1000.</p>
+        <br>
+        <p class="example_heading">Example #3</p>
+        <p>You can also use the select statement to retrieve fields from multiple tables.</p>
+        <blockquote class="sql_command">
+          <p>SELECT orders.order_id, suppliers.name<br>
+            FROM suppliers, orders<br>
+            WHERE suppliers.supplier_id = orders.supplier_id;</p>
+        </blockquote>
+        <p>The result set would display the order_id and suppier name fields where the supplier_id value existed in both the suppliers and orders table.</p>
+        <p>Learn more about <a href="joins.php.html">joins</a>.</p>
+    </div>
+      
+</td>
+  </tr>
+</table>
+
+</body>
+</html>

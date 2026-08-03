@@ -1,0 +1,97 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="robots" content="noarchive">
+
+<meta name="description"
+content="The DELETE statement allows you to delete a single record or multiple records from a table.">
+<meta name="keywords"
+content="tech on the net, sql, delete statement">
+<meta name="title" content="SQL: DELETE Statement">
+<title>SQL: DELETE Statement</title>
+
+<link rel="stylesheet" type="text/css" href="stylesheets/screen.css"  media="screen" />
+<link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+</head>
+<body>
+<table id="header" width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    
+    
+  </tr>
+</table>
+
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+
+    <td align="left"><div id="content">
+	
+        
+        <h1>SQL: DELETE Statement</h1>
+        <hr>
+        <p>The DELETE statement allows you to delete a single record or multiple records from a table.</p>
+        <p>The syntax for the DELETE statement is:</p>
+        <blockquote class="definition">
+          <p>DELETE FROM table<br>
+            WHERE predicates;</p>
+        </blockquote>
+        <br>
+        <p class="example_heading">Example #1 - Simple example</p>
+        <p>Let's take a look at a simple example:</p>
+        <blockquote class="sql_command">
+          <p>DELETE FROM suppliers<br>
+            WHERE supplier_name = 'IBM';</p>
+        </blockquote>
+        <p>This would delete all records from the suppliers table where the supplier_name is IBM.</p>
+        <p>You may wish to check for the number of rows that will be deleted. You can determine the number of rows that will be deleted by running the following SQL statement <b>before</b> performing the delete.</p>
+        <blockquote class="sql_command">
+          <p>SELECT count(*)<br>
+            FROM suppliers<br>
+            WHERE supplier_name = 'IBM';</p>
+        </blockquote>
+        <br>
+        <p class="example_heading">Example #2 - More complex example</p>
+        <p>You can also perform more complicated deletes.</p>
+        <p>You may wish to delete records in one table based on values in another table. Since you can't list more than one table in the FROM clause when you are performing a delete, you can use the EXISTS clause.</p>
+        <p>For example:</p>
+        <blockquote class="sql_command">
+          <p>DELETE FROM suppliers<br>
+            WHERE EXISTS<br>
+&nbsp; ( select customers.name<br>
+&nbsp;&nbsp;&nbsp;&nbsp; from customers<br>
+&nbsp;&nbsp;&nbsp;&nbsp; where customers.customer_id = suppliers.supplier_id<br>
+&nbsp;&nbsp; &nbsp; and customers.customer_name = 'IBM' );</p>
+        </blockquote>
+        <p>This would delete all records in the suppliers table where there is a record in the customers table whose name is IBM, and the customer_id is the same as the supplier_id.</p>
+        <p>Learn more about the <a href="exists.php.html">EXISTS condition</a>.</p>
+        <p>If you wish to determine the number of rows that will be deleted, you can run the following SQL statement <b>before</b> performing the delete.</p>
+        <blockquote class="sql_command">
+          <p>SELECT count(*) FROM suppliers<br>
+            WHERE EXISTS<br>
+&nbsp; ( select customers.name<br>
+&nbsp;&nbsp;&nbsp;&nbsp; from customers<br>
+&nbsp;&nbsp;&nbsp;&nbsp; where customers.customer_id = suppliers.supplier_id<br>
+&nbsp;&nbsp; &nbsp; and customers.customer_name = 'IBM' );</p>
+        </blockquote>
+        <br>
+        <h2>Frequently Asked Questions</h2>
+        <hr>
+        <p><b>Question</b>:&nbsp; How would I write an SQL statement to delete all records in TableA whose data in field1 &amp; field2 DO NOT match the data in fieldx &amp; fieldz of TableB?</p>
+        <p><b>Answer</b>:&nbsp; You could try something like this:</p>
+        <blockquote class="sql_command">
+          <p>DELETE FROM TableA<br>
+            WHERE NOT EXISTS<br>
+&nbsp; ( select *<br>
+&nbsp; &nbsp;&nbsp; from TableB<br>
+&nbsp;&nbsp; &nbsp; where TableA .field1 = TableB.fieldx<br>
+&nbsp;&nbsp; &nbsp; and TableA .field2 = TableB.fieldz );</p>
+        </blockquote>
+    </div>
+      
+</td>
+  </tr>
+</table>
+
+</body>
+</html>

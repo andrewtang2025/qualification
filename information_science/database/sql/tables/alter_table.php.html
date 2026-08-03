@@ -1,0 +1,578 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="robots" content="noarchive">
+
+<meta name="description"
+content="The ALTER TABLE statement allows you to rename an existing table. It can also be used to add, modify, or drop a column from an existing table.">
+<meta name="keywords"
+content="tech on the net, sql, alter table statement">
+<meta name="title" content="SQL: ALTER TABLE Statement">
+<title>SQL: ALTER TABLE Statement</title>
+
+<link rel="stylesheet" type="text/css" href="../stylesheets/screen.css"  media="screen" />
+<link rel="stylesheet" type="text/css" href="../stylesheets/print.css" media="print" />
+</head>
+<body>
+<table id="header" width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    
+    <td align="left"></td>
+  </tr>
+</table>
+
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+
+    <td align="left"><div id="content">
+	
+        
+        <h1>SQL: ALTER TABLE Statement</h1>
+        <hr>
+        <p>The ALTER TABLE statement allows you to rename an existing table. It can also be used to add, modify, or drop a column from an existing table.</p>
+        <br>
+        <h2>Renaming a table</h2>
+        <p>The basic syntax for renaming a table is:</p>
+        <blockquote class="definition">
+          <p>ALTER TABLE table_name<br>
+           &nbsp;RENAME TO new_table_name;</p>
+        </blockquote>
+        <p class="example_heading">For example:</p>
+        <blockquote class="sql_command">
+          <p>ALTER TABLE suppliers<br>
+&nbsp;RENAME TO vendors;</p>
+        </blockquote>
+        <p>This will rename the <i>suppliers</i> table to <i>vendors</i>.</p>
+        <br>
+        <h2>Adding column(s) to a table</h2>
+        <p><b>Syntax #1</b></p>
+        <p>To add a column to an existing table, the ALTER TABLE syntax is:</p>
+        <blockquote class="definition">
+          <p>ALTER TABLE table_name<br>
+&nbsp;ADD column_name column-definition;</p>
+        </blockquote>
+        <p class="example_heading">For example:</p>
+        <blockquote class="sql_command">
+          <p>ALTER TABLE supplier<br>
+&nbsp;ADD supplier_name&nbsp; varchar2(50);</p>
+        </blockquote>
+        <p>This will add a column called <i>supplier_name</i> to the <i>supplier</i> table.</p>
+        <br>
+        <p><b>Syntax #2</b></p>
+        <p>To add multiple columns to an existing table, the ALTER TABLE syntax is:</p>
+        <blockquote>
+          <table class="definition" border="0" cellpadding="0" cellspacing="0" width="245">
+            <tr>
+              <td colspan="3" width="243">ALTER TABLE table_name</td>
+            </tr>
+            <tr>
+              <td width="38">ADD (</td>
+              <td width="71">column_1</td>
+              <td width="130">column-definition,</td>
+            </tr>
+            <tr>
+              <td width="38">&nbsp;</td>
+              <td width="71">column_2</td>
+              <td width="130">column-definition,</td>
+            </tr>
+            <tr>
+              <td width="38">&nbsp;</td>
+              <td width="71">...</td>
+              <td width="130"></td>
+            </tr>
+            <tr>
+              <td width="38">&nbsp;</td>
+              <td width="71">column_n</td>
+              <td width="130">column_definition );</td>
+            </tr>
+          </table>
+        </blockquote>
+        <p class="example_heading">For example:</p>
+        <blockquote>
+          <table class="sql_command" border="0" cellpadding="0" cellspacing="0" width="251">
+            <tr>
+              <td colspan="3" width="249">ALTER TABLE supplier</td>
+            </tr>
+            <tr>
+              <td width="38">ADD (</td>
+              <td width="100">supplier_name</td>
+              <td width="107">varchar2(50),</td>
+            </tr>
+            <tr>
+              <td width="38">&nbsp;</td>
+              <td width="100">city</td>
+              <td width="107">varchar2(45) );</td>
+            </tr>
+          </table>
+        </blockquote>
+        <p>This will add two columns (<i>supplier_name</i> and <i>city</i>) to the <i>supplier</i> table.</p>
+        <br>
+        <h2>Modifying column(s) in a table</h2>
+        <p><b>Syntax #1</b></p>
+        <p>To modify a column in an existing table, the ALTER TABLE syntax is:</p>
+        <blockquote class="definition">
+          <p>ALTER TABLE table_name<br>
+&nbsp;MODIFY column_name column_type;</p>
+        </blockquote>
+        <p class="example_heading">For example:</p>
+        <blockquote class="sql_command">
+          <p>ALTER TABLE supplier<br>
+&nbsp;MODIFY supplier_name&nbsp;&nbsp; varchar2(100)&nbsp;&nbsp;&nbsp;&nbsp; not null;</p>
+        </blockquote>
+        <p>This will modify the column called <i>supplier_name</i> to be a data type of varchar2(100) and force the column to not allow null values.</p>
+        <br>
+        <p><b>Syntax #2</b></p>
+        <p>To modify multiple columns in an existing table, the ALTER TABLE syntax is:</p>
+        <blockquote>
+          <table class="definition" border="0" cellpadding="0" cellspacing="0" width="249">
+            <tr>
+              <td colspan="3" width="243">ALTER TABLE table_name</td>
+            </tr>
+            <tr>
+              <td width="65">MODIFY (</td>
+              <td width="67">column_1</td>
+              <td width="111">column_type,</td>
+            </tr>
+            <tr>
+              <td width="65">&nbsp;</td>
+              <td width="67">column_2</td>
+              <td width="111">column_type,</td>
+            </tr>
+            <tr>
+              <td width="65">&nbsp;</td>
+              <td width="67">...</td>
+              <td width="111"></td>
+            </tr>
+            <tr>
+              <td width="65">&nbsp;</td>
+              <td width="67">column_n</td>
+              <td width="111">column_type );</td>
+            </tr>
+          </table>
+        </blockquote>
+        <p class="example_heading">For example:</p>
+        <blockquote>
+          <table class="sql_command" border="0" cellpadding="0" cellspacing="0" width="338">
+            <tr>
+              <td colspan="5" width="319">ALTER TABLE supplier</td>
+            </tr>
+            <tr>
+              <td width="62">MODIFY (</td>
+              <td width="98">supplier_name</td>
+              <td width="97">varchar2(100)</td>
+              <td width="75" colspan="2">not null,</td>
+            </tr>
+            <tr>
+              <td width="62"></td>
+              <td width="98">city</td>
+              <td width="97">varchar2(75)</td>
+              <td width="38">&nbsp;</td>
+              <td width="37"> );</td>
+            </tr>
+          </table>
+        </blockquote>
+        <p>This will modify both the <i>supplier_name</i> and <i>city</i> columns.</p>
+        <br>
+        <h2>Drop column(s) in a table</h2>
+        <p><b>Syntax #1</b></p>
+        <p>To drop a column in an existing table, the ALTER TABLE syntax is:</p>
+        <blockquote class="definition">
+          <p>ALTER TABLE table_name<br>
+&nbsp;DROP COLUMN column_name;</p>
+        </blockquote>
+        <p class="example_heading">For example:</p>
+        <blockquote class="sql_command">
+          <p>ALTER TABLE supplier<br>
+&nbsp;DROP COLUMN supplier_name;</p>
+        </blockquote>
+        <p>This will drop the column called <i>supplier_name</i> from the table called <i>supplier</i>.</p>
+        <br>
+        <h2>Rename column(s) in a table<br>
+          (NEW in Oracle 9i Release 2)</h2>
+        <p><b>Syntax #1</b></p>
+        <p>Starting in Oracle 9i Release 2, you can now rename a column.</p>
+        <p>To rename a column in an existing table, the ALTER TABLE syntax is:</p>
+        <blockquote class="definition">
+          <p>ALTER TABLE table_name<br>
+&nbsp;RENAME COLUMN old_name to new_name;</p>
+        </blockquote>
+        <p class="example_heading">For example:</p>
+        <blockquote class="sql_command">
+          <p>ALTER TABLE supplier<br>
+&nbsp;RENAME COLUMN supplier_name to sname;</p>
+        </blockquote>
+        <p>This will rename the column called <i>supplier_name</i> to <i>sname</i>.</p>
+        <p><i>Acknowledgements</i>: Thanks to Dave M., Craig A., and Susan W. for contributing to this solution!</p>
+        <br>
+        <p class="practice_exercise">Practice Exercise #1:</p>
+        <p>Based on the <i>departments</i> table below, rename the <i>departments</i> table to <i>depts</i>.</p>
+        <blockquote>
+          <table class="sql_command" border="0" cellspacing="0" width="385">
+            <tr>
+              <td colspan="4">CREATE TABLE departments</td>
+            </tr>
+            <tr>
+              <td width="8">(</td>
+              <td width="123">department_id</td>
+              <td width="120">number(10)</td>
+              <td width="126">not null,</td>
+            </tr>
+            <tr>
+              <td width="8">&nbsp;</td>
+              <td width="123">department_name</td>
+              <td width="120">varchar2(50)</td>
+              <td width="126">not null,</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td colspan="3">CONSTRAINT departments_pk PRIMARY KEY (department_id)</td>
+            </tr>
+            <tr>
+              <td width="8">);</td>
+              <td width="123"></td>
+              <td width="120"></td>
+              <td width="126"></td>
+            </tr>
+          </table>
+        </blockquote>
+        <p><b>Solution</b>:</p>
+        <p>The following ALTER TABLE statement would rename the <i>departments</i> table to <i>depts</i>:</p>
+        <blockquote class="sql_command">
+          <p>ALTER TABLE departments<br>
+&nbsp;RENAME TO depts;</p>
+        </blockquote>
+        <br>
+        <p class="practice_exercise">Practice Exercise #2:</p>
+        <p>Based on the <i>employees</i> table below, add a  column called <i>salary</i> that is a number(6) datatype.</p>
+        <blockquote>
+          <table class="sql_command" border="0" cellspacing="0" width="407">
+            <tr>
+              <td colspan="4">CREATE TABLE employees</td>
+            </tr>
+            <tr>
+              <td width="8">(</td>
+              <td width="123">employee_number</td>
+              <td width="120">number(10)</td>
+              <td width="148">not null,</td>
+            </tr>
+            <tr>
+              <td width="8">&nbsp;</td>
+              <td width="123">employee_name</td>
+              <td width="120">varchar2(50)</td>
+              <td width="148">not null,</td>
+            </tr>
+            <tr>
+              <td width="8">&nbsp;</td>
+              <td width="123">department_id</td>
+              <td width="120">number(10),</td>
+              <td width="148"></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td colspan="3">CONSTRAINT employees_pk PRIMARY KEY (employee_number)</td>
+            </tr>
+            <tr>
+              <td width="8">);</td>
+              <td width="123"></td>
+              <td width="120"></td>
+              <td width="148"></td>
+            </tr>
+          </table>
+        </blockquote>
+        <p><b>Solution</b>:</p>
+        <p>The following ALTER TABLE statement would add a <i>salary</i> column to the <i>employees</i> table:</p>
+        <blockquote class="sql_command">
+          <p>ALTER TABLE employees<br>
+&nbsp;ADD salary&nbsp;number(6);</p>
+        </blockquote>
+        <br>
+        <p class="practice_exercise">Practice Exercise #3:</p>
+        <p>Based on the <i>customers</i> table below, add two columns - one column called <i>contact_name</i> that is a varchar2(50) datatype and one column called <i>last_contacted</i> that is a date datatype.</p>
+        <blockquote>
+          <table class="sql_command" border="0" cellspacing="0" width="350">
+            <tr>
+              <td colspan="4">CREATE TABLE customers</td>
+            </tr>
+            <tr>
+              <td width="8">(</td>
+              <td width="123">customer_id</td>
+              <td width="120">number(10)</td>
+              <td width="91">not null,</td>
+            </tr>
+            <tr>
+              <td width="8">&nbsp;</td>
+              <td width="123">customer_name</td>
+              <td width="120">varchar2(50)</td>
+              <td width="91">not null,</td>
+            </tr>
+            <tr>
+              <td width="8">&nbsp;</td>
+              <td width="123">address</td>
+              <td width="120">varchar2(50),</td>
+              <td width="91"></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>city</td>
+              <td>varchar2(50),</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>state</td>
+              <td>varchar2(25),</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>zip_code</td>
+              <td>varchar2(10),</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td colspan="3">CONSTRAINT customers_pk PRIMARY KEY (customer_id)</td>
+            </tr>
+            <tr>
+              <td width="8">);</td>
+              <td width="123"></td>
+              <td width="120"></td>
+              <td width="91"></td>
+            </tr>
+          </table>
+        </blockquote>
+        <p><b>Solution</b>:</p>
+        <p>The following ALTER TABLE statement would add the <i>contact_name</i> and <i>last_contacted</i> columns to the <i>customers</i> table:</p>
+        <blockquote>
+          <table class="sql_command" border="0" cellpadding="0" cellspacing="0" width="251">
+            <tr>
+              <td colspan="3" width="249">ALTER TABLE customers</td>
+            </tr>
+            <tr>
+              <td width="38">ADD (</td>
+              <td width="100">contact_name</td>
+              <td width="107">varchar2(50),</td>
+            </tr>
+            <tr>
+              <td width="38">&nbsp;</td>
+              <td width="100">last_contacted</td>
+              <td width="107">date );</td>
+            </tr>
+          </table>
+        </blockquote>
+        <br>
+        <p class="practice_exercise">Practice Exercise #4:</p>
+        <p>Based on the <i>employees</i> table below, change the <i>employee_name</i> column to a varchar2(75) datatype.</p>
+        <blockquote>
+          <table class="sql_command" border="0" cellspacing="0" width="407">
+            <tr>
+              <td colspan="4">CREATE TABLE employees</td>
+            </tr>
+            <tr>
+              <td width="8">(</td>
+              <td width="123">employee_number</td>
+              <td width="120">number(10)</td>
+              <td width="148">not null,</td>
+            </tr>
+            <tr>
+              <td width="8">&nbsp;</td>
+              <td width="123">employee_name</td>
+              <td width="120">varchar2(50)</td>
+              <td width="148">not null,</td>
+            </tr>
+            <tr>
+              <td width="8">&nbsp;</td>
+              <td width="123">department_id</td>
+              <td width="120">number(10),</td>
+              <td width="148"></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td colspan="3">CONSTRAINT employees_pk PRIMARY KEY (employee_number)</td>
+            </tr>
+            <tr>
+              <td width="8">);</td>
+              <td width="123"></td>
+              <td width="120"></td>
+              <td width="148"></td>
+            </tr>
+          </table>
+        </blockquote>
+        <p><b>Solution</b>:</p>
+        <p>The following ALTER TABLE statement would change the datatype for the <i>employee_name</i> column to varchar2(75):</p>
+        <blockquote class="sql_command">
+          <p>ALTER TABLE employees<br>
+&nbsp;MODIFY employee_name varchar2(75);</p>
+        </blockquote>
+        <br>
+        <p class="practice_exercise">Practice Exercise #5:</p>
+        <p>Based on the <i>customers</i> table below, change the <i>customer_name</i> column to NOT allow null values and change the <i>state</i> column to a varchar2(2) datatype.</p>
+        <blockquote>
+          <table class="sql_command" border="0" cellspacing="0" width="350">
+            <tr>
+              <td colspan="4">CREATE TABLE customers</td>
+            </tr>
+            <tr>
+              <td width="8">(</td>
+              <td width="123">customer_id</td>
+              <td width="120">number(10)</td>
+              <td width="91">not null,</td>
+            </tr>
+            <tr>
+              <td width="8">&nbsp;</td>
+              <td width="123">customer_name</td>
+              <td width="120">varchar2(50),</td>
+              <td width="91">&nbsp;</td>
+            </tr>
+            <tr>
+              <td width="8">&nbsp;</td>
+              <td width="123">address</td>
+              <td width="120">varchar2(50),</td>
+              <td width="91"></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>city</td>
+              <td>varchar2(50),</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>state</td>
+              <td>varchar2(25),</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>zip_code</td>
+              <td>varchar2(10),</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td colspan="3">CONSTRAINT customers_pk PRIMARY KEY (customer_id)</td>
+            </tr>
+            <tr>
+              <td width="8">);</td>
+              <td width="123"></td>
+              <td width="120"></td>
+              <td width="91"></td>
+            </tr>
+          </table>
+        </blockquote>
+        <p><b>Solution</b>:</p>
+        <p>The following ALTER TABLE statement would modify the <i>customer_name</i> and <i>state</i> columns accordingly in the <i>customers</i> table:</p>
+        <blockquote>
+          <table class="sql_command" border="0" cellpadding="0" cellspacing="0" width="351">
+            <tr>
+              <td colspan="3">ALTER TABLE customers</td>
+            </tr>
+            <tr>
+              <td width="62">MODIFY  (</td>
+              <td width="119">customer_name</td>
+              <td width="170">varchar2(50) not null,</td>
+            </tr>
+            <tr>
+              <td width="62">&nbsp;</td>
+              <td width="119">state</td>
+              <td width="170">varchar2(2) );</td>
+            </tr>
+          </table>
+        </blockquote>
+        <br>
+        <p class="practice_exercise">Practice Exercise #6:</p>
+        <p>Based on the <i>employees</i> table below, drop the <i>salary</i> column.</p>
+        <blockquote>
+          <table class="sql_command" border="0" cellspacing="0" width="407">
+            <tr>
+              <td colspan="4">CREATE TABLE employees</td>
+            </tr>
+            <tr>
+              <td width="8">(</td>
+              <td width="123">employee_number</td>
+              <td width="120">number(10)</td>
+              <td width="148">not null,</td>
+            </tr>
+            <tr>
+              <td width="8">&nbsp;</td>
+              <td width="123">employee_name</td>
+              <td width="120">varchar2(50)</td>
+              <td width="148">not null,</td>
+            </tr>
+            <tr>
+              <td width="8">&nbsp;</td>
+              <td width="123">department_id</td>
+              <td width="120">number(10),</td>
+              <td width="148"></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>salary</td>
+              <td>number(6),</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td colspan="3">CONSTRAINT employees_pk PRIMARY KEY (employee_number)</td>
+            </tr>
+            <tr>
+              <td width="8">);</td>
+              <td width="123"></td>
+              <td width="120"></td>
+              <td width="148"></td>
+            </tr>
+          </table>
+        </blockquote>
+        <p><b>Solution</b>:</p>
+        <p>The following ALTER TABLE statement would drop the <i>salary</i> column from the <i>employees</i> table:</p>
+        <blockquote class="sql_command">
+          <p>ALTER TABLE employees<br>
+&nbsp;DROP COLUMN salary;</p>
+        </blockquote>
+        <br>
+        <p class="practice_exercise">Practice Exercise #7:</p>
+        <p>Based on the <i>departments</i> table below, rename the <i>department_name</i> column to <i>dept_name</i>.</p>
+        <blockquote>
+          <table class="sql_command" border="0" cellspacing="0" width="385">
+            <tr>
+              <td colspan="4">CREATE TABLE departments</td>
+            </tr>
+            <tr>
+              <td width="8">(</td>
+              <td width="123">department_id</td>
+              <td width="120">number(10)</td>
+              <td width="126">not null,</td>
+            </tr>
+            <tr>
+              <td width="8">&nbsp;</td>
+              <td width="123">department_name</td>
+              <td width="120">varchar2(50)</td>
+              <td width="126">not null,</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td colspan="3">CONSTRAINT departments_pk PRIMARY KEY (department_id)</td>
+            </tr>
+            <tr>
+              <td width="8">);</td>
+              <td width="123"></td>
+              <td width="120"></td>
+              <td width="126"></td>
+            </tr>
+          </table>
+        </blockquote>
+        <p><b>Solution</b>:</p>
+        <p>The following ALTER TABLE statement would rename the <i>department_name</i> column to <i>dept_name</i> in the <i>departments</i> table:</p>
+        <blockquote class="sql_command">
+          <p>ALTER TABLE departments<br>
+&nbsp;RENAME COLUMN department_name to dept_name;</p>
+        </blockquote>
+    </div>
+      
+         </td>
+  </tr>
+</table>
+
+</body>
+</html>

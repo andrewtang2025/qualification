@@ -1,0 +1,383 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="robots" content="noarchive">
+
+<meta name="description"
+content="The COUNT function returns the number of rows in a query.">
+<meta name="keywords"
+content="tech on the net, sql, count function">
+<meta name="title" content="SQL: COUNT Function">
+<title>SQL: COUNT Function</title>
+
+<link rel="stylesheet" type="text/css" href="stylesheets/screen.css"  media="screen" />
+<link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+</head>
+<body>
+<table id="header" width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    
+    
+  </tr>
+</table>
+
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+
+    <td align="left"><div id="content">
+	
+        
+        <h1>SQL: COUNT Function</h1>
+        <hr>
+        <p>The COUNT function returns the number of rows in a query.</p>
+        <p>The syntax for the COUNT function is:</p>
+        <blockquote class="definition">
+          <p>SELECT COUNT(<i>expression</i>)<br>
+            FROM tables<br>
+            WHERE predicates;</p>
+        </blockquote>
+        <br>
+        <p class="example_heading">Note:</p>
+        <p>The COUNT function will only count those records in which the field in the brackets is NOT NULL.</p>
+        <p>For example, if you have the following table called <b>suppliers</b>:</p>
+        <blockquote>
+          <table class="parm_values" border="1" cellspacing="0" cellpadding="4" width="300">
+            <tr class="th_left_top">
+              <th>Supplier_ID</th>
+              <th>Supplier_Name</th>
+              <th>State</th>
+            </tr>
+            <tr class="tr_left_top">
+              <td>1</td>
+              <td>IBM</td>
+              <td>CA</td>
+            </tr>
+            <tr class="tr_left_top">
+              <td>2</td>
+              <td>Microsoft</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr class="tr_left_top">
+              <td>3</td>
+              <td>NVIDIA</td>
+              <td>&nbsp;</td>
+            </tr>
+          </table>
+        </blockquote>
+        <p>The result for this query will return 3.</p>
+        <blockquote class="sql_command">
+          <p>Select COUNT(Supplier_ID) from suppliers;</p>
+        </blockquote>
+        <p>While the result for the next query will only return 1, since there is only one row in the suppliers table where the State field is NOT NULL.</p>
+        <blockquote class="sql_command">
+          <p>Select COUNT(State) from suppliers;</p>
+          <br>
+        </blockquote>
+        <p class="example_heading">Simple Example</p>
+        <p>For example, you might wish to know how many employees have a salary that is above $25,000 / year.</p>
+        <blockquote class="sql_command">
+          <p>SELECT COUNT(*) as &quot;Number of employees&quot;<br>
+            FROM employees<br>
+            WHERE salary &gt; 25000;</p>
+        </blockquote>
+        <p>In this example, we've aliased the count(*) field as &quot;Number of employees&quot;. As a result, &quot;Number of employees&quot; will display as the field name when the result set is returned.</p>
+        <br>
+        <p class="example_heading">Example using DISTINCT</p>
+        <p>You can use the DISTINCT clause within the COUNT function.</p>
+        <p>For example, the SQL statement below returns the number of unique departments where at least one employee makes over $25,000 / year.</p>
+        <blockquote class="sql_command">
+          <p>SELECT COUNT(DISTINCT department) as &quot;Unique departments&quot;<br>
+            FROM employees<br>
+            WHERE salary &gt; 25000;</p>
+        </blockquote>
+        <p>Again, the count(DISTINCT department) field is aliased as &quot;Unique departments&quot;. This is the field name that will display in the result set.</p>
+        <br>
+        <p class="example_heading">Example using GROUP BY</p>
+        <p>In some cases, you will be required to use a GROUP BY clause with the COUNT function.</p>
+        <p>For example, you could use the COUNT function to return the name of the department and the number of employees (in the associated department) that make over $25,000 / year.</p>
+        <blockquote class="sql_command">
+          <p>SELECT department, COUNT(*) as &quot;Number of employees&quot;<br>
+            FROM employees<br>
+            WHERE salary &gt; 25000<br>
+            GROUP BY department;</p>
+        </blockquote>
+        <p>Because you have listed one column in your SELECT statement that is not encapsulated in the COUNT function, you must use a GROUP BY clause. The department field must, therefore, be listed in the GROUP BY section.</p>
+        <br>
+        <p class="example_heading">TIP: Performance Tuning</p>
+        <p>Since the COUNT function will return the same results regardless of what NOT NULL field(s) you include as the COUNT function parameters (ie: within the brackets), you can change the syntax of the COUNT function to COUNT(1) to get better performance as the database engine will not have to fetch back the data fields.</p>
+        <p>For example, based on the example above, the following syntax would result in better performance:</p>
+        <blockquote class="sql_command">
+          <p>SELECT department, COUNT(1) as &quot;Number of employees&quot;<br>
+            FROM employees<br>
+            WHERE salary &gt; 25000<br>
+            GROUP BY department;</p>
+        </blockquote>
+        <p>Now, the COUNT function does not need to retrieve all fields from the employees table as it had to when you used the COUNT(*) syntax. It will merely retrieve the numeric value of 1 for each record that meets your criteria.</p>
+        <br>
+        <p class="practice_exercise">Practice Exercise #1:</p>
+        <p>Based on the <i>employees</i> table populated with the following data, count the number of employees whose salary is over $55,000 per year.</p>
+        <blockquote class="sql_command">
+          <table class="sql_command" border="0" cellspacing="0" width="407">
+            <tr>
+              <td colspan="4">CREATE TABLE employees</td>
+            </tr>
+            <tr>
+              <td width="8">(</td>
+              <td width="123">employee_number</td>
+              <td width="120">number(10)</td>
+              <td width="148">not null,</td>
+            </tr>
+            <tr>
+              <td width="8">&nbsp;</td>
+              <td width="123">employee_name</td>
+              <td width="120">varchar2(50)</td>
+              <td width="148">not null,</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>salary</td>
+              <td>number(6),</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td colspan="3">CONSTRAINT employees_pk PRIMARY KEY (employee_number)</td>
+            </tr>
+            <tr>
+              <td width="8">);</td>
+              <td width="123"></td>
+              <td width="120"></td>
+              <td width="148"></td>
+            </tr>
+          </table>
+          <br>
+          <p>INSERT INTO employees
+            (employee_number, employee_name,  salary)<br>
+            VALUES 
+(1001, 'John Smith', 62000);</p>
+          <p>INSERT INTO employees
+            (employee_number, employee_name,  salary)<br>
+VALUES 
+(1002, 'Jane Anderson', 57500);</p>
+          <p>INSERT INTO employees
+            (employee_number, employee_name,  salary)<br>
+VALUES 
+(1003, 'Brad Everest', 71000);</p>
+          <p>INSERT INTO employees
+            (employee_number, employee_name,  salary)<br>
+VALUES 
+(1004, 'Jack Horvath', 42000);</p>
+        </blockquote>
+        <p><b>Solution</b>:</p>
+        <p>Although inefficient in terms of performance, the following SQL statement would return the number of employees whose salary is over $55,000 per year.</p>
+        <blockquote class="sql_command">
+          <p>SELECT COUNT(*) as &quot;Number of employees&quot;<br>
+FROM employees<br>
+WHERE salary &gt; 55000;</p>
+        </blockquote>
+        <p>It would return the following result set:</p>
+        <blockquote>
+          <table class="parm_values" border="1" cellspacing="0" cellpadding="4" width="147">
+            <tr class="th_left_top">
+              <th width="143">Number of employees</th>
+            </tr>
+            <tr class="tr_left_top">
+              <td>3</td>
+            </tr>
+          </table>
+        </blockquote>
+        <p>A more efficient implementation of the same solution would be the following SQL statement:</p>
+        <blockquote class="sql_command">
+          <p>SELECT COUNT(1) as &quot;Number of employees&quot;<br>
+FROM employees<br>
+WHERE salary &gt; 55000;</p>
+        </blockquote>
+        <p>Now, the COUNT function does not need to retrieve all of the fields from the table (ie: employee_number, employee_name, and salary), but rather whenever the condition is met, it will retrieve the numeric value of 1. Thus, increasing the performance of the SQL statement.</p>
+        <br>
+        <p class="practice_exercise">Practice Exercise #2:</p>
+        <p>Based on the <i>suppliers</i> table populated with the following data, count the number of distinct <i>cities</i> in the <i>suppliers</i> table:</p>
+        <blockquote class="sql_command">
+          <table class="sql_command" border="0" cellspacing="0" width="350">
+            <tr>
+              <td colspan="4">CREATE TABLE suppliers</td>
+            </tr>
+            <tr>
+              <td width="8">(</td>
+              <td width="123">supplier_id</td>
+              <td width="120">number(10)</td>
+              <td width="91">not null,</td>
+            </tr>
+            <tr>
+              <td width="8">&nbsp;</td>
+              <td width="123">supplier_name</td>
+              <td width="120">varchar2(50)</td>
+              <td width="91">not null,</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>city</td>
+              <td>varchar2(50),</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td colspan="3">CONSTRAINT suppliers_pk PRIMARY KEY (supplier_id)</td>
+            </tr>
+            <tr>
+              <td width="8">);</td>
+              <td width="123"></td>
+              <td width="120"></td>
+              <td width="91"></td>
+            </tr>
+          </table>
+          <br>
+          <p>INSERT INTO suppliers
+            (supplier_id, supplier_name,  city)<br>
+            VALUES 
+(5001, 'Microsoft', 'New York');</p>
+          <p>INSERT INTO suppliers
+            (supplier_id, supplier_name,  city)<br>
+VALUES 
+(5002, 'IBM', 'Chicago');</p>
+          <p>INSERT INTO suppliers
+            (supplier_id, supplier_name,  city)<br>
+VALUES 
+(5003, 'Red Hat', 'Detroit');</p>
+          <p>INSERT INTO suppliers
+            (supplier_id, supplier_name,  city)<br>
+VALUES 
+(5004, 'NVIDIA', 'New York');</p>
+          <p>INSERT INTO suppliers
+            (supplier_id, supplier_name,  city)<br>
+VALUES 
+(5005, 'NVIDIA', 'LA');</p>
+        </blockquote>
+        <p><b>Solution</b>:</p>
+        <p>The following SQL statement would return the number of distinct <i>cities</i> in the <i>suppliers</i> table:</p>
+        <blockquote class="sql_command">
+          <p>SELECT COUNT(DISTINCT city) as &quot;Distinct Cities&quot;<br>
+FROM suppliers;</p>
+        </blockquote>
+        <p>It would return the following result set:</p>
+        <blockquote>
+          <table class="parm_values" border="1" cellspacing="0" cellpadding="4" width="147">
+            <tr class="th_left_top">
+              <th width="143">Distinct Cities</th>
+            </tr>
+            <tr class="tr_left_top">
+              <td>4</td>
+            </tr>
+          </table>
+        </blockquote>
+        <br>
+        <p class="practice_exercise">Practice Exercise #3:</p>
+        <p>Based on the <i>customers</i> table populated with the following data, count the number of distinct <i>cities</i> for each <i>customer_name</i> in the <i>customers</i> table:</p>
+        <blockquote class="sql_command">
+          <table class="sql_command" border="0" cellspacing="0" width="350">
+            <tr>
+              <td colspan="4">CREATE TABLE customers</td>
+            </tr>
+            <tr>
+              <td width="8">(</td>
+              <td width="123">customer_id</td>
+              <td width="120">number(10)</td>
+              <td width="91">not null,</td>
+            </tr>
+            <tr>
+              <td width="8">&nbsp;</td>
+              <td width="123">customer_name</td>
+              <td width="120">varchar2(50)</td>
+              <td width="91">not null,</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>city</td>
+              <td>varchar2(50),</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td colspan="3">CONSTRAINT customers_pk PRIMARY KEY (customer_id)</td>
+            </tr>
+            <tr>
+              <td width="8">);</td>
+              <td width="123"></td>
+              <td width="120"></td>
+              <td width="91"></td>
+            </tr>
+          </table>
+          <br>
+          <p>INSERT INTO customers
+            (customer_id, customer_name,  city)<br>
+            VALUES 
+(7001, 'Microsoft', 'New York');</p>
+          <p>INSERT INTO customers
+            (customer_id, customer_name,  city)<br>
+VALUES 
+(7002, 'IBM', 'Chicago');</p>
+          <p>INSERT INTO customers
+            (customer_id, customer_name,  city)<br>
+VALUES 
+(7003, 'Red Hat', 'Detroit');</p>
+          <p>INSERT INTO customers
+            (customer_id, customer_name,  city)<br>
+VALUES 
+(7004, 'Red Hat', 'New York');</p>
+          <p>INSERT INTO customers
+            (customer_id, customer_name,  city)<br>
+VALUES 
+(7005, 'Red Hat', 'San Francisco');</p>
+          <p>INSERT INTO customers
+            (customer_id, customer_name,  city)<br>
+VALUES 
+(7006, 'NVIDIA', 'New York');</p>
+          <p>INSERT INTO customers
+            (customer_id, customer_name,  city)<br>
+VALUES 
+(7007, 'NVIDIA', 'LA');</p>
+          <p>INSERT INTO customers
+            (customer_id, customer_name,  city)<br>
+VALUES 
+(7008, 'NVIDIA', 'LA');</p>
+        </blockquote>
+        <p><b>Solution</b>:</p>
+        <p>The following SQL statement would return the number of distinct <i>cities</i> for each <i>customer_name</i> in the <i>customers</i> table:</p>
+        <blockquote class="sql_command">
+          <p>SELECT customer_name, COUNT(DISTINCT city) as &quot;Distinct Cities&quot;<br>
+FROM customers<br>
+GROUP BY customer_name;</p>
+        </blockquote>
+        <p>It would return the following result set:</p>
+        <blockquote>
+          <table class="parm_values" border="1" cellspacing="0" cellpadding="4" width="264">
+            <tr class="th_left_top">
+              <th width="143">CUSTOMER_NAME</th>
+              <th width="107">Distinct Cities</th>
+            </tr>
+            <tr class="tr_left_top">
+              <td>IBM</td>
+              <td>1</td>
+            </tr>
+            <tr class="tr_left_top">
+              <td>Microsoft</td>
+              <td>1</td>
+            </tr>
+            <tr class="tr_left_top">
+              <td>NVIDIA</td>
+              <td>2</td>
+            </tr>
+            <tr class="tr_left_top">
+              <td>Red Hat</td>
+              <td>3</td>
+            </tr>
+          </table>
+        </blockquote>
+    </div>
+      
+</td>
+  </tr>
+</table>
+
+</body>
+</html>

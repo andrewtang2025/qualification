@@ -1,0 +1,3258 @@
+=LDR  01463nas  22003492a 4500
+=001  ebs196386e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  041207c199u9999ir\br\p\\\\\\\0\\\\0eng\\
+=022  \\$y1735-1995$y1026-9844
+=035  \\$a(OCoLC)61860962
+=035  \\$a(EBZ)ebs196386e
+=040  \\$aDNLM $dEBZ
+=042  \\$alcd-m
+=050  \4$aR5 
+=060  00$aW1$bJO869R
+=222  \0$aJournal of research in medical sciences : the official journal of Isfahan University of Medical Sciences. 
+=245  00$aJournal of research in medical sciences$h[electronic resource] :$bthe official journal of Isfahan University of Medical Sciences.
+=246  15$aMajaleh pazh{macr}uhesh dar {mllhring}ul{macr}um-i pizishk{macr}i-i
+=246  3\$aJRMS
+=260  \\$aIsfahan, Iran :$bIsfahan University of Medical Sciences
+=310  \\$aBimonthly
+=500  \\$aDescription based on: Vol. 9, no. 2 (Mar./Apr. 2004).
+=500  \\$aLatest issue consulted: Vol. 10, no. 1 (Jan./Feb. 2005).
+=546  \\$aIn English; abstracts in Persian.
+=650  \0$aMedicine$vPeriodicals.
+=650  12$aMedicine$vPeriodicals.
+=710  2\$aD{macr}anishg{macr}ah-i {mllhring}Ul{macr}um-i Pizishk{macr}i-i I{dotb}sfah{macr}an.
+=773  0\$tAcademic Search Complete $dEBSCO Publishing
+=776  1\$tJournal of research in medical sciences$x1735-1995 $wocm618609624$w  2005243954 
+=856  40$3Full text available: 2011 -.$zAvailable in Academic Search Complete.$uhttp://search.ebscohost.com/direct.asp?db=a9h&jid=785C&scope=site
+
+=LDR  01634nas  22003972a 4500
+=001  ebs381555e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  050322c20049999tnutr\p\\g\\\\0\\\a0eng\c
+=022  \\$y1940-4131
+=035  \\$a(OCoLC)58550535
+=035  \\$a(EBZ)ebs381555e
+=040  \\$aTU-L $dEBZ
+=042  \\$alcd-m
+=050  \4$aK24 
+=222  \0$aTennessee journal of law & policy
+=245  00$aTennessee journal of law & policy$h[electronic resource] :$bTJLP.
+=246  3\$aTennessee journal of law and policy
+=246  13$aTJLP, Tennessee journal of law & policy
+=246  13$aTJLP
+=246  13$aTenn. J. L. & Pol'y
+=260  \\$aKnoxville, Tenn. :$bUniversity of Tennessee College of Law,$cc2004-
+=310  \\$aThree issues yearly,$bfall 2005-
+=362  0\$aVol. 1, no. 1 (fall 2004)-
+=500  \\$aTitle from cover.
+=500  \\$aLatest issue consulted: Vol. 2, no. 2 (winter 2006).
+=650  \0$aLaw$zUnited States$vPeriodicals.
+=650  \0$aLaw reviews$zTennessee.
+=650  \0$aPublic policy (Law)$zUnited States$vPeriodicals.
+=710  2\$aUniversity of Tennessee, Knoxville.$bCollege of Law.
+=773  0\$tAcademic Search Complete $dEBSCO Publishing
+=773  0\$tLegal Collection $dEBSCO Publishing
+=776  1\$tTennessee journal of law & policy$x1940-4131 $wocm585505351$w  2007250011 
+=856  40$3Full text available: 2012 -.$zAvailable in Academic Search Complete.$uhttp://search.ebscohost.com/direct.asp?db=a9h&jid=AWW1&scope=site
+=856  40$3Full text available: 2012 -.$zAvailable in Legal Collection.$uhttp://search.ebscohost.com/direct.asp?db=lgh&jid=AWW1&scope=site
+
+=LDR  01320nas  22003012a 4500
+=001  ebs195928e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  020326cuuuu9999bl\fr\p\\\\\\\0\\\\0por\c
+=022  \\$y1517-784X
+=035  \\$a(OCoLC)49396670
+=035  \\$a(EBZ)ebs195928e
+=040  \\$aTxU $dEBZ
+=042  \\$alcd-m
+=050  \4$aSF604 
+=222  \0$aArchives of veterinary science / Universidade Federal do Parana, Medicina Veterinaria. 
+=245  00$aArchives of veterinary science$h[electronic resource] /$cUniversidade Federal do Paran{acute}a, Medicina Veterin{acute}aria.
+=260  \\$aCuritiba, Paran{acute}a, Brasil :$bA Universidade,
+=310  \\$aSemiannual
+=500  \\$aDescription based on: V. 6, n. 2 (2001).
+=546  \\$aPortuguese and English, with abstracts in both languages.
+=650  \0$aVeterinary medicine$vPeriodicals.
+=650  \0$aVeterinary medicine$zBrazil$vPeriodicals.
+=710  2\$aUniversidade Federal do Paran{acute}a.$bCurso de P{acute}os-Gradua{cedil}c{tilde}ao em Ci{circ}encias Veterin{acute}arias.
+=773  0\$tAcademic Search Complete $dEBSCO Publishing
+=776  1\$tArchives of veterinary science (Curitiba, Brazil)$x1517-784X $wocm493966706$w  2002240196 
+=856  40$3Full text available: 2012 -.$zAvailable in Academic Search Complete.$uhttp://search.ebscohost.com/direct.asp?db=a9h&jid=77TC&scope=site
+
+=LDR  01336nas  22003372a 4500
+=001  ebs88686e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  010110c20019999nyubx\p\\\\\\\0\\\a0eng\d
+=022  \\$y1537-5838$y1522-810X
+=035  \\$a(OCoLC)45693990
+=035  \\$a(EBZ)ebs88686e
+=040  \\$aWMa $dEBZ
+=042  \\$alc-m
+=050  \4$aTK7881.3 
+=222  \0$aSound & vision$b(New York, N.Y.)
+=245  00$aSound & vision$h[electronic resource].
+=246  3\$aSound and vision
+=260  \\$aNew York, NY :$bHachette Filipacchi Magazines,$cc2001-
+=310  \\$a8 issues per year,$b2009-
+=362  0\$aVol. 66, no. 2 (Feb./Mar. 2001)-
+=500  \\$aTitle from cover.
+=500  \\$aLatest issue consulted: Vol. 74, no. 3 (Apr./May 2009).
+=650  \0$aHome entertainment systems$vPeriodicals.
+=650  \0$aSound recordings$xReviews$vPeriodicals.
+=650  \0$aVideo recordings$xReviews$vPeriodicals.
+=773  0\$tProQuest Career & Technical Education $dProquest Info & Learning Co
+=776  1\$tSound & vision (New York, N.Y.)$x1537-5838 $wocm456939909$w  2001233839 
+=780  00$tStereo review's sound & vision$x1522-810X$w(DLC)   99101525$w(OCoLC)40442263
+=856  40$3Full text available: 1992 - 2000.$zAvailable in ProQuest Career & Technical Education.$uhttp://search.proquest.com/publication/9338
+
+=LDR  01111nas  22003132a 4500
+=001  ebs129308e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  990203c19999999wauqr1p\\\\\\\0\\\a0eng\d
+=022  \\$y1523-6161
+=035  \\$a(OCoLC)40725509
+=035  \\$a(EBZ)ebs129308e
+=040  \\$aNSDP $dEBZ
+=042  \\$alcd-m
+=060  00$aW1$bRE257CP
+=222  \0$aReviews in urology
+=245  00$aReviews in urology$h[electronic resource].
+=260  \\$aMercer Island, WA :$bRIU Publishers,$cc1999-
+=310  \\$aQuarterly
+=362  0\$aVol. 1, no. 1 (winter 1999)-
+=500  \\$aTitle from cover.
+=515  \\$aVol. 1, no. 1 also called: Premiere issue.
+=650  12$aUrologic Diseases$vPeriodicals.
+=650  22$aDiagnostic Techniques, Urological$vPeriodicals.
+=650  22$aUrogenital Diseases$vPeriodicals.
+=773  0\$tAcademic Search Complete $dEBSCO Publishing
+=776  1\$tReviews in urology$x1523-6161 $wocm40725509 $wsn 99008271 
+=856  40$3Full text available: 2012 -.$zAvailable in Academic Search Complete.$uhttp://search.ebscohost.com/direct.asp?db=a9h&jid=EGC3&scope=site
+
+=LDR  01200nas  22003372a 4500
+=001  ebs4076e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  891026c19909999nyubr1p\\\\\\\0\\\a0eng\d
+=022  \\$y1046-8986
+=035  \\$a(OCoLC)20553467
+=035  \\$a(EBZ)ebs4076e
+=040  \\$aNSDP $dEBZ
+=042  \\$alc-m
+=050  \4$aTR1 
+=222  \0$aAmerican photo
+=245  00$aAmerican photo$h[electronic resource].
+=246  30$aPhoto
+=260  \\$aNew York, NY :$bDiamandis Communications,$cc1990-
+=310  \\$aBimonthly
+=362  0\$aVol. 1, no. 1 (Jan./Feb. 1990)-
+=500  \\$aPublisher: Hachette, Filipacchi Magazines, <1999->
+=500  \\$aTitle from cover.
+=500  \\$aLatest issue consulted: Suppl. (fall 2004)
+=525  \\$aHas supplements.
+=650  \0$aPhotography$vPeriodicals.
+=773  0\$tProQuest Career & Technical Education $dProquest Info & Learning Co
+=776  1\$tAmerican photo$x1046-8986 $wocm20553467 $w   90660071 
+=780  00$tAmerican photographer$x0161-6854$w(DLC)   78645477$w(OCoLC)3959739
+=856  40$3Full text available: 1997 - 2000.$zAvailable in ProQuest Career & Technical Education.$uhttp://search.proquest.com/publication/4025
+
+=LDR  01272nas  22003252  4500
+=001  ebs37123e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  741203c19749999enkmrzp\\\a\\\0\\\a0eng\\
+=022  \\$y0307-174X
+=035  \\$a(OCoLC)1795358
+=035  \\$a(EBZ)ebs37123e
+=040  \\$aDLC $dEBZ
+=042  \\$alc-m
+=050  \4$aQD380 
+=222  \0$aInternational polymer science and technology
+=245  00$aInternational polymer science and technology$h[electronic resource].
+=260  \\$aShrewsbury, Eng.,$bRubber and Plastics Research Association of Great Britain.
+=362  0\$av. 1- 1974-
+=580  \\$aFormed by the union of: Soviet plastics, and: Soviet rubber technology.
+=650  \0$aPolymers$vPeriodicals.
+=650  \0$aPolymerization$vPeriodicals.
+=650  \0$aPlastics$vPeriodicals.
+=710  2\$aRubber and Plastics Research Association of Great Britain.
+=773  0\$tAcademic Search Complete $dEBSCO Publishing
+=776  1\$tInternational polymer science and technology$x0307-174X $wocm01795358 $w   74646638 
+=780  14$tSoviet plastics
+=780  14$tSoviet rubber technology
+=856  40$3Full text available: 2012 -.$zAvailable in Academic Search Complete.$uhttp://search.ebscohost.com/direct.asp?db=a9h&jid=NBO&scope=site
+
+=LDR  01100nas  22003132a 4500
+=001  ebs29395e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  750824c19439999caumr1p\\\\\\\0\\\a0eng\d
+=022  \\$y0015-4806
+=035  \\$a(OCoLC)1569490
+=035  \\$a(EBZ)ebs29395e
+=040  \\$aMnMULS $dEBZ
+=042  \\$alc-m
+=050  \4$aTL501 
+=222  \0$aFlying$b(Chicago, Ill.)
+=245  00$aFlying$h[electronic resource].
+=260  \\$aChicago, Ill. :$bZiff-Davis Pub. Co.,$c1943-
+=310  \\$aMonthly
+=362  0\$aVol. 32, no. 6 (June 1943)-
+=500  \\$aTitle from cover.
+=500  \\$aImprint varies.
+=650  \0$aAeronautics$vPeriodicals.
+=650  \0$aAeronautics$zUnited States$vPeriodicals.
+=773  0\$tProQuest Career & Technical Education $dProquest Info & Learning Co
+=776  1\$tFlying$x0015-4806 $wocm01569490 $w   28030218 
+=780  00$tFlying including Industrial aviation$w(DLC)   99100484$w(OCoLC)1589081
+=856  40$3Full text available: 1994 - 2000.$zAvailable in ProQuest Career & Technical Education.$uhttp://search.proquest.com/publication/41684
+
+=LDR  00615nas  22001932  4500
+=001  ebs91423e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=022  \\$y1015-8758
+=035  \\$a(EBZ)ebs91423e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aActa Theologica
+=245  00$aActa Theologica$h[electronic resource].
+=260  \\$bUniversity Free State
+=773  0\$tAcademic Search Complete $dEBSCO Publishing
+=856  40$3Full text available: 2011 -.$zAvailable in Academic Search Complete.$uhttp://search.ebscohost.com/direct.asp?db=a9h&jid=AXU7&scope=site
+
+=LDR  00659nas  22001812  4500
+=001  ebs1443717e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1443717e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aAcupuncture: An Introduction
+=245  00$aAcupuncture: An Introduction$h[electronic resource].
+=260  \\$bNational Center for Complementary & Alternative Medicine
+=773  0\$tConsumer Health Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 - 2012.$zAvailable in Consumer Health Complete.$uhttp://search.ebscohost.com/direct.asp?db=cmh&jid=EH61&scope=site
+
+=LDR  00636nas  22001812  4500
+=001  ebs1578933e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1578933e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aAgePage: Beware of Health Scams
+=245  00$aAgePage: Beware of Health Scams$h[electronic resource].
+=260  \\$bNational Institute on Aging
+=773  0\$tConsumer Health Complete $dEBSCO Publishing
+=856  40$3Full text available: 2011 - 2011.$zAvailable in Consumer Health Complete.$uhttp://search.ebscohost.com/direct.asp?db=cmh&jid=EGY0&scope=site
+
+=LDR  00623nas  22001812  4500
+=001  ebs1442698e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1442698e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aAluminum Industry Profile: Canada
+=245  00$aAluminum Industry Profile: Canada$h[electronic resource].
+=260  \\$bDatamonitor Plc
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=FKI5&scope=site
+
+=LDR  00623nas  22001812  4500
+=001  ebs1442699e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1442699e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aAluminum Industry Profile: Norway
+=245  00$aAluminum Industry Profile: Norway$h[electronic resource].
+=260  \\$bDatamonitor Plc
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=FKIC&scope=site
+
+=LDR  00623nas  22001812  4500
+=001  ebs1442700e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1442700e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aAluminum Industry Profile: Russia
+=245  00$aAluminum Industry Profile: Russia$h[electronic resource].
+=260  \\$bDatamonitor Plc
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=FKI9&scope=site
+
+=LDR  00647nas  22001932  4500
+=001  ebs851408e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=022  \\$a2076-2615
+=035  \\$a(EBZ)ebs851408e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aAnimals (MDPI)
+=245  00$aAnimals (MDPI)$h[electronic resource].
+=260  \\$bMDPI (Multidisciplinary Digital Publishing Institute)
+=773  0\$tAcademic Search Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Academic Search Complete.$uhttp://search.ebscohost.com/direct.asp?db=a9h&jid=DRYD&scope=site
+
+=LDR  00690nas  22001932  4500
+=001  ebs302619e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=022  \\$a1347-4456$y1347-4464
+=035  \\$a(EBZ)ebs302619e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aAnnals of Business Administrative Science
+=245  00$aAnnals of Business Administrative Science$h[electronic resource].
+=260  \\$bGlobal Business Research Center
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2011 -.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=EGL9&scope=site
+
+=LDR  00705nas  22001812  4500
+=001  ebs1443718e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1443718e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aAntioxidant Supplements for Health: An Introduction
+=245  00$aAntioxidant Supplements for Health: An Introduction$h[electronic resource].
+=260  \\$bNational Center for Complementary & Alternative Medicine
+=773  0\$tConsumer Health Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 - 2012.$zAvailable in Consumer Health Complete.$uhttp://search.ebscohost.com/direct.asp?db=cmh&jid=EGWK&scope=site
+
+=LDR  00615nas  22001812  4500
+=001  ebs1586821e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1586821e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aAntofagasta plc SWOT Analysis
+=245  00$aAntofagasta plc SWOT Analysis$h[electronic resource].
+=260  \\$bDatamonitor Plc
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=FPRT&scope=site
+
+=LDR  00644nas  22001692  4500
+=001  ebs447039e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs447039e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aArboriculture: History and Development in North America
+=245  00$aArboriculture: History and Development in North America$h[electronic resource].
+=260  \\$bMichigan State University Press
+=856  40$3Full text available: 1999 - 1999.$zAvailable in eBooks on EBSCOhost.$uhttp://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=22774
+
+=LDR  00565nas  22001812  4500
+=001  ebs1573391e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=022  \\$y1657-320X
+=035  \\$a(EBZ)ebs1573391e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aArchivos de Medicina
+=245  00$aArchivos de Medicina$h[electronic resource].
+=773  0\$tMedicLatina $dEBSCO Publishing
+=856  40$3Full text available: 2011 -.$zAvailable in MedicLatina.$uhttp://search.ebscohost.com/direct.asp?db=lth&jid=BOLV&scope=site
+
+=LDR  00611nas  22001812  4500
+=001  ebs1591078e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=022  \\$y2007-1752
+=035  \\$a(EBZ)ebs1591078e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aArchivos de Medicina de Urgencia de M{acute}exico
+=245  00$aArchivos de Medicina de Urgencia de M{acute}exico$h[electronic resource].
+=773  0\$tMedicLatina $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in MedicLatina.$uhttp://search.ebscohost.com/direct.asp?db=lth&jid=BLR7&scope=site
+
+=LDR  00592nas  22001692  4500
+=001  ebs194847e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs194847e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aAuto Business News (ABN)
+=245  00$aAuto Business News (ABN)$h[electronic resource].
+=773  0\$tRegional Business News $dEBSCO Publishing
+=856  40$3Full text available: 2012 - 2012.$zAvailable in Regional Business News.$uhttp://search.ebscohost.com/direct.asp?db=bwh&jid=Auto_Business_News__ABN_&scope=site
+
+=LDR  00673nas  22001812  4500
+=001  ebs1443719e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1443719e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aAyurvedic Medicine: An Introduction
+=245  00$aAyurvedic Medicine: An Introduction$h[electronic resource].
+=260  \\$bNational Center for Complementary & Alternative Medicine
+=773  0\$tConsumer Health Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 - 2012.$zAvailable in Consumer Health Complete.$uhttp://search.ebscohost.com/direct.asp?db=cmh&jid=EGWL&scope=site
+
+=LDR  00787nas  22001812  4500
+=001  ebs1443027e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1443027e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aBernstein Black Book - The Best of Bernstein - European & Emerging Markets Edition (Third Quarter 2012)
+=245  00$aBernstein Black Book - The Best of Bernstein - European & Emerging Markets Edition (Third Quarter 2012)$h[electronic resource].
+=260  \\$bBernstein Global Wealth Management
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 - 2012.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=FKQH&scope=site
+
+=LDR  00683nas  22001812  4500
+=001  ebs1573374e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1573374e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aBernstein Black Book - European Media: Capital Sins
+=245  00$aBernstein Black Book - European Media: Capital Sins$h[electronic resource].
+=260  \\$bBernstein Global Wealth Management
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 - 2012.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=FKQQ&scope=site
+
+=LDR  00815nas  22001812  4500
+=001  ebs1573375e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1573375e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aBernstein Black Book - Proctor & Gamble: Time for Action - Enabling Growth Through Lower Costs & Increased Investment
+=245  00$aBernstein Black Book - Proctor & Gamble: Time for Action - Enabling Growth Through Lower Costs & Increased Investment$h[electronic resource].
+=260  \\$bBernstein Global Wealth Management
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 - 2012.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=FKQN&scope=site
+
+=LDR  00763nas  22001812  4500
+=001  ebs1482761e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1482761e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aBernstein White Book - Four Technology Inflection Points & their Implications for Investors
+=245  00$aBernstein White Book - Four Technology Inflection Points & their Implications for Investors$h[electronic resource].
+=260  \\$bBernstein Global Wealth Management
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 - 2012.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=FKQJ&scope=site
+
+=LDR  00634nas  22001932  4500
+=001  ebs927836e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=022  \\$a2228-5660$y2228-5652
+=035  \\$a(EBZ)ebs927836e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aBioImpacts
+=245  00$aBioImpacts$h[electronic resource].
+=260  \\$bTabriz University of Medical Sciences
+=773  0\$tAcademic Search Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Academic Search Complete.$uhttp://search.ebscohost.com/direct.asp?db=a9h&jid=D40N&scope=site
+
+=LDR  00659nas  22001692  4500
+=001  ebs331675e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs331675e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aBiotechnology in Animal Husbandry (Focus on biotechnology ; v. 5)
+=245  00$aBiotechnology in Animal Husbandry (Focus on biotechnology ; v. 5)$h[electronic resource].
+=260  \\$bKluwer Academic Publishers
+=856  40$3Full text available: 2001 - 2001.$zAvailable in eBooks on EBSCOhost.$uhttp://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=70078
+
+=LDR  00633nas  22001692  4500
+=001  ebs580269e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs580269e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aBird News: Vagrants and Visitors on a Peculiar Island
+=245  00$aBird News: Vagrants and Visitors on a Peculiar Island$h[electronic resource].
+=260  \\$bFour Walls Eight Windows
+=856  40$3Full text available: 1999 - 1999.$zAvailable in eBooks on EBSCOhost.$uhttp://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=38460
+
+=LDR  00688nas  22001932  4500
+=001  ebs1594431e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=022  \\$y2278-5337
+=035  \\$a(EBZ)ebs1594431e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aBusiness Perspectives & Research
+=245  00$aBusiness Perspectives & Research$h[electronic resource].
+=260  \\$bK. J. Somaiya Institute of Management Studies & Research
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=FIOK&scope=site
+
+=LDR  00828nas  22002172  4500
+=001  ebs732510e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=022  \\$y1810-9306
+=035  \\$a(EBZ)ebs732510e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aBusinessToday
+=245  00$aBusinessToday$h[electronic resource].
+=260  \\$bAl Bawaba (Middle East) Ltd.
+=773  0\$tRegional Business News $dEBSCO Publishing
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Regional Business News.$uhttp://search.ebscohost.com/direct.asp?db=bwh&jid=BE8O&scope=site
+=856  40$3Full text available: 2012 -.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=BE8O&scope=site
+
+=LDR  00699nas  22001812  4500
+=001  ebs1443720e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1443720e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aCAM & Hepatitis C: A Focus on Herbal Supplements
+=245  00$aCAM & Hepatitis C: A Focus on Herbal Supplements$h[electronic resource].
+=260  \\$bNational Center for Complementary & Alternative Medicine
+=773  0\$tConsumer Health Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 - 2012.$zAvailable in Consumer Health Complete.$uhttp://search.ebscohost.com/direct.asp?db=cmh&jid=EGWN&scope=site
+
+=LDR  00653nas  22001812  4500
+=001  ebs1443721e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1443721e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aCancer & CAM: At a Glance
+=245  00$aCancer & CAM: At a Glance$h[electronic resource].
+=260  \\$bNational Center for Complementary & Alternative Medicine
+=773  0\$tConsumer Health Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 - 2012.$zAvailable in Consumer Health Complete.$uhttp://search.ebscohost.com/direct.asp?db=cmh&jid=EGWM&scope=site
+
+=LDR  00651nas  22001812  4500
+=001  ebs1590801e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1590801e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aCasinos & Gaming Industry Profile: Asia-Pacific
+=245  00$aCasinos & Gaming Industry Profile: Asia-Pacific$h[electronic resource].
+=260  \\$bDatamonitor Plc
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=FPRH&scope=site
+
+=LDR  00641nas  22001812  4500
+=001  ebs1590789e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1590789e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aCasinos & Gaming Industry Profile: Belgium
+=245  00$aCasinos & Gaming Industry Profile: Belgium$h[electronic resource].
+=260  \\$bDatamonitor Plc
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=FPR9&scope=site
+
+=LDR  00639nas  22001812  4500
+=001  ebs1590790e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1590790e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aCasinos & Gaming Industry Profile: Canada
+=245  00$aCasinos & Gaming Industry Profile: Canada$h[electronic resource].
+=260  \\$bDatamonitor Plc
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=FPR3&scope=site
+
+=LDR  00637nas  22001812  4500
+=001  ebs1590792e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1590792e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aCasinos & Gaming Industry Profile: China
+=245  00$aCasinos & Gaming Industry Profile: China$h[electronic resource].
+=260  \\$bDatamonitor Plc
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=FPR5&scope=site
+
+=LDR  00655nas  22001812  4500
+=001  ebs1591055e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1591055e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aCasinos & Gaming Industry Profile: Eastern Europe
+=245  00$aCasinos & Gaming Industry Profile: Eastern Europe$h[electronic resource].
+=260  \\$bDatamonitor Plc
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=FPRN&scope=site
+
+=LDR  00639nas  22001812  4500
+=001  ebs1590802e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1590802e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aCasinos & Gaming Industry Profile: Europe
+=245  00$aCasinos & Gaming Industry Profile: Europe$h[electronic resource].
+=260  \\$bDatamonitor Plc
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=FPRJ&scope=site
+
+=LDR  00637nas  22001812  4500
+=001  ebs1590793e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1590793e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aCasinos & Gaming Industry Profile: Italy
+=245  00$aCasinos & Gaming Industry Profile: Italy$h[electronic resource].
+=260  \\$bDatamonitor Plc
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=FPRB&scope=site
+
+=LDR  00637nas  22001812  4500
+=001  ebs1590791e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1590791e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aCasinos & Gaming Industry Profile: Japan
+=245  00$aCasinos & Gaming Industry Profile: Japan$h[electronic resource].
+=260  \\$bDatamonitor Plc
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=FPR7&scope=site
+
+=LDR  00649nas  22001812  4500
+=001  ebs1590794e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1590794e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aCasinos & Gaming Industry Profile: Netherlands
+=245  00$aCasinos & Gaming Industry Profile: Netherlands$h[electronic resource].
+=260  \\$bDatamonitor Plc
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=FPRD&scope=site
+
+=LDR  00653nas  22001812  4500
+=001  ebs1591056e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1591056e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aCasinos & Gaming Industry Profile: North America
+=245  00$aCasinos & Gaming Industry Profile: North America$h[electronic resource].
+=260  \\$bDatamonitor Plc
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=FPRP&scope=site
+
+=LDR  00653nas  22001812  4500
+=001  ebs1591057e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1591057e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aCasinos & Gaming Industry Profile: South America
+=245  00$aCasinos & Gaming Industry Profile: South America$h[electronic resource].
+=260  \\$bDatamonitor Plc
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=FPRR&scope=site
+
+=LDR  00637nas  22001812  4500
+=001  ebs1590805e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1590805e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aCasinos & Gaming Industry Profile: Spain
+=245  00$aCasinos & Gaming Industry Profile: Spain$h[electronic resource].
+=260  \\$bDatamonitor Plc
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=FPRF&scope=site
+
+=LDR  00655nas  22001812  4500
+=001  ebs1590803e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1590803e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aCasinos & Gaming Industry Profile: Western Europe
+=245  00$aCasinos & Gaming Industry Profile: Western Europe$h[electronic resource].
+=260  \\$bDatamonitor Plc
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=FPRL&scope=site
+
+=LDR  00868nas  22001932  4500
+=001  ebs434845e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=022  \\$a1178-6272
+=035  \\$a(EBZ)ebs434845e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aCell Biology Insights
+=245  00$aCell Biology Insights$h[electronic resource].
+=260  \\$bLibertas Academica Ltd.
+=773  0\$tHealth Reference Center Academic $dGale Group
+=856  40$3Full text available: 2008 -.$zAvailable in Health Reference Center Academic.$uhttp://find.galegroup.com/openurl/openurl?url_ver=Z39.88-2004&url_ctx_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Actx&req_dat=info%3Asid%2Fgale%3Augnid%3Atxshracd2518&res_id=info%3Asid%2Fgale%3AHRCA&ctx_enc=info%3Aofi%3Aenc%3AUTF-8&rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&rft.issn=1178-6272
+
+=LDR  00615nas  22001812  4500
+=001  ebs396161e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs396161e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aCentral Asia General Newswire
+=245  00$aCentral Asia General Newswire$h[electronic resource].
+=260  \\$bInterfax America Inc.
+=773  0\$tRegional Business News $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Regional Business News.$uhttp://search.ebscohost.com/direct.asp?db=bwh&jid=B3GE&scope=site
+
+=LDR  00661nas  22001812  4500
+=001  ebs1443722e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1443722e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aChiropractic: An Introduction
+=245  00$aChiropractic: An Introduction$h[electronic resource].
+=260  \\$bNational Center for Complementary & Alternative Medicine
+=773  0\$tConsumer Health Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 - 2012.$zAvailable in Consumer Health Complete.$uhttp://search.ebscohost.com/direct.asp?db=cmh&jid=EGWO&scope=site
+
+=LDR  00665nas  22001812  4500
+=001  ebs1443723e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1443723e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aChronic Pain & CAM: At a Glance
+=245  00$aChronic Pain & CAM: At a Glance$h[electronic resource].
+=260  \\$bNational Center for Complementary & Alternative Medicine
+=773  0\$tConsumer Health Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 - 2012.$zAvailable in Consumer Health Complete.$uhttp://search.ebscohost.com/direct.asp?db=cmh&jid=EGWP&scope=site
+
+=LDR  00694nas  22001932  4500
+=001  ebs591174e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=022  \\$a1971-3266$y1724-8914
+=035  \\$a(EBZ)ebs591174e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aClinical Cases in Mineral and Bone Metabolism
+=245  00$aClinical Cases in Mineral and Bone Metabolism$h[electronic resource].
+=260  \\$bCIC Edizioni Internazionali
+=773  0\$tAcademic Search Complete $dEBSCO Publishing
+=856  40$3Full text available: 2010 -.$zAvailable in Academic Search Complete.$uhttp://search.ebscohost.com/direct.asp?db=a9h&jid=BCNV&scope=site
+
+=LDR  00869nas  22001932  4500
+=001  ebs1159026e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=022  \\$a2044-9046$y2044-9038
+=035  \\$a(EBZ)ebs1159026e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aClinical Practice
+=245  00$aClinical Practice$h[electronic resource].
+=260  \\$bFuture Medicine Ltd
+=773  0\$tHealth Reference Center Academic $dGale Group
+=856  40$3Full text available: 2012 -.$zAvailable in Health Reference Center Academic.$uhttp://find.galegroup.com/openurl/openurl?url_ver=Z39.88-2004&url_ctx_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Actx&req_dat=info%3Asid%2Fgale%3Augnid%3Atxshracd2518&res_id=info%3Asid%2Fgale%3AHRCA&ctx_enc=info%3Aofi%3Aenc%3AUTF-8&rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&rft.issn=2044-9038
+
+=LDR  00663nas  22001812  4500
+=001  ebs1443724e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1443724e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aColds & Flu & CAM: At a Glance
+=245  00$aColds & Flu & CAM: At a Glance$h[electronic resource].
+=260  \\$bNational Center for Complementary & Alternative Medicine
+=773  0\$tConsumer Health Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 - 2012.$zAvailable in Consumer Health Complete.$uhttp://search.ebscohost.com/direct.asp?db=cmh&jid=EGWQ&scope=site
+
+=LDR  00653nas  22001812  4500
+=001  ebs1443725e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1443725e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aColloidal Silver Products
+=245  00$aColloidal Silver Products$h[electronic resource].
+=260  \\$bNational Center for Complementary & Alternative Medicine
+=773  0\$tConsumer Health Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 - 2012.$zAvailable in Consumer Health Complete.$uhttp://search.ebscohost.com/direct.asp?db=cmh&jid=EGWR&scope=site
+
+=LDR  00709nas  22001812  4500
+=001  ebs1586823e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1586823e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aCompanhia de Saneamento Basico do Estado de Sao Paulo - SABESP SWOT Analysis
+=245  00$aCompanhia de Saneamento Basico do Estado de Sao Paulo - SABESP SWOT Analysis$h[electronic resource].
+=260  \\$bDatamonitor Plc
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=FPRW&scope=site
+
+=LDR  00673nas  22001812  4500
+=001  ebs1586824e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1586824e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aCompanhia Energetica de Minas Gerais - CEMIG SWOT Analysis
+=245  00$aCompanhia Energetica de Minas Gerais - CEMIG SWOT Analysis$h[electronic resource].
+=260  \\$bDatamonitor Plc
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=FPRU&scope=site
+
+=LDR  00705nas  22001812  4500
+=001  ebs1443726e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1443726e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aComplementary & Alternative Medicine Use & Children
+=245  00$aComplementary & Alternative Medicine Use & Children$h[electronic resource].
+=260  \\$bNational Center for Complementary & Alternative Medicine
+=773  0\$tConsumer Health Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 - 2012.$zAvailable in Consumer Health Complete.$uhttp://search.ebscohost.com/direct.asp?db=cmh&jid=EGWS&scope=site
+
+=LDR  00557nas  22001692  4500
+=001  ebs389549e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs389549e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \4$aThe comrade
+=245  04$aThe comrade$h[electronic resource].
+=260  \\$bUniversity of Virginia Library
+=856  40$3Full text available: 1996 - 1996.$zAvailable in eBooks on EBSCOhost.$uhttp://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=2011240
+
+=LDR  00653nas  22001692  4500
+=001  ebs795521e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs795521e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aConnecting Concepts: Thinking Activities for Students
+=245  00$aConnecting Concepts: Thinking Activities for Students$h[electronic resource].
+=260  \\$bAustralian Council for Educational Research
+=856  40$3Full text available: 2002 - 2002.$zAvailable in eBooks on EBSCOhost.$uhttp://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=101473
+
+=LDR  00540nas  22001692  4500
+=001  ebs389182e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs389182e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \4$aThe conservative
+=245  04$aThe conservative$h[electronic resource].
+=260  \\$bAlex Catalogue
+=856  40$3Full text available: .$zAvailable in eBooks on EBSCOhost.$uhttp://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=1086098
+
+=LDR  00663nas  22001812  4500
+=001  ebs1590804e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1590804e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aConstruction Materials Industry Profile: Asia-Pacific
+=245  00$aConstruction Materials Industry Profile: Asia-Pacific$h[electronic resource].
+=260  \\$bDatamonitor Plc
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=FPRI&scope=site
+
+=LDR  00653nas  22001812  4500
+=001  ebs1590795e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1590795e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aConstruction Materials Industry Profile: Belgium
+=245  00$aConstruction Materials Industry Profile: Belgium$h[electronic resource].
+=260  \\$bDatamonitor Plc
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=FPRA&scope=site
+
+=LDR  00651nas  22001812  4500
+=001  ebs1590800e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1590800e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aConstruction Materials Industry Profile: Canada
+=245  00$aConstruction Materials Industry Profile: Canada$h[electronic resource].
+=260  \\$bDatamonitor Plc
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=FPR4&scope=site
+
+=LDR  00649nas  22001812  4500
+=001  ebs1590799e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1590799e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aConstruction Materials Industry Profile: China
+=245  00$aConstruction Materials Industry Profile: China$h[electronic resource].
+=260  \\$bDatamonitor Plc
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=FPR6&scope=site
+
+=LDR  00667nas  22001812  4500
+=001  ebs1591059e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1591059e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aConstruction Materials Industry Profile: Eastern Europe
+=245  00$aConstruction Materials Industry Profile: Eastern Europe$h[electronic resource].
+=260  \\$bDatamonitor Plc
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=FPRO&scope=site
+
+=LDR  00651nas  22001812  4500
+=001  ebs1590806e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1590806e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aConstruction Materials Industry Profile: Europe
+=245  00$aConstruction Materials Industry Profile: Europe$h[electronic resource].
+=260  \\$bDatamonitor Plc
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=FPRK&scope=site
+
+=LDR  00649nas  22001812  4500
+=001  ebs1590796e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1590796e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aConstruction Materials Industry Profile: Italy
+=245  00$aConstruction Materials Industry Profile: Italy$h[electronic resource].
+=260  \\$bDatamonitor Plc
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=FPRC&scope=site
+
+=LDR  00649nas  22001812  4500
+=001  ebs1590798e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1590798e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aConstruction Materials Industry Profile: Japan
+=245  00$aConstruction Materials Industry Profile: Japan$h[electronic resource].
+=260  \\$bDatamonitor Plc
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=FPR8&scope=site
+
+=LDR  00661nas  22001812  4500
+=001  ebs1590797e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1590797e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aConstruction Materials Industry Profile: Netherlands
+=245  00$aConstruction Materials Industry Profile: Netherlands$h[electronic resource].
+=260  \\$bDatamonitor Plc
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=FPRE&scope=site
+
+=LDR  00665nas  22001812  4500
+=001  ebs1591060e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1591060e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aConstruction Materials Industry Profile: North America
+=245  00$aConstruction Materials Industry Profile: North America$h[electronic resource].
+=260  \\$bDatamonitor Plc
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=FPRQ&scope=site
+
+=LDR  00665nas  22001812  4500
+=001  ebs1591058e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1591058e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aConstruction Materials Industry Profile: South America
+=245  00$aConstruction Materials Industry Profile: South America$h[electronic resource].
+=260  \\$bDatamonitor Plc
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=FPRS&scope=site
+
+=LDR  00649nas  22001812  4500
+=001  ebs1590807e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1590807e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aConstruction Materials Industry Profile: Spain
+=245  00$aConstruction Materials Industry Profile: Spain$h[electronic resource].
+=260  \\$bDatamonitor Plc
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=FPRG&scope=site
+
+=LDR  00667nas  22001812  4500
+=001  ebs1590808e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1590808e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aConstruction Materials Industry Profile: Western Europe
+=245  00$aConstruction Materials Industry Profile: Western Europe$h[electronic resource].
+=260  \\$bDatamonitor Plc
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=FPRM&scope=site
+
+=LDR  00672nas  22001932  4500
+=001  ebs900898e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=022  \\$y2141-4130
+=035  \\$a(EBZ)ebs900898e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aContinental Journal of Agricultural Economics
+=245  00$aContinental Journal of Agricultural Economics$h[electronic resource].
+=260  \\$bWilolud Journals
+=773  0\$tAcademic Search Complete $dEBSCO Publishing
+=856  40$3Full text available: 2011 -.$zAvailable in Academic Search Complete.$uhttp://search.ebscohost.com/direct.asp?db=a9h&jid=BJM0&scope=site
+
+=LDR  00700nas  22001932  4500
+=001  ebs851196e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=022  \\$y2141-4238
+=035  \\$a(EBZ)ebs851196e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aContinental Journal of Pharmacology and Toxicology Research
+=245  00$aContinental Journal of Pharmacology and Toxicology Research$h[electronic resource].
+=260  \\$bWilolud Journals
+=773  0\$tAcademic Search Complete $dEBSCO Publishing
+=856  40$3Full text available: 2011 -.$zAvailable in Academic Search Complete.$uhttp://search.ebscohost.com/direct.asp?db=a9h&jid=BM1L&scope=site
+
+=LDR  00695nas  22001812  4500
+=001  ebs1443727e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1443727e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aDiabetes & CAM: A Focus on Dietary Supplements
+=245  00$aDiabetes & CAM: A Focus on Dietary Supplements$h[electronic resource].
+=260  \\$bNational Center for Complementary & Alternative Medicine
+=773  0\$tConsumer Health Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 - 2012.$zAvailable in Consumer Health Complete.$uhttp://search.ebscohost.com/direct.asp?db=cmh&jid=EGWT&scope=site
+
+=LDR  00889nas  22002052  4500
+=001  ebs1582271e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=022  \\$y1302-7956
+=035  \\$a(EBZ)ebs1582271e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aDogu Cografya Dergisi: DSD = Eastern Geographical Review
+=245  00$aDogu Cografya Dergisi: DSD = Eastern Geographical Review$h[electronic resource].
+=773  0\$tScience & Technology Collection $dEBSCO Publishing
+=773  0\$tAcademic Search Complete $dEBSCO Publishing
+=856  40$3Full text available: 2011 -.$zAvailable in Science & Technology Collection.$uhttp://search.ebscohost.com/direct.asp?db=syh&jid=BB3U&scope=site
+=856  40$3Full text available: 2011 -.$zAvailable in Academic Search Complete.$uhttp://search.ebscohost.com/direct.asp?db=a9h&jid=BB3U&scope=site
+
+=LDR  01281nas  22002412  4500
+=001  ebs1578976e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1578976e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aEarly Warning, Timely Response: A Guide to Safe Schools
+=245  00$aEarly Warning, Timely Response: A Guide to Safe Schools$h[electronic resource].
+=773  0\$tMasterFILE Premier $dEBSCO Publishing
+=773  0\$tPrimary Search $dEBSCO Publishing
+=773  0\$tProfessional Development Collection $dEBSCO Publishing
+=773  0\$tMAS Ultra - School Edition $dEBSCO Publishing
+=856  40$3Full text available: 1999 - 1999.$zAvailable in MasterFILE Premier.$uhttp://search.ebscohost.com/direct.asp?db=f5h&jid=6FY&scope=site
+=856  40$3Full text available: 1999 - 1999.$zAvailable in Primary Search.$uhttp://search.ebscohost.com/direct.asp?db=prh&jid=6FY&scope=site
+=856  40$3Full text available: 1999 - 1999.$zAvailable in Professional Development Collection.$uhttp://search.ebscohost.com/direct.asp?db=tfh&jid=6FY&scope=site
+=856  40$3Full text available: 1999 - 1999.$zAvailable in MAS Ultra - School Edition.$uhttp://search.ebscohost.com/direct.asp?db=ulh&jid=6FY&scope=site
+
+=LDR  00695nas  22001932  4500
+=001  ebs1237097e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=022  \\$a2284-8584$y2284-8576
+=035  \\$a(EBZ)ebs1237097e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aEconomic Insights - Trends & Challenges
+=245  00$aEconomic Insights - Trends & Challenges$h[electronic resource].
+=260  \\$bPetroleum - Gas University of Ploiesti
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=FB2A&scope=site
+
+=LDR  00853nas  22001932  4500
+=001  ebs794107e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=022  \\$a2159-3078$y2158-7833
+=035  \\$a(EBZ)ebs794107e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aEMS World
+=245  00$aEMS World$h[electronic resource].
+=260  \\$bCygnus Business Media
+=773  0\$tHealth Reference Center Academic $dGale Group
+=856  40$3Full text available: 2012 -.$zAvailable in Health Reference Center Academic.$uhttp://find.galegroup.com/openurl/openurl?url_ver=Z39.88-2004&url_ctx_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Actx&req_dat=info%3Asid%2Fgale%3Augnid%3Atxshracd2518&res_id=info%3Asid%2Fgale%3AHRCA&ctx_enc=info%3Aofi%3Aenc%3AUTF-8&rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&rft.issn=2158-7833
+
+=LDR  00672nas  22001692  4500
+=001  ebs1573670e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1573670e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aEnvironmental Impact of the Consumption of Sweets, Crisps & Soft Drinks
+=245  00$aEnvironmental Impact of the Consumption of Sweets, Crisps & Soft Drinks$h[electronic resource].
+=773  0\$tAcademic Search Complete $dEBSCO Publishing
+=856  40$3Full text available: 2011 - 2011.$zAvailable in Academic Search Complete.$uhttp://search.ebscohost.com/direct.asp?db=a9h&jid=ESXM&scope=site
+
+=LDR  00635nas  22001812  4500
+=001  ebs1443240e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1443240e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aFerrellgas Partners, L.P. SWOT Analysis
+=245  00$aFerrellgas Partners, L.P. SWOT Analysis$h[electronic resource].
+=260  \\$bDatamonitor Plc
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=FI62&scope=site
+
+=LDR  00625nas  22001812  4500
+=001  ebs1578924e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1578924e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aFertilizer Industry Profile: China
+=245  00$aFertilizer Industry Profile: China$h[electronic resource].
+=260  \\$bDatamonitor Plc
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=FI6S&scope=site
+
+=LDR  00643nas  22001812  4500
+=001  ebs1578925e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1578925e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aFertilizer Industry Profile: United Kingdom
+=245  00$aFertilizer Industry Profile: United Kingdom$h[electronic resource].
+=260  \\$bDatamonitor Plc
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=FI6T&scope=site
+
+=LDR  00665nas  22001812  4500
+=001  ebs1443728e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1443728e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aFibromyalgia & CAM: At a Glance
+=245  00$aFibromyalgia & CAM: At a Glance$h[electronic resource].
+=260  \\$bNational Center for Complementary & Alternative Medicine
+=773  0\$tConsumer Health Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 - 2012.$zAvailable in Consumer Health Complete.$uhttp://search.ebscohost.com/direct.asp?db=cmh&jid=EGWU&scope=site
+
+=LDR  00670nas  22001812  4500
+=001  ebs1596177e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1596177e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aFrom Genes to Personalized Medicines Fact Sheet
+=245  00$aFrom Genes to Personalized Medicines Fact Sheet$h[electronic resource].
+=260  \\$bNational Institutes of Health
+=773  0\$tConsumer Health Complete $dEBSCO Publishing
+=856  40$3Full text available: 2010 - 2010.$zAvailable in Consumer Health Complete.$uhttp://search.ebscohost.com/direct.asp?db=cmh&jid=EH1E&scope=site
+
+=LDR  00606nas  22001812  4500
+=001  ebs1581732e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1581732e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aGamma Gazette
+=245  00$aGamma Gazette$h[electronic resource].
+=260  \\$bCopyright Agency Limited (Distributor)
+=773  0\$tAcademic Search Complete $dEBSCO Publishing
+=856  40$3Full text available: 2011 -.$zAvailable in Academic Search Complete.$uhttp://search.ebscohost.com/direct.asp?db=a9h&jid=FAPD&scope=site
+
+=LDR  00630nas  22001812  4500
+=001  ebs194849e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs194849e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aGlobal Banking News (GBN)
+=245  00$aGlobal Banking News (GBN)$h[electronic resource].
+=260  \\$bNormans Media Ltd.
+=773  0\$tRegional Business News $dEBSCO Publishing
+=856  40$3Full text available: 2012 - 2012.$zAvailable in Regional Business News.$uhttp://search.ebscohost.com/direct.asp?db=bwh&jid=Global_Banking_News__GBN_&scope=site
+
+=LDR  00601nas  22001812  4500
+=001  ebs124927e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=022  \\$y1020-5454
+=035  \\$a(EBZ)ebs124927e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aGlobal Development Finance
+=245  00$aGlobal Development Finance$h[electronic resource].
+=260  \\$bThe World Bank Group
+=856  40$3Full text available: 1999 - 1999.$zAvailable in eBooks on EBSCOhost.$uhttp://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=26767
+
+=LDR  00626nas  22001932  4500
+=001  ebs1239227e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=022  \\$a2164-5701$y2164-5698
+=035  \\$a(EBZ)ebs1239227e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aGM Crops & Food
+=245  00$aGM Crops & Food$h[electronic resource].
+=260  \\$bLandes Bioscience
+=773  0\$tAcademic Search Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Academic Search Complete.$uhttp://search.ebscohost.com/direct.asp?db=a9h&jid=EGMS&scope=site
+
+=LDR  00637nas  22001812  4500
+=001  ebs771588e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=022  \\$y0350-0756
+=035  \\$a(EBZ)ebs771588e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aHmeljarski Bilten / Bulletin of Hop Research
+=245  00$aHmeljarski Bilten / Bulletin of Hop Research$h[electronic resource].
+=773  0\$tAcademic Search Complete $dEBSCO Publishing
+=856  40$3Full text available: 2010 -.$zAvailable in Academic Search Complete.$uhttp://search.ebscohost.com/direct.asp?db=a9h&jid=464I&scope=site
+
+=LDR  00657nas  22001812  4500
+=001  ebs1443729e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1443729e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aHomeopathy: An Introduction
+=245  00$aHomeopathy: An Introduction$h[electronic resource].
+=260  \\$bNational Center for Complementary & Alternative Medicine
+=773  0\$tConsumer Health Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 - 2012.$zAvailable in Consumer Health Complete.$uhttp://search.ebscohost.com/direct.asp?db=cmh&jid=EGXB&scope=site
+
+=LDR  00674nas  22001692  4500
+=001  ebs1573671e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1573671e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aInitiatives on Prevention of Food Waste in the Retail & Wholesale Trades
+=245  00$aInitiatives on Prevention of Food Waste in the Retail & Wholesale Trades$h[electronic resource].
+=773  0\$tAcademic Search Complete $dEBSCO Publishing
+=856  40$3Full text available: 2011 - 2011.$zAvailable in Academic Search Complete.$uhttp://search.ebscohost.com/direct.asp?db=a9h&jid=ESXP&scope=site
+
+=LDR  00633nas  22001932  4500
+=001  ebs821743e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=022  \\$y2075-4450
+=035  \\$a(EBZ)ebs821743e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aInsects
+=245  00$aInsects$h[electronic resource].
+=260  \\$bMolecular Diversity Preservation International (MDPI)
+=773  0\$tAcademic Search Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Academic Search Complete.$uhttp://search.ebscohost.com/direct.asp?db=a9h&jid=DRYH&scope=site
+
+=LDR  00625nas  22001812  4500
+=001  ebs608514e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs608514e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aInterfax: Kazakhstan Mining Weekly
+=245  00$aInterfax: Kazakhstan Mining Weekly$h[electronic resource].
+=260  \\$bInterfax America Inc.
+=773  0\$tRegional Business News $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Regional Business News.$uhttp://search.ebscohost.com/direct.asp?db=bwh&jid=B71V&scope=site
+
+=LDR  00629nas  22001812  4500
+=001  ebs608927e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs608927e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aInterfax: Russia & CIS Announcements
+=245  00$aInterfax: Russia & CIS Announcements$h[electronic resource].
+=260  \\$bInterfax America Inc.
+=773  0\$tRegional Business News $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Regional Business News.$uhttp://search.ebscohost.com/direct.asp?db=bwh&jid=B71W&scope=site
+
+=LDR  00657nas  22001812  4500
+=001  ebs608522e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs608522e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aInterfax: Russia & CIS Military Information Weekly
+=245  00$aInterfax: Russia & CIS Military Information Weekly$h[electronic resource].
+=260  \\$bInterfax America Inc.
+=773  0\$tRegional Business News $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Regional Business News.$uhttp://search.ebscohost.com/direct.asp?db=bwh&jid=B6QB&scope=site
+
+=LDR  00637nas  22001812  4500
+=001  ebs608523e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs608523e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aInterfax: Russia & CIS Military Newswire
+=245  00$aInterfax: Russia & CIS Military Newswire$h[electronic resource].
+=260  \\$bInterfax America Inc.
+=773  0\$tRegional Business News $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Regional Business News.$uhttp://search.ebscohost.com/direct.asp?db=bwh&jid=B6QC&scope=site
+
+=LDR  00659nas  22001932  4500
+=001  ebs1593942e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=022  \\$y1972-3539
+=035  \\$a(EBZ)ebs1593942e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aInternational Journal of Ozone Therapy
+=245  00$aInternational Journal of Ozone Therapy$h[electronic resource].
+=260  \\$bCentauro S.r.l.
+=773  0\$tAcademic Search Complete $dEBSCO Publishing
+=856  40$3Full text available: 2011 -.$zAvailable in Academic Search Complete.$uhttp://search.ebscohost.com/direct.asp?db=a9h&jid=BDGN&scope=site
+
+=LDR  00663nas  22001812  4500
+=001  ebs1414580e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=022  \\$y1986-8111
+=035  \\$a(EBZ)ebs1414580e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aInternational Journal of Pharmacy Teaching and Practices
+=245  00$aInternational Journal of Pharmacy Teaching and Practices$h[electronic resource].
+=773  0\$tAcademic Search Complete $dEBSCO Publishing
+=856  40$3Full text available: 2011 -.$zAvailable in Academic Search Complete.$uhttp://search.ebscohost.com/direct.asp?db=a9h&jid=BE7E&scope=site
+
+=LDR  00689nas  22001812  4500
+=001  ebs1443730e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1443730e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aIrritable Bowel Syndrome & CAM: At a Glance
+=245  00$aIrritable Bowel Syndrome & CAM: At a Glance$h[electronic resource].
+=260  \\$bNational Center for Complementary & Alternative Medicine
+=773  0\$tConsumer Health Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 - 2012.$zAvailable in Consumer Health Complete.$uhttp://search.ebscohost.com/direct.asp?db=cmh&jid=EGWV&scope=site
+
+=LDR  00882nas  22001932  4500
+=001  ebs730247e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=022  \\$a2090-438X$y2090-4371
+=035  \\$a(EBZ)ebs730247e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aISRN Dentistry
+=245  00$aISRN Dentistry$h[electronic resource].
+=260  \\$bInternational Scholarly Research Network
+=773  0\$tHealth Reference Center Academic $dGale Group
+=856  40$3Full text available: 2011 -.$zAvailable in Health Reference Center Academic.$uhttp://find.galegroup.com/openurl/openurl?url_ver=Z39.88-2004&url_ctx_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Actx&req_dat=info%3Asid%2Fgale%3Augnid%3Atxshracd2518&res_id=info%3Asid%2Fgale%3AHRCA&ctx_enc=info%3Aofi%3Aenc%3AUTF-8&rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&rft.issn=2090-4371
+
+=LDR  00652nas  22001812  4500
+=001  ebs1587107e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1587107e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aJournal of Administrative Sciences & Technology
+=245  00$aJournal of Administrative Sciences & Technology$h[electronic resource].
+=260  \\$bIBIMA Publishing
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2011 -.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=B58K&scope=site
+
+=LDR  00640nas  22001932  4500
+=001  ebs1159041e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=022  \\$y2249-6629
+=035  \\$a(EBZ)ebs1159041e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aJournal of Animal Research
+=245  00$aJournal of Animal Research$h[electronic resource].
+=260  \\$bNew Delhi Publishers
+=773  0\$tAcademic Search Complete $dEBSCO Publishing
+=856  40$3Full text available: 2011 -.$zAvailable in Academic Search Complete.$uhttp://search.ebscohost.com/direct.asp?db=a9h&jid=DIDQ&scope=site
+
+=LDR  00649nas  22001812  4500
+=001  ebs1573672e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1573672e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aJournal of Arthropod-Borne Diseases
+=245  00$aJournal of Arthropod-Borne Diseases$h[electronic resource].
+=260  \\$bTehran University of Medical Sciences
+=773  0\$tAcademic Search Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Academic Search Complete.$uhttp://search.ebscohost.com/direct.asp?db=a9h&jid=FQ44&scope=site
+
+=LDR  00655nas  22001932  4500
+=001  ebs1256178e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=022  \\$a2045-8568$y2045-855X
+=035  \\$a(EBZ)ebs1256178e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aJournal of Brand Strategy
+=245  00$aJournal of Brand Strategy$h[electronic resource].
+=260  \\$bHenry Stewart Publications
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=FDEP&scope=site
+
+=LDR  00630nas  22001812  4500
+=001  ebs604250e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs604250e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aJournal of Electronic Banking Systems
+=245  00$aJournal of Electronic Banking Systems$h[electronic resource].
+=260  \\$bIBIMA Publishing
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2011 -.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=B58P&scope=site
+
+=LDR  00676nas  22001932  4500
+=001  ebs656436e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=022  \\$y2155-4781
+=035  \\$a(EBZ)ebs656436e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aJournal of Enterprise Resource Planning Studies
+=245  00$aJournal of Enterprise Resource Planning Studies$h[electronic resource].
+=260  \\$bIBIMA Publishing
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2011 -.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=B58Q&scope=site
+
+=LDR  00654nas  22001812  4500
+=001  ebs604193e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs604193e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aJournal of Innovation and Business Best Practices
+=245  00$aJournal of Innovation and Business Best Practices$h[electronic resource].
+=260  \\$bIBIMA Publishing
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2011 -.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=B58W&scope=site
+
+=LDR  00682nas  22001812  4500
+=001  ebs1587109e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1587109e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aJournal of Innovation Management in Small & Medium Enterprises
+=245  00$aJournal of Innovation Management in Small & Medium Enterprises$h[electronic resource].
+=260  \\$bIBIMA Publishing
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2011 -.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=B58X&scope=site
+
+=LDR  00684nas  22001812  4500
+=001  ebs604201e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs604201e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aJournal of Outsourcing and Organizational Information Management
+=245  00$aJournal of Outsourcing and Organizational Information Management$h[electronic resource].
+=260  \\$bIBIMA Publishing
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2011 -.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=B592&scope=site
+
+=LDR  00854nas  22002052  4500
+=001  ebs1586912e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1586912e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aKansas Quarterly / Arkansas Review
+=245  00$aKansas Quarterly / Arkansas Review$h[electronic resource].
+=260  \\$bArkansas State University Foundation
+=773  0\$tMasterFILE Premier $dEBSCO Publishing
+=773  0\$tAcademic Search Complete $dEBSCO Publishing
+=856  40$3Full text available: 1994 - 1996.$zAvailable in MasterFILE Premier.$uhttp://search.ebscohost.com/direct.asp?db=f5h&jid=L32&scope=site
+=856  40$3Full text available: 1994 - 1996.$zAvailable in Academic Search Complete.$uhttp://search.ebscohost.com/direct.asp?db=a9h&jid=L32&scope=site
+
+=LDR  00608nas  22001812  4500
+=001  ebs385295e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs385295e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aKazakhstan General Newswire
+=245  00$aKazakhstan General Newswire$h[electronic resource].
+=260  \\$bInterfax - America
+=773  0\$tRegional Business News $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Regional Business News.$uhttp://search.ebscohost.com/direct.asp?db=bwh&jid=95AZ&scope=site
+
+=LDR  00608nas  22001812  4500
+=001  ebs385297e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs385297e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aKazakhstan Oil & Gas Weekly
+=245  00$aKazakhstan Oil & Gas Weekly$h[electronic resource].
+=260  \\$bInterfax - America
+=773  0\$tRegional Business News $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Regional Business News.$uhttp://search.ebscohost.com/direct.asp?db=bwh&jid=95B1&scope=site
+
+=LDR  00592nas  22001932  4500
+=001  ebs1581879e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=022  \\$y1812-7886
+=035  \\$a(EBZ)ebs1581879e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aKiru
+=245  00$aKiru$h[electronic resource].
+=260  \\$bUniversidad de San Mart{grave}in de Porres, Lima
+=773  0\$tMedicLatina $dEBSCO Publishing
+=856  40$3Full text available: 2006 -.$zAvailable in MedicLatina.$uhttp://search.ebscohost.com/direct.asp?db=lth&jid=2WNN&scope=site
+
+=LDR  00614nas  22001812  4500
+=001  ebs785412e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=022  \\$a2092-8920$y1738-1843
+=035  \\$a(EBZ)ebs785412e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aKorean Journal of Pathology
+=245  00$aKorean Journal of Pathology$h[electronic resource].
+=773  0\$tAcademic Search Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Academic Search Complete.$uhttp://search.ebscohost.com/direct.asp?db=a9h&jid=DAKC&scope=site
+
+=LDR  00635nas  22001812  4500
+=001  ebs1443731e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1443731e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aMagnets for Pain
+=245  00$aMagnets for Pain$h[electronic resource].
+=260  \\$bNational Center for Complementary & Alternative Medicine
+=773  0\$tConsumer Health Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 - 2012.$zAvailable in Consumer Health Complete.$uhttp://search.ebscohost.com/direct.asp?db=cmh&jid=EGWW&scope=site
+
+=LDR  00669nas  22001932  4500
+=001  ebs385123e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=022  \\$a1985-2274$y1985-207X
+=035  \\$a(EBZ)ebs385123e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aMalaysian Family Physician
+=245  00$aMalaysian Family Physician$h[electronic resource].
+=260  \\$bAcademy of Family Physicians of Malaysia
+=773  0\$tAcademic Search Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Academic Search Complete.$uhttp://search.ebscohost.com/direct.asp?db=a9h&jid=787E&scope=site
+
+=LDR  00667nas  22001812  4500
+=001  ebs1443732e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1443732e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aMassage Therapy: An Introduction
+=245  00$aMassage Therapy: An Introduction$h[electronic resource].
+=260  \\$bNational Center for Complementary & Alternative Medicine
+=773  0\$tConsumer Health Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 - 2012.$zAvailable in Consumer Health Complete.$uhttp://search.ebscohost.com/direct.asp?db=cmh&jid=EGWX&scope=site
+
+=LDR  00587nas  22001812  4500
+=001  ebs1581909e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=022  \\$y1817-969X
+=035  \\$a(EBZ)ebs1581909e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aMass-spektrometria
+=245  00$aMass-spektrometria$h[electronic resource].
+=773  0\$tAcademic Search Complete $dEBSCO Publishing
+=856  40$3Full text available: 2011 -.$zAvailable in Academic Search Complete.$uhttp://search.ebscohost.com/direct.asp?db=a9h&jid=BG0T&scope=site
+
+=LDR  00594nas  22001932  4500
+=001  ebs1586886e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=022  \\$y1578-0740
+=035  \\$a(EBZ)ebs1586886e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aMatronas Profesi{acute}on
+=245  00$aMatronas Profesi{acute}on$h[electronic resource].
+=260  \\$bEdiciones Mayo
+=773  0\$tMedicLatina $dEBSCO Publishing
+=856  40$3Full text available: 2011 -.$zAvailable in MedicLatina.$uhttp://search.ebscohost.com/direct.asp?db=lth&jid=635D&scope=site
+
+=LDR  00658nas  22001692  4500
+=001  ebs1578926e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1578926e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aMeasuring Work Well-Being & Productivity in the Nordic Countries
+=245  00$aMeasuring Work Well-Being & Productivity in the Nordic Countries$h[electronic resource].
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2011 - 2011.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=ESXW&scope=site
+
+=LDR  00657nas  22001812  4500
+=001  ebs1443733e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1443733e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aMeditation: An Introduction
+=245  00$aMeditation: An Introduction$h[electronic resource].
+=260  \\$bNational Center for Complementary & Alternative Medicine
+=773  0\$tConsumer Health Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 - 2012.$zAvailable in Consumer Health Complete.$uhttp://search.ebscohost.com/direct.asp?db=cmh&jid=EGWY&scope=site
+
+=LDR  00630nas  22001932  4500
+=001  ebs796488e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=022  \\$y2077-0375
+=035  \\$a(EBZ)ebs796488e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aMembranes
+=245  00$aMembranes$h[electronic resource].
+=260  \\$bMolecular Diversity Preservation International
+=773  0\$tAcademic Search Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Academic Search Complete.$uhttp://search.ebscohost.com/direct.asp?db=a9h&jid=DRYK&scope=site
+
+=LDR  00653nas  22001812  4500
+=001  ebs1443734e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1443734e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aMenopausal Symptoms & CAM
+=245  00$aMenopausal Symptoms & CAM$h[electronic resource].
+=260  \\$bNational Center for Complementary & Alternative Medicine
+=773  0\$tConsumer Health Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 - 2012.$zAvailable in Consumer Health Complete.$uhttp://search.ebscohost.com/direct.asp?db=cmh&jid=EGWZ&scope=site
+
+=LDR  00667nas  22001812  4500
+=001  ebs1482760e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1482760e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aMovies & Entertainment Industry Profile: Eastern Europe
+=245  00$aMovies & Entertainment Industry Profile: Eastern Europe$h[electronic resource].
+=260  \\$bDatamonitor Plc
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=FKI1&scope=site
+
+=LDR  00649nas  22001812  4500
+=001  ebs1442701e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1442701e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aMovies & Entertainment Industry Profile: Italy
+=245  00$aMovies & Entertainment Industry Profile: Italy$h[electronic resource].
+=260  \\$bDatamonitor Plc
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=FKHX&scope=site
+
+=LDR  00612nas  22001812  4500
+=001  ebs1593950e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1593950e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aMultiple Sclerosis
+=245  00$aMultiple Sclerosis$h[electronic resource].
+=260  \\$bNational Institutes of Health
+=773  0\$tConsumer Health Complete $dEBSCO Publishing
+=856  40$3Full text available: 2006 - 2006.$zAvailable in Consumer Health Complete.$uhttp://search.ebscohost.com/direct.asp?db=cmh&jid=32KL&scope=site
+
+=LDR  00613nas  22001932  4500
+=001  ebs1414821e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=022  \\$a1314-4049$y1314-4057
+=035  \\$a(EBZ)ebs1414821e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aMycoKeys
+=245  00$aMycoKeys$h[electronic resource].
+=260  \\$bPensoft Publishers
+=773  0\$tAcademic Search Complete $dEBSCO Publishing
+=856  40$3Full text available: 2011 -.$zAvailable in Academic Search Complete.$uhttp://search.ebscohost.com/direct.asp?db=a9h&jid=DAMH&scope=site
+
+=LDR  00659nas  22001812  4500
+=001  ebs1443699e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1443699e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aNaturopathy: An Introduction
+=245  00$aNaturopathy: An Introduction$h[electronic resource].
+=260  \\$bNational Center for Complementary & Alternative Medicine
+=773  0\$tConsumer Health Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 - 2012.$zAvailable in Consumer Health Complete.$uhttp://search.ebscohost.com/direct.asp?db=cmh&jid=EGX0&scope=site
+
+=LDR  00638nas  22001692  4500
+=001  ebs1573673e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1573673e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aNordic Cooperation with Russia in Education & Research
+=245  00$aNordic Cooperation with Russia in Education & Research$h[electronic resource].
+=773  0\$tAcademic Search Complete $dEBSCO Publishing
+=856  40$3Full text available: 2011 - 2011.$zAvailable in Academic Search Complete.$uhttp://search.ebscohost.com/direct.asp?db=a9h&jid=ESXX&scope=site
+
+=LDR  00666nas  22001692  4500
+=001  ebs1578928e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1578928e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aNordiske Landes Konkurrencedygtighed: fra Flexicurity til Mobication
+=245  00$aNordiske Landes Konkurrencedygtighed: fra Flexicurity til Mobication$h[electronic resource].
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2011 - 2011.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=ESY0&scope=site
+
+=LDR  00584nas  22001692  4500
+=001  ebs1578927e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1578927e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aNordisk Pendlingskarta 2011
+=245  00$aNordisk Pendlingskarta 2011$h[electronic resource].
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2011 - 2011.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=ESXZ&scope=site
+
+=LDR  00633nas  22001812  4500
+=001  ebs1578929e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1578929e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aNuclear Energy Industry Profile: Japan
+=245  00$aNuclear Energy Industry Profile: Japan$h[electronic resource].
+=260  \\$bDatamonitor Plc
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=FI6U&scope=site
+
+=LDR  00641nas  22001812  4500
+=001  ebs1578930e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1578930e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aOil & Gas Industry Profile: Eastern Europe
+=245  00$aOil & Gas Industry Profile: Eastern Europe$h[electronic resource].
+=260  \\$bDatamonitor Plc
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=FI6V&scope=site
+
+=LDR  00675nas  22001812  4500
+=001  ebs1443735e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1443735e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aOmega-3 Supplements: An Introduction
+=245  00$aOmega-3 Supplements: An Introduction$h[electronic resource].
+=260  \\$bNational Center for Complementary & Alternative Medicine
+=773  0\$tConsumer Health Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 - 2012.$zAvailable in Consumer Health Complete.$uhttp://search.ebscohost.com/direct.asp?db=cmh&jid=EGX1&scope=site
+
+=LDR  01047nas  22002292  4500
+=001  ebs1586818e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=022  \\$y1063-1933
+=035  \\$a(EBZ)ebs1586818e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aOPEN The McCombs School of Business Magazine
+=245  00$aOPEN The McCombs School of Business Magazine$h[electronic resource].
+=773  0\$tTexas Reference Center $dEBSCO Publishing
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=773  0\$tMasterFILE Premier $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Texas Reference Center.$uhttp://search.ebscohost.com/direct.asp?db=tih&jid=DAE9&scope=site
+=856  40$3Full text available: 2012 -.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=DAE9&scope=site
+=856  40$3Full text available: 2012 -.$zAvailable in MasterFILE Premier.$uhttp://search.ebscohost.com/direct.asp?db=f5h&jid=DAE9&scope=site
+
+=LDR  01020nas  22002292  4500
+=001  ebs193459e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs193459e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aOur World: Palestine
+=245  00$aOur World: Palestine$h[electronic resource].
+=260  \\$bGreat Neck Publishing
+=773  0\$tMAS Ultra - School Edition $dEBSCO Publishing
+=773  0\$tMasterFILE Premier $dEBSCO Publishing
+=773  0\$tMiddle Search Plus $dEBSCO Publishing
+=856  40$3Full text available: 2011 - 2011.$zAvailable in MAS Ultra - School Edition.$uhttp://search.ebscohost.com/direct.asp?db=ulh&jid=15S8&scope=site
+=856  40$3Full text available: 2011 - 2011.$zAvailable in MasterFILE Premier.$uhttp://search.ebscohost.com/direct.asp?db=f5h&jid=15S8&scope=site
+=856  40$3Full text available: 2011 - 2011.$zAvailable in Middle Search Plus.$uhttp://search.ebscohost.com/direct.asp?db=mih&jid=15S8&scope=site
+
+=LDR  00611nas  22001812  4500
+=001  ebs1586828e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1586828e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aOutokumpu Oyj SWOT Analysis
+=245  00$aOutokumpu Oyj SWOT Analysis$h[electronic resource].
+=260  \\$bDatamonitor Plc
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=FPRY&scope=site
+
+=LDR  00649nas  22001932  4500
+=001  ebs1573661e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=022  \\$y0078-8562
+=035  \\$a(EBZ)ebs1573661e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aPalaeontologia Polonica
+=245  00$aPalaeontologia Polonica$h[electronic resource].
+=260  \\$bForeign Trade Enterprise Ars Polona
+=773  0\$tAcademic Search Complete $dEBSCO Publishing
+=856  40$3Full text available: 2011 -.$zAvailable in Academic Search Complete.$uhttp://search.ebscohost.com/direct.asp?db=a9h&jid=BN8M&scope=site
+
+=LDR  00658nas  22001932  4500
+=001  ebs1573383e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=022  \\$y2081-0016
+=035  \\$a(EBZ)ebs1573383e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aPalliative Medicine / Medycyna Paliatywna
+=245  00$aPalliative Medicine / Medycyna Paliatywna$h[electronic resource].
+=260  \\$bTermedia
+=773  0\$tAcademic Search Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Academic Search Complete.$uhttp://search.ebscohost.com/direct.asp?db=a9h&jid=EG7F&scope=site
+
+=LDR  00685nas  22001932  4500
+=001  ebs1573674e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=022  \\$y1300-5251
+=035  \\$a(EBZ)ebs1573674e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aPerinatoloji Dergisi = Journal of Perinatology
+=245  00$aPerinatoloji Dergisi = Journal of Perinatology$h[electronic resource].
+=260  \\$bDeomed Medical Publishing
+=773  0\$tAcademic Search Complete $dEBSCO Publishing
+=856  40$3Full text available: 2011 -.$zAvailable in Academic Search Complete.$uhttp://search.ebscohost.com/direct.asp?db=a9h&jid=B995&scope=site
+
+=LDR  00641nas  22001932  4500
+=001  ebs1587110e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=022  \\$y2164-3865
+=035  \\$a(EBZ)ebs1587110e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aPlans & Trusts
+=245  00$aPlans & Trusts$h[electronic resource].
+=260  \\$bInternational Foundation of Employee Benefits
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=FB2T&scope=site
+
+=LDR  00668nas  22001932  4500
+=001  ebs1123125e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=022  \\$y1944-0510
+=035  \\$a(EBZ)ebs1123125e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aPopular Photography (19440510)
+=245  00$aPopular Photography (19440510)$h[electronic resource].
+=260  \\$bBonnier Corporation
+=773  0\$tProQuest Career & Technical Education $dProquest Info & Learning Co
+=856  40$3Full text available: 1994 - 2000.$zAvailable in ProQuest Career & Technical Education.$uhttp://search.proquest.com/publication/19613
+
+=LDR  00726nas  22001932  4500
+=001  ebs361054e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=022  \\$y1642-395X
+=035  \\$a(EBZ)ebs361054e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aPostepy Dermatologii i Alergologii = Advances in Dermatology and Allergology
+=245  00$aPostepy Dermatologii i Alergologii = Advances in Dermatology and Allergology$h[electronic resource].
+=260  \\$bTermedia
+=773  0\$tAcademic Search Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Academic Search Complete.$uhttp://search.ebscohost.com/direct.asp?db=a9h&jid=EG79&scope=site
+
+=LDR  00677nas  22001692  4500
+=001  ebs795418e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs795418e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aPractise Now!: How to Prepare for Recruitment and Selection Tests
+=245  00$aPractise Now!: How to Prepare for Recruitment and Selection Tests$h[electronic resource].
+=260  \\$bAustralian Council for Educational Research
+=856  40$3Full text available: 2002 - 2002.$zAvailable in eBooks on EBSCOhost.$uhttp://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=101469
+
+=LDR  00630nas  22001932  4500
+=001  ebs970479e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=022  \\$y0328-9702
+=035  \\$a(EBZ)ebs970479e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aPraxis Educativa
+=245  00$aPraxis Educativa$h[electronic resource].
+=260  \\$bEditorial de la Universidad Nacional de La Pampa
+=773  0\$tFuente Academica $dEBSCO Publishing
+=856  40$3Full text available: 2003 -.$zAvailable in Fuente Academica.$uhttp://search.ebscohost.com/direct.asp?db=zbh&jid=1GU0&scope=site
+
+=LDR  00597nas  22001812  4500
+=001  ebs668181e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=022  \\$y0033-2526
+=035  \\$a(EBZ)ebs668181e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aPrzeglad Dermatologiczny
+=245  00$aPrzeglad Dermatologiczny$h[electronic resource].
+=773  0\$tAcademic Search Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Academic Search Complete.$uhttp://search.ebscohost.com/direct.asp?db=a9h&jid=EG7B&scope=site
+
+=LDR  00708nas  22001932  4500
+=001  ebs462397e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=022  \\$y1896-9666
+=035  \\$a(EBZ)ebs462397e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aPrzegla?d kardiodiabetologiczny = Cardiovascular diabetology review
+=245  00$aPrzegla?d kardiodiabetologiczny = Cardiovascular diabetology review$h[electronic resource].
+=260  \\$bTermedia
+=773  0\$tAcademic Search Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Academic Search Complete.$uhttp://search.ebscohost.com/direct.asp?db=a9h&jid=EG7A&scope=site
+
+=LDR  00654nas  22001932  4500
+=001  ebs462479e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=022  \\$y1643-8876
+=035  \\$a(EBZ)ebs462479e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aPrzeglad Menopauzalny = Menopause Review
+=245  00$aPrzeglad Menopauzalny = Menopause Review$h[electronic resource].
+=260  \\$bTermedia
+=773  0\$tAcademic Search Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Academic Search Complete.$uhttp://search.ebscohost.com/direct.asp?db=a9h&jid=EG7D&scope=site
+
+=LDR  00726nas  22001812  4500
+=001  ebs1596178e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1596178e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aRedesigning the Health Care Tram: Diabetes Prevention & Lifelong Management
+=245  00$aRedesigning the Health Care Tram: Diabetes Prevention & Lifelong Management$h[electronic resource].
+=260  \\$bNational Institutes of Health
+=773  0\$tConsumer Health Complete $dEBSCO Publishing
+=856  40$3Full text available: 2011 - 2011.$zAvailable in Consumer Health Complete.$uhttp://search.ebscohost.com/direct.asp?db=cmh&jid=EH2N&scope=site
+
+=LDR  00637nas  22001812  4500
+=001  ebs1586829e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1586829e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aRegency Energy Partners LP SWOT Analysis
+=245  00$aRegency Energy Partners LP SWOT Analysis$h[electronic resource].
+=260  \\$bDatamonitor Plc
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=FPRV&scope=site
+
+=LDR  00647nas  22001812  4500
+=001  ebs1443736e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1443736e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aReiki: An Introduction
+=245  00$aReiki: An Introduction$h[electronic resource].
+=260  \\$bNational Center for Complementary & Alternative Medicine
+=773  0\$tConsumer Health Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 - 2012.$zAvailable in Consumer Health Complete.$uhttp://search.ebscohost.com/direct.asp?db=cmh&jid=EGX2&scope=site
+
+=LDR  00821nas  22002052  4500
+=001  ebs833896e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=022  \\$y2007-1124
+=035  \\$a(EBZ)ebs833896e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aRevista Mexicana de Ciencias Pecuarias
+=245  00$aRevista Mexicana de Ciencias Pecuarias$h[electronic resource].
+=773  0\$tAcademic Search Complete $dEBSCO Publishing
+=773  0\$tFuente Academica $dEBSCO Publishing
+=856  40$3Full text available: 2010 -.$zAvailable in Academic Search Complete.$uhttp://search.ebscohost.com/direct.asp?db=a9h&jid=FR2L&scope=site
+=856  40$3Full text available: 2010 -.$zAvailable in Fuente Academica.$uhttp://search.ebscohost.com/direct.asp?db=zbh&jid=FR2L&scope=site
+
+=LDR  00655nas  22001812  4500
+=001  ebs1443737e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1443737e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aRheumatoid Arthritis & CAM
+=245  00$aRheumatoid Arthritis & CAM$h[electronic resource].
+=260  \\$bNational Center for Complementary & Alternative Medicine
+=773  0\$tConsumer Health Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 - 2012.$zAvailable in Consumer Health Complete.$uhttp://search.ebscohost.com/direct.asp?db=cmh&jid=EGX3&scope=site
+
+=LDR  00593nas  22001692  4500
+=001  ebs375375e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs375375e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aRussia & CIS Banking & Finance Weekly
+=245  00$aRussia & CIS Banking & Finance Weekly$h[electronic resource].
+=773  0\$tRegional Business News $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Regional Business News.$uhttp://search.ebscohost.com/direct.asp?db=bwh&jid=B2ZB&scope=site
+
+=LDR  00597nas  22001692  4500
+=001  ebs396517e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs396517e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aRussia & CIS Business & Financial Daily
+=245  00$aRussia & CIS Business & Financial Daily$h[electronic resource].
+=773  0\$tRegional Business News $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Regional Business News.$uhttp://search.ebscohost.com/direct.asp?db=bwh&jid=DULB&scope=site
+
+=LDR  00618nas  22001812  4500
+=001  ebs375382e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs375382e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aRussia & CIS Business Law Weekly
+=245  00$aRussia & CIS Business Law Weekly$h[electronic resource].
+=260  \\$bInterfax - America
+=773  0\$tRegional Business News $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Regional Business News.$uhttp://search.ebscohost.com/direct.asp?db=bwh&jid=B2ZC&scope=site
+
+=LDR  00626nas  22001812  4500
+=001  ebs385313e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs385313e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aRussia & CIS Defense Industry Weekly
+=245  00$aRussia & CIS Defense Industry Weekly$h[electronic resource].
+=260  \\$bInterfax - America
+=773  0\$tRegional Business News $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Regional Business News.$uhttp://search.ebscohost.com/direct.asp?db=bwh&jid=95B2&scope=site
+
+=LDR  00618nas  22001812  4500
+=001  ebs375383e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs375383e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aRussia & CIS Diplomatic Panorama
+=245  00$aRussia & CIS Diplomatic Panorama$h[electronic resource].
+=260  \\$bInterfax - America
+=773  0\$tRegional Business News $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Regional Business News.$uhttp://search.ebscohost.com/direct.asp?db=bwh&jid=B2ZD&scope=site
+
+=LDR  00604nas  22001812  4500
+=001  ebs375386e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs375386e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aRussia & CIS Energy Daily
+=245  00$aRussia & CIS Energy Daily$h[electronic resource].
+=260  \\$bInterfax - America
+=773  0\$tRegional Business News $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Regional Business News.$uhttp://search.ebscohost.com/direct.asp?db=bwh&jid=95B3&scope=site
+
+=LDR  00610nas  22001812  4500
+=001  ebs375384e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs375384e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aRussia & CIS Energy Newswire
+=245  00$aRussia & CIS Energy Newswire$h[electronic resource].
+=260  \\$bInterfax - America
+=773  0\$tRegional Business News $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Regional Business News.$uhttp://search.ebscohost.com/direct.asp?db=bwh&jid=95B4&scope=site
+
+=LDR  00612nas  22001812  4500
+=001  ebs385315e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs385315e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aRussia & CIS Insurance Weekly
+=245  00$aRussia & CIS Insurance Weekly$h[electronic resource].
+=260  \\$bInterfax - America
+=773  0\$tRegional Business News $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Regional Business News.$uhttp://search.ebscohost.com/direct.asp?db=bwh&jid=95B6&scope=site
+
+=LDR  00608nas  22001812  4500
+=001  ebs385318e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs385318e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aRussia & CIS Military Daily
+=245  00$aRussia & CIS Military Daily$h[electronic resource].
+=260  \\$bInterfax - America
+=773  0\$tRegional Business News $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Regional Business News.$uhttp://search.ebscohost.com/direct.asp?db=bwh&jid=95B8&scope=site
+
+=LDR  00625nas  22001812  4500
+=001  ebs608930e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs608930e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aRussia & CIS Presidential Bulletin
+=245  00$aRussia & CIS Presidential Bulletin$h[electronic resource].
+=260  \\$bInterfax America Inc.
+=773  0\$tRegional Business News $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Regional Business News.$uhttp://search.ebscohost.com/direct.asp?db=bwh&jid=B2ZH&scope=site
+
+=LDR  00606nas  22001812  4500
+=001  ebs609099e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs609099e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aRussia & FSU News Bulletin
+=245  00$aRussia & FSU News Bulletin$h[electronic resource].
+=260  \\$bInterfax - America
+=773  0\$tRegional Business News $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Regional Business News.$uhttp://search.ebscohost.com/direct.asp?db=bwh&jid=B2ZI&scope=site
+
+=LDR  00711nas  22001932  4500
+=001  ebs594467e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=022  \\$y1554-2440
+=035  \\$a(EBZ)ebs594467e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aScholastic News -- Edition 5/6 (Teacher's Edition)
+=245  00$aScholastic News -- Edition 5/6 (Teacher's Edition)$h[electronic resource].
+=260  \\$bScholastic Incorporated
+=773  0\$tProfessional Development Collection $dEBSCO Publishing
+=856  40$3Full text available: 2005 -.$zAvailable in Professional Development Collection.$uhttp://search.ebscohost.com/direct.asp?db=tfh&jid=15VB&scope=site
+
+=LDR  00696nas  22001932  4500
+=001  ebs594469e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=022  \\$y1010-144X
+=035  \\$a(EBZ)ebs594469e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aScholastic SuperScience (Teacher's Edition)
+=245  00$aScholastic SuperScience (Teacher's Edition)$h[electronic resource].
+=260  \\$bScholastic Incorporated
+=773  0\$tProfessional Development Collection $dEBSCO Publishing
+=856  40$3Full text available: 1999 -.$zAvailable in Professional Development Collection.$uhttp://search.ebscohost.com/direct.asp?db=tfh&jid=SYQ&scope=site
+
+=LDR  00681nas  22001812  4500
+=001  ebs1443029e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=022  \\$y2247-3173
+=035  \\$a(EBZ)ebs1443029e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aScientific Research & Education in the Air Force - AFASES
+=245  00$aScientific Research & Education in the Air Force - AFASES$h[electronic resource].
+=773  0\$tMilitary & Government Collection $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Military & Government Collection.$uhttp://search.ebscohost.com/direct.asp?db=mth&jid=ETXC&scope=site
+
+=LDR  00551nas  22001812  4500
+=001  ebs1331165e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=022  \\$y2236-9600
+=035  \\$a(EBZ)ebs1331165e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aScire Salutis
+=245  00$aScire Salutis$h[electronic resource].
+=773  0\$tMedicLatina $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in MedicLatina.$uhttp://search.ebscohost.com/direct.asp?db=lth&jid=DBNO&scope=site
+
+=LDR  00725nas  22001812  4500
+=001  ebs1578934e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1578934e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aSelecting a Complementary & Alternative Medicine Practitioner
+=245  00$aSelecting a Complementary & Alternative Medicine Practitioner$h[electronic resource].
+=260  \\$bNational Center for Complementary & Alternative Medicine
+=773  0\$tConsumer Health Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 - 2012.$zAvailable in Consumer Health Complete.$uhttp://search.ebscohost.com/direct.asp?db=cmh&jid=EH62&scope=site
+
+=LDR  00671nas  22001812  4500
+=001  ebs1443738e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1443738e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aSleep Disorders & CAM: At a Glance
+=245  00$aSleep Disorders & CAM: At a Glance$h[electronic resource].
+=260  \\$bNational Center for Complementary & Alternative Medicine
+=773  0\$tConsumer Health Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 - 2012.$zAvailable in Consumer Health Complete.$uhttp://search.ebscohost.com/direct.asp?db=cmh&jid=EGX4&scope=site
+
+=LDR  00591nas  22001572  4500
+=001  ebs671622e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs671622e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aSpeaking Effectively: A Guide for Air Force Speakers
+=245  00$aSpeaking Effectively: A Guide for Air Force Speakers$h[electronic resource].
+=856  40$3Full text available: 1989 - 1989.$zAvailable in eBooks on EBSCOhost.$uhttp://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=184507
+
+=LDR  00677nas  22001812  4500
+=001  ebs1443739e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1443739e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aSpinal Manipulation for Low-Back Pain
+=245  00$aSpinal Manipulation for Low-Back Pain$h[electronic resource].
+=260  \\$bNational Center for Complementary & Alternative Medicine
+=773  0\$tConsumer Health Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 - 2012.$zAvailable in Consumer Health Complete.$uhttp://search.ebscohost.com/direct.asp?db=cmh&jid=EGX5&scope=site
+
+=LDR  00682nas  22001692  4500
+=001  ebs1578931e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1578931e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aState of the Art Report on Bullying at the Workplace in the Nordic Countries
+=245  00$aState of the Art Report on Bullying at the Workplace in the Nordic Countries$h[electronic resource].
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2011 - 2011.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=ESY2&scope=site
+
+=LDR  00629nas  22001692  4500
+=001  ebs402046e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs402046e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aStop the Bullying: A Handbook for Schools
+=245  00$aStop the Bullying: A Handbook for Schools$h[electronic resource].
+=260  \\$bAustralian Council for Educational Research
+=856  40$3Full text available: 2003 - 2003.$zAvailable in eBooks on EBSCOhost.$uhttp://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=107407
+
+=LDR  00658nas  22001692  4500
+=001  ebs1578932e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1578932e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aStrategic use of Public-Private Cooperation in the Nordic Region
+=245  00$aStrategic use of Public-Private Cooperation in the Nordic Region$h[electronic resource].
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2011 - 2011.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=ESY3&scope=site
+
+=LDR  00651nas  22001812  4500
+=001  ebs1443740e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1443740e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aTai Chi: An Introduction
+=245  00$aTai Chi: An Introduction$h[electronic resource].
+=260  \\$bNational Center for Complementary & Alternative Medicine
+=773  0\$tConsumer Health Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 - 2012.$zAvailable in Consumer Health Complete.$uhttp://search.ebscohost.com/direct.asp?db=cmh&jid=EGX6&scope=site
+
+=LDR  00632nas  22001932  4500
+=001  ebs1158535e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=022  \\$y2249-6610
+=035  \\$a(EBZ)ebs1158535e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aTheriogenology Insight
+=245  00$aTheriogenology Insight$h[electronic resource].
+=260  \\$bNew Delhi Publishers
+=773  0\$tAcademic Search Complete $dEBSCO Publishing
+=856  40$3Full text available: 2011 -.$zAvailable in Academic Search Complete.$uhttp://search.ebscohost.com/direct.asp?db=a9h&jid=DID9&scope=site
+
+=LDR  00675nas  22001812  4500
+=001  ebs1586832e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1586832e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aTIER Industry Report - Oscillators Manufacturing
+=245  00$aTIER Industry Report - Oscillators Manufacturing$h[electronic resource].
+=260  \\$bTaiwan Institute of Economic Research
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=EUZN&scope=site
+
+=LDR  00687nas  22001812  4500
+=001  ebs1586833e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1586833e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aTIER Industry Report - Radio & Television Broadcasting
+=245  00$aTIER Industry Report - Radio & Television Broadcasting$h[electronic resource].
+=260  \\$bTaiwan Institute of Economic Research
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=BLL1&scope=site
+
+=LDR  00680nas  22001812  4500
+=001  ebs926874e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs926874e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aTime for Kids: News Scoop Edition (Teacher's Edition)
+=245  00$aTime for Kids: News Scoop Edition (Teacher's Edition)$h[electronic resource].
+=260  \\$bTime Inc
+=773  0\$tProfessional Development Collection $dEBSCO Publishing
+=856  40$3Full text available: 2003 - 2010.$zAvailable in Professional Development Collection.$uhttp://search.ebscohost.com/direct.asp?db=tfh&jid=SYS&scope=site
+
+=LDR  00719nas  22001812  4500
+=001  ebs1443374e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1443374e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aTips for Talking With Your Health Care Providers About CAM
+=245  00$aTips for Talking With Your Health Care Providers About CAM$h[electronic resource].
+=260  \\$bNational Center for Complementary & Alternative Medicine
+=773  0\$tConsumer Health Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 - 2012.$zAvailable in Consumer Health Complete.$uhttp://search.ebscohost.com/direct.asp?db=cmh&jid=EGX7&scope=site
+
+=LDR  00674nas  22001932  4500
+=001  ebs1581737e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=022  \\$y1839-8561
+=035  \\$a(EBZ)ebs1581737e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aTraining & Development (1839-8561)
+=245  00$aTraining & Development (1839-8561)$h[electronic resource].
+=260  \\$bCopyright Agency Limited (Distributor)
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=FIAS&scope=site
+
+=LDR  00738nas  22001932  4500
+=001  ebs1586760e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=022  \\$y0163-9013
+=035  \\$a(EBZ)ebs1586760e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aTransactions of the Nebraska Academy of Sciences & Affiliated Societies
+=245  00$aTransactions of the Nebraska Academy of Sciences & Affiliated Societies$h[electronic resource].
+=260  \\$bNebraska Academy of Sciences
+=773  0\$tAcademic Search Complete $dEBSCO Publishing
+=856  40$3Full text available: 2011 -.$zAvailable in Academic Search Complete.$uhttp://search.ebscohost.com/direct.asp?db=a9h&jid=38OB&scope=site
+
+=LDR  00650nas  22001932  4500
+=001  ebs360492e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=022  \\$y1304-2947
+=035  \\$a(EBZ)ebs360492e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aTurkish journal of geriatrics
+=245  00$aTurkish journal of geriatrics$h[electronic resource].
+=260  \\$bGeriatrics Society, Ankara
+=773  0\$tAcademic Search Complete $dEBSCO Publishing
+=856  40$3Full text available: 2011 -.$zAvailable in Academic Search Complete.$uhttp://search.ebscohost.com/direct.asp?db=a9h&jid=78IH&scope=site
+
+=LDR  00667nas  22001812  4500
+=001  ebs1443741e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1443741e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aUsing Dietary Supplements Wisely
+=245  00$aUsing Dietary Supplements Wisely$h[electronic resource].
+=260  \\$bNational Center for Complementary & Alternative Medicine
+=773  0\$tConsumer Health Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 - 2012.$zAvailable in Consumer Health Complete.$uhttp://search.ebscohost.com/direct.asp?db=cmh&jid=EGX8&scope=site
+
+=LDR  00641nas  22001812  4500
+=001  ebs1443028e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1443028e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aUnited States Input & Output Report Series
+=245  00$aUnited States Input & Output Report Series$h[electronic resource].
+=260  \\$bC. Barnes & Co.
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=FAHC&scope=site
+
+=LDR  00645nas  22001812  4500
+=001  ebs1443845e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1443845e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aUnited States Product & Retail Report Series
+=245  00$aUnited States Product & Retail Report Series$h[electronic resource].
+=260  \\$bC. Barnes & Co.
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=FAHO&scope=site
+
+=LDR  00714nas  22001932  4500
+=001  ebs1593964e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=022  \\$y0890-3204
+=035  \\$a(EBZ)ebs1593964e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aWeekly Reader News - Edition 3 (Teacher's Edition)
+=245  00$aWeekly Reader News - Edition 3 (Teacher's Edition)$h[electronic resource].
+=260  \\$bWeekly Reader Corporation
+=773  0\$tProfessional Development Collection $dEBSCO Publishing
+=856  40$3Full text available: 2003 -.$zAvailable in Professional Development Collection.$uhttp://search.ebscohost.com/direct.asp?db=tfh&jid=SYU&scope=site
+
+=LDR  00627nas  22001812  4500
+=001  ebs1586831e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1586831e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aWestJet Airlines Ltd. SWOT Analysis
+=245  00$aWestJet Airlines Ltd. SWOT Analysis$h[electronic resource].
+=260  \\$bDatamonitor Plc
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=FPRX&scope=site
+
+=LDR  00736nas  22001692  4500
+=001  ebs349360e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs349360e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aWest Nile Virus: A Medical Dictionary, Bibliography, and Annotated Research Guide to Internet References
+=245  00$aWest Nile Virus: A Medical Dictionary, Bibliography, and Annotated Research Guide to Internet References$h[electronic resource].
+=260  \\$bIcon Health Publications
+=856  40$3Full text available: 2004 - 2004.$zAvailable in eBooks on EBSCOhost.$uhttp://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=109729
+
+=LDR  00693nas  22001812  4500
+=001  ebs1443742e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1443742e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aWhat is Complementary & Alternative Medicine?
+=245  00$aWhat is Complementary & Alternative Medicine?$h[electronic resource].
+=260  \\$bNational Center for Complementary & Alternative Medicine
+=773  0\$tConsumer Health Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 - 2012.$zAvailable in Consumer Health Complete.$uhttp://search.ebscohost.com/direct.asp?db=cmh&jid=EH63&scope=site
+
+=LDR  00582nas  22001812  4500
+=001  ebs1482732e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=022  \\$a1948-4682$y2153-2028
+=035  \\$a(EBZ)ebs1482732e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aWorld Medical & Health Policy
+=245  00$aWorld Medical & Health Policy$h[electronic resource].
+=260  \\$bWiley
+=856  40$3Full text available: 2009 -.$zAvailable in Wiley Online Library.$uhttp://onlinelibrary.wiley.com/journal/10.1002/(ISSN)1948-4682/issues
+
+=LDR  00537nas  22001692  4500
+=001  ebs1443654e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1443654e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aWPR Subset
+=245  00$aWPR Subset$h[electronic resource].
+=773  0\$tAcademic Search Complete $dEBSCO Publishing
+=856  40$3Full text available.$zAvailable in Academic Search Complete.$uhttp://search.ebscohost.com/direct.asp?db=a9h&jid=FDSQ&scope=site
+
+=LDR  00779nas  22001932  4500
+=001  ebs1443025e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=022  \\$y0084-3857
+=035  \\$a(EBZ)ebs1443025e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aYearbook of Labour Statistics / International Labour Office Yearbook of Labour Statistics
+=245  00$aYearbook of Labour Statistics / International Labour Office Yearbook of Labour Statistics$h[electronic resource].
+=260  \\$bInternational Labour Organization
+=773  0\$tBusiness Source Complete $dEBSCO Publishing
+=856  40$3Full text available: 2007 -.$zAvailable in Business Source Complete.$uhttp://search.ebscohost.com/direct.asp?db=bth&jid=38CA&scope=site
+
+=LDR  00667nas  22001812  4500
+=001  ebs1443743e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1443743e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aYoga for Health: An Introduction
+=245  00$aYoga for Health: An Introduction$h[electronic resource].
+=260  \\$bNational Center for Complementary & Alternative Medicine
+=773  0\$tConsumer Health Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 - 2012.$zAvailable in Consumer Health Complete.$uhttp://search.ebscohost.com/direct.asp?db=cmh&jid=EGXA&scope=site
+
+con-m
+=222  \0$aGlobal Development Finance
+=245  00$aGlobal Development Finance$h[electronic resource].
+=260  \\$bThe World Bank Group
+=856  40$3Full text available: 1999 - 1999.$zAvailable in eBooks on EBSCOhost.$uhttp://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=26767
+
+=LDR  00626nas  22001932  4500
+=001  ebs1239227e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=022  \\$a2164-5701$y2164-5698
+=035  \\$a(EBZ)ebs1239227e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aGM Crops & Food
+=245  00$aGM Crops & Food$h[electronic resource].
+=260  \\$bLandes Bioscience
+=773  0\$tAcademic Search Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Academic Search Complete.$uhttp://search.ebscohost.com/direct.asp?db=a9h&jid=EGMS&scope=site
+
+=LDR  00637nas  22001812  4500
+=001  ebs771588e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=022  \\$y0350-0756
+=035  \\$a(EBZ)ebs771588e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aHmeljarski Bilten / Bulletin of Hop Research
+=245  00$aHmeljarski Bilten / Bulletin of Hop Research$h[electronic resource].
+=773  0\$tAcademic Search Complete $dEBSCO Publishing
+=856  40$3Full text available: 2010 -.$zAvailable in Academic Search Complete.$uhttp://search.ebscohost.com/direct.asp?db=a9h&jid=464I&scope=site
+
+=LDR  00657nas  22001812  4500
+=001  ebs1443729e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1443729e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aHomeopathy: An Introduction
+=245  00$aHomeopathy: An Introduction$h[electronic resource].
+=260  \\$bNational Center for Complementary & Alternative Medicine
+=773  0\$tConsumer Health Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 - 2012.$zAvailable in Consumer Health Complete.$uhttp://search.ebscohost.com/direct.asp?db=cmh&jid=EGXB&scope=site
+
+=LDR  00674nas  22001692  4500
+=001  ebs1573671e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs1573671e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aInitiatives on Prevention of Food Waste in the Retail & Wholesale Trades
+=245  00$aInitiatives on Prevention of Food Waste in the Retail & Wholesale Trades$h[electronic resource].
+=773  0\$tAcademic Search Complete $dEBSCO Publishing
+=856  40$3Full text available: 2011 - 2011.$zAvailable in Academic Search Complete.$uhttp://search.ebscohost.com/direct.asp?db=a9h&jid=ESXP&scope=site
+
+=LDR  00633nas  22001932  4500
+=001  ebs821743e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=022  \\$y2075-4450
+=035  \\$a(EBZ)ebs821743e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aInsects
+=245  00$aInsects$h[electronic resource].
+=260  \\$bMolecular Diversity Preservation International (MDPI)
+=773  0\$tAcademic Search Complete $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Academic Search Complete.$uhttp://search.ebscohost.com/direct.asp?db=a9h&jid=DRYH&scope=site
+
+=LDR  00625nas  22001812  4500
+=001  ebs608514e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs608514e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aInterfax: Kazakhstan Mining Weekly
+=245  00$aInterfax: Kazakhstan Mining Weekly$h[electronic resource].
+=260  \\$bInterfax America Inc.
+=773  0\$tRegional Business News $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Regional Business News.$uhttp://search.ebscohost.com/direct.asp?db=bwh&jid=B71V&scope=site
+
+=LDR  00629nas  22001812  4500
+=001  ebs608927e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs608927e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aInterfax: Russia & CIS Announcements
+=245  00$aInterfax: Russia & CIS Announcements$h[electronic resource].
+=260  \\$bInterfax America Inc.
+=773  0\$tRegional Business News $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Regional Business News.$uhttp://search.ebscohost.com/direct.asp?db=bwh&jid=B71W&scope=site
+
+=LDR  00657nas  22001812  4500
+=001  ebs608522e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs608522e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aInterfax: Russia & CIS Military Information Weekly
+=245  00$aInterfax: Russia & CIS Military Information Weekly$h[electronic resource].
+=260  \\$bInterfax America Inc.
+=773  0\$tRegional Business News $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Regional Business News.$uhttp://search.ebscohost.com/direct.asp?db=bwh&jid=B6QB&scope=site
+
+=LDR  00637nas  22001812  4500
+=001  ebs608523e
+=003  EBZ
+=006  m\\\\\\\\d\\||||||
+=007  cr|unu||||||||
+=008  121205c\\\\9999xx\uu\p\s\\\\\0\\\\0eng\d
+=035  \\$a(EBZ)ebs608523e
+=040  \\$aEBZ
+=042  \\$anoncon-m
+=222  \0$aInterfax: Russia & CIS Military Newswire
+=245  00$aInterfax: Russia & CIS Military Newswire$h[electronic resource].
+=260  \\$bInterfax America Inc.
+=773  0\$tRegional Business News $dEBSCO Publishing
+=856  40$3Full text available: 2012 -.$zAvailable in Regional Business News.$uhttp://search.ebscohost.com/direct.asp?db=bwh&jid=B6QC&scope=site
+
+=LDR  00659nas  22001932  4500
+=001  ebs1593942e
+=003  EBZ
+=006  m\\\\\\\\d\\|||

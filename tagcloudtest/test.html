@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>flashTagCloud manual generator</title>
+<script language="javascript" type="text/javascript" src="swfobject.js"></script>
+</head>
+
+<body>
+<!--<div id="flashcontent"></div><script language="javascript" type="text/javascript">swfobject.embedSWF("imagecloud.swf", "flashcontent",
+					"280", "280",
+					"9", "",
+					{cloud_data: "cloud_data.xml"},
+					{wmode: "transparent", menu: "false", quality: "high", scale:"noscale"}
+					);</script>-->
+					
+<!--above is old script of tagcloud, it run in success in any ie, chrome, and firefox 3.6. however, it fail in firefox 4-->
+
+<!--the tag cloud below comes from http://randomfractals.com/blog/flex/flex/, Andy make a modification on it, it can run on any browser including firefox 4-->
+
+<div id="flashcontent">
+	<embed width="280" height="280" flashvars="tcolor=0x333333&tcolor2=0x333333&hicolor=0x000000&tspeed=100&distr=&mode=tags&tagcloud=
+	<tags>
+				<a+href='http://randomfractals.com/blog/flex/3d/'+class='tag-link-26'+title='3+topics'+style='font-size:+16.75pt;'>3D</a>
+				<a+href='http://randomfractals.com/blog/flex/2008/'+class='tag-link-38'+title='2+topics'+style='font-size:+13.25pt;'>2008</a>
+				<a+href='http://randomfractals.com/blog/flex/air/'+class='tag-link-3'+title='1+topic'+style='font-size:+8pt;'>AIR</a>
+				<a+href='http://randomfractals.com/blog/flex/bitmapdata/'+class='tag-link-19'+title='2+topics'+style='font-size:+13.25pt;'>bitmapdata</a>
+				<a+href='http://randomfractals.com/blog/flex/campaign/'+class='tag-link-36'+title='2+topics'+style='font-size:+13.25pt;'>campaign</a>
+				<a+href='http://randomfractals.com/blog/flex/candidate/'+class='tag-link-35'+title='2+topics'+style='font-size:+13.25pt;'>candidate</a>
+				<a+href='http://randomfractals.com/blog/flex/dashboard/'+class='tag-link-39'+title='1+topic'+style='font-size:+8pt;'>dashboard</a>
+				<a+href='http://randomfractals.com/blog/flex/degrafa/'+class='tag-link-32'+title='3+topics'+style='font-size:+16.75pt;'>Degrafa</a>
+				<a+href='http://randomfractals.com/blog/flex/degrafa-globe/'+class='tag-link-66'+title='2+topics'+style='font-size:+13.25pt;'>Degrafa+Globe</a>
+				<a+href='http://randomfractals.com/blog/flex/degrafa-maps/'+class='tag-link-65'+title='2+topics'+style='font-size:+13.25pt;'>Degrafa+Maps</a>
+				<a+href='http://randomfractals.com/blog/flex/degrafa-svg-painter/'+class='tag-link-90'+title='2+topics'+style='font-size:+13.25pt;'>Degrafa+SVG+Painter</a>
+				<a+href='http://randomfractals.com/blog/flex/explorer/'+class='tag-link-18'+title='2+topics'+style='font-size:+13.25pt;'>explorer</a>
+				<a+href='http://randomfractals.com/blog/flex/finances/'+class='tag-link-37'+title='2+topics'+style='font-size:+13.25pt;'>finances</a>
+				<a+href='http://randomfractals.com/blog/flex/flex/'+class='tag-link-4'+title='5+topics'+style='font-size:+22pt;'>Flex</a>
+				<a+href='http://randomfractals.com/blog/flex/flex-music-player/'+class='tag-link-56'+title='3+topics'+style='font-size:+16.75pt;'>flex+music+player</a>
+				<a+href='http://randomfractals.com/blog/flex/flex-svg-explorer/'+class='tag-link-87'+title='2+topics'+style='font-size:+13.25pt;'>Flex+SVG+Explorer</a>
+				<a+href='http://randomfractals.com/blog/flex/flex-ui-skin/'+class='tag-link-49'+title='1+topic'+style='font-size:+8pt;'>flex+ui+skin</a>
+				<a+href='http://randomfractals.com/blog/flex/flickorama/'+class='tag-link-24'+title='4+topics'+style='font-size:+19.6666666667pt;'>Flickorama</a>
+				<a+href='http://randomfractals.com/blog/flex/flickr/'+class='tag-link-28'+title='3+topics'+style='font-size:+16.75pt;'>Flickr</a>
+				<a+href='http://randomfractals.com/blog/flex/flickr-flip-book/'+class='tag-link-46'+title='3+topics'+style='font-size:+16.75pt;'>flickr+flip+book</a>
+				<a+href='http://randomfractals.com/blog/flex/flickr-mashup/'+class='tag-link-45'+title='1+topic'+style='font-size:+8pt;'>flickr+mashup</a>
+				<a+href='http://randomfractals.com/blog/flex/flip-book/'+class='tag-link-42'+title='1+topic'+style='font-size:+8pt;'>flip+book</a>
+				<a+href='http://randomfractals.com/blog/flex/interactive/'+class='tag-link-21'+title='4+topics'+style='font-size:+19.6666666667pt;'>interactive</a>
+				<a+href='http://randomfractals.com/blog/flex/light/'+class='tag-link-48'+title='1+topic'+style='font-size:+8pt;'>light</a>
+				<a+href='http://randomfractals.com/blog/flex/map/'+class='tag-link-33'+title='2+topics'+style='font-size:+13.25pt;'>map</a>
+				<a+href='http://randomfractals.com/blog/flex/mashup/'+class='tag-link-30'+title='4+topics'+style='font-size:+19.6666666667pt;'>mashup</a>
+				<a+href='http://randomfractals.com/blog/flex/mp3/'+class='tag-link-14'+title='1+topic'+style='font-size:+8pt;'>mp3</a>
+				<a+href='http://randomfractals.com/blog/flex/music/'+class='tag-link-15'+title='2+topics'+style='font-size:+13.25pt;'>music</a>
+				<a+href='http://randomfractals.com/blog/flex/music-visualization/'+class='tag-link-54'+title='2+topics'+style='font-size:+13.25pt;'>music+visualization</a>
+				<a+href='http://randomfractals.com/blog/flex/noise/'+class='tag-link-17'+title='3+topics'+style='font-size:+16.75pt;'>noise</a>
+				<a+href='http://randomfractals.com/blog/flex/no-signal/'+class='tag-link-20'+title='1+topic'+style='font-size:+8pt;'>no+signal</a>
+				<a+href='http://randomfractals.com/blog/flex/openflux/'+class='tag-link-25'+title='3+topics'+style='font-size:+16.75pt;'>OpenFlux</a>
+				<a+href='http://randomfractals.com/blog/flex/perlin/'+class='tag-link-22'+title='2+topics'+style='font-size:+13.25pt;'>perlin</a>
+				<a+href='http://randomfractals.com/blog/flex/photo-album/'+class='tag-link-43'+title='1+topic'+style='font-size:+8pt;'>photo+album</a>
+				<a+href='http://randomfractals.com/blog/flex/photoset/'+class='tag-link-40'+title='1+topic'+style='font-size:+8pt;'>photoset</a>
+				<a+href='http://randomfractals.com/blog/flex/photo-visualization/'+class='tag-link-44'+title='1+topic'+style='font-size:+8pt;'>photo+visualization</a>
+				<a+href='http://randomfractals.com/blog/flex/player/'+class='tag-link-16'+title='1+topic'+style='font-size:+8pt;'>player</a>
+				<a+href='http://randomfractals.com/blog/flex/plexiglass/'+class='tag-link-27'+title='3+topics'+style='font-size:+16.75pt;'>PlexiGlass</a>
+				<a+href='http://randomfractals.com/blog/flex/presidential/'+class='tag-link-34'+title='2+topics'+style='font-size:+13.25pt;'>presidential</a>
+				<a+href='http://randomfractals.com/blog/flex/ria/'+class='tag-link-5'+title='1+topic'+style='font-size:+8pt;'>RIA</a>
+				<a+href='http://randomfractals.com/blog/flex/simple/'+class='tag-link-13'+title='1+topic'+style='font-size:+8pt;'>simple</a>
+				<a+href='http://randomfractals.com/blog/flex/svg/'+class='tag-link-69'+title='3+topics'+style='font-size:+16.75pt;'>SVG</a>
+				<a+href='http://randomfractals.com/blog/flex/ui-skin/'+class='tag-link-47'+title='1+topic'+style='font-size:+8pt;'>ui+skin</a>
+				<a+href='http://randomfractals.com/blog/flex/viewer/'+class='tag-link-41'+title='1+topic'+style='font-size:+8pt;'>viewer</a>
+				<a+href='http://randomfractals.com/blog/flex/visualization/'+class='tag-link-23'+title='3+topics'+style='font-size:+16.75pt;'>visualization</a>
+
+
+	</tags>" 
+allowscriptaccess="always" quality="high" bgcolor="#ffffff" name="tagcloudflash" id="tagcloudflash" src="tagcloud.swf" type="application/x-shockwave-flash">
+
+</div>	
+					
+					
+					
+					</body></html>
+					
+					
+					
+					<!--below is the old original code from website http://randomfractals.com/blog/flex/flex/-->
+					<!--
+										<div id="wpcumuluswidgetcontent9504073"><embed width="160" height="160" flashvars="tcolor=0x333333&tcolor2=0x333333&hicolor=0x000000&tspeed=100&distr=&mode=tags&tagcloud=<tags><a+href='http://randomfractals.com/blog/flex/3d/'+class='tag-link-26'+title='3+topics'+style='font-size:+16.75pt;'>3D</a>
+<a+href='http://randomfractals.com/blog/flex/2008/'+class='tag-link-38'+title='2+topics'+style='font-size:+13.25pt;'>2008</a>
+<a+href='http://randomfractals.com/blog/flex/air/'+class='tag-link-3'+title='1+topic'+style='font-size:+8pt;'>AIR</a>
+<a+href='http://randomfractals.com/blog/flex/bitmapdata/'+class='tag-link-19'+title='2+topics'+style='font-size:+13.25pt;'>bitmapdata</a>
+<a+href='http://randomfractals.com/blog/flex/campaign/'+class='tag-link-36'+title='2+topics'+style='font-size:+13.25pt;'>campaign</a>
+<a+href='http://randomfractals.com/blog/flex/candidate/'+class='tag-link-35'+title='2+topics'+style='font-size:+13.25pt;'>candidate</a>
+<a+href='http://randomfractals.com/blog/flex/dashboard/'+class='tag-link-39'+title='1+topic'+style='font-size:+8pt;'>dashboard</a>
+<a+href='http://randomfractals.com/blog/flex/degrafa/'+class='tag-link-32'+title='3+topics'+style='font-size:+16.75pt;'>Degrafa</a>
+<a+href='http://randomfractals.com/blog/flex/degrafa-globe/'+class='tag-link-66'+title='2+topics'+style='font-size:+13.25pt;'>Degrafa+Globe</a>
+<a+href='http://randomfractals.com/blog/flex/degrafa-maps/'+class='tag-link-65'+title='2+topics'+style='font-size:+13.25pt;'>Degrafa+Maps</a>
+<a+href='http://randomfractals.com/blog/flex/degrafa-svg-painter/'+class='tag-link-90'+title='2+topics'+style='font-size:+13.25pt;'>Degrafa+SVG+Painter</a>
+<a+href='http://randomfractals.com/blog/flex/explorer/'+class='tag-link-18'+title='2+topics'+style='font-size:+13.25pt;'>explorer</a>
+<a+href='http://randomfractals.com/blog/flex/finances/'+class='tag-link-37'+title='2+topics'+style='font-size:+13.25pt;'>finances</a>
+<a+href='http://randomfractals.com/blog/flex/flex/'+class='tag-link-4'+title='5+topics'+style='font-size:+22pt;'>Flex</a>
+<a+href='http://randomfractals.com/blog/flex/flex-music-player/'+class='tag-link-56'+title='3+topics'+style='font-size:+16.75pt;'>flex+music+player</a>
+<a+href='http://randomfractals.com/blog/flex/flex-svg-explorer/'+class='tag-link-87'+title='2+topics'+style='font-size:+13.25pt;'>Flex+SVG+Explorer</a>
+<a+href='http://randomfractals.com/blog/flex/flex-ui-skin/'+class='tag-link-49'+title='1+topic'+style='font-size:+8pt;'>flex+ui+skin</a>
+<a+href='http://randomfractals.com/blog/flex/flickorama/'+class='tag-link-24'+title='4+topics'+style='font-size:+19.6666666667pt;'>Flickorama</a>
+<a+href='http://randomfractals.com/blog/flex/flickr/'+class='tag-link-28'+title='3+topics'+style='font-size:+16.75pt;'>Flickr</a>
+<a+href='http://randomfractals.com/blog/flex/flickr-flip-book/'+class='tag-link-46'+title='3+topics'+style='font-size:+16.75pt;'>flickr+flip+book</a>
+<a+href='http://randomfractals.com/blog/flex/flickr-mashup/'+class='tag-link-45'+title='1+topic'+style='font-size:+8pt;'>flickr+mashup</a>
+<a+href='http://randomfractals.com/blog/flex/flip-book/'+class='tag-link-42'+title='1+topic'+style='font-size:+8pt;'>flip+book</a>
+<a+href='http://randomfractals.com/blog/flex/interactive/'+class='tag-link-21'+title='4+topics'+style='font-size:+19.6666666667pt;'>interactive</a>
+<a+href='http://randomfractals.com/blog/flex/light/'+class='tag-link-48'+title='1+topic'+style='font-size:+8pt;'>light</a>
+<a+href='http://randomfractals.com/blog/flex/map/'+class='tag-link-33'+title='2+topics'+style='font-size:+13.25pt;'>map</a>
+<a+href='http://randomfractals.com/blog/flex/mashup/'+class='tag-link-30'+title='4+topics'+style='font-size:+19.6666666667pt;'>mashup</a>
+<a+href='http://randomfractals.com/blog/flex/mp3/'+class='tag-link-14'+title='1+topic'+style='font-size:+8pt;'>mp3</a>
+<a+href='http://randomfractals.com/blog/flex/music/'+class='tag-link-15'+title='2+topics'+style='font-size:+13.25pt;'>music</a>
+<a+href='http://randomfractals.com/blog/flex/music-visualization/'+class='tag-link-54'+title='2+topics'+style='font-size:+13.25pt;'>music+visualization</a>
+<a+href='http://randomfractals.com/blog/flex/noise/'+class='tag-link-17'+title='3+topics'+style='font-size:+16.75pt;'>noise</a>
+<a+href='http://randomfractals.com/blog/flex/no-signal/'+class='tag-link-20'+title='1+topic'+style='font-size:+8pt;'>no+signal</a>
+<a+href='http://randomfractals.com/blog/flex/openflux/'+class='tag-link-25'+title='3+topics'+style='font-size:+16.75pt;'>OpenFlux</a>
+<a+href='http://randomfractals.com/blog/flex/perlin/'+class='tag-link-22'+title='2+topics'+style='font-size:+13.25pt;'>perlin</a>
+<a+href='http://randomfractals.com/blog/flex/photo-album/'+class='tag-link-43'+title='1+topic'+style='font-size:+8pt;'>photo+album</a>
+<a+href='http://randomfractals.com/blog/flex/photoset/'+class='tag-link-40'+title='1+topic'+style='font-size:+8pt;'>photoset</a>
+<a+href='http://randomfractals.com/blog/flex/photo-visualization/'+class='tag-link-44'+title='1+topic'+style='font-size:+8pt;'>photo+visualization</a>
+<a+href='http://randomfractals.com/blog/flex/player/'+class='tag-link-16'+title='1+topic'+style='font-size:+8pt;'>player</a>
+<a+href='http://randomfractals.com/blog/flex/plexiglass/'+class='tag-link-27'+title='3+topics'+style='font-size:+16.75pt;'>PlexiGlass</a>
+<a+href='http://randomfractals.com/blog/flex/presidential/'+class='tag-link-34'+title='2+topics'+style='font-size:+13.25pt;'>presidential</a>
+<a+href='http://randomfractals.com/blog/flex/ria/'+class='tag-link-5'+title='1+topic'+style='font-size:+8pt;'>RIA</a>
+<a+href='http://randomfractals.com/blog/flex/simple/'+class='tag-link-13'+title='1+topic'+style='font-size:+8pt;'>simple</a>
+<a+href='http://randomfractals.com/blog/flex/svg/'+class='tag-link-69'+title='3+topics'+style='font-size:+16.75pt;'>SVG</a>
+<a+href='http://randomfractals.com/blog/flex/ui-skin/'+class='tag-link-47'+title='1+topic'+style='font-size:+8pt;'>ui+skin</a>
+<a+href='http://randomfractals.com/blog/flex/viewer/'+class='tag-link-41'+title='1+topic'+style='font-size:+8pt;'>viewer</a>
+<a+href='http://randomfractals.com/blog/flex/visualization/'+class='tag-link-23'+title='3+topics'+style='font-size:+16.75pt;'>visualization</a></tags>" allowscriptaccess="always" quality="high" bgcolor="#ffffff" name="tagcloudflash" id="tagcloudflash" src="http://randomfractals.com/blog/wp-content/plugins/wp-cumulus/tagcloud.swf?r=6418753" type="application/x-shockwave-flash"></div>	
+					
+					
+					
+					-->

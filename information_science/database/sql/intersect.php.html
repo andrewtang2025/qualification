@@ -1,0 +1,66 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="robots" content="noarchive">
+
+<meta name="description"
+content="The INTERSECT query allows you to return the results of 2 or more select queries.">
+<meta name="keywords"
+content="tech on the net, sql, intersect query">
+<meta name="title" content="SQL: INTERSECT Query">
+<title>SQL: INTERSECT Query</title>
+
+<link rel="stylesheet" type="text/css" href="stylesheets/screen.css"  media="screen" />
+<link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+</head>
+<body>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td align="left"><div id="content">
+      <h1>SQL: INTERSECT Query</h1>
+        <hr>
+        <p>The INTERSECT query allows you to return the results of 2 or more &quot;select&quot; queries. However, it only returns the rows selected by all queries. If a record exists in one query and not in the other, it will be omitted from the INTERSECT results.</p>
+        <p>Each SQL statement within the INTERSECT query must have the same number of fields in the result sets with similar data types.</p>
+        <p>The syntax for an INTERSECT query is:</p>
+        <blockquote class="definition">
+          <p>select field1, field2, . field_n<br>
+            from tables<br>
+            INTERSECT<br>
+            select field1, field2, . field_n<br>
+            from tables;</p>
+        </blockquote>
+        <br>
+        <p class="example_heading">Example #1</p>
+        <p>The following is an example of an INTERSECT query:</p>
+        <blockquote class="sql_command">
+          <p>select supplier_id<br>
+            from suppliers<br>
+            INTERSECT<br>
+            select supplier_id<br>
+            from orders;</p>
+        </blockquote>
+        <p>In this example, if a supplier_id appeared in both the suppliers and orders table, it would appear in your result set.</p>
+        <br>
+        <p class="example_heading">Example #2 - With ORDER BY Clause</p>
+        <p>The following is an INTERSECT query that uses an ORDER BY clause:</p>
+        <blockquote class="sql_command">
+          <p>select supplier_id, supplier_name<br>
+            from suppliers<br>
+            where supplier_id &gt; 2000<br>
+            INTERSECT<br>
+            select company_id, company_name<br>
+            from companies<br>
+            where company_id &gt; 1000<br>
+            ORDER BY 2;</p>
+        </blockquote>
+        <p>Since the column names are different between the two &quot;select&quot; statements, it is more advantageous to reference the columns in the ORDER BY clause by their position in the result set. In this example, we've sorted the results by supplier_name / company_name in ascending order, as denoted by the &quot;ORDER BY 2&quot;.</p>
+        <p>The supplier_name / company_name fields are in position #2 in the result set.</p>
+    </div>
+      
+         </td>
+  </tr>
+</table>
+
+</body>
+</html>

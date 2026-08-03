@@ -1,0 +1,113 @@
+*******************************************************************************************************
+* Author: Andy Tang
+* Prodedure Content:  Convert dbf (dbase or foxpro format) file into XML format under control.
+* Date: 01/2009
+* Copyright: Andy Tang
+*********************************************************************************************************
+CLEAR event
+CLEAR ALL 
+CLOSE ALL
+CLEAR memory
+CLEAR
+CLEAR screen
+
+patha=SPACE(50)
+sourcea=SPACE(50)
+targeta=SPACE(50)
+marka=SPACE(50)
+judge=SPACE(1)
+
+DO WHILE .t.
+
+@  10, 15 say "Convert Dbase file into XML format"  font "25"
+@   11, 23 say "Author: Andy Tang" 
+@   12, 23 say "SCILS at Rutgers" font "20"
+@  20, 10 say "Input the file path: "   get patha picture "@XXXXXXXXXXXXXXXXX" 
+@  21, 10 say "Input the source file name (dbf): " get sourcea picture "@XXXXXXXXXXXXXXXXX"
+@  22, 10 say "Input the target file name (xml): " get targeta picture "@XXXXXXXXXXXXXXXXX"
+@  23, 10 say "Input the XML record head mark: " get marka picture "@XXXXXXXXXXXXXXXXX"
+@ 25, 10 say "Are you sure everything is ok? (If ok, press button 'Y', If you want quit, press 'E':): " get judge picture "@A"
+
+READ 
+		IF ALLTRIM(judge)="y" OR ALLTRIM(judge)="Y" 
+		       EXIT
+		ELSE 
+			IF ALLTRIM(judge)="e" OR ALLTRIM(judge)="E" 
+				QUIT
+			Endif
+		       LOOP
+		ENDIF
+ENDDO 
+
+
+marka=ALLTRIM(marka)
+&& patha="D:\InMagic\ACLU_Leangood\2008-11-3"
+&& sourcea="leangood"
+&& targeta="ee.txt"
+&& marka="inmagic"
+
+
+&& SET DEFAULT TO  D:\InMagic\ACLU_Leangood\2008-11-3    This command has been substitued by macro variable.
+
+SET DEFAULT TO  &patha
+
+ERASE  targeta
+IF FILE(targeta)  && Does file exist? 
+   leanfile = FOPEN(targeta,12)     && If so, open read/write
+ELSE
+   leanfile = FCREATE(targeta, 0)  && If not create it
+ENDIF
+
+
+USE &sourcea                             &&use macro change to open the directed source database files.
+GO top
+
+DO WHILE NOT EOF()
+
+&&=FWRITE(leanfile, "<inm:Record setEntry="+CHR(34))
+
+=FWRITE(leanfile, "<"+marka+":Record setEntry="+CHR(34))
+=FWRITE(leanfile, ALLTRIM(STR(RECNO()-1)))
+=FWRITE(leanfile, CHR(34)+">")
+=FPUTS(leanfile, CHR(13))
+
+
+gncount=1
+FOR gncount=1 TO FCOUNT()
+	 =FWRITE(leanfile, "<"+marka+":")
+	=FWRITE(leanfile, FIELD(gncount))
+	=FWRITE(leanfile, ">")
+	xx=FIELD(gncount)
+	xx1=&xx
+	xx2=xx1
+
+			DO case
+			        CASE  TYPE('xx2')="C"
+					=FWRITE(leanfile,ALLTRIM(xx2))
+				CASE TYPE('xx2')="N"
+					=FWRITE(leanfile,ALLTRIM(STR(xx2)))
+				CASE TYPE('xx2')="D"
+					=FWRITE(leanfile,ALLTRIM(DTOC(xx2)))
+			Endcase
+	
+	&& close tag of every field. Pay attetion: one record consists many fields.
+	=FWRITE(leanfile, "</"+marka+":")
+	=FWRITE(leanfile, FIELD(gncount))
+	=FWRITE(leanfile, ">")
+		=FPUTS(leanfile, CHR(13))
+		
+		&&can change the field display order in normal
+NEXT    &&  you can merely choose one of them whic are "next "or "endfor"
+
+=FPUTS(leanfile, "</"+marka+":Record>")                   && close tag of every record. Pay attetion: one record consists many fields.
+
+skip
+	iF EOF()=.t.
+		=FCLOSE(leanfile)
+	ENDIF
+ENDDO
+
+clear
+CLEAR screen
+@  20, 10 say "The file "+ALLTRIM(targeta)+" has been generated under the directory "+ patha
+

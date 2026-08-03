@@ -1,0 +1,17 @@
+# Automatically answer all prompts negatively not to stall
+# the script on errors
+option batch on
+# Disable overwrite confirmations that conflict with the previous
+option confirm off
+# Connect using the username and password set up on the Secure-FTP Server, to the address of the Secure-FTP Server
+# open user:password@example.com
+open atang:0420@10.25.8.14
+# Force binary mode transfer
+option transfer binary
+# Upload the backup data to current working directory
+put c:\Temp\example.mrc
+# Disconnect
+close
+# Exit WinSCP
+exit
+*End Code, do not copy and paste this line.

@@ -1,0 +1,77 @@
+a:link { color: #336699; font-weight: bold; font-size: 14px; text-decoration: none; }
+a:active { color: #336699; font-weight: bold; font-size: 14px; text-decoration: none; }
+a:visited { color: #336699; font-weight: bold; font-size: 14px; text-decoration: none; }
+a:hover { color:#4A6593; font-weight: bold; font-size: 14px; text-decoration: underline; }
+
+body { font-family: Arial, Helvetica, sans-serif; font-size: 14px; margin: 0 0 0 0; background-color: #FFFFFF; }
+h1 { font-size: 16px; font-weight: bold; color: #666666; }
+h2 { font-size: 14px; font-weight: bold; color: #666666; }
+h3 { font-size: 14px; font-weight: bold; color: #666666; }
+ol li { line-height: 150%; }
+td { font-size: 14px; }
+
+#header { margin-bottom: 0; background-color: #4A6593; }
+#logo1 { padding: 13px 0 0 10px; margin: 0 0 0 0; font-size: 26px; color: #FFFFFF; }
+#logo2 { padding: 0 0 0 30px; margin: 0 0 0 0; font-size: 18px; color: #CBD3DE; }
+
+#topnav { padding-top: 0; padding-right: 2px; background:url(../images/topnav_grad.jpgg') repeat-x; height: 36px; }
+#topnav span { font-size: 14px; font-weight: bold; padding-left: 15px; padding-right: 15px; }
+#topnav a:link { color: #272727; }
+#topnav a:visited { color: #272727; }
+#topnav a:hover { color: #4A6593; }
+#search { text-align: right; }
+
+#menu { font-size: 14px; background-color: #CBCBCB; }
+#menu p { margin: 0 0 0 0; padding: 3px 0 2px 5px; list-style-type: none; background-color: #4A6593; color: #FFFFFF; font-weight: bold; }
+#menu ul { margin: 0 0 4px 0; padding: 0 0 0 0; list-style-type: none; background-color: #4A6593; color: #FFFFFF; font-weight: bold; }
+#menu li { padding-left: 15px; padding-top: 1px; padding-bottom: 0px; border-bottom: 1px solid #EEECE5; background-color: #CBCBCB; }
+#menu a:link { color: #272727; }
+#menu a:visited { color: #272727; }
+#menu a:hover { color: #4A6593; }
+
+#left_ad { padding-top: 10px; padding-bottom: 5px; font-size: 10px; font-weight: bold; color: #4A6593; text-align: center; background-color: #CBCBCB; }
+#bottom_ad { float: right; padding-bottom: 5px; padding-right: 5px; }
+
+#breadcrumb { padding-bottom: 15px; padding-top: 0px; }
+#breadcrumb span { font-size: 14px; font-weight: normal; }
+#breadcrumb span a { font-size: 14px; font-weight: normal; }
+#content { font-size: 14px; margin-left: 20px; margin-right: 20px; margin-top: 10px; margin-bottom: 20px; }
+#footer { font-size: 10px; text-align: center; background:url(../images/topnav_grad.jpgg') repeat-x; height: 30px; border-top: 1px solid #999999; border-bottom: 1px solid #999999; padding-top: 5px; }
+
+.th_left_top { font-size: 14px; background-color: #7391BE; text-align: left; vertical-align: top; color: #FFF; }
+.th_center_top { font-size: 14px; background-color: #7391BE; text-align: center; vertical-align: top; color: #FFF; }
+.tr_left_top { font-size: 14px; text-align: left; vertical-align: top; background-color: #F5F5F5; }
+.tr_center_top { font-size: 14px; text-align: center; vertical-align: top; background-color: #F5F5F5; }
+
+.syntax { font-weight: bold; font-size: 14px; color: #000000; border-style: solid; border-width: 1px; border-color: #CCC; background-color: #E2E3E3; margin-left: 50px; margin-right: 80px; padding-left: 20px; padding-right: 20px; min-width: 500px; }
+
+.code_example { font-weight: bold; font-size: 14px; color: #000000; border-style: solid; border-width: 1px; border-color: #CCC; background-color: #F9FBF2; margin-left: 50px; margin-right: 80px; padding-left: 20px; padding-right: 20px; min-width: 500px; }
+
+.function_table { border: 1px solid #999; }
+.function_example { font-weight: bold; font-size: 14px; color: #2E5348; }
+.function_desc { font-weight: normal; font-size: 14px; color: #000000; line-height: 120%; }
+
+.parameters_tbl { font-weight: normal; font-size: 14px; color: #000000; line-height: 120%; border: 1px solid #000000; }
+
+.code { font-weight: bold; font-size: 14px; color: #2E5348; }
+.definition { font-weight: bold; font-size: 14px; color: #2E5348; }
+.exam_answers { }
+.exam_question { font-weight: bold; }
+.instructions { font-weight: bold; font-size: 14px; color: #2E5348; }
+.joke { font-size: 14px; font-weight: bold; color: #2E5348; }
+.note { font-size: 14px; color: black; }
+.parm_values { font-weight: normal; font-size: 14px; color: #000000; line-height: 120%; }
+.small_note { font-size: 11px; }
+.smap_h1 { background-color: #FFFFCC; margin: 0 0 10px 10px; padding-top: 6px; padding-bottom: 6px; padding-left: 6px; border: 1px solid #999999; }
+.smap_h2 { background-color: #E7ECF2; margin: 0 0 10px 10px; padding-top: 6px; padding-bottom: 6px; padding-left: 6px; border: 1px solid #999999; }
+.sql_command { font-weight: bold; font-size: 14px; color: #2E5348; }
+.tutorial_next { padding-right: 40px; }
+.tutorial_prev { padding-right: 40px; }
+.url { font-size: 14px; }
+.example_heading { font-weight: bold; font-size: 14px; color: #008040; }
+.oracle_error_tbl { font-weight: normal; font-size: 14px; color: #000000; line-height: 120%; }
+.oracle_error_tr { font-size: 14px; text-align: left; vertical-align: top; }
+.oracle_error { font-weight: bold; font-size: 14px; color: #008040; margin-top: 0; }
+.practice_exercise { font-weight: bold; font-size: 14px; color: #990000; }
+
+.versions { font-style: italic; color: #630; margin-bottom: 25px; }

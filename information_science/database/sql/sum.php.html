@@ -1,0 +1,89 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="robots" content="noarchive">
+
+<meta name="description"
+content="The SUM function returns the summed value of an expression.">
+<meta name="keywords"
+content="tech on the net, sql, sum function">
+<meta name="title" content="SQL: SUM Function">
+<title>SQL: SUM Function</title>
+
+<link rel="stylesheet" type="text/css" href="stylesheets/screen.css"  media="screen" />
+<link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+</head>
+<body>
+<table id="header" width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    
+    
+  </tr>
+</table>
+
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+
+    <td align="left"><div id="content">
+	
+        
+        <h1>SQL: SUM Function</h1>
+        <hr>
+        <p>The SUM function returns the summed value of an expression.</p>
+        <p>The syntax for the SUM function is:</p>
+        <blockquote class="definition">
+          <p>SELECT SUM(<i>expression</i> )<br>
+            FROM tables<br>
+            WHERE predicates;</p>
+        </blockquote>
+        <p><i>expression</i> can be a numeric field or formula.</p>
+        <br>
+        <p class="example_heading">Simple Example</p>
+        <p>For example, you might wish to know how the combined total salary of all employees whose salary is above $25,000 / year.</p>
+        <blockquote class="sql_command">
+          <p>SELECT SUM(salary) as &quot;Total Salary&quot;<br>
+            FROM employees<br>
+            WHERE salary &gt; 25000;</p>
+        </blockquote>
+        <p>In this example, we've aliased the sum(salary) field as &quot;Total Salary&quot;. As a result, &quot;Total Salary&quot; will display as the field name when the result set is returned.</p>
+        <br>
+        <p class="example_heading">Example using DISTINCT</p>
+        <p>You can use the DISTINCT clause within the SUM function. For example, the SQL statement below returns the combined total salary of unique salary values where the salary is above $25,000 / year.</p>
+        <blockquote class="sql_command">
+          <p>SELECT SUM(DISTINCT salary) as &quot;Total Salary&quot;<br>
+            FROM employees<br>
+            WHERE salary &gt; 25000;</p>
+        </blockquote>
+        <p>If there were two salaries of $30,000/year, only one of these values would be used in the SUM function.</p>
+        <br>
+        <p class="example_heading">Example using a Formula</p>
+        <p>The <i>expression</i> contained within the SUM function does not need to be a single field. You could also use a formula. For example, you might want the net income for a business. Net Income is calculated as total income less total expenses.</p>
+        <blockquote class="sql_command">
+          <p>SELECT SUM(income - expenses) as &quot;Net Income&quot;<br>
+            FROM gl_transactions;</p>
+        </blockquote>
+        <br>
+        <p>You might also want to perform a mathematical operation within a SUM function. For example, you might determine total commission as 10% of total sales.</p>
+        <blockquote class="sql_command">
+          <p>SELECT SUM(sales * 0.10) as &quot;Commission&quot;<br>
+            FROM order_details;</p>
+        </blockquote>
+        <br>
+        <p class="example_heading">Example using GROUP BY</p>
+        <p>In some cases, you will be required to use a GROUP BY clause with the SUM function.</p>
+        <p>For example, you could also use the SUM function to return the name of the department and the total sales (in the associated department).</p>
+        <blockquote class="sql_command">
+          <p>SELECT department, SUM(sales) as &quot;Total sales&quot;<br>
+            FROM order_details<br>
+            GROUP BY department;</p>
+        </blockquote>
+        <p>Because you have listed one column in your SELECT statement that is not encapsulated in the SUM function, you must use a GROUP BY clause. The department field must, therefore, be listed in the GROUP BY section.</p>
+    </div>
+      
+</td>
+  </tr>
+</table>
+
+</body>
+</html>

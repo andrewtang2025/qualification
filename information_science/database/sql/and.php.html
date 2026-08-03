@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="robots" content="noarchive">
+
+<meta name="description"
+content="The AND condition allows you to create an SQL statement based on 2 or more conditions being met.">
+<meta name="keywords"
+content="tech on the net, sql, and condition, and conditions">
+<meta name="title" content="SQL: AND Condition">
+<title>SQL: AND Condition</title>
+
+<link rel="stylesheet" type="text/css" href="stylesheets/screen.css"  media="screen" />
+<link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+</head>
+<body>
+<table id="header" width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    
+    
+  </tr>
+</table>
+
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+
+    <td align="left"><div id="content">
+	
+        
+        <h1>SQL: &quot;AND&quot; Condition</h1>
+        <hr>
+        <p>The AND condition allows you to create an SQL statement based on 2 or more conditions being met. It can be used in any valid SQL statement - select, insert, update, or delete.</p>
+        <p>The syntax for the AND condition is:</p>
+        <blockquote class="definition">
+          <p>SELECT columns<br>
+            FROM tables<br>
+            WHERE column1 = 'value1'<br>
+            and column2 = 'value2';</p>
+        </blockquote>
+        <p>The AND condition requires that each condition be must be met for the record to be included in the result set. In this case, column1 has to equal 'value1' and column2 has to equal 'value2'.</p>
+        <br>
+        <p class="example_heading">Example #1</p>
+        <p>The first example that we'll take a look at involves a very simple example using the AND condition.</p>
+        <blockquote class="sql_command">
+          <p>SELECT *<br>
+            FROM suppliers<br>
+            WHERE city = 'New York'<br>
+            and type = 'PC Manufacturer';</p>
+        </blockquote>
+        <p>This would return all suppliers that reside in New York and are PC Manufacturers. Because the * is used in the select, all fields from the supplier table would appear in the result set.</p>
+        <br>
+        <p class="example_heading">Example #2</p>
+        <p>Our next example demonstrates how the AND condition can be used to &quot;join&quot; multiple tables in an SQL statement.</p>
+        <blockquote class="sql_command">
+          <p>SELECT orders.order_id, suppliers.supplier_name<br>
+            FROM suppliers, orders<br>
+            WHERE suppliers.supplier_id = orders.supplier_id<br>
+            and suppliers.supplier_name = 'IBM';</p>
+        </blockquote>
+        <p>This would return all rows where the supplier_name is IBM. And the <i>supplier</i>s and <i>orders</i> tables are joined on supplier_id. You will notice that all of the fields are prefixed with the table names (ie: orders.order_id). This is required to eliminate any ambiguity as to which field is being referenced; as the same field name can exist in both the suppliers and orders tables.</p>
+        <p>In this case, the result set would only display the order_id and supplier_name fields (as listed in the first part of the select statement.).</p>
+        <p>Learn more about <a href="joins.php.html">joins</a>.</p>
+    </div>
+      
+</td>
+  </tr>
+</table>
+
+</body>
+</html>

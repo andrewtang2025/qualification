@@ -1,0 +1,12 @@
+				<div id="navs">
+					<table class="ontop"  border="0">
+						   <tr>
+								<td   align="center" Title="Open Library Home Page in new Window!" onclick="window.open('http://kcfac.kilgore.edu/library/')"><span id="navbutton1">Library Home</span></td>
+								<td   align="center" Title="Search through Electronic Database!" onclick="window.open('http://kcfac.kilgore.edu/library/a-z.htm')"><span id="navbutton1">Database &amp; Indexes</span></td>
+								<!--<td   align="center" Title="Search Electronic Database!" onclick="window.open('http://library.kilgore.edu/database/index.cfm')"><span id="navbutton1">Search Database</span></td>-->
+								<td   align="center" Title="E-Journals Fulltext!" onclick="window.open('http://atoz.ebsco.com/titles.asp?Id=kilgore&amp;sid=96083428&amp;TabID=2')"><span id="navbutton1">E-Journals</span></td>
+								<td   align="center" Title="The Introduction on Randolph C. Watson Library!" onclick="window.open('http://kcfac.kilgore.edu/library/about.htm')"><span id="navbutton1">About The Library</span></td>
+						   </tr>
+					</table>
+							<br/>
+		        </div>

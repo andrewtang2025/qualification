@@ -1,0 +1,216 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><!-- InstanceBegin template="/Templates/techonthenet.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="robots" content="noarchive">
+<!-- InstanceBeginEditable name="Meta-title" -->
+<meta name="description"
+content="The MAX function returns the maximum value of an expression.">
+<meta name="keywords"
+content="tech on the net, sql, max function">
+<meta name="title" content="SQL: MAX Function">
+<title>SQL: MAX Function</title>
+<!-- InstanceEndEditable -->
+<link rel="stylesheet" type="text/css" href="../stylesheets/screen.css"  media="screen" />
+<link rel="stylesheet" type="text/css" href="../stylesheets/print.css" media="print" />
+<!-- InstanceParam name="OptionalBottomAd" type="boolean" value="true" -->
+</head>
+<body>
+<table id="header" width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="150" nowrap height="95" align="left" valign="top"><p id="logo1">TECH</p>
+      <p id="logo2">on the Net</p></td>
+    <td align="left"><script type="text/javascript"><!--
+e9 = new Object();
+e9.size = "728x90,468x60";
+e9.addBlockingCategories="Adult,Political,Flashing,Floating,Unicast,Warning,Religious,Alcohol,Dating,Suggestive,Audio,Full-page,Expandable,Pop-under,Gambling,Tobacco,Sweepstakes,Violence,Pop-up,Survey";
+//--></script>
+<script type="text/javascript" src="../../tags.expo9.exponential.com/tags/TechontheNet/ROS/tags.js"></script>
+</td>
+  </tr>
+</table>
+<table id="topnav" width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="middle">
+    <td width="575" nowrap><span><a href="http://www.techonthenet.com/index.php">Home</a></span><span><a href="http://www.techonthenet.com/privacy.php">Privacy Policy</a></span><span><a href="http://www.techonthenet.com/feedback.php">Feedback</a></span><span><a href="http://www.techonthenet.com/link_to_us.php">Link to us</a></span><span><a href="http://www.techonthenet.com/site_map.php">Site Map</a></span></td>
+    <td id="search" nowrap><form style="margin: 0px; padding: 1px;" action="http://www.techonthenet.com/searchresults.php" id="cse-search-box">
+        <div>
+          <input type="hidden" name="cx" value="partner-pub-9252326275773521:gafvcgat1r2" />
+          <input type="hidden" name="cof" value="FORID:9" />
+          <input type="hidden" name="ie" value="ISO-8859-1" />
+          <input type="text" name="q" size="31" />
+          <input type="submit" name="sa" value="Search" />
+        </div>
+      </form>
+      <script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script></td>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td id="menu" width="170"><p>Microsoft</p>
+      <ul>
+        <li><a href="http://www.techonthenet.com/access/index.php">Access</a></li>
+        <li><a href="http://www.techonthenet.com/excel/index.php">Excel</a></li>
+        <li><a href="http://www.techonthenet.com/word/index.php">Word</a></li>
+      </ul>
+      <p>Database</p>
+      <ul>
+        <li><a href="index.php.html">SQL</a></li>
+        <li><a href="http://www.techonthenet.com/oracle/index.php">Oracle / PLSQL</a></li>
+      </ul>
+      <p>UNIX</p>
+      <ul>
+        <li><a href="http://www.techonthenet.com/unix/index.php">General UNIX</a></li>
+        <li><a href="http://www.techonthenet.com/linux/index.php">Linux</a></li>
+      </ul>
+      <p>Other</p>
+      <ul>
+        <li><a href="http://www.techonthenet.com/ascii/chart.php">Ascii Table</a></li>
+        <li><a href="http://www.techonthenet.com/java/index.php">Java</a></li>
+        <li><a href="http://www.techonthenet.com/clipart/index.php">Clipart</a></li>
+      </ul>
+      <p>Top 10 Pages</p>
+      <ul>
+        <li><a href="http://www.techonthenet.com/top10/oracle.php">Oracle / PLSQL</a></li>
+        <li><a href="http://www.techonthenet.com/top10/sql.php">SQL</a></li>
+        <li><a href="http://www.techonthenet.com/top10/access.php">Access</a></li>
+        <li><a href="http://www.techonthenet.com/top10/excel.php">Excel</a></li>
+      </ul>
+      <div id="left_ad">ADVERTISEMENT<br>
+        <script type="text/javascript"><!--
+e9 = new Object();
+e9.size = "160x600";
+e9.addBlockingCategories="Adult,Political,Flashing,Floating,Unicast,Warning,Religious,Alcohol,Dating,Suggestive,Audio,Full-page,Expandable,Pop-under,Gambling,Tobacco,Sweepstakes,Violence,Pop-up,Survey";
+//--></script>
+<script type="text/javascript" src="../../tags.expo9.exponential.com/tags/TechontheNet/ROS/tags.js"></script>
+      </div></td>
+    <td align="left"><div id="content">
+	<!-- InstanceBeginEditable name="Content" -->
+        <div id="breadcrumb">
+          <span><a href="http://www.techonthenet.com/index.php">Home</a> &gt;</span>
+          <span><a href="index.php.html">SQL</a></span>
+        </div>
+        <h1>SQL: MAX Function</h1>
+        <hr>
+        <p>The MAX function returns the maximum value of an expression.</p>
+        <p>The syntax for the MAX function is:</p>
+        <blockquote class="definition">
+          <p>SELECT MAX(<i>expression</i> )<br>
+            FROM tables<br>
+            WHERE predicates;</p>
+        </blockquote>
+        <br>
+        <p class="example_heading">Simple Example</p>
+        <p>For example, you might wish to know the maximum salary of all employees.</p>
+        <blockquote class="sql_command">
+          <p>SELECT MAX(salary) as &quot;Highest salary&quot;<br>
+            FROM employees;</p>
+        </blockquote>
+        <p>In this example, we've aliased the max(salary) field as &quot;Highest salary&quot;. As a result, &quot;Highest salary&quot; will display as the field name when the result set is returned.</p>
+        <br>
+        <p class="example_heading">Example using GROUP BY</p>
+        <p>In some cases, you will be required to use a GROUP BY clause with the MAX function.</p>
+        <p>For example, you could also use the MAX function to return the name of each department and the maximum salary in the department.</p>
+        <blockquote class="sql_command">
+          <p>SELECT department, MAX(salary) as &quot;Highest salary&quot;<br>
+            FROM employees<br>
+            GROUP BY department;</p>
+        </blockquote>
+        <p>Because you have listed one column in your SELECT statement that is not encapsulated in the MAX function, you must use a GROUP BY clause. The department field must, therefore, be listed in the GROUP BY section.</p>
+        <br>
+        <h2>Frequently Asked Questions</h2>
+        <hr>
+        <p><b>Question</b>:&nbsp; I'm trying to pull some info out of a table. To simplify, let's say the table (report_history) has 4 columns:</p>
+        <blockquote>
+          <p>user_name, report_job_id, report_name, report_run_date.</p>
+        </blockquote>
+        <p>Each time a report is run in Oracle, a record is written to this table noting the above info. What I am trying to do is pull from this table when the last time each distinct report was run and who ran it last.</p>
+        <p>My initial query:</p>
+        <blockquote class="sql_command">
+          <p>SELECT report_name, max(report_run_date)<br>
+            FROM report_history<br>
+            GROUP BY report_name</p>
+        </blockquote>
+        <p>runs fine. However, it does not provide the name of the user who ran the report.</p>
+        <p>Adding user_name to both the select list and to the group by clause returns multiple lines for each report; the results show the last time each person ran each report in question. (i.e. User1 ran Report 1 on 01-JUL-03, User2 ran Report1 on 01-AUG-03). I don't want that....I just want to know who ran a particular report the last time it was run.</p>
+        <p>Any suggestions?</p>
+        <p><b>Answer</b>:&nbsp; This is where things get a bit complicated. The SQL statement below will return the results that you want:</p>
+        <blockquote class="sql_command">
+          <p>SELECT rh.user_name, rh.report_name, rh.report_run_date<br>
+            FROM report_history rh,<br>
+&nbsp;&nbsp; (SELECT max(report_run_date) as maxdate, report_name<br>
+&nbsp;&nbsp;&nbsp;&nbsp; FROM report_history<br>
+&nbsp;&nbsp;&nbsp;&nbsp; GROUP BY report_name) maxresults<br>
+            WHERE rh.report_name = maxresults.report_name<br>
+            AND rh.report_run_date= maxresults.maxdate;</p>
+        </blockquote>
+        <p>Let's take a few moments to explain what we've done.</p>
+        <p>First, we've aliased the first instance of the report_history table as rh.</p>
+        <p>Second, we've included two components in our FROM clause. The first is the table called report_history (aliased as rh). The second is a select statement:</p>
+        <blockquote class="sql_command">
+          <p>&nbsp;&nbsp;&nbsp; (SELECT max(report_run_date) as maxdate, report_name<br>
+&nbsp;&nbsp;&nbsp;&nbsp; FROM report_history<br>
+&nbsp;&nbsp;&nbsp;&nbsp; GROUP BY report_name) maxresults</p>
+        </blockquote>
+        <p>We've aliased the max(report_run_date) as <i>maxdate</i> and we've aliased the entire result set as <i>maxresults</i>.</p>
+        <p>Now, that we've created this select statement within our FROM clause, Oracle will let us join these results against our original report_history table. So we've joined the report_name and report_run_date fields between the tables called <i>rh</i> and <i>maxresults</i>. This allows us to retrieve the report_name, max(report_run_date) as well as the user_name.</p>
+        <hr>
+        <p><b>Question</b>:&nbsp; I need help in an SQL query. I have a table in Oracle called <i>orders</i> which has the following fields: order_no, customer, and amount.</p>
+        <p>I need a query that will return the customer who has ordered the highest total amount.</p>
+        <p><b>Answer</b>:&nbsp; The following SQL should return the customer with the highest total amount in the orders table.</p>
+        <blockquote class="sql_command">
+          <p>select query1.* from<br>
+&nbsp;&nbsp; (SELECT customer, Sum(orders.amount) AS total_amt<br>
+&nbsp;&nbsp; FROM orders<br>
+&nbsp;&nbsp; GROUP BY orders.customer) query1,</p>
+          <p>&nbsp;&nbsp; (select max(query2.total_amt) as highest_amt<br>
+&nbsp;&nbsp; from (SELECT customer, Sum(orders.amount) AS total_amt<br>
+&nbsp;&nbsp; FROM orders<br>
+&nbsp;&nbsp; GROUP BY orders.customer) query2) query3<br>
+            where query1.total_amt = query3.highest_amt;</p>
+        </blockquote>
+        <p>This SQL statement will summarize the total orders for each customer and then return the customer with the highest total orders. This syntax is optimized for Oracle and may not work for other database technologies.</p>
+        <hr>
+        <p><b>Question</b>:&nbsp; I'm trying to retrieve some info from an Oracle database. I've got a table named <i>Scoring</i> with two fields - Name and Score. What I want to get is the highest score from the table and the name of the player.</p>
+        <p><b>Answer</b>:&nbsp; The following SQL should work:</p>
+        <blockquote class="sql_command">
+          <p>SELECT Name, Score<br>
+            FROM Scoring<br>
+            WHERE Score = (select Max(Score) from Scoring);</p>
+        </blockquote>
+        <hr>
+        <p><b>Question</b>:&nbsp; I need help in an SQL query. I have a table in Oracle called <i>cust_order</i> which has the following fields: OrderNo, Customer_id, Order_Date, and Amount.</p>
+        <p>I would like to find the customer_id, who has Highest order count.</p>
+        <p>I tried with following query.</p>
+        <blockquote class="sql_command">SELECT MAX(COUNT(*)) FROM CUST_ORDER GROUP BY CUSTOMER_ID;</blockquote>
+        <p>This gives me the max Count, But, I can't get the CUSTOMER_ID. Can you help me please?</p>
+        <p><b>Answer</b>:&nbsp; The following SQL should return the customer with the highest order count in the cust_order table.</p>
+        <blockquote class="sql_command">
+          <p>select query1.* from<br>
+&nbsp;&nbsp; (SELECT Customer_id, Count(*) AS order_count<br>
+&nbsp;&nbsp; FROM cust_order<br>
+&nbsp;&nbsp; GROUP BY cust_order.Customer_id) query1,</p>
+          <p>&nbsp;&nbsp; (select max(query2.order_count) as highest_count<br>
+&nbsp;&nbsp; from (SELECT Customer_id, Count(*) AS order_count<br>
+&nbsp;&nbsp; FROM cust_order<br>
+&nbsp;&nbsp; GROUP BY cust_order.Customer_id) query2) query3<br>
+            where query1.order_count = query3.highest_count;</p>
+        </blockquote>
+        <p>This SQL statement will summarize the total orders for each customer and then return the customer with the highest order count. This syntax is optimized for Oracle and may not work for other database technologies.</p>
+      <!-- InstanceEndEditable -->
+    </div>
+      
+      <div id="bottom_ad">
+        <script type="text/javascript"><!--
+e9 = new Object();
+e9.size = "300x250";
+e9.addBlockingCategories="Adult,Political,Flashing,Floating,Unicast,Warning,Religious,Alcohol,Dating,Suggestive,Audio,Full-page,Expandable,Pop-under,Gambling,Tobacco,Sweepstakes,Violence,Pop-up,Survey";
+//--></script>
+<script type="text/javascript" src="../../tags.expo9.exponential.com/tags/TechontheNet/ROS/tags.js"></script>
+      </div>
+      </td>
+  </tr>
+</table>
+<div id="footer">Copyright &copy; 2003-2011 Tech on the Net. All rights reserved.<br>
+  We are not responsible for any loss or liability incurred by using this information.</div>
+</body>
+<!-- InstanceEnd --></html>

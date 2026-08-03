@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.berrypicking.net/qualification/project/xml_mysql/xml_schema" xmlns="http://www.berrypicking.net/qualification/project/xml_mysql/xml_schema" elementFormDefault="qualified">
+
+	<xs:element name="EmailMessage">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Message" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+					
+
+							<xs:all>
+									<xs:element name="messagedate" type="dateType" />
+									<xs:element name="From" type="EmailType" />
+									<xs:element name="to" type="EmailType" />
+								    <xs:element name="subject" type="subjectType" />
+								    <xs:element name="content" type="contentType" />
+									<xs:element name="cc" type="EmailType" minOccurs="0"/>
+									<xs:element name="priority" type="priorityType" minOccurs="0"  />
+									<xs:element name="mailedby" type="mailedbyType" minOccurs="0" />
+
+
+								
+							</xs:all>
+					
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+
+
+
+
+	<xs:simpleType name="dateType">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="((Date:)|(date))\s(Mon|Tue|Wed|Thu|Fri|Sat|Sun),\s([0-2][0-9]|30|31)\s(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s([0-9][0-9][0-9][0-9])\s([0-1][0-9]|20|21|22|23|24):([0-5][0-9]):([0-5][0-9])\s((\-(0[1-9]00|[1][1-2]00|0330|0430))|(\+(0[1-9]00|[1][1-2]00|0330|0430|0530|0545|0630|0930)))" />
+			<xs:pattern value="((Date:)|(date))\s(Mon|Tue|Wed|Thu|Fri|Sat|Sun),\s(January|Febuary|March|April|May|June|July|August|September|October|November|December)\s([1-2][0-9]|[1-9]|30|31),\s([0-9][0-9][0-9][0-9])\s([1-9]|10|11|12):([0-5][0-9])\s(am|pm)" />
+			<xs:pattern value="((Date:)|(date))\s(Mon|Tue|Wed|Thu|Fri|Sat|Sun),\s(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s([1-2][0-9]|[1-9]|30|31),\s([0-9][0-9][0-9][0-9])\s(at)\s([1-9]|10|11|12):([0-5][0-9])\s(AM|PM)" />
+		</xs:restriction>
+	</xs:simpleType>
+
+
+	<xs:simpleType name="EmailType">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="((From:)|(from)|(To:)|(to)|(Cc:))\s[A-Za-z0-9_]+([-+.'][A-Za-z0-9_]+)*\s[A-Za-z0-9_]+([-+.'][A-Za-z0-9_]+)*\s&lt;[A-Za-z0-9_]+([-+.'][A-Za-z0-9_]+)*@[A-Za-z0-9_]+([-.][A-Za-z0-9_]+)*\.[A-Za-z0-9_]+([-.][A-Za-z0-9_]+)*&gt;" />
+			<!-- have the first name and space and last name and email address-->
+			<xs:pattern value="((From:)|(from)|(To:)|(to)|(Cc:))\s[A-Za-z0-9_]+([-+.'][A-Za-z0-9_]+)*\s&lt;[A-Za-z0-9_]+([-+.'][A-Za-z0-9_]+)*@[A-Za-z0-9_]+([-.][A-Za-z0-9_]+)*\.[A-Za-z0-9_]+([-.][A-Za-z0-9_]+)*&gt;" />
+			<!-- have only the first name or last name and email address-->
+			<xs:pattern value="((From:)|(from)|(To:)|(to)|(Cc:))\s&quot;[A-Za-z0-9_]+([-+.'][A-Za-z0-9_]+)*\s[A-Za-z0-9_]+([-+.'][A-Za-z0-9_]+)*&quot;\s&lt;[A-Za-z0-9_]+([-+.'][A-Za-z0-9_]+)*@[A-Za-z0-9_]+([-.][A-Za-z0-9_]+)*\.[A-Za-z0-9_]+([-.][A-Za-z0-9_]+)*&gt;" />
+			<!-- have the first name and space and last name quoated, and email address-->
+			<xs:pattern value="((From:)|(from)|(To:)|(to)|(Cc:))\s&quot;[A-Za-z0-9_]+([-+.'][A-Za-z0-9_]+)*&quot;\s&lt;[A-Za-z0-9_]+([-+.'][A-Za-z0-9_]+)*@[A-Za-z0-9_]+([-.][A-Za-z0-9_]+)*\.[A-Za-z0-9_]+([-.][A-Za-z0-9_]+)*&gt;" />
+			<!-- have only the first name or last name quoated and email address-->
+			<xs:pattern value="((From:)|(from)|(To:)|(to)|(Cc:))\s&quot;[A-Za-z0-9_]+([-+.'][A-Za-z0-9_]+)*\s[A-Za-z0-9_]+([-+.'][A-Za-z0-9_]+)*&quot;\s[A-Za-z0-9_]+([-+.'][A-Za-z0-9_]+)*@[A-Za-z0-9_]+([-.][A-Za-z0-9_]+)*\.[A-Za-z0-9_]+([-.][A-Za-z0-9_]+)*,\s&quot;[A-Za-z0-9_]+([-+.'][A-Za-z0-9_]+)*\s[A-Za-z0-9_]+([-+.'][A-Za-z0-9_]+)*&quot;\s&lt;[A-Za-z0-9_]+([-+.'][A-Za-z0-9_]+)*@[A-Za-z0-9_]+([-.][A-Za-z0-9_]+)*\.[A-Za-z0-9_]+([-.][A-Za-z0-9_]+)*&gt;" />
+		</xs:restriction>
+	</xs:simpleType>
+
+
+	<xs:simpleType name="subjectType">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="(Subject:\s.*)|(subject\s.*)" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="mailedbyType">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="mailed\-by\s[A-Za-z0-9_]+([-+.'][A-Za-z0-9_]+)*" />
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="priorityType">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="Priority:\s.*" />
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="contentType">
+		<xs:restriction base="xs:string">
+		</xs:restriction>
+	</xs:simpleType>
+	
+	
+</xs:schema>

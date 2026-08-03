@@ -1,0 +1,1617 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<style type="text/css">
+<!--
+#apDiv2 {
+	position:absolute;
+	left:210px;
+	top:180px;
+	width:703px;
+	height:560px;
+	z-index:9;
+}
+-->
+</style>
+<head>
+	<link rel="stylesheet" href="index-en_files/styl-2004-11-10.css" type="text/css">
+
+<script type="text/javascript" src="index-en_files/colorblind.js"></script>
+<script type="text/javascript">
+<!--
+
+function objGet(x) {
+	if (typeof x != 'string') return x;
+	else if (Boolean(document.getElementById)) return document.getElementById(x);
+	else if (Boolean(document.all)) return eval('document.all.'+x);
+	else return null;
+	}
+
+function objSetStyle (obj,prop,val) {
+	var o = objGet(obj);
+	if (o && o.style) {
+		eval ('o.style.'+prop+'="'+val+'"');
+		return true;
+		}
+	else return false;
+	}
+
+function objDisplay (obj,on,type) {
+	if (on && !type) type = 'block';
+	return objSetStyle(obj,'display',(on) ? type:'none');
+	}
+
+function getFormValue(name) { return objGet(name).value; }
+function setFormValue(name,val) { objGet(name).value = val; }
+
+function dec2hex(n) {
+	var s = n.toString(16);
+	if (s.length<2) s = '0'+s;
+	return s.toUpperCase();
+	}
+function hex2dec(n) {
+	return parseInt(n,16);
+	}
+
+function col2Gray(r,g,b) {
+	var lum = Math.round( r*0.299 + g*0.587 + b*0.114 );
+	return dec2hex(lum)+dec2hex(lum)+dec2hex(lum);
+	}
+
+
+// Color object
+
+var varPresets = new Array();
+
+varPresets['default'] = new Array( -1,-1, 1,-0.7, 0.25,1, 0.5,1 );
+varPresets['pastel'] = new Array( 0.5,-0.9, 0.5,0.5, 0.1,0.9, 0.75,0.75 );
+varPresets['soft'] = new Array( 0.3,-0.8, 0.3,0.5, 0.1,0.9, 0.5,0.75 );
+varPresets['hard'] = new Array( 1,-1, 1,-0.6, 0.1,1, 0.6,1 );
+varPresets['light'] = new Array( 0.25,1, 0.5,0.75, 0.1,1, 0.5,1 );
+varPresets['pale'] = new Array( 0.1,-0.85, 0.1,0.5, 0.1,1, 0.1,0.75 );
+varPresets['work'] = new Array();
+
+function Color(H) {
+	this.S = new Array();
+	this.V = new Array();
+	this.setBaseColor(H);
+	}
+
+Color.prototype.setBaseColor = function (H) {
+	this.moveHue(H);
+	}
+
+Color.prototype.moveHue = function (H) {
+
+	function avrg(a,b,k) { return a + Math.round((b-a)*k);	}
+
+	this.H = H;
+	var hue = Math.round(this.H) % 360;
+	var d = hue%15 + (this.H-Math.floor(this.H));
+	var k = d/15;
+	var d1 = hue - Math.floor(d);
+	var c1 = colWheel[d1];
+	d1 = (d1+15)%360;
+	var c2 = colWheel[d1];
+	this.baseR = avrg(c1[0],c2[0],k);
+	this.baseG = avrg(c1[1],c2[1],k);
+	this.baseB = avrg(c1[2],c2[2],k);
+	this.baseS = avrg(c1[4],c2[4],k)/100;
+	this.baseV = avrg(c1[5],c2[5],k)/100;
+	}
+
+Color.prototype.setVariant = function (varNr, S, V) {
+	this.S[varNr] = S;
+	this.V[varNr] = V;
+	}
+Color.prototype.getS = function (varNr) {
+	var S = (this.S[varNr]<0) ? -this.S[varNr] * this.baseS : this.S[varNr];
+	if (S>1) S = 1; if (S<0) S = 0;
+	return S;
+	}
+Color.prototype.getV = function (varNr) {
+	var V = (this.V[varNr]<0) ? -this.V[varNr] * this.baseV : this.V[varNr];
+	if (V>1) V = 1; if (V<0) V = 0;
+	return V;
+	}
+Color.prototype.setVariantPreset = function (preset) {
+	var i,p = varPresets[preset];
+	if (!p) p = varPresets['default'];
+	for (i=0;i<4;i++) this.setVariant(i,p[2*i],p[2*i+1]);
+	}
+
+Color.prototype.getHex = function(webColors,CBMode,varNr) {
+	var r,g,b;
+	var max = Math.max(Math.max(this.baseR,this.baseG),this.baseB);
+	var min = Math.min(Math.min(this.baseR,this.baseG),this.baseB);
+	var V = (varNr<0) ? this.baseV : this.getV(varNr);
+	var S = (varNr<0) ? this.baseS : this.getS(varNr);
+	var v = V*255;
+	var k = (max>0) ? v/max : 0;
+	r = Math.round(v-(v-this.baseR*k)*S); if (r>255) r = 255;
+	g = Math.round(v-(v-this.baseG*k)*S); if (g>255) g = 255;
+	b = Math.round(v-(v-this.baseB*k)*S); if (b>255) b = 255;
+	if (webColors) {
+		r = Math.round(r/51) * 51;
+		g = Math.round(g/51) * 51;
+		b = Math.round(b/51) * 51;
+		}
+	if (CBMode) {
+		if (CBMode==7) return col2Gray(r,g,b);
+		else return getColorBlindColor(r,g,b,CBMode);
+		}
+	else return dec2hex(r)+dec2hex(g)+dec2hex(b);
+	}
+
+Color.prototype.rotate = function (angle) {
+	var nh = (this.H + angle) % 360;
+	this.setBaseColor(nh);
+	}
+
+
+// Variables
+
+var colWheel = new Array(12);
+	colWheel['0']   = new Array(255,0,0,	0, 100, 100);
+	colWheel['15']  = new Array(255,51,0,	15, 100, 100);
+	colWheel['30']  = new Array(255,102,0,	30, 100, 100);
+	colWheel['45']  = new Array(255,128,0,	45, 100, 100);
+	colWheel['60']  = new Array(255,153,0,	60, 100, 100);
+	colWheel['75']  = new Array(255,178,0,	75, 100, 100);
+	colWheel['90']  = new Array(255,204,0,	90, 100, 100);
+	colWheel['105'] = new Array(255,229,0,	105, 100, 100);
+	colWheel['120'] = new Array(255,255,0,	120, 100, 100);
+	colWheel['135'] = new Array(204,255,0,	135, 100, 100);
+	colWheel['150'] = new Array(153,255,0,	150, 100, 100);
+	colWheel['165'] = new Array(51,255,0,	165, 100, 100);
+	colWheel['180'] = new Array(0,204,0,	180, 100, 80);
+	colWheel['195'] = new Array(0,178,102,	195, 100, 70);
+	colWheel['210'] = new Array(0,153,153,	210, 100, 60);
+	colWheel['225'] = new Array(0,102,178,	225, 100, 70);
+	colWheel['240'] = new Array(0,51,204,	240, 100, 80);
+	colWheel['255'] = new Array(25,25,178,	255, 100, 70);
+	colWheel['270'] = new Array(51,0,153,	270, 100, 60);
+	colWheel['285'] = new Array(64,0,153,	285, 100, 60);
+	colWheel['300'] = new Array(102,0,153,	300, 100, 60);
+	colWheel['315'] = new Array(153,0,153,	315, 100, 60);
+	colWheel['330'] = new Array(204,0,153,	330, 100, 80);
+	colWheel['345'] = new Array(229,0,102,	345, 100, 90);
+
+
+var usedColors = 1;
+var schemeNames = new Array('mono','compl','triad','tetrad','analog');
+var usedScheme = 'mono';
+var sliderVal = 0.5;
+var col = new Array(4);
+for (var i=0;i<4;i++) col[i] = new Color(60);
+var bussy = false;
+var webSnap = false;
+var colorblindMode = '';
+var usedPreset = 'default';
+
+var RGBinput = '';
+
+// Setting colors
+
+function setMainColor(H, moveonly) {
+	col[0].setBaseColor(H);
+	createScheme(!moveonly);
+	}
+
+function setVar(colNr,varNr,S,V) {
+	var o;
+	if (col[colNr].S[varNr]!=S || col[colNr].V[varNr]!=V) {
+		col[colNr].setVariant(varNr,S,V);
+		if (usedPreset) {
+			o = objGet('preset-'+usedPreset);
+			if (o) o.className = 'btn';
+			usedPreset = '';
+			}
+		}
+	drawSample();
+	}
+
+
+function createScheme(setDefaults) {
+	H = col[0].H;
+	if (usedScheme=='mono') {
+		usedColors=1;
+		}
+	else if (usedScheme=='compl') {
+		usedColors=2;
+		col[1].setBaseColor(H); col[1].rotate(180);
+		}
+	else if (usedScheme=='triad') {
+		usedColors=3;
+		var dif = 60 * sliderVal;
+		col[1].setBaseColor(H); col[1].rotate(180-dif);
+		col[2].setBaseColor(H); col[2].rotate(180+dif);
+		}
+	else if (usedScheme=='tetrad') {
+		usedColors=4;
+		var dif = 90 * sliderVal;
+		col[1].setBaseColor(H); col[1].rotate(180);
+		col[2].setBaseColor(H); col[2].rotate(180+dif);
+		col[3].setBaseColor(H); col[3].rotate(dif);
+		}
+	else if (usedScheme=='analog') {
+		usedColors=3;
+		var dif = 60 * sliderVal;
+		var compl = objGet('analogCompl').checked;
+		col[1].setBaseColor(H); col[1].rotate(dif);
+		col[2].setBaseColor(H); col[2].rotate(360-dif);
+		col[3].setBaseColor(H); col[3].rotate(180);
+		usedColors = (compl) ? 4 : 3;
+		}
+	if (setDefaults) {
+		for (var i=0; i<4; i++) col[i].setVariantPreset('default');
+		}
+	drawSample();
+	}
+
+
+// Drawings
+
+function drawSample() {
+	var i,j,c,used;
+	var buff = '';
+
+	for (i=0;i<4;i++) {
+		used = (i<usedColors);
+		if (used) {
+			c = '#' + col[i].getHex(webSnap,colorblindMode,0);
+			objSetStyle('color'+i,'background', c);
+			c = '#' + col[i].getHex(webSnap,0,0);
+			buff += '<img class="coltbl-image" src="index-en_files/uarr.gif" alt="" onclick="shiftVar('+i+')">';
+			buff += '<p class="coltbl-item" style="border-color:' + c + ';">' + c + '<'+'/p>';
+			drawRing(i,1,col[i].H);
+			}
+		else {
+			drawRing(i,0,col[i].H);
+			}
+		for (j=0;j<4;j++) {
+			objDisplay('color'+i+'-'+j,used);
+			objGet('color'+i+'-'+j).className = 'col-'+j;
+			if (used) {
+				c = '#' + col[i].getHex(webSnap,colorblindMode,j);
+				objSetStyle('color'+i+'-'+j,'background',c);
+				if (j>0) {
+					c = '#' + col[i].getHex(webSnap,0,j);
+					buff += '<p class="coltbl-itemvar" style="border-color:' + c + ';">' + c + '<'+'/p>';
+					}
+				}
+			}
+		}
+	if (usedColors==1) {
+		for (j=1;j<4;j++) {
+			objSetStyle('color'+j,'background','#' + col[0].getHex(webSnap,colorblindMode,j));
+			objGet('color0-'+j).className = 'col-'+j+' col-on';
+			}
+		}
+	else if (usedColors==2) {
+		objSetStyle('color2','background','#' + col[1].getHex(webSnap,colorblindMode,1));
+		objSetStyle('color3','background','#' + col[0].getHex(webSnap,colorblindMode,1));
+		objGet('color0-1').className = 'col-1 col-on';
+		objGet('color1-1').className = 'col-1 col-on';
+		}
+	else if (usedColors==3) {
+		objSetStyle('color3','background','#' + col[0].getHex(webSnap,colorblindMode,1));
+		objGet('color0-1').className = 'col-1 col-on';
+		}
+
+	objSetStyle('colsample','background','#' + col[0].getHex(webSnap,colorblindMode,0));
+	objSetStyle('maincolorsample', 'background', '#'+col[0].getHex(0,0,-1));
+	objGet('maincolorhue').innerHTML = col[0].H + '°';
+	objDisplay('colsamplevars',false);
+	objDisplay('colsamplevarsswitch',false);
+	objDisplay('cbmodeswitch',true);
+	objDisplay('websnapswitch',true);
+	objDisplay('colsample',true);
+	objDisplay('coltable',false);
+	objGet('coltable').innerHTML = buff;
+	objDisplay('coltable',true);
+	
+	var data = usedScheme + ';' + Math.round(sliderVal*100) + ';';
+	data += (objGet('analogCompl').checked) ? '1;' : '0;';
+	data += col[0].H + ';';
+	for (i=0;i<4;i++) {
+		for (j=0;j<4;j++) {
+			data += col[i].S[j] + ';' + col[i].V[j] + ';';
+			}
+		}
+	data += (webSnap) ? '1' : '0';
+	objGet('url').href = 'index-en.html?' + data;
+	}
+
+
+function drawVar(colNr,varNr) {
+	var o, ccode;
+	var S = Math.round(col[colNr].getS(varNr)*20)/20;
+	var V = Math.round(col[colNr].getV(varNr)*20)/20;
+	var c = new Color(col[colNr].H);
+	var buff = '';
+	for (var i=20; i>=0; i--) {
+		c.S[0] = i/20;
+		for (var j=20; j>=0; j--) {
+			c.V[0] = j/20;
+			ccode = c.getHex(webSnap,0,0);
+			buff += '<div id="vbx-'+i+'-'+j+'" onclick="setVar('+colNr+','+varNr+','+c.S[0]+','+c.V[0]+')" ';
+			buff += 'title="S='+Math.round(c.S[0]*100)+' %, V='+Math.round(c.V[0]*100)+' % --- #' + ccode + '" ';
+			buff += 'class="colvar" style="top:'+((20-i)*14)+'px; left:'+((20-j)*14)+'px; ';
+			if (c.S[0]==S && c.V[0]==V) buff += 'background: red url(\'ring-w.gif\') center no-repeat; ';
+			buff += 'background-color:#'+ccode;
+			buff += '"><'+'/div>';
+			}
+		}
+
+	objGet('colsamplevars').innerHTML = buff;
+	
+	objDisplay('cbmodeswitch',false);
+	objDisplay('websnapswitch',false);
+	objDisplay('colsample',false);
+	objDisplay('colsamplevars',true);
+	objDisplay('colsamplevarsswitch',true);
+	}
+
+function drawRing(n,on,angle) {
+	var x,y,o = objGet('pointer'+n);
+	var r = (angle-90)/360 * 2*Math.PI;
+	if (on) {
+		x = Math.round( 115 + 45*Math.cos(r) ) - 3;
+		y = Math.round( 115 + 45*Math.sin(r) ) - 2;
+		objSetStyle(o,'left',x+'px');
+		objSetStyle(o,'top',y+'px');
+		}
+	objDisplay(o,on);
+	}
+
+
+// Action handling
+//dX and dY variable is very important, it determine the control point work or not , by andy 05-24-2011
+//var dX = 20, dY = 20;
+var dX = 230, dY = 200;
+var eX,eY;
+function getEvent(e) {
+	if (!e) e = window.event;
+	eX = (e.x) ? e.x : e.clientX;
+	eY = (e.y) ? e.y : e.clientY;
+	}
+function moveHue(e) {
+	var a,x,y,h;
+	getEvent(e);
+	x = eX - dX - 115;
+	y = eY - dY - 115;
+	h = Math.round(((Math.atan2(-x,y) * 180/Math.PI) + 180) % 360);
+	r = Math.sqrt(x*x + y*y);
+	if (r>50) {
+		h = (Math.floor((h-7.5)/15 + 1) * 15) % 360;
+		setMainColor(h,false);
+		switchPreset('default');
+		}
+	else {
+		setMainColor(h,true);
+		}
+	
+	}
+function showHueInfo(e) {
+	var a,x,y,h;
+	getEvent(e);
+	x = eX - dX - 115;
+	y = eY - dY - 115;
+	h = Math.round(((Math.atan2(-x,y) * 180/Math.PI) + 180) % 360);
+	r = Math.sqrt(x*x + y*y);
+	if (r>50) h = (Math.floor((h-7.5)/15 + 1) * 15) % 360;
+	window.status = 'Hue: '+ h + '°';
+	}
+function showSliderInfo(e) {
+	var min = 48;
+	var max = 188;
+	getEvent(e);
+	var x = eX - dX;
+	x = (x-min)/(max-min);
+	if (x<0) x = 0; if (x>1) x = 1;
+	window.status = 'Value: '+ Math.round(x*100) + ' %';
+	}
+function moveSlider(e) {
+	var min = 48;
+	var max = 188;
+	getEvent(e);
+	var x = eX - dX;
+	x = (x-min)/(max-min);
+	if (x<0) x = 0; if (x>1) x = 1;
+	objSetStyle('pointer-slider','left', Math.round(min+(max-min)*x)-3 + 'px' )
+	sliderVal = x;
+	createScheme(false);
+	}
+function setSlider(x) {
+	var min = 48;
+	var max = 188;
+	if (x<0) x = 0; if (x>1) x = 1;
+	objSetStyle('pointer-slider','left', Math.round(min+(max-min)*x)-3 + 'px' )
+	sliderVal = x;
+	}
+
+function shiftVar(n) {
+	var S = col[n].S[0];
+	var V = col[n].V[0];
+	for (var i=0;i<3;i++) {
+		col[n].S[i] = col[n].S[i+1];
+		col[n].V[i] = col[n].V[i+1];
+		}
+	col[n].S[3] = S;
+	col[n].V[3] = V;
+	drawSample();
+	}
+
+function selectScheme(name) {
+	usedScheme = name;
+	for (var i=0; i<5; i++) {
+		objGet('previmg-'+schemeNames[i]).src = 'prev_' + schemeNames[i] + ((name==schemeNames[i])?'-on':'') + '.gif';
+		}
+	objDisplay('scheme-slider', (name=='triad' || name=='tetrad' || name=='analog') );
+	objDisplay('scheme-addcompl', (name=='analog') );
+	createScheme(false);
+	}
+
+function switchPreset(preset) {
+	var o;
+	if (usedPreset) {
+		o = objGet('preset-'+usedPreset);
+		if (o) o.className = 'btn';
+		}
+	usedPreset = preset;
+	o = objGet('preset-'+usedPreset);
+	if (o) o.className = 'btnon';
+	for (var i=0;i<4;i++) col[i].setVariantPreset(preset);
+	drawSample();
+	}
+
+function switchWebSnap(on) {
+	webSnap = on;
+	drawSample();
+	}
+
+function switchBlindlessMode() {
+	colorblindMode = getFormValue('cbmodeswitcher');
+	drawSample();
+	}
+
+function searchRGB() {
+	var hex = prompt('Six-digit hexadecial code of wanted color (without #) - i. e. FF99CC',RGBinput);
+	if (!hex) return;
+	RGBinput = hex;
+	if (!hex.match(/^[0-9a-fA-F]{6}$/)) {
+		alert('Wrong number format');
+		return;
+		}
+	
+	function RGB2HSV(r,g,b) {
+		// rgb = [0,1];
+		var d, min, max, H, S, V;
+		min = Math.min(r,Math.min(g,b));
+		max = Math.max(r,Math.max(g,b));
+		d = max-min;
+		V = max;
+		if (d>0) S = d/max;
+		else return [0,0,V];
+		// grey
+		if (r==max) H = (g-b)/d;
+		else if (g==max) H = 2 + (b-r)/d;
+		else H = 4 + (r-g)/d;
+		H *= 60;
+		if (H<0) H += 360;
+		return [H,S,V];
+		}
+
+	var i, c, r, g, b, hsv, hsv1, H0, H1, H2, i1, i2, H, S, V;
+	r = hex2dec(hex.substr(0,2));
+	g = hex2dec(hex.substr(2,2));
+	b = hex2dec(hex.substr(4,2));
+	hsv = RGB2HSV(r/255,g/255,b/255);
+	H0 = hsv[0];
+	H1 = 0; H2 = 1000;
+	for (i=0; i<360; i+=15) {
+		c = colWheel[i];
+		hsv1 = RGB2HSV(c[0]/255,c[1]/255,c[2]/255);
+		H = hsv1[0];
+		if (H>=H1 && H<=H0) { H1 = H; i1 = i }
+		if (H<=H2 && H>=H0) { H2 = H; i2 = i }
+		}
+	if (H2==0 || H2>360) { H2 = 360; i2 = 360 }
+	
+	k = (H2!=H1) ? (H0-H1)/(H2-H1) : 0;
+	H = Math.round(i1 + k*(i2-i1));
+	if (H>=360) H -= 360; if (H<0) H += 360;
+	S = hsv[1];
+	V = hsv[2];
+	varPresets['work'] = [S,V, S,V*0.7, S*0.25,1, S*0.5,1];
+	setMainColor(H,true);
+	switchPreset('work');
+	}
+
+// drag & drop by dgx  (thanks by pixy)
+
+var dragging = false;
+
+function beginDragSlider(e) {
+	dragging = true;
+	dragSlider(e);
+	}
+
+function dragSlider(e) {
+	showSliderInfo(e);
+	if (dragging) moveSlider(e);
+	}
+
+function beginDragWheel(e) {
+	dragging = true;
+	dragWheel(e);
+	}
+
+function dragWheel(e) {
+	showHueInfo(e);
+	if (dragging) moveHue(e);
+	}
+
+function endDrag() { dragging = false }
+
+
+// INIT
+
+window.onload = Init;
+function Init() {
+/*
+	objGet('wheelarea').onclick = moveHue;
+	objGet('wheelarea').onmousemove = showHueInfo;
+	objGet('scheme-slider').onclick = moveSlider;
+	objGet('scheme-slider').onmousemove = showSliderInfo;
+*/
+	objGet('wheelarea').onmousedown = beginDragWheel;
+	objGet('wheelarea').onmousemove = dragWheel;
+	objGet('wheelarea').onmouseup = endDrag;
+	objGet('pointer0').onmouseup = endDrag;
+	objGet('scheme-slider').onmousedown = beginDragSlider;
+	objGet('scheme-slider').onmousemove = dragSlider;
+	objGet('scheme-slider').onmouseup = endDrag;
+
+
+	var i,j,sstr = document.location.search;
+	if (sstr!='') {
+		sstr = sstr.substr(1);
+		var data = sstr.split(';');
+		if (data.length!=37) {
+			alert('Wrong parameters');
+			setMainColor(60);
+			selectScheme('mono');
+			}
+		else {
+			setSlider(parseInt(data[1])/100);
+			objGet('analogCompl').checked = (data[2]!=0);
+			col[0].setBaseColor(parseInt(data[3]));
+			selectScheme(data[0]);
+			var n = 4;
+			for (i=0; i<4; i++) {
+				for (j=0; j<4; j++) {
+					col[i].S[j] = parseFloat(data[n]);
+					n++;
+					col[i].V[j] = parseFloat(data[n]);
+					n++;
+					}
+				}
+			objGet('websnapper').checked = (data[36]!=0);
+			drawSample();
+			}
+		}
+	else {
+		setMainColor(60);
+		selectScheme('mono');
+		switchPreset('default');
+		}
+	return true;
+	}
+
+//-->
+</script>
+
+<style type="text/css">
+<!--
+#apDiv1 {
+	position:absolute;
+	left:0;
+	top:0;
+	width:752px;
+	height:420px;
+	z-index:11;
+}
+-->
+</style>
+
+
+
+<style type="text/css">
+	html {
+		overflow: hidden;
+	}
+	body {
+		position: absolute;
+		margin: 0px;
+		padding: 0px;
+		background: #111;
+		width: 100%;
+		height: 100%;
+	}
+	#screen {
+	position: absolute;
+	left: 229px;
+	top: 170px;
+	width: 724px;
+	height: 444px;
+	background: #000;
+	z-index: 110;
+	}
+	#screen img {
+		position: absolute;
+		cursor: pointer;
+		visibility: hidden;
+		width: 0px;
+		height: 0px;
+	}
+	#screen .tvover {
+		border: solid #876;
+		opacity: 1;
+		filter: alpha(opacity=100);
+	}
+	#screen .tvout {
+		border: solid #fff;
+		opacity: 0.7;
+	}
+	#bankImages {
+		display: none;
+	}
+</style>
+<script type="text/javascript">
+var Library = {};
+Library.ease = function () {
+	this.target = 0;
+	this.position = 0;
+	this.move = function (target, speed)
+	{
+		this.position += (target - this.position) * speed;
+	}
+}
+
+var tv = {
+	/* ==== variables ==== */
+	O : [],
+	screen : {},
+	grid : {
+		size       : 6,  // 4x4 grid
+		borderSize : 6,  // borders size
+		zoomed     : false
+	},
+	angle : {
+		x : new Library.ease(),
+		y : new Library.ease()
+	},
+	camera : {
+		x    : new Library.ease(),
+		y    : new Library.ease(),
+		zoom : new Library.ease(),
+		focalLength : 750 // camera Focal Length
+	},
+
+	/* ==== init script ==== */
+	init : function ()
+	{
+		this.screen.obj = document.getElementById('screen');
+		var img = document.getElementById('bankImages').getElementsByTagName('img');
+		this.screen.obj.onselectstart = function () { return false; }
+		this.screen.obj.ondrag        = function () { return false; }
+		/* ==== create images grid ==== */
+		var ni = 0;
+		var n = (tv.grid.size / 2) - .5;
+		for (var y = -n; y <= n; y++)
+		{
+			for (var x = -n; x <= n; x++)
+			{
+				/* ==== create HTML image element ==== */
+				var o = document.createElement('img');
+				var i = img[(ni++) % img.length];
+				o.className = 'tvout';
+				o.src = i.src;
+				tv.screen.obj.appendChild(o);
+				/* ==== 3D coordinates ==== */
+				o.point3D = {
+					x  : x,
+					y  : y,
+					z  : new Library.ease()
+				};
+				/* ==== push object ==== */
+				o.point2D = {};
+				o.ratioImage = 1;
+				tv.O.push(o);
+				/* ==== on mouse over event ==== */
+				o.onmouseover = function ()
+				{
+					if (!tv.grid.zoomed)
+					{
+						if (tv.o)
+						{
+							/* ==== mouse out ==== */
+							tv.o.point3D.z.target = 0;
+							tv.o.className = 'tvout';
+						}
+						/* ==== mouse over ==== */
+						this.className = 'tvover';
+						this.point3D.z.target = -.5;
+						tv.o = this;
+					}
+				}
+				/* ==== on click event ==== */
+				o.onclick = function ()
+				{
+					if (!tv.grid.zoomed)
+					{
+						/* ==== zoom in ==== */
+						tv.camera.x.target = this.point3D.x;
+						tv.camera.y.target = this.point3D.y;
+						tv.camera.zoom.target = tv.screen.w * 1.25;
+						tv.grid.zoomed = this;
+					} else {
+						if (this == tv.grid.zoomed){
+							/* ==== zoom out ==== */
+							tv.camera.x.target = 0;
+							tv.camera.y.target = 0;
+							tv.camera.zoom.target = tv.screen.w / (tv.grid.size + .1);
+							tv.grid.zoomed = false;
+						}
+					}
+				}
+				/* ==== 3D transform function ==== */
+				o.calc = function ()
+				{
+					/* ==== ease mouseover ==== */
+					this.point3D.z.move(this.point3D.z.target, .5);
+					/* ==== assign 3D coords ==== */
+					var x = (this.point3D.x - tv.camera.x.position) * tv.camera.zoom.position;
+					var y = (this.point3D.y - tv.camera.y.position) * tv.camera.zoom.position;
+					var z = this.point3D.z.position * tv.camera.zoom.position;
+					/* ==== perform rotations ==== */
+					var xy = tv.angle.cx * y  - tv.angle.sx * z;
+					var xz = tv.angle.sx * y  + tv.angle.cx * z;
+					var yz = tv.angle.cy * xz - tv.angle.sy * x;
+					var yx = tv.angle.sy * xz + tv.angle.cy * x;
+					/* ==== 2D transformation ==== */
+					this.point2D.scale = tv.camera.focalLength / (tv.camera.focalLength + yz);
+					this.point2D.x = yx * this.point2D.scale;
+					this.point2D.y = xy * this.point2D.scale;
+					this.point2D.w = Math.round(
+					                   Math.max(
+
+					                     0,
+					                     this.point2D.scale * tv.camera.zoom.position * .8
+					                   )
+					                 );
+					/* ==== image size ratio ==== */
+					if (this.ratioImage > 1)
+						this.point2D.h = Math.round(this.point2D.w / this.ratioImage);
+					else
+					{
+						this.point2D.h = this.point2D.w;
+						this.point2D.w = Math.round(this.point2D.h * this.ratioImage);
+					}
+				}
+				/* ==== rendering ==== */
+				o.draw = function ()
+				{
+					if (this.complete)
+					{
+						/* ==== paranoid image load ==== */
+						if (!this.loaded)
+						{
+							if (!this.img)
+							{
+								/* ==== create internal image ==== */
+								this.img = new Image();
+								this.img.src = this.src;
+							}
+							if (this.img.complete)
+							{
+								/* ==== get width / height ratio ==== */
+								this.style.visibility = 'visible';
+								this.ratioImage = this.img.width / this.img.height;
+								this.loaded = true;
+								this.img = false;
+							}
+						}
+						/* ==== HTML rendering ==== */
+						this.style.left = Math.round(
+						                    this.point2D.x * this.point2D.scale +
+						                    tv.screen.w - this.point2D.w * .5
+						                  ) + 'px';
+						this.style.top  = Math.round(
+						                    this.point2D.y * this.point2D.scale +
+						                    tv.screen.h - this.point2D.h * .5
+						                  ) + 'px';
+						this.style.width  = this.point2D.w + 'px';
+						this.style.height = this.point2D.h + 'px';
+						this.style.borderWidth = Math.round(
+						                           Math.max(
+						                             this.point2D.w,
+						                             this.point2D.h
+						                           ) * tv.grid.borderSize * .01
+						                         ) + 'px';
+						this.style.zIndex = Math.floor(this.point2D.scale * 100);
+					}
+				}
+			}
+		}
+		/* ==== start script ==== */
+		tv.resize();
+		mouse.y = tv.screen.y + tv.screen.h;
+		mouse.x = tv.screen.x + tv.screen.w;
+		tv.run();
+	},
+
+	/* ==== resize window ==== */
+	resize : function ()
+	{
+		var o = tv.screen.obj;
+		tv.screen.w = o.offsetWidth / 2;
+		tv.screen.h = o.offsetHeight / 2;
+		tv.camera.zoom.target = tv.screen.w / (tv.grid.size + .1);
+		for (tv.screen.x = 0, tv.screen.y = 0; o != null; o = o.offsetParent)
+		{
+			tv.screen.x += o.offsetLeft;
+			tv.screen.y += o.offsetTop;
+		}
+	},
+
+	/* ==== main loop ==== */
+	run : function ()
+	{
+		/* ==== motion ease ==== */
+		tv.angle.x.move(-(mouse.y - tv.screen.h - tv.screen.y) * .0025, .1);
+		tv.angle.y.move( (mouse.x - tv.screen.w - tv.screen.x) * .0025, .1);
+		tv.camera.x.move(tv.camera.x.target, tv.grid.zoomed ? .25 : .025);
+		tv.camera.y.move(tv.camera.y.target, tv.grid.zoomed ? .25 : .025);
+		tv.camera.zoom.move(tv.camera.zoom.target, .05);
+		/* ==== angles sin and cos ==== */
+		tv.angle.cx = Math.cos(tv.angle.x.position);
+		tv.angle.sx = Math.sin(tv.angle.x.position);
+		tv.angle.cy = Math.cos(tv.angle.y.position);
+		tv.angle.sy = Math.sin(tv.angle.y.position);
+		/* ==== loop through all images ==== */
+		for (var i = 0, o; o = tv.O[i]; i++)
+		{
+			o.calc();
+			o.draw();
+		}
+		/* ==== loop ==== */
+		setTimeout(tv.run, 32);
+	}
+}
+
+/* ==== global mouse position ==== */
+var mouse = {
+	x : 0,
+	y : 0
+}
+document.onmousemove = function(e)
+{
+	if (window.event) e = window.event;
+	mouse.x = e.clientX;
+	mouse.y = e.clientY;
+	return false;
+}
+
+</script>
+
+
+<script type=text/javascript>
+/**
+*bond toonload
+*/
+startList = function() {
+if (document.all&&document.getElementById) {
+dropmenuRoot = document.getElementById("dropmenu");
+for (i=0; i<dropmenuRoot.childNodes.length; i++) {
+node = dropmenuRoot.childNodes[i];
+if (node.nodeName=="LI") {
+node.onmouseover=function() {
+this.className+=" over";
+//开始灌水
+for(j=0;j<this.childNodes.length;j++){
+if (this.childNodes[j].nodeName=="UL"){
+if (this.childNodes[j].childNodes[0].nodeName=="LI"){
+if (this.offsetLeft+this.childNodes[j].childNodes.length*this.childNodes[j].childNodes[0].offsetWidth-dropmenuRoot.offsetLeft>dropmenuRoot.offsetWidth){
+var len=this.childNodes[j].childNodes.length*this.childNodes[j].childNodes[0].offsetWidth; //the length of menu
+(len>dropmenuRoot.offsetWidth) ? this.childNodes[j].style.width=776+"px" : this.childNodes[j].style.width=len+"px"; //target to give length to UL, if child menu is too much more, and great to the length of holder or container, then the length of UL is the length of  holder
+len =this.offsetLeft+len-dropmenuRoot.offsetLeft-dropmenuRoot.offsetWidth;
+(len>this.offsetLeft-dropmenuRoot.offsetLeft) ? this.childNodes[j].style.marginLeft=-(this.offsetLeft-dropmenuRoot.offsetLeft) : this.childNodes[j].style.marginLeft=-len+"px";
+}
+}
+}
+}
+}
+window.onload=startList;
+}
+}
+}
+}
+</script>
+
+
+<link href="../../css/top_menu_1.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+<!--
+#apDiv1 {
+	position:absolute;
+	left:51px;
+	top:0px;
+	width:900px;
+	height:148px;
+	z-index:19;
+}
+#apDiv18 {
+	position:absolute;
+	left:220px;
+	top:775px;
+	width:733px;
+	height:75px;
+	z-index:17;
+}
+#apDiv30 {
+	position:absolute;
+	left:206px;
+	top:128px;
+	width:746px;
+	height:20px;
+	z-index:111;
+	overflow: visible;
+}
+#apDiv36 {
+	position:absolute;
+	left:300px;
+	top:215px;
+	width:575px;
+	height:506px;
+	z-index:32;
+	border: 1px none #CCCCCC;
+}
+#apDiv45 {
+	position:absolute;
+	left:51px;
+	top:627px;
+	width:154px;
+	height:225px;
+	z-index:102;
+}
+#apDiv47 {
+	position:absolute;
+	left:229px;
+	top:178px;
+	width:724px;
+	height:31px;
+	z-index:50;
+}
+#apDiv55 {
+	position:absolute;
+	left:51px;
+	top:147px;
+	width:154px;
+	height:514px;
+	z-index:107;
+	color: #FFFFFF;
+	background-color: #636563;
+}
+.shalow_fonts {
+	color: #444444;
+	font-size: 24px;
+}
+#apDiv5 {
+	position:absolute;
+	left:51px;
+	top:518px;
+	width:154px;
+	height:150px;
+	z-index:108;
+	background-color: #666666;
+}
+-->
+</style>
+<link href="../../css/comprehensive.css" rel="stylesheet" type="text/css" />
+<link href="../../css/top_menu_2.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 6]>
+<style type="text/css">
+body {margin-top:-8px;}
+#head {height:147px;}
+#noniemenu {display:none;}
+.menu {display:block; position:absolute;}
+.menu a.outer, .menu a.outer:visited {
+   color:#fff; 
+   width:104px; 
+   height:18px; 
+   display:block; 
+   background:#e09222; 
+   border:1px solid #000; 
+   margin-right:1px; 
+   text-align:center; 
+   float:left; 
+   text-decoration:none; 
+   font-family: verdana, arial, sans-serif; 
+   font-size:10px; 
+   line-height:18px; 
+   overflow:hidden;
+   }
+.menu a.outer:hover {
+  background:#697210; 
+  overflow:visible;
+  }
+.menu a.outer:hover table.first {
+  display:block; 
+  background:#eee; 
+  border-collapse:collapse;
+  }
+.menu a.inner, .menu a.inner:visited {
+  display:block; 
+  width:102px; 
+  height:18px; 
+  border-bottom:1px solid #000; 
+  text-decoration:none; 
+  color:#000;
+  font-family: verdana, arial, sans-serif; 
+  font-size:10px; 
+  text-align:center;
+  }
+.menu a.inner:hover {
+  background:#add;
+  }
+.menu a.outer table.first a.second {
+  height:18px; 
+  line-height:18px; 
+  overflow:hidden; 
+  font-weight:bold;
+  }
+.menu a.outer table.first a.second:hover {
+  position:relative; 
+  overflow:visible;
+  }
+.menu a.outer table.first a.second:hover table {
+  position:absolute; 
+  top:-2px; 
+  left:102px; 
+  border-collapse:collapse; 
+  background:#eee; 
+  border:1px solid #000; 
+  font-weight:normal
+}
+</style>
+<![endif]-->
+<!--[if lte IE 6]>
+<style>
+#ads {display:none;}
+#adsie {clear:both; text-align:center; width:750px; margin-top:10px;}
+</style>
+<![endif]-->
+</head>
+
+
+<body>
+<div id="apDiv1"><img src="../../pictures/banner/banner_blue2.jpg" width="900" height="148" /></div>
+<div id="apDiv30"><!-- #BeginLibraryItem "/css/top_navigationalbar.lbi" -->
+<style type="text/css">
+<!--
+
+/* CSS Document */
+
+
+/*body {color:#fff;}*/
+#wrapper {color:#000;}
+.red {color:#c00;}
+#info {margin-top:20px;}
+#info h1 {font-size:3em; text-align:center; font-family: georgia, "times new roman", serif;}
+#head {height:145px; border:0;}
+#positioner {clear:both; position:relative; left:1px; z-index:100;}
+#ads {position:relative; z-index:10;}
+.menu {display:none;}
+#noniemenu {
+	position:absolute;
+	left: 230px;
+	top: 189px;
+	width: 691px;
+	z-index: 25;
+}
+#noniemenu .holder ul {padding:0; margin:0;}
+#noniemenu .holder ul li {list-style-type: none;}
+#noniemenu .holder li {}
+#noniemenu .holder li ul {display: none;} 
+#noniemenu .holder li:hover > ul#a3 {
+	display:none;
+	position:absolute;
+	left:105px;
+	margin-top:-20px;
+	border:1px solid #000;
+}
+#noniemenu .holder .bold {font-weight:bold;}
+#noniemenu .holder {
+  color:#fff; 
+  width:95px; 
+  height:18px; 
+  display:block; 
+  overflow:hidden;
+  float:left;
+  border:1px solid #000;
+  margin-right:1px;
+  font-size:10px;
+  }
+#noniemenu .holder:hover {
+  height:auto; 
+  }
+#noniemenu a.outer, #noniemenu a.outer:visited {
+	color:#fff;
+	width:auto;
+	line-height:18px;
+	display:block;
+	background:#e09222;
+	text-align:center;
+	text-decoration:none;
+	font-family: verdana, arial, sans-serif;
+   }
+#noniemenu a.outer:hover {
+  background:#697210; 
+  overflow:visible;
+  }
+#noniemenu div.open {display:none;}
+#noniemenu a.inner, #noniemenu a.inner:visited {
+	display:block;
+	width:auto;
+	height:18px;
+	line-height:18px;
+	border-bottom:1px solid #000;
+	text-decoration:none;
+	color:#000;
+	background:#eee;
+	text-align:center;
+  }
+#noniemenu a.second {font-weight:bold;}
+#noniemenu a.inner:hover {
+  background:#add;
+  }
+
+/* CSS Document */
+
+
+ul { margin: 1; padding: 0; }
+li { list-style-position: outside; list-style: none;}
+ul#dropmenu,ul#dropmenu ul{
+margin: 0 auto;
+text-align: left;
+padding: 1;
+list-style: none;
+z-index: 99;
+}
+a {
+	text-decoration: none;
+}     /*Control the whole area links color   */
+ul#dropmenu {
+	width: auto;
+	display: block;
+	height: 16px;     /* determine the height of father menu bar */
+	clear: both;
+	border: 1px solid #ccc;
+	text-align: center;    /* The color the the father menu bar background*/
+	background-color: #666666;
+}
+ul#dropmenu li {
+
+position: relative;
+z-index: 999;
+float: left;
+}
+ul#dropmenu ul li{
+
+float: left;
+display: block;
+}
+ul#dropmenu ul li{
+
+width: 130px;
+border: 0;
+}
+ul#dropmenu ul {
+/*width: 122px;
+w\idth: 120px;*/
+width: 168px;    /*useless on the control of the width of the sub pop menu*/
+w\idth: 168px;   /*control the sub menu pop width ! determine the sub pop menu width before padding implemented*/
+height: auto;   /* control useless*/
+position: absolute;
+text-align: left;
+left: 0px;
+display: none;
+border: solid 1px #ccc;
+
+}
+/*when mouse stop onto the sub menu and father menu,  this the style of father menu*/
+ul#dropmenu li.over a,ul#dropmenu li:hover a{
+	border-color: #ccc;  /*the color of the father menu item back ground. Pay attention, if adding "v" after colon, the  font color of menu item will still a original when mouse cursor move over*/
+	color: #fff;
+	background-color: #0000FF;
+}
+/*erase the style of child menu*/
+ul#dropmenu li.over ul a,ul#dropmenu li:hover ul a{
+	font-weight: normal;
+	color: #333333;
+	background: #fff;
+	background: #f6f6f6;   /* the color of the child pop up menu back ground */
+}
+/*the hover style of child menu*/
+ul#dropmenu li.over ul a:hover,ul#dropmenu li:hover ul a:hover{
+	font-weight: normal;
+	color: #FFFFFF;    /* the color of sub menu items*/
+	font-weight: bold;  /* the background of sub menu items*/
+	background-color: #0000FF;
+}
+/* Styles for Menu Items */
+ul#dropmenu a {
+	display: block;
+	padding: 0 0 0 0px;
+	width: 90px;
+	w\idth: 88px;
+	color: #FFFFFF;
+	line-height: 16px;  /* have a influence on whole menu layout height*/
+	font-size: 12px;
+}
+/* End */
+ul#dropmenu ul a {
+FILTER: progid:DXImageTransform.Microsoft.Alpha(opacity=70); /* make the menu become transparent, but merely take effect in IE*/
+	padding: 1px 4px 1px 4px;  /* the first and thrid item control the pading between every lines under sub menu system; however, the second and the fourth items control the left and right pading!*/
+	border: 1;
+	width: 160px;  /*useless on the control of the width of the sub pop menu*/
+	w\idth: 160px;/* Sub Menu Styles */  /*control the sub menu pop width! determine the sub pop menu width after padding implemented */
+}
+ul#dropmenu li:hover ul,ul#dropmenu li.over ul {
+display: block; /* The magic */
+}
+
+-->
+</style>
+
+
+
+  <table width="100%" height="22" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td height="22">
+          <div id="nav">
+            <ul id="dropmenu">
+              <li><a href="../../index.html" class="Pop_up_Menu_Item_FontStyle style1">Home</a></li>
+           <!--   <li><a href="../resume/index.html" target="_top" class="Pop_up_Menu_Item_FontStyle style2">Resume</a></li>-->
+              <li><a href="../../project/index.html" class="Pop_up_Menu_Item_FontStyle style1">Project</a>
+                  <ul>
+                    <ul>
+                    <li><a href="../../project/alma/index.html">ALMA</a></li>
+                    <li><a href="../../project/primove/index.html">Primo</a></li>
+                    <li><a href="../../voyager/index.html">Voyager</a></li>
+                    <li><a href="../../project/vufind/index.html">VuFind</a></li>
+                    <li><a href="../../project/ai/index.html">AI</a></li>
+                    <!--<li><a href="../project/millennium/index.html">III Millennium</a></li>-->
+                   <!-- <li><a href="../project/sierra/index.html">III Sierra</a></li>
+                    <li><a href="../project/horizon/index.html">SirsiDynix Horizon</a></li>
+                    <li><a href="../project/symphony/index.html">SirsiDynix Symphony</a></li>
+                    <li><a href="../project/drupal/index.html">Drupal</a></li>
+                    <li><a href="../project/wordpress/index.html">Wordpress</a></li>
+                    <li><a href="../project/mediawiki/index.html">MediaWiki</a></li>
+                      <li><a href="../project/digital_library/index.html">Digital Library</a></li>-->
+                      <li><a href="../../project/xml_mysql/index.html">XML and MySQL</a></li>
+                      <li><a href="../../project/rdbms_data_cleansing/index.html">RDBMS</a></li>
+                      <li><a href="../../project/web_building/index.html">Web Building</a></li>
+                      <li><a href="../../project/record_management/index.html">Record Management</a></li>
+                      <li><a href="../../project/metadata/index.html">Metadata</a></li>
+                     <!-- <li><a href="../project/index_design/index.html">Index Design</a></li>
+                      <li><a href="../project/interface_design/index.html">Interface Design</a></li>-->
+                      <li><a href="../../project/information_retrieval/index.html">Information Retrieval</a></li>
+                      
+                      <li><a href="../../project/statistics/index.html">Statistics</a></li>
+                    </ul>
+                  </ul>
+              </li>
+              <li class="style16"><a href="../../project/reference/Reference_Contact_Information.pdf" target="_blank" class="Pop_up_Menu_Item_FontStyle style1">Reference</a></li>
+              <li><a href="../../library/index.html" class="Pop_up_Menu_Item_FontStyle">Library</a>
+                  <ul>
+                    <li><a href="../../library/library_research/index.html">Library Research</a></li>
+                    <li><a href="../../library/library_orgainzation/index.html">Library Organization</a></li>
+                    <!--<li><a href="../library/digital_library/index.html">Digitalization</a></li>-->
+
+
+                </ul>
+              </li>
+              <li><a href="../../information_science/index.html" class="Pop_up_Menu_Item_FontStyle">IT</a>
+                  <ul>
+                    <li><a href="../../information_science/operating_systems/index.html">Operating_Systems</a></li>
+                    <li><a href="../../information_science/server/index.html">Server</a></li>
+                    <li><a href="../../information_science/database/index.html">Database</a></li>
+                   <!-- <li><a href="../information_science/programming_language/index.html">Programming_language</a></li>-->
+                  </ul>
+              </li>
+              <li><a href="../index.html" class="Pop_up_Menu_Item_FontStyle">Others</a>
+                  <ul>
+
+                    <li><a href="../my_favorite_singer/index.html">My Favorite singer</a></li>
+                    <li><a href="../coal_mine/index.html">Coal Mining</a></li>
+                    
+                     <li><a href="../landscape/index.html">Landscape</a></li>
+                     <li><a href="../landscape2/index.html">Vincent van Gogh</a></li>
+                     <li><a href="../landscape3/index.html">Pierre-Auguste Renoir</a></li>
+                       
+                     <li><a href="../landscape4/index.html">cezanne</a></li> 
+                      <li><a href="../langscape5/index.html">Claude Monet</a></li>
+                       <li><a href="../interface_dream_factory/index.html">Interface Factory</a></li>
+                        <li><a href="../google_3d_menu/index.html">3D menu</a></li>
+                        <li><a href="../color_box1/index.htm">Color Box</a></li>
+                        <li><a href="../colorpicking/index.html">Color Picking</a></li>
+                       <li><a href="../color_box2/index.html">Color Group</a></li>
+                       <li><a href="../color_blender/index.html">Color Blender</a></li>
+                    <li><a href="../color_box3/index.html">Color Scheme</a></li>
+                       <li><a href="index.html">Color Scheme 2</a></li>
+                       <li><a href="../color_box5/index.html">Color Scheme 3</a></li>
+                        <li><a href="../color-pallete-generator/index.php">Color Pallete Generator</a></li>
+                    <li><a href="../Scalculator/index.html" target="_blank">Sci calculator</a></li>
+                   <!-- <li><a href="../about/calculator/index.html">Calculator</a></li> -->                  
+                    <li><a href="../search_rutgers/index.html">Search  Rutgers</a></li>
+                   <!-- <li><a href="../about/message/index.html">Message </a></li>-->
+                    <li><a href="http://www.berrypicking.net:8080/EmailStruts/EmailForm.jsp">Message </a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        <div align="left"></div></td>
+    </tr>
+  </table>
+
+<!-- #EndLibraryItem --></div>
+<div class="Left_NavigationBar_Item_Backgroud" id="apDiv45">
+  <style type="text/css">
+<!--
+.Left_NavigationBar_Item_Backgroud {
+	background-color: #A0A0A4;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+.Left_Bottom_Corner_Address {	font-size: 11px;
+	color: #FFFFFF;
+	vertical-align: middle;
+}
+.borderofcell {	border: 1px ridge #FFFFFF;
+}
+.white {	color: #FFFFFF;
+}
+-->
+  </style><!-- #BeginLibraryItem "/css/left_navigation_bar_bottom1.lbi" -->
+<style type="text/css">
+<!--
+-->
+</style>
+<link href="../../css/external.css" rel="stylesheet" type="text/css">
+<table width="99%" height="190" border="0" cellpadding="0" cellspacing="0" class="Left_NavigationBar_Item_Backgroud">
+  <tr>
+    <td width="5%" height="140">&nbsp;</td>
+    <td width="86%" class="Left_Bottom_Corner_Address"><div align="center">
+      <p><strong>UNLV law library<br>
+        Las Vegas, NV 89154-1080
+      </strong> <br>
+<strong>Phone:504-515-1880</strong><br>
+        </p>
+    </div></td>
+    <td width="9%" class="Left_Bottom_Corner_Address">&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td class="Left_Bottom_Corner_Address">&nbsp;</td>
+    <td class="Left_Bottom_Corner_Address">&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td class="Left_Bottom_Corner_Address"><div align="center"><img src="../../pictures/photo/flower_in_cook.jpg" width="100" height="40"></div></td>
+    <td class="Left_Bottom_Corner_Address">&nbsp;</td>
+  </tr>
+</table>
+<!-- #EndLibraryItem --></div>
+<div id="apDiv55"><!-- #BeginLibraryItem "/css/left_navigationbar_first.lbi" -->
+<link href="../../css/external.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+	color: #0000FF;
+}
+a:active {
+	text-decoration: none;
+}
+-->
+</style>
+<table width="100%" height="377" border="0" cellpadding="0" cellspacing="0" bgcolor="#A0A0A4" class="background">
+<tr>
+      <td width="13%" height="14">&nbsp;</td>
+    <td width="9%" height="14">&nbsp;</td>
+    <td width="78%" height="14">&nbsp;</td>
+  </tr>
+    <tr>
+      <td height="26">&nbsp;</td>
+      <td height="26"><img src="../../pictures/bullet/Squarebullet2.jpg" width="5" height="5"></td>
+      <td height="26"><a href="../../project/digital_library/index.html" class="whitecolor">Digital Library</a></td>
+  </tr>
+    <tr>
+      <td height="26">&nbsp;</td>
+      <td height="26"><img src="../../pictures/bullet/Squarebullet2.jpg" width="5" height="5"></td>
+      <td height="26"><a href="../../voyager/index.html" class="whitecolor">Voyager</a></td>
+  </tr>
+    <tr>
+      <td height="26">&nbsp;</td>
+      <td height="26"><img src="../../pictures/bullet/Squarebullet2.jpg" width="5" height="5"></td>
+      <td height="26"><a href="../../project/xml_mysql/index.html" class="whitecolor">XML &amp; MySQL</a></td>
+  </tr>
+    <tr>
+      <td height="26">&nbsp;</td>
+      <td height="26"><img src="../../pictures/bullet/Squarebullet2.jpg" width="5" height="5"></td>
+      <td height="26"><a href="../../project/rdbms_data_cleansing/index.html" class="whitecolor">RDBMS</a></td>
+  </tr>
+    <tr>
+      <td height="26">&nbsp;</td>
+      <td height="26"><img src="../../pictures/bullet/Squarebullet2.jpg" width="5" height="5"></td>
+      <td height="26"><a href="../../project/web_building/index.html" class="whitecolor">Web Building</a></td>
+  </tr>
+    <tr>
+      <td height="43">&nbsp;</td>
+      <td height="43"><img src="../../pictures/bullet/Squarebullet2.jpg" width="5" height="5"></td>
+      <td height="43"><a href="../../project/record_management/index.html" class="whitecolor">Record Management</a></td>
+  </tr>
+    <tr>
+      <td height="26">&nbsp;</td>
+      <td height="26"><img src="../../pictures/bullet/Squarebullet2.jpg" width="5" height="5"></td>
+      <td height="26"><a href="../../project/metadata/index.html" class="whitecolor">Metadata</a></td>
+  </tr>
+    <tr>
+      <td height="28">&nbsp;</td>
+      <td height="28"><img src="../../pictures/bullet/Squarebullet2.jpg" width="5" height="5"></td>
+      <td height="26"><a href="../../project/index_design/index.html" class="whitecolor">Index Design</a></td>
+  </tr>
+    <tr>
+      <td height="46">&nbsp;</td>
+      <td height="46"><img src="../../pictures/bullet/Squarebullet2.jpg" width="5" height="5"></td>
+      <td><a href="../../project/information_retrieval/index.html" class="whitecolor">Information Retrieval</a></td>
+  </tr>
+    <tr>
+      <td height="19">&nbsp;</td>
+      <td height="19"><img src="../../pictures/bullet/Squarebullet2.jpg" width="5" height="5"></td>
+      <td height="26"><a href="../../project/statistics/index.html" class="whitecolor">Statistics</a></td>
+  </tr>
+    <tr>
+      <td height="19">&nbsp;</td>
+      <td height="19"><img src="../../pictures/bullet/Squarebullet2.jpg" width="5" height="5"></td>
+      <td height="26"><a href="https://librarysysworld.com/xuan/" class="whitecolor">My Blog</a></td>
+  </tr>
+    <tr>
+      <td height="19">&nbsp;</td>
+      <td height="19">&nbsp;</td>
+      <td height="19">&nbsp;</td>
+    </tr>
+</table>
+<!-- #EndLibraryItem --></div>
+
+
+<div id="apDiv2">
+  <div id="apDiv3">
+    <div style="background: none repeat scroll 0% 0% rgb(255, 153, 0);" id="maincolorsample"></div>
+    <div id="image">
+      <!--<img src="index-en_files/wheel.gif" alt="" width="232" height="232" border="0" usemap="#map">
+	<map name="map"><area id="wheelarea" shape="circle" coords="116,116,116"></map>-->
+      <div id="wheelarea"></div>
+      <div style="left: 151px; top: 91px; display: block;" id="pointer0"></div>
+      <div style="display: none;" id="pointer1"></div>
+      <div style="display: none;" id="pointer2"></div>
+      <div style="display: none;" id="pointer3"></div>
+    </div>
+    <div id="maincolorhue">60°</div>
+    <div id="scheme-select"> <img id="previmg-mono" src="index-en_files/prev_mono-on.gif" alt="" onclick="selectScheme('mono')" height="52" width="41" /> <img id="previmg-compl" src="index-en_files/prev_compl.gif" alt="" onclick="selectScheme('compl')" height="52" width="41" /> <img id="previmg-triad" src="index-en_files/prev_triad.gif" alt="" onclick="selectScheme('triad')" height="52" width="41" /> <img id="previmg-tetrad" src="index-en_files/prev_tetrad.gif" alt="" onclick="selectScheme('tetrad')" height="52" width="41" /> <img id="previmg-analog" src="index-en_files/prev_analog.gif" alt="" onclick="selectScheme('analog')" height="52" width="41" /> </div>
+    <div style="display: none;" id="scheme-slider">
+      <div id="pointer-slider"></div>
+    </div>
+    <div style="display: none;" id="scheme-addcompl">
+      <input id="analogCompl" onchange="createScheme(false)" onclick="createScheme(false)" type="checkbox" />
+      <label for="analogCompl">add the complement</label>
+    </div>
+    <div id="scheme-searchrgb"> <a href="#" onclick="searchRGB(false)">Enter RGB</a> (rough conversion) </div>
+    <div style="background: none repeat scroll 0% 0% rgb(255, 153, 0); display: block;" id="colsample">
+      <div style="background: none repeat scroll 0% 0% rgb(255, 153, 0);" id="color0" class="col">
+        <div style="display: block; background: none repeat scroll 0% 0% rgb(255, 153, 0);" id="color0-0" class="col-0" onclick="drawVar(0,0)"></div>
+        <div style="display: block; background: none repeat scroll 0% 0% rgb(179, 107, 0);" id="color0-1" class="col-1 col-on" onclick="drawVar(0,1)"></div>
+        <div style="display: block; background: none repeat scroll 0% 0% rgb(255, 230, 191);" id="color0-2" class="col-2 col-on" onclick="drawVar(0,2)"></div>
+        <div style="display: block; background: none repeat scroll 0% 0% rgb(255, 204, 128);" id="color0-3" class="col-3 col-on" onclick="drawVar(0,3)"></div>
+      </div>
+      <div style="background: none repeat scroll 0% 0% rgb(179, 107, 0);" id="color1" class="col">
+        <div style="display: none;" id="color1-0" class="col-0" onclick="drawVar(1,0)"></div>
+        <div style="display: none;" id="color1-1" class="col-1" onclick="drawVar(1,1)"></div>
+        <div style="display: none;" id="color1-2" class="col-2" onclick="drawVar(1,2)"></div>
+        <div style="display: none;" id="color1-3" class="col-3" onclick="drawVar(1,3)"></div>
+      </div>
+      <div style="background: none repeat scroll 0% 0% rgb(255, 230, 191);" id="color2" class="col">
+        <div style="display: none;" id="color2-0" class="col-0" onclick="drawVar(2,0)"></div>
+        <div style="display: none;" id="color2-1" class="col-1" onclick="drawVar(2,1)"></div>
+        <div style="display: none;" id="color2-2" class="col-2" onclick="drawVar(2,2)"></div>
+        <div style="display: none;" id="color2-3" class="col-3" onclick="drawVar(2,3)"></div>
+      </div>
+      <div style="background: none repeat scroll 0% 0% rgb(255, 204, 128);" id="color3" class="col">
+        <div style="display: none;" id="color3-0" class="col-0" onclick="drawVar(3,0)"></div>
+        <div style="display: none;" id="color3-1" class="col-1" onclick="drawVar(3,1)"></div>
+        <div style="display: none;" id="color3-2" class="col-2" onclick="drawVar(3,2)"></div>
+        <div style="display: none;" id="color3-3" class="col-3" onclick="drawVar(3,3)"></div>
+      </div>
+      <div id="textBlack">Lorem ipsum <strong>dolor sit amet</strong></div>
+      <div id="textWhite"><strong>Lorem ipsum</strong> dolor sit amet</div>
+    </div>
+    <div style="display: block;" id="coltable"><img class="coltbl-image" src="index-en_files/uarr.gif" alt="" onclick="shiftVar(0)" />
+        <p class="coltbl-item" style="border-color:#FF9900;">#FF9900</p>
+      <p class="coltbl-itemvar" style="border-color:#B36B00;">#B36B00</p>
+      <p class="coltbl-itemvar" style="border-color:#FFE6BF;">#FFE6BF</p>
+      <p class="coltbl-itemvar" style="border-color:#FFCC80;">#FFCC80</p>
+    </div>
+    <div style="display: block;" id="websnapswitch">
+      <input id="websnapper" onclick="switchWebSnap(this.checked)" onchange="switchWebSnap(this.checked)" type="checkbox" />
+      <label for="websnapper">Reduce to &quot;safe&quot; colors (WebColors)</label>
+    </div>
+    <div id="presetswitch"> Variations: <a href="" id="preset-default" class="btnon" onclick="switchPreset('default');return false">Default</a> <a href="" name="preset-pastel" class="btn" id="preset-pastel" onclick="switchPreset('pastel');return false">Pastel</a> <a href="" id="preset-soft" class="btn" onclick="switchPreset('soft');return false">Dark pastel</a> <a href="" id="preset-light" class="btn" onclick="switchPreset('light');return false">Light pastel</a> <a href="" id="preset-hard" class="btn" onclick="switchPreset('hard');return false">Contrast</a> <a href="" id="preset-pale" class="btn" onclick="switchPreset('pale');return false">Pale</a></div>
+    <a id="url" href="http://colorschemedesigner.com/previous/colorscheme2/index-en.html?mono;50;0;45;-1;-1;1;-0.7;0.25;1;0.5;1;-1;-1;1;-0.7;0.25;1;0.5;1;-1;-1;1;-0.7;0.25;1;0.5;1;-1;-1;1;-0.7;0.25;1;0.5;1;0"></a>
+    <form style="display: block;" id="cbmodeswitch">
+      <select name="cbmodeswitcher" id="cbmodeswitcher" onchange="switchBlindlessMode()">
+        <option selected="selected" value="">Normal vision (cca 85,5 % of population)</option>
+        <option value="1">Protanopy (1 % of men)</option>
+        <option value="2">Deuteranopy (1 % of men)</option>
+        <option value="3">Tritanopy (cca 0,003 % of population)</option>
+        <option value="4">Protanomaly (1 % of men)</option>
+        <option value="5">Deuteranomaly (5 % of men, 0.4 % of women)</option>
+        <option value="6">Tritanomaly (almost 0 %)</option>
+        <option value="7">Full colorblindness (0,005% of population)</option>
+        <option value="8">Atypical monochromatism</option>
+      </select>
+    </form>
+    <div style="display: none;" id="colsamplevarsswitch">
+      <div class="bottomaligner"> <a href="" class="btn" id="cancelsamplevars" onclick="drawSample();return false">Back</a> </div>
+    </div>
+    <div style="display: none;" id="colsamplevars"></div>
+    <!--<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="index-en_files/ga.js" type="text/javascript"></script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-1465350-3");
+pageTracker._trackPageview();
+} catch(err) {}</script> -->
+  </div>
+</div>
+<div id="apDiv8"></div>
+<div id="apDiv18"><!-- #BeginLibraryItem "/css/bottom_menu.lbi" -->
+<link href="../../css/bottom_menu_copyright.css" rel="stylesheet" type="text/css">
+<link href="../../css/comprehensive.css" rel="stylesheet" type="text/css">
+<table width="730" height="72" border="0" cellpadding="0" cellspacing="0" bgcolor="#999999">
+
+    <tr>
+      <td width="39" bgcolor="#666666">&nbsp;</td>
+      <td width="653" height="43" bgcolor="#666666" class="whitefont"><div align="center" class="copyright">@ 2024 <a href="mailto:andytang2010@gmail.com" class="alink">Andy Tang</a>. All rights reserved. <br />
+Last updated April 10th, 2024</div></td>
+      <td width="47" bgcolor="#666666">&nbsp;</td>
+  </tr>
+</table>
+<!-- #EndLibraryItem --></div>
+</body>
+</html>

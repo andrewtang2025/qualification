@@ -1,0 +1,1072 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<!--for demo of the flash effect@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@--><head>
+<style type="text/css">
+.dot         { position: absolute; width: 6; height: 6; visibility: hidden; background-color: red; font-size: 1px; cursor: pointer; cursor: hand; z-index: 100 }
+.dotoff      { position: absolute; width: 6; height: 6; visibility: hidden; background-color: gray; font-size: 1px; cursor:default; z-index: 100}
+.dotempty    { position: absolute; width: 6; height: 6; visibility: hidden; background-color: orange; font-size: 1px; cursor: pointer; cursor: hand; zindex: 100 }
+.caption     { position: absolute; visibility: hidden; font-family: Tahoma; color: black; 
+               font-size: 11px; text-align: Center; cursor: default; z-index: 
+               1 }
+
+body		   { margin: 0px; background-color: white; }
+a			   { color: silver; text-decoration: none }
+p			   { font-size: 10px; font-family: tahoma; color: black } 
+</style>
+
+
+<!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+
+
+
+<script src="../../Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+
+<script type=text/javascript>
+/**
+*bond toonload
+*/
+startList = function() {
+if (document.all&&document.getElementById) {
+dropmenuRoot = document.getElementById("dropmenu");
+for (i=0; i<dropmenuRoot.childNodes.length; i++) {
+node = dropmenuRoot.childNodes[i];
+if (node.nodeName=="LI") {
+node.onmouseover=function() {
+this.className+=" over";
+//开始灌水
+for(j=0;j<this.childNodes.length;j++){
+if (this.childNodes[j].nodeName=="UL"){
+if (this.childNodes[j].childNodes[0].nodeName=="LI"){
+if (this.offsetLeft+this.childNodes[j].childNodes.length*this.childNodes[j].childNodes[0].offsetWidth-dropmenuRoot.offsetLeft>dropmenuRoot.offsetWidth){
+var len=this.childNodes[j].childNodes.length*this.childNodes[j].childNodes[0].offsetWidth; //the length of menu
+(len>dropmenuRoot.offsetWidth) ? this.childNodes[j].style.width=776+"px" : this.childNodes[j].style.width=len+"px"; //target to give length to UL, if child menu is too much more, and great to the length of holder or container, then the length of UL is the length of  holder
+len =this.offsetLeft+len-dropmenuRoot.offsetLeft-dropmenuRoot.offsetWidth;
+(len>this.offsetLeft-dropmenuRoot.offsetLeft) ? this.childNodes[j].style.marginLeft=-(this.offsetLeft-dropmenuRoot.offsetLeft) : this.childNodes[j].style.marginLeft=-len+"px";
+}
+}
+}
+}
+}
+window.onload=startList;
+}
+}
+}
+}
+</script>
+
+
+<link href="../../css/top_menu_1.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+<!--
+#apDiv7 {
+	position:absolute;
+	left:220px;
+	top:198px;
+	width:705px;
+	height:478px;
+	z-index:9;
+}
+#apDiv2 {
+	position:absolute;
+	left:251px;
+	top:215px;
+	width:702px;
+	height:604px;
+	z-index:108;
+}
+#apDiv1 {
+	position:absolute;
+	left:51px;
+	top:0px;
+	width:900px;
+	height:148px;
+	z-index:19;
+}
+#apDiv18 {
+	position:absolute;
+	left:223px;
+	top:937px;
+	width:733px;
+	height:75px;
+	z-index:17;
+}
+#apDiv30 {
+	position:absolute;
+	left:206px;
+	top:128px;
+	width:746px;
+	height:20px;
+	z-index:99;
+	overflow: visible;
+}
+#apDiv36 {
+	position:absolute;
+	left:300px;
+	top:215px;
+	width:575px;
+	height:506px;
+	z-index:32;
+	border: 1px none #CCCCCC;
+}
+#apDiv45 {
+	position:absolute;
+	left:51px;
+	top:786px;
+	width:154px;
+	height:225px;
+	z-index:102;
+}
+#apDiv47 {
+	position:absolute;
+	left:236px;
+	top:184px;
+	width:717px;
+	height:31px;
+	z-index:50;
+}
+#apDiv55 {
+	position:absolute;
+	left:51px;
+	top:147px;
+	width:154px;
+	height:672px;
+	z-index:107;
+	color: #FFFFFF;
+	background-color: #636563;
+}
+#apDiv3 {
+	position:absolute;
+	left:295px;
+	top:245px;
+	width:508px;
+	height:51px;
+	z-index:55;
+}
+#apDiv5 {
+	position:absolute;
+	left:51px;
+	top:522px;
+	width:154px;
+	height:302px;
+	z-index:108;
+	background-color: #666666;
+}
+#apDiv4 {
+	position:absolute;
+	left:233px;
+	top:241px;
+	width:720px;
+	height:552px;
+	z-index:108;
+}
+-->
+</style>
+<link href="../../css/comprehensive.css" rel="stylesheet" type="text/css" />
+<link href="../../css/top_menu_2.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 6]>
+<style type="text/css">
+body {margin-top:-8px;}
+#head {height:147px;}
+#noniemenu {display:none;}
+.menu {display:block; position:absolute;}
+.menu a.outer, .menu a.outer:visited {
+   color:#fff; 
+   width:104px; 
+   height:18px; 
+   display:block; 
+   background:#e09222; 
+   border:1px solid #000; 
+   margin-right:1px; 
+   text-align:center; 
+   float:left; 
+   text-decoration:none; 
+   font-family: verdana, arial, sans-serif; 
+   font-size:10px; 
+   line-height:18px; 
+   overflow:hidden;
+   }
+.menu a.outer:hover {
+  background:#697210; 
+  overflow:visible;
+  }
+.menu a.outer:hover table.first {
+  display:block; 
+  background:#eee; 
+  border-collapse:collapse;
+  }
+.menu a.inner, .menu a.inner:visited {
+  display:block; 
+  width:102px; 
+  height:18px; 
+  border-bottom:1px solid #000; 
+  text-decoration:none; 
+  color:#000;
+  font-family: verdana, arial, sans-serif; 
+  font-size:10px; 
+  text-align:center;
+  }
+.menu a.inner:hover {
+  background:#add;
+  }
+.menu a.outer table.first a.second {
+  height:18px; 
+  line-height:18px; 
+  overflow:hidden; 
+  font-weight:bold;
+  }
+.menu a.outer table.first a.second:hover {
+  position:relative; 
+  overflow:visible;
+  }
+.menu a.outer table.first a.second:hover table {
+  position:absolute; 
+  top:-2px; 
+  left:102px; 
+  border-collapse:collapse; 
+  background:#eee; 
+  border:1px solid #000; 
+  font-weight:normal
+}
+</style>
+<![endif]-->
+<!--[if lte IE 6]>
+<style>
+#ads {display:none;}
+#adsie {clear:both; text-align:center; width:750px; margin-top:10px;}
+</style>
+<![endif]-->
+</head>
+
+
+<body>
+<div id="apDiv1"><img src="../../pictures/banner/banner_blue2.jpg" width="900" height="148" /></div>
+<div id="apDiv30"><!-- #BeginLibraryItem "/css/top_navigationalbar.lbi" -->
+<style type="text/css">
+<!--
+
+/* CSS Document */
+
+
+/*body {color:#fff;}*/
+#wrapper {color:#000;}
+.red {color:#c00;}
+#info {margin-top:20px;}
+#info h1 {font-size:3em; text-align:center; font-family: georgia, "times new roman", serif;}
+#head {height:145px; border:0;}
+#positioner {clear:both; position:relative; left:1px; z-index:100;}
+#ads {position:relative; z-index:10;}
+.menu {display:none;}
+#noniemenu {
+	position:absolute;
+	left: 230px;
+	top: 189px;
+	width: 691px;
+	z-index: 25;
+}
+#noniemenu .holder ul {padding:0; margin:0;}
+#noniemenu .holder ul li {list-style-type: none;}
+#noniemenu .holder li {}
+#noniemenu .holder li ul {display: none;} 
+#noniemenu .holder li:hover > ul#a3 {
+	display:none;
+	position:absolute;
+	left:105px;
+	margin-top:-20px;
+	border:1px solid #000;
+}
+#noniemenu .holder .bold {font-weight:bold;}
+#noniemenu .holder {
+  color:#fff; 
+  width:95px; 
+  height:18px; 
+  display:block; 
+  overflow:hidden;
+  float:left;
+  border:1px solid #000;
+  margin-right:1px;
+  font-size:10px;
+  }
+#noniemenu .holder:hover {
+  height:auto; 
+  }
+#noniemenu a.outer, #noniemenu a.outer:visited {
+	color:#fff;
+	width:auto;
+	line-height:18px;
+	display:block;
+	background:#e09222;
+	text-align:center;
+	text-decoration:none;
+	font-family: verdana, arial, sans-serif;
+   }
+#noniemenu a.outer:hover {
+  background:#697210; 
+  overflow:visible;
+  }
+#noniemenu div.open {display:none;}
+#noniemenu a.inner, #noniemenu a.inner:visited {
+	display:block;
+	width:auto;
+	height:18px;
+	line-height:18px;
+	border-bottom:1px solid #000;
+	text-decoration:none;
+	color:#000;
+	background:#eee;
+	text-align:center;
+  }
+#noniemenu a.second {font-weight:bold;}
+#noniemenu a.inner:hover {
+  background:#add;
+  }
+
+/* CSS Document */
+
+
+ul { margin: 1; padding: 0; }
+li { list-style-position: outside; list-style: none;}
+ul#dropmenu,ul#dropmenu ul{
+margin: 0 auto;
+text-align: left;
+padding: 1;
+list-style: none;
+z-index: 99;
+}
+a {
+	text-decoration: none;
+}     /*Control the whole area links color   */
+ul#dropmenu {
+	width: auto;
+	display: block;
+	height: 16px;     /* determine the height of father menu bar */
+	clear: both;
+	border: 1px solid #ccc;
+	text-align: center;    /* The color the the father menu bar background*/
+	background-color: #666666;
+}
+ul#dropmenu li {
+
+position: relative;
+z-index: 999;
+float: left;
+}
+ul#dropmenu ul li{
+
+float: left;
+display: block;
+}
+ul#dropmenu ul li{
+
+width: 130px;
+border: 0;
+}
+ul#dropmenu ul {
+/*width: 122px;
+w\idth: 120px;*/
+width: 168px;    /*useless on the control of the width of the sub pop menu*/
+w\idth: 168px;   /*control the sub menu pop width ! determine the sub pop menu width before padding implemented*/
+height: auto;   /* control useless*/
+position: absolute;
+text-align: left;
+left: 0px;
+display: none;
+border: solid 1px #ccc;
+
+}
+/*when mouse stop onto the sub menu and father menu,  this the style of father menu*/
+ul#dropmenu li.over a,ul#dropmenu li:hover a{
+	border-color: #ccc;  /*the color of the father menu item back ground. Pay attention, if adding "v" after colon, the  font color of menu item will still a original when mouse cursor move over*/
+	color: #fff;
+	background-color: #0000FF;
+}
+/*erase the style of child menu*/
+ul#dropmenu li.over ul a,ul#dropmenu li:hover ul a{
+	font-weight: normal;
+	color: #333333;
+	background: #fff;
+	background: #f6f6f6;   /* the color of the child pop up menu back ground */
+}
+/*the hover style of child menu*/
+ul#dropmenu li.over ul a:hover,ul#dropmenu li:hover ul a:hover{
+	font-weight: normal;
+	color: #FFFFFF;    /* the color of sub menu items*/
+	font-weight: bold;  /* the background of sub menu items*/
+	background-color: #0000FF;
+}
+/* Styles for Menu Items */
+ul#dropmenu a {
+	display: block;
+	padding: 0 0 0 0px;
+	width: 90px;
+	w\idth: 88px;
+	color: #FFFFFF;
+	line-height: 16px;  /* have a influence on whole menu layout height*/
+	font-size: 12px;
+}
+/* End */
+ul#dropmenu ul a {
+FILTER: progid:DXImageTransform.Microsoft.Alpha(opacity=70); /* make the menu become transparent, but merely take effect in IE*/
+	padding: 1px 4px 1px 4px;  /* the first and thrid item control the pading between every lines under sub menu system; however, the second and the fourth items control the left and right pading!*/
+	border: 1;
+	width: 160px;  /*useless on the control of the width of the sub pop menu*/
+	w\idth: 160px;/* Sub Menu Styles */  /*control the sub menu pop width! determine the sub pop menu width after padding implemented */
+}
+ul#dropmenu li:hover ul,ul#dropmenu li.over ul {
+display: block; /* The magic */
+}
+
+-->
+</style>
+
+
+
+  <table width="100%" height="22" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td height="22">
+          <div id="nav">
+            <ul id="dropmenu">
+              <li><a href="../../index.html" class="Pop_up_Menu_Item_FontStyle style1">Home</a></li>
+           <!--   <li><a href="../resume/index.html" target="_top" class="Pop_up_Menu_Item_FontStyle style2">Resume</a></li>-->
+              <li><a href="../../project/index.html" class="Pop_up_Menu_Item_FontStyle style1">Project</a>
+                  <ul>
+                    <ul>
+                    <li><a href="../../project/alma/index.html">ALMA</a></li>
+                    <li><a href="../../project/primove/index.html">Primo</a></li>
+                    <li><a href="../../voyager/index.html">Voyager</a></li>
+                    <li><a href="../../project/vufind/index.html">VuFind</a></li>
+                    <li><a href="../../project/ai/index.html">AI</a></li>
+                    <!--<li><a href="../project/millennium/index.html">III Millennium</a></li>-->
+                   <!-- <li><a href="../project/sierra/index.html">III Sierra</a></li>
+                    <li><a href="../project/horizon/index.html">SirsiDynix Horizon</a></li>
+                    <li><a href="../project/symphony/index.html">SirsiDynix Symphony</a></li>
+                    <li><a href="../project/drupal/index.html">Drupal</a></li>
+                    <li><a href="../project/wordpress/index.html">Wordpress</a></li>
+                    <li><a href="../project/mediawiki/index.html">MediaWiki</a></li>
+                      <li><a href="../project/digital_library/index.html">Digital Library</a></li>-->
+                      <li><a href="../../project/xml_mysql/index.html">XML and MySQL</a></li>
+                      <li><a href="../../project/rdbms_data_cleansing/index.html">RDBMS</a></li>
+                      <li><a href="../../project/web_building/index.html">Web Building</a></li>
+                      <li><a href="../../project/record_management/index.html">Record Management</a></li>
+                      <li><a href="../../project/metadata/index.html">Metadata</a></li>
+                     <!-- <li><a href="../project/index_design/index.html">Index Design</a></li>
+                      <li><a href="../project/interface_design/index.html">Interface Design</a></li>-->
+                      <li><a href="../../project/information_retrieval/index.html">Information Retrieval</a></li>
+                      
+                      <li><a href="../../project/statistics/index.html">Statistics</a></li>
+                    </ul>
+                  </ul>
+              </li>
+              <li class="style16"><a href="../../project/reference/Reference_Contact_Information.pdf" target="_blank" class="Pop_up_Menu_Item_FontStyle style1">Reference</a></li>
+              <li><a href="../../library/index.html" class="Pop_up_Menu_Item_FontStyle">Library</a>
+                  <ul>
+                    <li><a href="../../library/library_research/index.html">Library Research</a></li>
+                    <li><a href="../../library/library_orgainzation/index.html">Library Organization</a></li>
+                    <!--<li><a href="../library/digital_library/index.html">Digitalization</a></li>-->
+
+
+                </ul>
+              </li>
+              <li><a href="../../information_science/index.html" class="Pop_up_Menu_Item_FontStyle">IT</a>
+                  <ul>
+                    <li><a href="../../information_science/operating_systems/index.html">Operating_Systems</a></li>
+                    <li><a href="../../information_science/server/index.html">Server</a></li>
+                    <li><a href="../../information_science/database/index.html">Database</a></li>
+                   <!-- <li><a href="../information_science/programming_language/index.html">Programming_language</a></li>-->
+                  </ul>
+              </li>
+              <li><a href="../index.html" class="Pop_up_Menu_Item_FontStyle">Others</a>
+                  <ul>
+
+                    <li><a href="../my_favorite_singer/index.html">My Favorite singer</a></li>
+                    <li><a href="../coal_mine/index.html">Coal Mining</a></li>
+                    
+                     <li><a href="../landscape/index.html">Landscape</a></li>
+                     <li><a href="../landscape2/index.html">Vincent van Gogh</a></li>
+                     <li><a href="../landscape3/index.html">Pierre-Auguste Renoir</a></li>
+                       
+                     <li><a href="../landscape4/index.html">cezanne</a></li> 
+                      <li><a href="../langscape5/index.html">Claude Monet</a></li>
+                       <li><a href="../interface_dream_factory/index.html">Interface Factory</a></li>
+                        <li><a href="../google_3d_menu/index.html">3D menu</a></li>
+                        <li><a href="../color_box1/index.htm">Color Box</a></li>
+                        <li><a href="../colorpicking/index.html">Color Picking</a></li>
+                       <li><a href="../color_box2/index.html">Color Group</a></li>
+                       <li><a href="../color_blender/index.html">Color Blender</a></li>
+                    <li><a href="../color_box3/index.html">Color Scheme</a></li>
+                       <li><a href="../color_box4/index.html">Color Scheme 2</a></li>
+                       <li><a href="../color_box5/index.html">Color Scheme 3</a></li>
+                        <li><a href="../color-pallete-generator/index.php">Color Pallete Generator</a></li>
+                    <li><a href="../Scalculator/index.html" target="_blank">Sci calculator</a></li>
+                   <!-- <li><a href="../about/calculator/index.html">Calculator</a></li> -->                  
+                    <li><a href="../search_rutgers/index.html">Search  Rutgers</a></li>
+                   <!-- <li><a href="../about/message/index.html">Message </a></li>-->
+                    <li><a href="http://www.berrypicking.net:8080/EmailStruts/EmailForm.jsp">Message </a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        <div align="left"></div></td>
+    </tr>
+  </table>
+
+<!-- #EndLibraryItem --></div>
+<div class="Left_NavigationBar_Item_Backgroud" id="apDiv45">
+  <style type="text/css">
+<!--
+.Left_NavigationBar_Item_Backgroud {
+	background-color: #A0A0A4;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+.Left_Bottom_Corner_Address {	font-size: 11px;
+	color: #FFFFFF;
+	vertical-align: middle;
+}
+.borderofcell {	border: 1px ridge #FFFFFF;
+}
+.white {	color: #FFFFFF;
+}
+-->
+  </style><!-- #BeginLibraryItem "/css/left_navigation_bar_bottom1.lbi" -->
+<style type="text/css">
+<!--
+-->
+</style>
+<link href="../../css/external.css" rel="stylesheet" type="text/css">
+<table width="99%" height="190" border="0" cellpadding="0" cellspacing="0" class="Left_NavigationBar_Item_Backgroud">
+  <tr>
+    <td width="5%" height="140">&nbsp;</td>
+    <td width="86%" class="Left_Bottom_Corner_Address"><div align="center">
+      <p><strong>UNLV law library<br>
+        Las Vegas, NV 89154-1080
+      </strong> <br>
+<strong>Phone:504-515-1880</strong><br>
+        </p>
+    </div></td>
+    <td width="9%" class="Left_Bottom_Corner_Address">&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td class="Left_Bottom_Corner_Address">&nbsp;</td>
+    <td class="Left_Bottom_Corner_Address">&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td class="Left_Bottom_Corner_Address"><div align="center"><img src="../../pictures/photo/flower_in_cook.jpg" width="100" height="40"></div></td>
+    <td class="Left_Bottom_Corner_Address">&nbsp;</td>
+  </tr>
+</table>
+<!-- #EndLibraryItem --></div>
+<div id="apDiv55"><!-- #BeginLibraryItem "/css/left_navigationbar_first.lbi" -->
+<link href="../../css/external.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+	color: #0000FF;
+}
+a:active {
+	text-decoration: none;
+}
+-->
+</style>
+<table width="100%" height="377" border="0" cellpadding="0" cellspacing="0" bgcolor="#A0A0A4" class="background">
+<tr>
+      <td width="13%" height="14">&nbsp;</td>
+    <td width="9%" height="14">&nbsp;</td>
+    <td width="78%" height="14">&nbsp;</td>
+  </tr>
+    <tr>
+      <td height="26">&nbsp;</td>
+      <td height="26"><img src="../../pictures/bullet/Squarebullet2.jpg" width="5" height="5"></td>
+      <td height="26"><a href="../../project/digital_library/index.html" class="whitecolor">Digital Library</a></td>
+  </tr>
+    <tr>
+      <td height="26">&nbsp;</td>
+      <td height="26"><img src="../../pictures/bullet/Squarebullet2.jpg" width="5" height="5"></td>
+      <td height="26"><a href="../../voyager/index.html" class="whitecolor">Voyager</a></td>
+  </tr>
+    <tr>
+      <td height="26">&nbsp;</td>
+      <td height="26"><img src="../../pictures/bullet/Squarebullet2.jpg" width="5" height="5"></td>
+      <td height="26"><a href="../../project/xml_mysql/index.html" class="whitecolor">XML &amp; MySQL</a></td>
+  </tr>
+    <tr>
+      <td height="26">&nbsp;</td>
+      <td height="26"><img src="../../pictures/bullet/Squarebullet2.jpg" width="5" height="5"></td>
+      <td height="26"><a href="../../project/rdbms_data_cleansing/index.html" class="whitecolor">RDBMS</a></td>
+  </tr>
+    <tr>
+      <td height="26">&nbsp;</td>
+      <td height="26"><img src="../../pictures/bullet/Squarebullet2.jpg" width="5" height="5"></td>
+      <td height="26"><a href="../../project/web_building/index.html" class="whitecolor">Web Building</a></td>
+  </tr>
+    <tr>
+      <td height="43">&nbsp;</td>
+      <td height="43"><img src="../../pictures/bullet/Squarebullet2.jpg" width="5" height="5"></td>
+      <td height="43"><a href="../../project/record_management/index.html" class="whitecolor">Record Management</a></td>
+  </tr>
+    <tr>
+      <td height="26">&nbsp;</td>
+      <td height="26"><img src="../../pictures/bullet/Squarebullet2.jpg" width="5" height="5"></td>
+      <td height="26"><a href="../../project/metadata/index.html" class="whitecolor">Metadata</a></td>
+  </tr>
+    <tr>
+      <td height="28">&nbsp;</td>
+      <td height="28"><img src="../../pictures/bullet/Squarebullet2.jpg" width="5" height="5"></td>
+      <td height="26"><a href="../../project/index_design/index.html" class="whitecolor">Index Design</a></td>
+  </tr>
+    <tr>
+      <td height="46">&nbsp;</td>
+      <td height="46"><img src="../../pictures/bullet/Squarebullet2.jpg" width="5" height="5"></td>
+      <td><a href="../../project/information_retrieval/index.html" class="whitecolor">Information Retrieval</a></td>
+  </tr>
+    <tr>
+      <td height="19">&nbsp;</td>
+      <td height="19"><img src="../../pictures/bullet/Squarebullet2.jpg" width="5" height="5"></td>
+      <td height="26"><a href="../../project/statistics/index.html" class="whitecolor">Statistics</a></td>
+  </tr>
+    <tr>
+      <td height="19">&nbsp;</td>
+      <td height="19"><img src="../../pictures/bullet/Squarebullet2.jpg" width="5" height="5"></td>
+      <td height="26"><a href="https://librarysysworld.com/xuan/" class="whitecolor">My Blog</a></td>
+  </tr>
+    <tr>
+      <td height="19">&nbsp;</td>
+      <td height="19">&nbsp;</td>
+      <td height="19">&nbsp;</td>
+    </tr>
+</table>
+<!-- #EndLibraryItem --></div>
+
+
+<!--the code for flash display-->
+<div id="apDiv6">
+
+
+</div>
+
+
+<div id="apDiv53">
+<div align="center"></div>
+<div id="apDiv46"></div>
+<p>
+</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div id="apDiv8"></div>
+<div id="apDiv18"><!-- #BeginLibraryItem "/css/bottom_menu.lbi" -->
+<link href="../../css/bottom_menu_copyright.css" rel="stylesheet" type="text/css">
+<link href="../../css/comprehensive.css" rel="stylesheet" type="text/css">
+<table width="730" height="72" border="0" cellpadding="0" cellspacing="0" bgcolor="#999999">
+
+    <tr>
+      <td width="39" bgcolor="#666666">&nbsp;</td>
+      <td width="653" height="43" bgcolor="#666666" class="whitefont"><div align="center" class="copyright">@ 2024 <a href="mailto:andytang2010@gmail.com" class="alink">Andy Tang</a>. All rights reserved. <br />
+Last updated April 10th, 2024</div></td>
+      <td width="47" bgcolor="#666666">&nbsp;</td>
+  </tr>
+</table>
+<!-- #EndLibraryItem --></div>
+
+
+
+<div id="apDiv2">
+  <p>
+    <style type="text/css">
+.dot         { position: absolute; width: 6; height: 6; visibility: hidden; background-color: red; font-size: 1px; cursor: pointer; cursor: hand; z-index: 100 }
+.dotoff      { position: absolute; width: 6; height: 6; visibility: hidden; background-color: gray; font-size: 1px; cursor:default; z-index: 100}
+.dotempty    { position: absolute; width: 6; height: 6; visibility: hidden; background-color: orange; font-size: 1px; cursor: pointer; cursor: hand; zindex: 100 }
+.caption     { position: absolute; visibility: hidden; font-family: Tahoma; color: black; 
+               font-size: 11px; text-align: Center; cursor: default; z-index: 
+               1 }
+
+body		   { margin: 0px; background-color: white; }
+a			   { color: silver; text-decoration: none }
+p			   { font-size: 10px; font-family: tahoma; color: black } 
+    </style>
+    <script language="JavaScript" type="text/javascript">
+function lib_bwcheck(){ //Browsercheck (needed)
+	this.ver=navigator.appVersion
+	this.agent=navigator.userAgent
+	this.dom=document.getElementById?1:0
+	this.opera5=this.agent.indexOf("Opera 5")>-1
+	this.ie5=(this.ver.indexOf("MSIE 5")>-1 && this.dom && !this.opera5)?1:0; 
+	this.ie6=(this.ver.indexOf("MSIE 6")>-1 && this.dom && !this.opera5)?1:0;
+	this.ie4=(document.all && !this.dom && !this.opera5)?1:0;
+	this.ie=this.ie4||this.ie5||this.ie6
+	this.mac=this.agent.indexOf("Mac")>-1
+	this.ns6=(this.dom && parseInt(this.ver) >= 5) ?1:0; 
+	this.ns4=(document.layers && !this.dom)?1:0;
+	this.bw=(this.ie6 || this.ie5 || this.ie4 || this.ns4 || this.ns6 || this.opera5)
+	return this
+}
+var bw=new lib_bwcheck()
+
+
+// The code of this script is in the body, the browsercheck above is not used.
+
+    </script>
+    <script language="JavaScript1.2" type="text/javascript">
+<!--
+// DotMenu
+// provides cross-browser functionality
+//======================================
+function getObjectRef(name) {
+  if(document.getElementById) return document.getElementById(name);
+  else if(document.all) return document.all[name];
+  else return null;
+}
+
+// general functions to assist the script
+//========================================
+function show(name) {
+  var el = getObjectRef(name);
+  if(el) el.style.visibility = "visible";
+}
+function hide(name) {
+  var el = getObjectRef(name);
+  if(el) el.style.visibility = "hidden";
+}
+function getWidth(name) {
+  var el = getObjectRef(name);
+  return el.offsetWidth;
+}
+function getHeight(name) {
+  var el = getObjectRef(name);
+  return el.offsetHeight;
+}
+function moveMe(name,x,y) {
+  var el = getObjectRef(name);
+  if(el) { el.style.top = parseInt(y); el.style.left = parseInt(x); }  
+}
+function moveBy(name,x,y) {
+  var el = getObjectRef(name);
+  if(el) { el.style.top = parseInt(el.style.top) + parseInt(y); el.style.left = parseInt(el.style.left) + parseInt(x); }  
+}
+
+// Creates the menu objects
+//==========================
+var menuCount = 0;
+function menuObject(name,x,y,caption, r, parent) {
+  if ( (!document.getElementById&&!document.all) || navigator.userAgent.indexOf("Opera")>-1) return;
+  document.write('<div id="divDot' + menuCount + '" class="dotempty" style="top: ' + y + '; left: ' + x + '"></div>');
+  document.write('<div id="divCap' + menuCount + '" class="caption" style="top: 0; left: 0">' + caption + '</div>');
+  
+  this.name = name;
+  this.parent = parent
+  this.ref = "divDot" + menuCount;
+  this.caption = "divCap" + menuCount
+  if(r) this.radius = r;
+  else this.radius = 400;
+  this.subMenus = new Array();
+  this.state = 0;
+  this.moving = false;
+  if(this.parent) this.action = "null";
+  else this.action = "toggle";
+  if(this.parent) this.startAngle = parent.startAngle;
+  else this.startAngle = 0;
+
+  getObjectRef(this.ref).objRef = this.name;
+  
+  this.show = function() { show(this.ref); }
+  this.hide = function() { hide(this.ref); }
+  this.moveMe = function(x,y) { if(this.parent) { x += this.parent.x(); y += this.parent.y(); } moveMe(this.ref,x,y); }
+  this.moveBy = function(x,y) { moveBy(this.ref,x,y); }
+  this.x = function() { return parseInt(getObjectRef(this.ref).style.left); }
+  this.y = function() { return parseInt(getObjectRef(this.ref).style.top); }
+  this.w = function() { return getWidth(this.ref); }
+  this.h = function() { return getHeight(this.ref); }
+
+  this.showCaption = function() {
+    moveMe(this.caption, this.x() - (getWidth(this.caption)/2) + (this.w()/2), (this.y() + this.h()));
+    show(this.caption);
+  }
+  this.hideCaption = function() {
+    hide(this.caption);
+  }
+  this.setCaption = function(c) { getObjectRef(this.caption).innerHTML = c;}
+ 
+  this.addItem = function(c,action,r) {
+    getObjectRef(this.ref).className = "dot";
+    if(!r) r = this.radius/2;
+    var sub = new menuObject(this.name + ".subMenus[" + this.subMenus.length + "]",0,0,c,r,this);
+    sub.parent = this;
+    sub.action = action;
+    sub.moveMe(0,0);
+    this.subMenus[this.subMenus.length] = sub;
+    return sub;
+  }
+  
+  this.expand = function() {
+    if(this.subMenus.length > 0) {
+      var p = true;
+      if(this.parent) {
+        p = !this.parent.moving;
+        for(var i=0; i<this.parent.subMenus.length;i++)
+          p = p && ((this.parent.subMenus[i].state==0) || (this.parent.subMenus[i].state==this.parent.subMenus[i].subMenus.length)) && (this.parent.subMenus[i].moving==false);
+      } else var o = false;
+      
+
+      if((!this.parent || this.parent.state == this.parent.subMenus.length) && p) {
+        if(this.parent) this.collapseAll(this.name);
+        
+        var diff = 360 / this.subMenus.length;
+        for(var i=0;i<this.subMenus.length;i++){
+          this.subMenus[i].moveMe(0,0);
+          this.subMenus[i].show();
+          this.moving = true;
+          this.subMenus[i].slide(this.subMenus[i].radius * cos(degToRad((diff*i)+this.startAngle)), this.subMenus[i].radius * sin(degToRad((diff*i)+this.startAngle)), this.name + ".subMenus[" + i + "].showCaption();" + this.name + ".moving=false;" + this.name + ".state+=1;");
+        }
+        if(this.parent){
+          getObjectRef(this.parent.ref).style.filter = "alpha (opacity=33)";
+          getObjectRef(this.parent.ref).style.MozOpacity = "33%";
+
+          getObjectRef(this.parent.ref).className = "dotoff";
+          getObjectRef(this.parent.caption).style.filter = "alpha (opacity=33)";
+          getObjectRef(this.parent.caption).style.MozOpacity = "33%";
+          for(i=0;i<this.parent.subMenus.length;i++) {
+              getObjectRef(this.parent.subMenus[i].ref).style.filter = "alpha (opacity=66)";
+              getObjectRef(this.parent.subMenus[i].ref).style.MozOpacity = "66%";
+              getObjectRef(this.parent.subMenus[i].caption).style.filter = "alpha (opacity=66)";
+              getObjectRef(this.parent.subMenus[i].caption).style.MozOpacity = "66%";        
+          }
+          if(this.parent.parent) {
+            for(i=0;i<this.parent.parent.subMenus.length;i++) {
+              getObjectRef(this.parent.parent.subMenus[i].ref).style.filter = "alpha (opacity=33)";
+              getObjectRef(this.parent.parent.subMenus[i].ref).style.MozOpacity = "33%";
+              getObjectRef(this.parent.parent.subMenus[i].ref).className = "dotoff";
+              getObjectRef(this.parent.parent.subMenus[i].caption).style.filter = "alpha (opacity=33)";        
+              getObjectRef(this.parent.parent.subMenus[i].caption).style.MozOpacity = "33%";
+            }
+            getObjectRef(this.parent.parent.ref).style.MozOpacity = "33%";
+            getObjectRef(this.parent.parent.ref).style.MozOpacity = "33%";
+            getObjectRef(this.parent.parent.ref).className = "dotoff";
+          }
+        }
+        getObjectRef(this.ref).style.filter = "alpha (opacity=66)";
+        getObjectRef(this.caption).style.filter = "alpha (opacity=66)";  
+        getObjectRef(this.ref).style.MozOpacity = "66%";
+        getObjectRef(this.caption).style.MozOpacity = "66%"; 
+      }
+    }  
+  }
+
+  this.collapse = function() {
+    var p = true;
+    p = !this.moving;
+    for(var i=0; i<this.subMenus.length;i++)
+      p = p && (this.subMenus[i].state==0)  && (this.subMenus[i].moving==false);
+    
+    if(p && this.subMenus.length > 0) {
+      for(var i=0;i<this.subMenus.length;i++){
+        this.subMenus[i].hideCaption();
+        this.moving = true;
+        this.subMenus[i].slide(0, 0, this.name + ".subMenus[" + i + "].hide();" + this.name + ".moving=false;" + this.name + ".state-=1;");
+      }
+      if(this.parent){
+        getObjectRef(this.parent.ref).style.filter = "alpha (opacity=66)";
+        getObjectRef(this.parent.ref).style.MozOpacity = "66%";
+        if(this.parent.subMenus.length != 0)
+          getObjectRef(this.parent.ref).className = "dot";
+        else
+          getObjectRef(this.parent.ref).className = "dotempty";
+        getObjectRef(this.parent.caption).style.filter = "alpha (opacity=66)";
+        getObjectRef(this.parent.caption).style.MozOpacity = "66%";
+        for(i=0;i<this.parent.subMenus.length;i++) {
+          getObjectRef(this.parent.subMenus[i].ref).style.filter = "alpha (opacity=100)";
+          getObjectRef(this.parent.subMenus[i].ref).style.MozOpacity = "100%";
+          if(this.parent.subMenus[i].subMenus.length != 0) 
+            getObjectRef(this.parent.subMenus[i].ref).className = "dot";
+          else
+            getObjectRef(this.parent.subMenus[i].ref).className = "dotempty";
+          getObjectRef(this.parent.subMenus[i].caption).style.filter = "alpha (opacity=100)";        
+          getObjectRef(this.parent.subMenus[i].caption).style.MozOpacity = "100%";
+        }
+        if(this.parent.parent) {
+          for(i=0;i<this.parent.parent.subMenus.length;i++) {
+            getObjectRef(this.parent.parent.subMenus[i].ref).style.filter = "alpha (opacity=66)";
+            getObjectRef(this.parent.parent.subMenus[i].ref).style.MozOpacity = "66%";
+            if(this.parent.parent.subMenus[i].subMenus.length != 0)
+              getObjectRef(this.parent.parent.subMenus[i].ref).className = "dot";
+            else
+              getObjectRef(this.parent.parent.subMenus[i].ref).className = "dotempty";
+            getObjectRef(this.parent.parent.subMenus[i].caption).style.filter = "alpha (opacity=66)";        
+            getObjectRef(this.parent.parent.subMenus[i].caption).style.MozOpacity = "66%";
+          }
+        }
+      }
+      getObjectRef(this.ref).style.filter = "alpha (opacity=100)";
+      getObjectRef(this.caption).style.filter = "alpha (opacity=100)";       
+      getObjectRef(this.ref).style.MozOpacity = "100%";
+      getObjectRef(this.caption).style.MozOpacity = "100%";
+    }
+  }
+
+  this.collapseAll = function(except) {
+    for(var i=0;i<this.parent.subMenus.length;i++) {
+      if(this.parent.subMenus[i].name!=except && this.parent.subMenus[i].state==this.parent.subMenus[i].subMenus.length) {
+        this.parent.subMenus[i].collapse();
+      }    
+    }
+  }
+  
+  this.toggle = function(e) {
+    if(document.all) id = window.event.srcElement;
+    else id = e.target;
+    var dot = eval(id.objRef);
+    
+    if(dot.state==0 && !dot.moving) dot.expand();
+    else if(dot.state==dot.subMenus.length && !dot.moving) dot.collapse()
+  }
+  
+  this.doAction = function(e) {
+    if(document.all) id = window.event.srcElement;
+    else id = e.target;
+    var dot = eval(id.objRef);
+    
+    if(dot.action == "toggle") dot.toggle(e);
+    else eval(dot.action);
+  }
+  
+  //change these if you want to change the events that trigger the actions
+  //========================================================================
+  //getObjectRef(this.ref).onmousemove = this.toggle;
+  getObjectRef(this.ref).onmouseup = this.doAction;
+  
+  this.slide = function(xx,yy,func) {
+    if(!func) func = "";
+    var px = this.parent.x();
+    var py = this.parent.y();
+    
+    var x = xx - this.x() + px;
+    var y = yy - this.y() + py;
+    
+    var d = sqrt(square(xx-this.x() + px) + square(yy-this.y() + py));
+    
+    var v = d/8;
+    if(v<1) v = 1;
+        
+    if( (Math.abs(x) < v) && (Math.abs(y) < v) ) {
+      moveMe(this.ref,xx + px,yy + py);      
+      if(func != "") eval(func);
+    } else {    
+      var a = round(atan(x,y));
+      dx = round(v * cos(degToRad(a)));
+      dy = round(v * sin(degToRad(a)));
+   
+      this.moveBy(dx,dy);
+      setTimeout(this.name + ".slide(" + xx + "," + yy + ", '" + func + "');",10);    
+    }
+  }
+  // Preoading the windows filters.
+  if (menuCount==0 && document.all) document.all[this.ref].style.filter = "alpha (opacity=100)";
+  menuCount++;
+  return this;
+}
+
+
+// Math functions
+//================
+var pi = Math.PI;
+function square(x) { return (x*x); }
+function sqrt(x) { return Math.sqrt(x); }
+function round(x) { return Math.round(x); }
+function rand(x,y) { return (round(Math.random()*(y-x)) + x); }
+
+function cos(x) { return Math.cos(x) }
+function sin(x) { return Math.sin(x) }
+	
+function degToRad(x) { return ( x/(360/(2*pi)) ); }
+function radToDeg(x) { return ( x*(360/(2*pi)) ); }
+
+
+function atan(s,t) {
+  if( s == 0.0 && t > 0.0)
+    angle = 90.0;
+  else if(s == 0.0 && t < 0.0) 
+    angle = 270.0;
+  else if (s < 0.0 ) 
+    angle = 180.0 + radToDeg(Math.atan(t/s));
+  else if (s > 0.0 && t < 0.0)
+    angle = 360.0 + radToDeg(Math.atan(t/s));
+  else {
+    if(s==0.0) s=0.00001;
+    angle = radToDeg(Math.atan(t/s));
+  }
+  if(angle < 0.0) angle += 360.0;
+  return angle;
+}
+//get dimentions of the page
+if(document.all) pageWidth = document.body.offsetWidth-20;
+else pageWidth = innerWidth;
+if(document.all) pageHeight = document.body.offsetHeight-4;
+else pageHeight = innerHeight;
+
+//Create main menu
+var menu = new menuObject("menu",pageWidth/2,pageHeight/2,"DhtmlCentral Site Map",pageHeight/2);
+menu.startAngle = -90;
+
+//show menu and caption
+menu.show();
+menu.showCaption();
+
+//Add submenus
+menu.addItem("news","window.open('/news')");
+menu.addItem("scripts","toggle");
+menu.addItem("tutorials","toggle");
+menu.addItem("forums","toggle");
+menu.addItem("resources","toggle");
+
+menu.subMenus[1].addItem("FoldOutMenu","window.open('/script/script22.asp')");
+menu.subMenus[1].addItem("Loading Bar","window.open('/script/script17.asp')");
+menu.subMenus[1].addItem("Window Script","window.open('/script/script16.asp')");
+menu.subMenus[1].addItem("PageSlideFade","window.open('/script/script15.asp')");
+menu.subMenus[1].addItem("Circle Menu","window.open('/script/script14.asp')");
+menu.subMenus[1].addItem("Annimation Intro","window.open('/script/script9.asp')");
+menu.subMenus[1].addItem("NewsSlideFade","window.open('/script/script10.asp')");
+menu.subMenus[1].addItem("Other Scripts","window.open('/script/')");
+
+
+menu.subMenus[2].addItem("Scripting for vs5 browsers","window.open('/tutorials/tutorial5.asp')");
+menu.subMenus[2].addItem("Makeing a Dhtml Script","window.open('/tutorials/tutorial6.asp')");
+menu.subMenus[2].addItem("Filters & Transitions","window.open('/tutorials/tutorial4.asp')");
+menu.subMenus[2].addItem("Dhtml Library","window.open('/tutorials/tutorial3.asp')");
+menu.subMenus[2].addItem("Document Size","window.open('/tutorials/tutorial2.asp')");
+menu.subMenus[2].addItem("Dhtml Intro","window.open('/tutorials/tutorial1.asp')");
+
+menu.subMenus[3].addItem("Forum listings","window.open('/forums')");
+menu.subMenus[3].addItem("Cool Sites","window.open('/forums/forum.asp?FORUM_ID=1&CAT_ID=1&Forum_Title=Cool+sites')");
+menu.subMenus[3].addItem("CoolMenus","window.open('/forums/forum.asp?FORUM_ID=2&CAT_ID=1&Forum_Title=CoolMenus')");
+menu.subMenus[3].addItem("Cross Browser","window.open('/forums/forum.asp?FORUM_ID=3&CAT_ID=1&Forum_Title=Crossbrowser+DHTML')");
+menu.subMenus[3].addItem("Scripts","window.open('/forums/forum.asp?FORUM_ID=4&CAT_ID=1&Forum_Title=DHTML+Scripts')");
+menu.subMenus[3].addItem("General","window.open('/forums/forum.asp?FORUM_ID=6&CAT_ID=1&Forum_Title=General+DHTML+issues')");
+menu.subMenus[3].addItem("Off-Topic","window.open('/forums/forum.asp?FORUM_ID=9&CAT_ID=1&Forum_Title=Off%2Dtopic')");
+
+
+c = menu.subMenus[4].addItem("Cool Sites","toggle");
+c.startAngle = 15;
+menu.subMenus[4].addItem("Portals","window.open('/resources/default.asp?catid=7&cattitle=Portals')");
+menu.subMenus[4].addItem("Script Sites","window.open('/resources/default.asp?catid=1&cattitle=Script+sites')");
+menu.subMenus[4].addItem("Tutorials &<br>References","toggle");
+
+menu.subMenus[4].subMenus[0].addItem("Comercial Sites","window.open('/resources/default.asp?catid=5&cattitle=Commercial+sites')");
+menu.subMenus[4].subMenus[0].addItem("Personal Sites","window.open('/resources/default.asp?catid=6&cattitle=Personal+sites')");
+menu.subMenus[4].subMenus[0].addItem("Experimental Projects","window.open('/resources/default.asp?catid=4&cattitle=Experimental+projects')");
+
+menu.subMenus[4].subMenus[3].addItem("References","window.open('/resources/default.asp?catid=8&cattitle=References')");
+menu.subMenus[4].subMenus[3].addItem("Tutorials & Articles","window.open('/resources/default.asp?catid=9&cattitle=Tutorials+and+Articles')");
+//--></script>
+  </p>
+</div>
+</body>
+</html>

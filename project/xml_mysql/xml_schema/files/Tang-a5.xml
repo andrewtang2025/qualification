@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EmailMessage xmlns ="http://www.berrypicking.net/qualification/project/xml_mysql/xml_schema"
+							 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		                     xsi:schemaLocation="
+												http://www.berrypicking.net/qualification/project/xml_mysql/xml_schema
+                                                Tang-a5.xsd">
+	<Message>
+		<messagedate>Date: Fri, 05 Dec 2008 16:36:14 -0500</messagedate>
+		<From>From: joe smith &lt;jsmith@rutgers.edu&gt;</From>
+		<to>To: Xiangmin Zhang &lt;xzhang@scils.rutgers.edu&gt;</to>
+		<cc>Cc: John Terry &lt;jterry@gmail.com&gt;</cc>
+		<subject>Subject: Meeting on monday</subject>
+		<content>
+			
+			Hi, there,
+			What time do we meet on Monday to discuss the project?
+
+			Joe
+		</content>
+	</Message>
+
+
+	<Message>
+		<subject>Subject: Re: Meeting on Monday</subject>
+		<From>From: &quot;xzhang&quot; &lt;xzhang@scils.rutgers.edu&gt;</From>
+		<messagedate>Date: Fri, 05 Dec 2008 16:36:14 -0500</messagedate>
+		<to>To: &quot;joe smith&quot; &lt;jsmith@rutgers.edu&gt;</to>
+		<cc>Cc: &quot;John Terry&quot; &lt;jterry@gmail.com&gt;</cc>
+		<priority>Priority: Normal</priority>
+		<content>
+
+			How about 10 am on Monday?
+
+			-XMZ
+
+		</content>
+	</Message>
+
+	<Message>
+		<From>from John Terry &lt;jterry@gmail.com&gt;</From>
+		<to>to &quot;Xiangmin Zhang&quot; xzhang@scils.rutgers.edu, &quot;joe smith&quot; &lt;jsmith@rutgers.edu&gt;</to>
+		<messagedate>date Fri, Dec 5, 2008 at 7:08 PM</messagedate>
+		<subject>subject Re: Meeting on monday</subject>
+		<mailedby>mailed-by gmail.google.com</mailedby>
+		<content>
+			
+			OK, see you Monday at 10 am.
+
+			John
+
+		</content>
+	</Message>
+</EmailMessage>

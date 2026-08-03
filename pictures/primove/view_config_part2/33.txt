@@ -1,0 +1,104 @@
+
+MARC21 normalization rule for display  works, andy
+*******************************************************************************
+rule "Primo VE - Lds02"
+	when
+		MARC is "050"."a" AND MARC."050"."a" match "A.*"   
+	then
+		#create pnx."display"."lds02" with MARC "050"."a"
+set TEMP"1" to MARC "050"."a"
+replace string by string (TEMP"1","^(.{1}).*","$1")
+add suffix (TEMP"1"," - General Works")
+create pnx."display"."lds02" with TEMP"1"
+end
+---------------------------------------------------------------------
+
+rule "Primo VE Marc - Lsr02"
+	when
+		#MARC is "050"."a" 
+MARC is "050"."a" AND MARC."050"."a" match "A.*" 
+	then
+		#create pnx."display"."lds02" with MARC "090"."a"
+set TEMP"1" to MARC "050"."a"
+replace string by string (TEMP"1","^(.{1}).*","$1")
+add suffix (TEMP"1"," - General Works")
+create pnx."search"."lsr02" with TEMP"1"
+end
+
+rule "Primo VE Marc - Lsr02_K"
+	when
+		#MARC is "050"."a" 
+MARC is "050"."a" AND MARC."050"."a" match "K.*" 
+	then
+		#create pnx."display"."lds02" with MARC "090"."a"
+set TEMP"1" to MARC "050"."a"
+replace string by string (TEMP"1","^(.{1}).*","$1")
+add suffix (TEMP"1"," - LAW")
+create pnx."search"."lsr02" with TEMP"1"
+end
+
+rule "Primo VE Marc - Lsr02_H"
+	when
+		#MARC is "050"."a" 
+MARC is "050"."a" AND MARC."050"."a" match "H.*" 
+	then
+		#create pnx."display"."lds02" with MARC "090"."a"
+set TEMP"1" to MARC "050"."a"
+replace string by string (TEMP"1","^(.{1}).*","$1")
+add suffix (TEMP"1"," - Social Sience")
+create pnx."search"."lsr02" with TEMP"1"
+end
+*******************************************************************************
+
+
+MARC21 normalization rule for display My algorithm works, andy
+*************************
+rule "Primo VE - Lds02"
+	when
+		MARC is "050"."a" AND MARC."050"."a" match "A.*"   
+	then
+		#create pnx."display"."lds02" with MARC "050"."a"
+set TEMP"1" to MARC "050"."a"
+replace string by string (TEMP"1","(?<!^).*","")
+add suffix (TEMP"1"," - General Works")
+create pnx."display"."lds02" with TEMP"1"
+end
+----------------------------
+rule "Primo VE Marc - Lsr02"
+	when
+		#MARC is "050"."a" 
+MARC is "050"."a" AND MARC."050"."a" match "A.*" 
+	then
+		#create pnx."display"."lds02" with MARC "090"."a"
+set TEMP"1" to MARC "050"."a"
+replace string by string (TEMP"1","(?<!^).*","")
+add suffix (TEMP"1"," - General Works")
+create pnx."search"."lsr02" with TEMP"1"
+end
+
+rule "Primo VE Marc - Lsr02_K"
+	when
+		#MARC is "050"."a" 
+MARC is "050"."a" AND MARC."050"."a" match "K.*" 
+	then
+		#create pnx."display"."lds02" with MARC "090"."a"
+set TEMP"1" to MARC "050"."a"
+replace string by string (TEMP"1","(?<!^).*","")
+add suffix (TEMP"1"," - LAW")
+create pnx."search"."lsr02" with TEMP"1"
+end
+
+rule "Primo VE Marc - Lsr02_H"
+	when
+		#MARC is "050"."a" 
+MARC is "050"."a" AND MARC."050"."a" match "H.*" 
+	then
+		#create pnx."display"."lds02" with MARC "090"."a"
+set TEMP"1" to MARC "050"."a"
+replace string by string (TEMP"1","(?<!^).*","")
+add suffix (TEMP"1"," - Social Sience")
+create pnx."search"."lsr02" with TEMP"1"
+end
+***************************************************************************
+
+

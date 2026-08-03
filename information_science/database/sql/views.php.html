@@ -1,0 +1,101 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="robots" content="noarchive">
+
+<meta name="description"
+content="A view is, in essence, a virtual table.  It does not physically exist.">
+<meta name="keywords"
+content="tech on the net, sql, views">
+<meta name="title" content="SQL: VIEWS">
+<title>SQL: VIEWS</title>
+
+<link rel="stylesheet" type="text/css" href="stylesheets/screen.css"  media="screen" />
+<link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+</head>
+<body>
+<table id="header" width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    
+    
+  </tr>
+</table>
+
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+
+    <td align="left"><div id="content">
+	
+        
+        <h1>SQL: VIEWS</h1>
+        <hr>
+        <p>A view is, in essence, a virtual table. It does not physically exist. Rather, it is created by a query joining one or more tables.</p>
+        <h2>Creating a VIEW</h2>
+        <p>The syntax for creating a VIEW is:</p>
+        <blockquote class="definition">
+          <p>CREATE VIEW view_name AS<br>
+            SELECT columns<br>
+            FROM table<br>
+            WHERE predicates;</p>
+        </blockquote>
+        <br>
+        <p class="example_heading">For example:</p>
+        <blockquote class="sql_command">
+          <p>CREATE VIEW sup_orders AS<br>
+            SELECT suppliers.supplier_id, orders.quantity, orders.price<br>
+            FROM suppliers, orders<br>
+            WHERE suppliers.supplier_id = orders.supplier_id<br>
+            and suppliers.supplier_name = 'IBM';</p>
+        </blockquote>
+        <p>This would create a virtual table based on the result set of the select statement. You can now query the view as follows:</p>
+        <blockquote class="sql_command">
+          <p>SELECT *<br>
+            FROM sup_orders;</p>
+        </blockquote>
+        <br>
+        <h2>Updating a VIEW</h2>
+        <p>You can update a VIEW without dropping it by using the following syntax:</p>
+        <blockquote class="definition">
+          <p>CREATE OR REPLACE VIEW view_name AS<br>
+            SELECT columns<br>
+            FROM table<br>
+            WHERE predicates;</p>
+        </blockquote>
+        <br>
+        <p class="example_heading">For example:</p>
+        <blockquote class="sql_command">
+          <p>CREATE or REPLACE VIEW sup_orders AS<br>
+            SELECT suppliers.supplier_id, orders.quantity, orders.price<br>
+            FROM suppliers, orders<br>
+            WHERE suppliers.supplier_id = orders.supplier_id<br>
+            and suppliers.supplier_name = 'Microsoft';</p>
+        </blockquote>
+        <br>
+        <h2>Dropping a VIEW</h2>
+        <p>The syntax for dropping a VIEW is:</p>
+        <blockquote class="definition">
+          <p>DROP VIEW view_name;</p>
+        </blockquote>
+        <p class="example_heading">For example:</p>
+        <blockquote class="sql_command">
+          <p>DROP VIEW sup_orders;</p>
+        </blockquote>
+        <br>
+        <h2>Frequently Asked Questions</h2>
+        <hr>
+        <p><b>Question</b>:&nbsp; Can you update the data in a view?</p>
+        <p><b>Answer</b>:&nbsp; A view is created by joining one or more tables. When you update record(s) in a view, it updates the records in the underlying tables that make up the view.</p>
+        <p>So, yes, you can update the data in a view providing you have the proper privileges to the underlying tables.</p>
+        <hr>
+        <p><b>Question</b>: Does the view exist if the table is dropped from the database?</p>
+        <p><b>Answer</b>: Yes, in Oracle, the view continues to exist even after one of the tables (that the view is based on) is dropped from the database. However, if you try to query the view after the table has been dropped, you will receive a message indicating that the view has errors.</p>
+        <p>If you recreate the table (that you had dropped), the view will again be fine.</p>
+    </div>
+      
+</td>
+  </tr>
+</table>
+
+</body>
+</html>

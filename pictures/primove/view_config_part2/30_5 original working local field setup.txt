@@ -1,0 +1,17 @@
+rule "Primo VE - Lds01"
+	when
+		MARC is "050"."a"
+	then
+		create pnx."display"."lds01" with MARC "050"."a"
+end
+
+
+
+rule "Primo VE Marc - Lsr01"
+	when
+		MARC is "050"."a"
+	then
+		create pnx."search"."lsr01" with MARC "050"."a"
+end
+*************************************************************************************
+

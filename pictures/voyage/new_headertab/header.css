@@ -1,0 +1,80 @@
+/* below is added by andy on 06-02-2010 to change header bar style, the code comes from columbia university website */
+#hheaderTabs {
+height:25px;
+position:relative;
+z-index:1;
+}
+#hheaderTabs .navbar {
+height:1.5em;
+margin:0;
+vertical-align:top;
+width:100%;
+}
+
+/*added by andy on 09-23-2010*/
+#hheaderTabs .navbar .vufind{
+height:1.5em;
+float:right;
+margin-right:5em;
+background-color:red;
+/*vertical-align:top;*/
+/*width:100%;*/
+}
+
+
+#hheaderTabs ul {
+background-color:#006498;
+border-bottom:1px solid #006498;
+list-style:none outside none;
+margin:0;
+padding:0;
+width:100%;
+}
+#hheaderTabs li {
+background-color:#006498;
+float:left;
+margin-top:0;
+text-align:center;
+width:100px;
+}
+#hheaderTabs li a {
+color:#FFFFFF;
+cursor:pointer;
+display:block;
+font-size:14px;
+font-weight:normal;
+margin:3px 0;
+padding:0 6px 0 0;
+text-decoration:none;
+}
+#hheaderTabs li a span {
+display:block;
+text-align:center;
+text-decoration:none;
+}
+#hheaderTabs li a:hover {
+color:#006498;
+}
+#hheaderTabs li a:hover span {
+}
+#hheaderTabs li.on a, #hheaderTabs li.on a:visited {
+color:#006498;
+text-decoration:none;
+}
+#hheaderTabs li.on a span {
+}
+#hheaderTabs li.on {
+background:none repeat scroll 0 0 #C9E5FF;
+border-bottom:2px solid #C9E5FF;
+}
+#hheaderTabs li:hover {
+background:none repeat scroll 0 0 #C9E5FF;
+border-bottom:1px solid #C9E5FF;
+}
+#hheaderTabs li a:hover, #hheaderTabs li:hover a {
+background:none repeat scroll 0 0 #C9E5FF;
+border-bottom:1px solid #C9E5FF;
+color:#006498;
+}
+
+/* above is added by andy on 06-02-2010 to change header bar style */

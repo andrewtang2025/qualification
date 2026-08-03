@@ -1,0 +1,793 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+<!--
+#apDiv1 {
+	position:absolute;
+	left:15px;
+	top:15px;
+	width:158px;
+	height:265px;
+	z-index:1;
+}
+-->
+</style>
+</head>
+
+<body>
+<div id="apDiv1">
+
+<style>
+    .MenuLevel1{
+ position:relative;
+ font-size:12px ;
+ color:#333333 ;
+ height:24px ;
+ line-height:24px;
+ cursor:hand ;
+ padding-left:12px;
+ background:#efefef;
+ border-top:1px #f7f7f7 solid;
+ border-bottom:1px #ccc solid;
+}
+.MenuLevel1 span{
+ position : absolute ;
+ right:2px;
+ top:3px;
+
+}
+.MenuLevel2{
+ font-size:12px ;
+ color:#333333 ;
+ background-color:#f7f7f7 ;
+ height:18px ;
+ padding-top:3px ;
+ padding-left:18px;
+ border-bottom:1px #efefef solid;
+}
+.MenuLevel3{
+ position:relative;
+ font-size:12px ;
+ color:#333333 ;
+ background-color:#f7f7f7 ;
+ height:20px ;
+ padding-top:3px ;
+ padding-left:18px;
+ border-top:1px #ffffff solid;
+ border-bottom:1px #efefef solid;
+}
+.MenuLevel3 span{
+ position : absolute ;
+ right:2px;
+ top:3px;
+
+}
+.MenuLevel4{
+ display:block;
+ font-size:12px ;
+ color:#333333 ; 
+ background-color:#fff;
+ height:20px ;
+ line-height:20px ;
+ padding:3px 0 0 18px;
+ border-bottom:1px #efefef solid;
+}
+
+a.MenuLevel4 {
+ text-decoration:none;
+}
+
+a.MenuLevel4:hover {
+ color:#fff;
+ background:#AFC81C;
+ text-decoration:none;
+}
+
+
+.MenuLevel8888{
+ font-size:12px ;
+ color:#5277A9 ;
+ background-color:#E0E0DA ;
+ height:18px ;
+ padding-top:3px ;
+ padding-left:18px;
+}
+
+.SubMenuLayer{
+ display:inline ;
+ cursor:hand ;
+}
+
+.SubMenuLayerHidden{
+ display:none ;
+ cursor:hand ;
+}
+
+.oprName{
+ position : absolute ;
+ left : 0 ;
+ top : 1000px ; 
+ width : 109 ; 
+ z-index : 10 ;
+ line-height : 20px ; 
+ font-size : 12px ;
+ background-color : #887868 ;
+ color : #ffffff ;
+ border : none ;
+ text-align : left ;
+ display:inline;
+}
+
+.oprName_hidden{
+ position : absolute ;
+ left : 0 ;
+ top : 1000px ; 
+ width : 109 ; 
+ z-index : 10 ;
+ line-height : 20px ; 
+ font-size : 12px ;
+ background-color : #887868 ;
+ color : #ffffff ;
+ border : none ;
+ text-align : left ;
+ display:none;
+}
+
+.oprName1{
+ position : absolute ;
+ right : 0 ;
+ bottom : 1000px ; 
+ width : 12 ; 
+ z-index : 10 ;
+ line-height : 12px ; 
+ font-size : 12px ;
+ background-color : #887868 ;
+ color : #ffffff ;
+ border : none ;
+ text-align:center;
+ padding-top:6px;
+ display:inline;
+}
+
+.oprName1_hidden{
+ position : absolute ;
+ right : 0 ;
+ bottom : 1000px ; 
+ width : 12 ; 
+ z-index : 10 ;
+ line-height : 12px ; 
+ font-size : 12px ;
+ background-color : #887868 ;
+ color : #ffffff ;
+ border : none ;
+ text-align:center;
+ padding-top:6px;
+ display:none;
+}
+
+#rlisttable {
+ text-align:right;
+}
+#rlisttable table {
+ clear:both;
+ margin:10px 0;
+ text-align:left;
+ width:100%;
+}
+#rlisttable tr {
+ zoom:1;
+}
+#rlisttable th {
+ background:#6e8193;
+ color:#fff;
+ font:bold 12px verdana;
+ zoom:1;
+}
+#rlisttable th div {
+ margin:3px 2px;
+ zoom:1;
+}
+#rlisttable th a {
+ color:#fff;
+}
+
+#rlisttable th.photo div {
+ margin-left:5px;
+}
+#rlisttable td {
+ background:#fff;
+ zoom:1;
+}
+#rlisttable td.div {
+ overflow:hidden;
+}
+#rlisttable td.selected {
+ color:#d8602f;
+}
+#rlisttable .prirow td {
+ font:normal 12px verdana;
+ vertical-align:top;
+}
+
+#rlisttable .secrow td {
+ font:normal 12px verdana;
+ vertical-align:top;
+ border-top:3px solid #f0f0f0;
+}
+#rlisttable td.ord div {
+ margin:10px 3px;
+ width:23px;
+}
+#rlisttable td.photo div {
+ margin:10px 2px 10px 5px;
+ width:120px;
+}
+#rlisttable td.photo img {
+ display:block;
+ height:90px;
+ width:120px;
+}
+#rlisttable td.model div {
+ margin:10px 2px;
+ line-height:1.3em;
+ width:174px;
+}
+#rlisttable td.model .optional {
+ font:12px arial;
+ color:#666;
+}
+#rlisttable td.mpg div {
+ margin:10px 2px;
+ width:80px;
+}
+#rlisttable td.msrp div {
+ margin:10px 2px;
+ width:76px;
+}
+#rlisttable td.hp div {
+ margin:10px 2px;
+ width:100px;
+}
+#rlisttable td.rating div {
+ margin:10px 2px;
+ text-align:center;
+ width:80px;
+}
+#rlisttable th.compare {
+ background:#d4dbe3;
+ color:#000;
+ text-align:right;
+}
+#rlisttable th.compare2 {
+ background:#f0f0f0;
+}
+
+#rlisttable td.ord {
+ font:bold 100% sans-serif;
+ text-align:left;
+}
+#rlisttable td.model {
+ font:bold 100% sans-serif;
+ text-align:left;
+}
+#rlisttable td.tech {
+ color:#379115;
+}
+#rlisttable .border td {
+ background:#f0f0f0;
+ height:10px;
+}
+#rlisttable td.addtrim {
+ padding:0 0 0 2px;
+}
+#rlisttable td.addtrim .head {
+ border-top:1px dotted #999;
+ border-bottom:1px dotted #999;
+ color:#999;
+ margin:10px 0;
+ padding:2px 0 2px 5px;
+}
+#rlisttable td.addtrim .head a {
+ color:#d8602f;
+ text-decoration:none;
+}
+#rlisttable td.addtrim .head a strong {
+ color:#999;
+}
+#rlisttable td.addtrim .head a:hover {
+ zoom:1;
+}
+#rlisttable td.addtrim .head a:hover strong {
+ color:#d8602f;
+ text-decoration:underline;
+}
+#rlisttable td.addtrim .head a:hover span {
+ font-weight:bold;
+}
+#rlisttable td.compare {
+ background:#e0e0e0;
+ vertical-align:bottom;
+}
+#rlisttable td.compare div {
+ margin:5px auto;
+ text-align:center;
+ width:28px;
+}
+
+    </style>
+        <script LANGUAGE="javascript">
+<!--
+
+var subMenu = new Array(5);
+subMenu[0] = 'undefine';
+subMenu[1] = 'undefine';
+subMenu[2] = 'undefine';
+subMenu[3] = 'undefine';
+subMenu[4] = 'undefine';
+
+function gotoURL(szURL){
+ window.open(szURL,'Main','') ;
+}
+//-->
+</script>
+<link type="text/css" rel="stylesheet" href="/skin/v2009/down.css"/>
+
+<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
+            <tr valign="top">
+              <td id="Menu" style="display:inline;" width="100%">
+              
+
+<div onClick="javascript:spreadMenu(1)" class="MenuLevel1">源码下载 <span id="ArrowLayer1Down" style="display:inline ; "><img src="/skin/v2009/downarrow.gif" border="0"></span><span id="ArrowLayer1Right" style="display:none ; "><img src="/skin/v2009/uparrow.gif" border="0"></span></div>
+<div id="SubMenu1" class="SubMenuLayerHidden" style="overflow-y:block;">
+   
+   <script language="javascript">subMenu[4] = 1;</script>
+            <div onClick="javascript:spreadSubMenu(1)" class="MenuLevel3"> ASP源码<span id="ArrowSubLayer1Down" style="display:inline ; "><img src="/skin/v2009/slot-down.gif" border="0"></span><span id="ArrowSubLayer1Right" style="display:none ; "><img src="/skin/v2009/slot-up.gif" border="0"></span></div>
+                  <div id="SubSubMenu1" class="SubMenuLayerHidden">
+                  <a class="MenuLevel4" href="../about/interface_dream_factory/拷贝[2] 于 index.html">新闻文章CMS</a>
+<a class="MenuLevel4" href="sp.asp?id=65">论坛程序源码</a>
+<a class="MenuLevel4" href="sp.asp?id=66">企业公司网站</a>
+<a class="MenuLevel4" href="sp.asp?id=67">购物商城网店</a>
+<a class="MenuLevel4" href="sp.asp?id=68">行业商务网站</a>
+<a class="MenuLevel4" href="sp.asp?id=69">政府机构网站</a>
+<a class="MenuLevel4" href="sp.asp?id=70">房地产行业网</a>
+<a class="MenuLevel4" href="sp.asp?id=71">教育院校门户</a>
+<a class="MenuLevel4" href="sp.asp?id=72">汽车相关行业</a>
+<a class="MenuLevel4" href="sp.asp?id=73">健康医疗网站</a>
+<a class="MenuLevel4" href="sp.asp?id=74">人才招聘信息</a>
+<a class="MenuLevel4" href="sp.asp?id=75">图片类型网站</a>
+<a class="MenuLevel4" href="sp.asp?id=76">游戏点卡相关</a>
+<a class="MenuLevel4" href="sp.asp?id=77">婚介交友网站</a>
+<a class="MenuLevel4" href="sp.asp?id=78">地方信息门户</a>
+<a class="MenuLevel4" href="sp.asp?id=79">美食餐饮网站</a>
+<a class="MenuLevel4" href="sp.asp?id=80">电影视频音乐</a>
+<a class="MenuLevel4" href="sp.asp?id=81">域名主机空间</a>
+<a class="MenuLevel4" href="sp.asp?id=82">聊天留言程序</a>
+<a class="MenuLevel4" href="sp.asp?id=83">博客播客系统</a>
+<a class="MenuLevel4" href="sp.asp?id=84">软件下载上传</a>
+<a class="MenuLevel4" href="sp.asp?id=85">行政办公系统</a>
+<a class="MenuLevel4" href="sp.asp?id=86">计数投票统计</a>
+<a class="MenuLevel4" href="sp.asp?id=87">便民查询搜索</a>
+<a class="MenuLevel4" href="sp.asp?id=88">链接网址导航</a>
+<a class="MenuLevel4" href="sp.asp?id=89">设计装潢广告</a>
+<a class="MenuLevel4" href="sp.asp?id=90">娱乐休闲搞笑</a>
+<a class="MenuLevel4" href="sp.asp?id=91">景点旅游门户</a>
+<a class="MenuLevel4" href="sp.asp?id=92">其它整站系统</a>                  </div>
+   
+   <script language="javascript">subMenu[4] = 2;</script>
+            <div onClick="javascript:spreadSubMenu(2)" class="MenuLevel3"> PHP源码<span id="ArrowSubLayer2Down" style="display:inline ; "><img src="/skin/v2009/slot-down.gif" border="0"></span><span id="ArrowSubLayer2Right" style="display:none ; "><img src="/skin/v2009/slot-up.gif" border="0"></span></div>
+                  <div id="SubSubMenu2" class="SubMenuLayerHidden">
+                  <a class="MenuLevel4" href="sp.asp?id=1">便民查询搜索</a>
+<a class="MenuLevel4" href="sp.asp?id=2">链接网址导航</a>
+<a class="MenuLevel4" href="sp.asp?id=3">设计装潢广告</a>
+<a class="MenuLevel4" href="sp.asp?id=4">娱乐休闲搞笑</a>
+<a class="MenuLevel4" href="sp.asp?id=5">景点旅游门户</a>
+<a class="MenuLevel4" href="sp.asp?id=6">其它整站系统</a>
+<a class="MenuLevel4" href="sp.asp?id=37">新闻文章CMS</a>
+<a class="MenuLevel4" href="sp.asp?id=38">论坛程序源码</a>
+<a class="MenuLevel4" href="sp.asp?id=39">企业公司网站</a>
+<a class="MenuLevel4" href="sp.asp?id=40">购物商城网店</a>
+<a class="MenuLevel4" href="sp.asp?id=41">行业商务网站</a>
+<a class="MenuLevel4" href="sp.asp?id=42">政府机构网站</a>
+<a class="MenuLevel4" href="sp.asp?id=43">房地产行业网</a>
+<a class="MenuLevel4" href="sp.asp?id=44">教育院校门户</a>
+<a class="MenuLevel4" href="sp.asp?id=45">汽车相关行业</a>
+<a class="MenuLevel4" href="sp.asp?id=46">健康医疗网站</a>
+<a class="MenuLevel4" href="sp.asp?id=47">人才招聘信息</a>
+<a class="MenuLevel4" href="sp.asp?id=48">图片类型网站</a>
+<a class="MenuLevel4" href="sp.asp?id=49">游戏点卡相关</a>
+<a class="MenuLevel4" href="sp.asp?id=50">婚介交友网站</a>
+<a class="MenuLevel4" href="sp.asp?id=51">地方信息门户</a>
+<a class="MenuLevel4" href="sp.asp?id=52">美食餐饮网站</a>
+<a class="MenuLevel4" href="sp.asp?id=53">电影视频音乐</a>
+<a class="MenuLevel4" href="sp.asp?id=54">域名主机空间</a>
+<a class="MenuLevel4" href="sp.asp?id=55">聊天留言程序</a>
+<a class="MenuLevel4" href="sp.asp?id=56">博客播客系统</a>
+<a class="MenuLevel4" href="sp.asp?id=57">软件下载上传</a>
+<a class="MenuLevel4" href="sp.asp?id=58">行政办公系统</a>
+<a class="MenuLevel4" href="sp.asp?id=59">计数投票统计</a>
+
+                  </div>
+   
+   <script language="javascript">subMenu[4] = 3;</script>
+            <div onClick="javascript:spreadSubMenu(3)" class="MenuLevel3"> JSP源码<span id="ArrowSubLayer3Down" style="display:inline ; "><img src="/skin/v2009/slot-down.gif" border="0"></span><span id="ArrowSubLayer3Right" style="display:none ; "><img src="/skin/v2009/slot-up.gif" border="0"></span></div>
+                  <div id="SubSubMenu3" class="SubMenuLayerHidden">
+                  <a class="MenuLevel4" href="sp.asp?id=30">计数投票统计</a>
+<a class="MenuLevel4" href="sp.asp?id=31">便民查询搜索</a>
+<a class="MenuLevel4" href="sp.asp?id=32">链接网址导航</a>
+<a class="MenuLevel4" href="sp.asp?id=33">设计装潢广告</a>
+<a class="MenuLevel4" href="sp.asp?id=34">娱乐休闲搞笑</a>
+<a class="MenuLevel4" href="sp.asp?id=35">景点旅游门户</a>
+<a class="MenuLevel4" href="sp.asp?id=36">其它整站系统</a>
+<a class="MenuLevel4" href="sp.asp?id=93">新闻文章CMS</a>
+<a class="MenuLevel4" href="sp.asp?id=94">论坛程序源码</a>
+<a class="MenuLevel4" href="sp.asp?id=95">企业公司网站</a>
+<a class="MenuLevel4" href="sp.asp?id=96">购物商城网店</a>
+<a class="MenuLevel4" href="sp.asp?id=97">行业商务网站</a>
+<a class="MenuLevel4" href="sp.asp?id=98">政府机构网站</a>
+<a class="MenuLevel4" href="sp.asp?id=99">房地产行业网</a>
+<a class="MenuLevel4" href="sp.asp?id=100">教育院校门户</a>
+<a class="MenuLevel4" href="sp.asp?id=101">汽车相关行业</a>
+<a class="MenuLevel4" href="sp.asp?id=102">健康医疗网站</a>
+<a class="MenuLevel4" href="sp.asp?id=103">人才招聘信息</a>
+<a class="MenuLevel4" href="sp.asp?id=104">图片类型网站</a>
+<a class="MenuLevel4" href="sp.asp?id=105">游戏点卡相关</a>
+<a class="MenuLevel4" href="sp.asp?id=106">婚介交友网站</a>
+<a class="MenuLevel4" href="sp.asp?id=107">地方信息门户</a>
+<a class="MenuLevel4" href="sp.asp?id=108">美食餐饮网站</a>
+<a class="MenuLevel4" href="sp.asp?id=109">电影视频音乐</a>
+<a class="MenuLevel4" href="sp.asp?id=110">域名主机空间</a>
+<a class="MenuLevel4" href="sp.asp?id=111">聊天留言程序</a>
+<a class="MenuLevel4" href="sp.asp?id=112">博客播客系统</a>
+<a class="MenuLevel4" href="sp.asp?id=113">软件下载上传</a>
+<a class="MenuLevel4" href="sp.asp?id=114">行政办公系统</a>
+
+                  </div>
+   
+   <script language="javascript">subMenu[4] = 4;</script>
+            <div onClick="javascript:spreadSubMenu(4)" class="MenuLevel3"> .NET源码<span id="ArrowSubLayer4Down" style="display:inline ; "><img src="/skin/v2009/slot-down.gif" border="0"></span><span id="ArrowSubLayer4Right" style="display:none ; "><img src="/skin/v2009/slot-up.gif" border="0"></span></div>
+                  <div id="SubSubMenu4" class="SubMenuLayerHidden">
+                  <a class="MenuLevel4" href="sp.asp?id=7">新闻文章CMS</a>
+<a class="MenuLevel4" href="sp.asp?id=8">论坛程序源码</a>
+<a class="MenuLevel4" href="sp.asp?id=9">企业公司网站</a>
+<a class="MenuLevel4" href="sp.asp?id=10">购物商城网店</a>
+<a class="MenuLevel4" href="sp.asp?id=11">行业商务网站</a>
+<a class="MenuLevel4" href="sp.asp?id=12">政府机构网站</a>
+<a class="MenuLevel4" href="sp.asp?id=13">房地产行业网</a>
+<a class="MenuLevel4" href="sp.asp?id=14">教育院校门户</a>
+<a class="MenuLevel4" href="sp.asp?id=15">汽车相关行业</a>
+<a class="MenuLevel4" href="sp.asp?id=16">健康医疗网站</a>
+<a class="MenuLevel4" href="sp.asp?id=17">人才招聘信息</a>
+<a class="MenuLevel4" href="sp.asp?id=18">图片类型网站</a>
+<a class="MenuLevel4" href="sp.asp?id=19">游戏点卡相关</a>
+<a class="MenuLevel4" href="sp.asp?id=20">婚介交友网站</a>
+<a class="MenuLevel4" href="sp.asp?id=21">地方信息门户</a>
+<a class="MenuLevel4" href="sp.asp?id=22">美食餐饮网站</a>
+<a class="MenuLevel4" href="sp.asp?id=23">电影视频音乐</a>
+<a class="MenuLevel4" href="sp.asp?id=24">域名主机空间</a>
+<a class="MenuLevel4" href="sp.asp?id=25">聊天留言程序</a>
+<a class="MenuLevel4" href="sp.asp?id=26">博客播客系统</a>
+<a class="MenuLevel4" href="sp.asp?id=115">软件下载上传</a>
+<a class="MenuLevel4" href="sp.asp?id=116">行政办公系统</a>
+<a class="MenuLevel4" href="sp.asp?id=117">计数投票统计</a>
+<a class="MenuLevel4" href="sp.asp?id=118">便民查询搜索</a>
+<a class="MenuLevel4" href="sp.asp?id=119">链接网址导航</a>
+<a class="MenuLevel4" href="sp.asp?id=120">设计装潢广告</a>
+<a class="MenuLevel4" href="sp.asp?id=121">娱乐休闲搞笑</a>
+<a class="MenuLevel4" href="sp.asp?id=122">景点旅游门户</a>
+<a class="MenuLevel4" href="sp.asp?id=123">其它整站系统</a>
+
+                  </div>
+   
+   <script language="javascript">subMenu[4] = 5;</script>
+            <div onClick="javascript:spreadSubMenu(5)" class="MenuLevel3"> FLASH源码<span id="ArrowSubLayer5Down" style="display:inline ; "><img src="/skin/v2009/slot-down.gif" border="0"></span><span id="ArrowSubLayer5Right" style="display:none ; "><img src="/skin/v2009/slot-up.gif" border="0"></span></div>
+                  <div id="SubSubMenu5" class="SubMenuLayerHidden">
+                  <a class="MenuLevel4" href="sp.asp?id=124">片头源文件</a>
+<a class="MenuLevel4" href="sp.asp?id=125">整站源文件</a>
+<a class="MenuLevel4" href="sp.asp?id=126">导航源文件</a>
+<a class="MenuLevel4" href="sp.asp?id=127">广告展示片</a>
+<a class="MenuLevel4" href="sp.asp?id=128">透明源文件</a>
+
+                  </div>
+   </div>
+
+<div onClick="javascript:spreadMenu(2)" class="MenuLevel1">广告代码 <span id="ArrowLayer2Down" style="display:inline ; "><img src="/skin/v2009/downarrow.gif" border="0"></span><span id="ArrowLayer2Right" style="display:none ; "><img src="/skin/v2009/uparrow.gif" border="0"></span></div>
+<div id="SubMenu2" class="SubMenuLayerHidden" style="overflow-y:block;">
+   <a class="MenuLevel4" href="list.asp?id=36">FLASH图片展示</a>
+<a class="MenuLevel4" href="list.asp?id=37">JS图片展示</a>
+<a class="MenuLevel4" href="list.asp?id=38">导航菜单代码</a>
+<a class="MenuLevel4" href="list.asp?id=39">新闻展示代码</a>
+<a class="MenuLevel4" href="list.asp?id=40">浮动广告代码</a>
+<a class="MenuLevel4" href="list.asp?id=41">其它广告代码</a>
+</div>
+
+<div onClick="javascript:spreadMenu(3)" class="MenuLevel1">建站素材 <span id="ArrowLayer3Down" style="display:inline ; "><img src="/skin/v2009/downarrow.gif" border="0"></span><span id="ArrowLayer3Right" style="display:none ; "><img src="/skin/v2009/uparrow.gif" border="0"></span></div>
+<div id="SubMenu3" class="SubMenuLayerHidden" style="overflow-y:block;">
+   <a class="MenuLevel4" href="list.asp?id=59">网页模板</a>
+<a class="MenuLevel4" href="list.asp?id=60">精美图标</a>
+<a class="MenuLevel4" href="list.asp?id=61">字体字库</a>
+<a class="MenuLevel4" href="list.asp?id=62">图片素材</a>
+</div>
+
+<div onClick="javascript:spreadMenu(4)" class="MenuLevel1">电子书籍 <span id="ArrowLayer4Down" style="display:inline ; "><img src="/skin/v2009/downarrow.gif" border="0"></span><span id="ArrowLayer4Right" style="display:none ; "><img src="/skin/v2009/uparrow.gif" border="0"></span></div>
+<div id="SubMenu4" class="SubMenuLayerHidden" style="overflow-y:block;">
+   <a class="MenuLevel4" href="list.asp?id=42">ASP电子书</a>
+<a class="MenuLevel4" href="list.asp?id=43">PHP电子书</a>
+<a class="MenuLevel4" href="list.asp?id=44">JSP电子书</a>
+<a class="MenuLevel4" href="list.asp?id=45">ASP.NET电子书</a>
+<a class="MenuLevel4" href="list.asp?id=46">AJAX电子书</a>
+<a class="MenuLevel4" href="list.asp?id=47">数据库(XML)电子书</a>
+<a class="MenuLevel4" href="list.asp?id=48">服务器电子书</a>
+<a class="MenuLevel4" href="list.asp?id=49">其它编程电子书</a>
+</div>
+
+<div onClick="javascript:spreadMenu(5)" class="MenuLevel1">开发软件 <span id="ArrowLayer5Down" style="display:inline ; "><img src="/skin/v2009/downarrow.gif" border="0"></span><span id="ArrowLayer5Right" style="display:none ; "><img src="/skin/v2009/uparrow.gif" border="0"></span></div>
+<div id="SubMenu5" class="SubMenuLayerHidden" style="overflow-y:block;">
+   <a class="MenuLevel4" href="list.asp?id=50">代码编程软件</a>
+<a class="MenuLevel4" href="list.asp?id=51">服务器软件</a>
+<a class="MenuLevel4" href="list.asp?id=52">数据库软件</a>
+<a class="MenuLevel4" href="list.asp?id=53">界面设计软件</a>
+<a class="MenuLevel4" href="list.asp?id=54">开发辅助工具</a>
+</div>
+
+<div onClick="javascript:spreadMenu(6)" class="MenuLevel1">绿色软件 <span id="ArrowLayer6Down" style="display:inline ; "><img src="/skin/v2009/downarrow.gif" border="0"></span><span id="ArrowLayer6Right" style="display:none ; "><img src="/skin/v2009/uparrow.gif" border="0"></span></div>
+<div id="SubMenu6" class="SubMenuLayerHidden" style="overflow-y:block;">
+   <a class="MenuLevel4" href="list.asp?id=56">装机必备</a>
+<a class="MenuLevel4" href="list.asp?id=57">精品绿软</a>
+<a class="MenuLevel4" href="list.asp?id=63">安全杀毒</a>
+</div>
+
+
+
+<script LANGUAGE="javascript">
+<!--
+var RightMenuUID = "";
+
+function spreadMenu(n){
+ 
+ var szSubMenuClassName1 = document.getElementById('SubMenu1').className ;
+ document.getElementById('SubMenu1').className = 'SubMenuLayerHidden' ;
+ document.getElementById('ArrowLayer1Down').style.display = '' ;
+ document.getElementById('ArrowLayer1Right').style.display = 'none' ;
+ 
+ var szSubMenuClassName2 = document.getElementById('SubMenu2').className ;
+ document.getElementById('SubMenu2').className = 'SubMenuLayerHidden' ;
+ document.getElementById('ArrowLayer2Down').style.display = '' ;
+ document.getElementById('ArrowLayer2Right').style.display = 'none' ;
+ 
+ var szSubMenuClassName3 = document.getElementById('SubMenu3').className ;
+ document.getElementById('SubMenu3').className = 'SubMenuLayerHidden' ;
+ document.getElementById('ArrowLayer3Down').style.display = '' ;
+ document.getElementById('ArrowLayer3Right').style.display = 'none' ;
+ 
+ var szSubMenuClassName4 = document.getElementById('SubMenu4').className ;
+ document.getElementById('SubMenu4').className = 'SubMenuLayerHidden' ;
+ document.getElementById('ArrowLayer4Down').style.display = '' ;
+ document.getElementById('ArrowLayer4Right').style.display = 'none' ;
+ 
+ var szSubMenuClassName5 = document.getElementById('SubMenu5').className ;
+ document.getElementById('SubMenu5').className = 'SubMenuLayerHidden' ;
+ document.getElementById('ArrowLayer5Down').style.display = '' ;
+ document.getElementById('ArrowLayer5Right').style.display = 'none' ;
+ 
+ var szSubMenuClassName6 = document.getElementById('SubMenu6').className ;
+ document.getElementById('SubMenu6').className = 'SubMenuLayerHidden' ;
+ document.getElementById('ArrowLayer6Down').style.display = '' ;
+ document.getElementById('ArrowLayer6Right').style.display = 'none' ;
+  
+ switch (n){
+ 
+  case 1 :
+   if (szSubMenuClassName1 == 'SubMenuLayerHidden'){
+    document.getElementById('SubMenu1').className = 'SubMenuLayer' ;
+    document.getElementById('ArrowLayer1Down').style.display = 'none' ;
+    document.getElementById('ArrowLayer1Right').style.display = '' ;
+   }
+   else{
+    document.getElementById('SubMenu1').className = 'SubMenuLayerHidden' ;
+    document.getElementById('ArrowLayer1Down').style.display = '' ;
+    document.getElementById('ArrowLayer1Right').style.display = 'none' ;
+   }
+   break ;
+ 
+  case 2 :
+   if (szSubMenuClassName2 == 'SubMenuLayerHidden'){
+    document.getElementById('SubMenu2').className = 'SubMenuLayer' ;
+    document.getElementById('ArrowLayer2Down').style.display = 'none' ;
+    document.getElementById('ArrowLayer2Right').style.display = '' ;
+   }
+   else{
+    document.getElementById('SubMenu2').className = 'SubMenuLayerHidden' ;
+    document.getElementById('ArrowLayer2Down').style.display = '' ;
+    document.getElementById('ArrowLayer2Right').style.display = 'none' ;
+   }
+   break ;
+ 
+  case 3 :
+   if (szSubMenuClassName3 == 'SubMenuLayerHidden'){
+    document.getElementById('SubMenu3').className = 'SubMenuLayer' ;
+    document.getElementById('ArrowLayer3Down').style.display = 'none' ;
+    document.getElementById('ArrowLayer3Right').style.display = '' ;
+   }
+   else{
+    document.getElementById('SubMenu3').className = 'SubMenuLayerHidden' ;
+    document.getElementById('ArrowLayer3Down').style.display = '' ;
+    document.getElementById('ArrowLayer3Right').style.display = 'none' ;
+   }
+   break ;
+ 
+  case 4 :
+   if (szSubMenuClassName4 == 'SubMenuLayerHidden'){
+    document.getElementById('SubMenu4').className = 'SubMenuLayer' ;
+    document.getElementById('ArrowLayer4Down').style.display = 'none' ;
+    document.getElementById('ArrowLayer4Right').style.display = '' ;
+   }
+   else{
+    document.getElementById('SubMenu4').className = 'SubMenuLayerHidden' ;
+    document.getElementById('ArrowLayer4Down').style.display = '' ;
+    document.getElementById('ArrowLayer4Right').style.display = 'none' ;
+   }
+   break ;
+ 
+  case 5 :
+   if (szSubMenuClassName5 == 'SubMenuLayerHidden'){
+    document.getElementById('SubMenu5').className = 'SubMenuLayer' ;
+    document.getElementById('ArrowLayer5Down').style.display = 'none' ;
+    document.getElementById('ArrowLayer5Right').style.display = '' ;
+   }
+   else{
+    document.getElementById('SubMenu5').className = 'SubMenuLayerHidden' ;
+    document.getElementById('ArrowLayer5Down').style.display = '' ;
+    document.getElementById('ArrowLayer5Right').style.display = 'none' ;
+   }
+   break ;
+ 
+  case 6 :
+   if (szSubMenuClassName6 == 'SubMenuLayerHidden'){
+    document.getElementById('SubMenu6').className = 'SubMenuLayer' ;
+    document.getElementById('ArrowLayer6Down').style.display = 'none' ;
+    document.getElementById('ArrowLayer6Right').style.display = '' ;
+   }
+   else{
+    document.getElementById('SubMenu6').className = 'SubMenuLayerHidden' ;
+    document.getElementById('ArrowLayer6Down').style.display = '' ;
+    document.getElementById('ArrowLayer6Right').style.display = 'none' ;
+   }
+   break ;
+  
+   
+ }
+ 
+
+ if (SubMenu1.scrollHeight > 440  &&  screen.availHeight <= 600){
+  SubMenu1.style.height = 440;
+  SubMenu1.style.overflowY = 'scroll';
+ }
+}
+
+function spreadSubMenu(k){
+ 
+ var szSubMenuClassName1 = document.getElementById('SubSubMenu1').className ;
+ document.getElementById('SubSubMenu1').className = 'SubMenuLayerHidden' ;
+ document.getElementById('ArrowSubLayer1Down').style.display = '' ;
+ document.getElementById('ArrowSubLayer1Right').style.display = 'none' ;
+ 
+ var szSubMenuClassName2 = document.getElementById('SubSubMenu2').className ;
+ document.getElementById('SubSubMenu2').className = 'SubMenuLayerHidden' ;
+ document.getElementById('ArrowSubLayer2Down').style.display = '' ;
+ document.getElementById('ArrowSubLayer2Right').style.display = 'none' ;
+ 
+ var szSubMenuClassName3 = document.getElementById('SubSubMenu3').className ;
+ document.getElementById('SubSubMenu3').className = 'SubMenuLayerHidden' ;
+ document.getElementById('ArrowSubLayer3Down').style.display = '' ;
+ document.getElementById('ArrowSubLayer3Right').style.display = 'none' ;
+ 
+ var szSubMenuClassName4 = document.getElementById('SubSubMenu4').className ;
+ document.getElementById('SubSubMenu4').className = 'SubMenuLayerHidden' ;
+ document.getElementById('ArrowSubLayer4Down').style.display = '' ;
+ document.getElementById('ArrowSubLayer4Right').style.display = 'none' ;
+ 
+ var szSubMenuClassName5 = document.getElementById('SubSubMenu5').className ;
+ document.getElementById('SubSubMenu5').className = 'SubMenuLayerHidden' ;
+ document.getElementById('ArrowSubLayer5Down').style.display = '' ;
+ document.getElementById('ArrowSubLayer5Right').style.display = 'none' ;
+  
+ 
+ switch (k){
+ 
+ 
+  case 1 :
+   if (szSubMenuClassName1 == 'SubMenuLayerHidden'){
+    document.getElementById('SubSubMenu1').className = 'SubMenuLayer' ;
+    document.getElementById('ArrowSubLayer1Down').style.display = 'none' ;
+    document.getElementById('ArrowSubLayer1Right').style.display = '' ;
+   }
+   else{
+    document.getElementById('SubSubMenu1').className = 'SubMenuLayerHidden' ;
+    document.getElementById('ArrowSubLayer1Down').style.display = '' ;
+    document.getElementById('ArrowSubLayer1Right').style.display = 'none' ;
+   }
+   break ;
+ 
+  case 2 :
+   if (szSubMenuClassName2 == 'SubMenuLayerHidden'){
+    document.getElementById('SubSubMenu2').className = 'SubMenuLayer' ;
+    document.getElementById('ArrowSubLayer2Down').style.display = 'none' ;
+    document.getElementById('ArrowSubLayer2Right').style.display = '' ;
+   }
+   else{
+    document.getElementById('SubSubMenu2').className = 'SubMenuLayerHidden' ;
+    document.getElementById('ArrowSubLayer2Down').style.display = '' ;
+    document.getElementById('ArrowSubLayer2Right').style.display = 'none' ;
+   }
+   break ;
+ 
+  case 3 :
+   if (szSubMenuClassName3 == 'SubMenuLayerHidden'){
+    document.getElementById('SubSubMenu3').className = 'SubMenuLayer' ;
+    document.getElementById('ArrowSubLayer3Down').style.display = 'none' ;
+    document.getElementById('ArrowSubLayer3Right').style.display = '' ;
+   }
+   else{
+    document.getElementById('SubSubMenu3').className = 'SubMenuLayerHidden' ;
+    document.getElementById('ArrowSubLayer3Down').style.display = '' ;
+    document.getElementById('ArrowSubLayer3Right').style.display = 'none' ;
+   }
+   break ;
+ 
+  case 4 :
+   if (szSubMenuClassName4 == 'SubMenuLayerHidden'){
+    document.getElementById('SubSubMenu4').className = 'SubMenuLayer' ;
+    document.getElementById('ArrowSubLayer4Down').style.display = 'none' ;
+    document.getElementById('ArrowSubLayer4Right').style.display = '' ;
+   }
+   else{
+    document.getElementById('SubSubMenu4').className = 'SubMenuLayerHidden' ;
+    document.getElementById('ArrowSubLayer4Down').style.display = '' ;
+    document.getElementById('ArrowSubLayer4Right').style.display = 'none' ;
+   }
+   break ;
+ 
+  case 5 :
+   if (szSubMenuClassName5 == 'SubMenuLayerHidden'){
+    document.getElementById('SubSubMenu5').className = 'SubMenuLayer' ;
+    document.getElementById('ArrowSubLayer5Down').style.display = 'none' ;
+    document.getElementById('ArrowSubLayer5Right').style.display = '' ;
+   }
+   else{
+    document.getElementById('SubSubMenu5').className = 'SubMenuLayerHidden' ;
+    document.getElementById('ArrowSubLayer5Down').style.display = '' ;
+    document.getElementById('ArrowSubLayer5Right').style.display = 'none' ;
+   }
+   break ;
+  
+  
+ 
+ }
+ 
+
+ if (SubSubMenu1.scrollHeight > 440  &&  screen.availHeight <= 600){
+  SubSubMenu1.style.height = 440;
+  SubSubMenu1.style.overflowY = 'scroll';
+ }
+}
+
+ switch (channelid){
+  case 12 : document.getElementById('SubMenu1').className = 'SubMenuLayer';
+ 
+ }
+ switch (classid){
+  case 27 : document.getElementById('SubSubMenu1').className = 'SubMenuLayer';
+ }
+
+//-->
+</script>
+
+              </td>
+            </tr>
+          </table>
+</div>
+</body>
+</html>

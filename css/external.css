@@ -1,0 +1,27 @@
+@charset "utf-8";
+.background {
+	background-color: #666666;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.whitefont {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.Left_NavigationBar_Item_Backgroud {
+	background-color: #666666;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+.whitecolor {color: #FFFFFF; font-family: Verdana, Arial, Helvetica, sans-serif;}
+
+.Left_Bottom_Corner_Address {
+	font-size: 11px;
+	color: #FFFFFF;
+	vertical-align: bottom;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.center_image {
+	text-align: center;
+}

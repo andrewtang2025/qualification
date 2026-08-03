@@ -1,0 +1,32 @@
+<div id="apDiv7">
+
+	<embed src="tagcloud.swf" width="500" height="300" flashvars="tcolor=0x333333&tcolor2=0x333333&hicolor=0x000000&tspeed=100&distr=&mode=tags&tagcloud=
+<tags>
+                <a+href='http://www.berrypicking.net/qualification/index.html'+hicolor='0x+8525a'+color='0xe810f3'+style='font-size:12'>Home</a>
+                <a+href='http://www.berrypicking.net/qualification/resume/index.html'+hicolor='0x25578b'+color='0x4b5b89'+style='font-size:10'>Resume</a>
+                <a+href='http://www.berrypicking.net/qualification/project/index.html'+hicolor='0x687be7'+color='0xa5dc56'+style='font-size:11'>Project</a>
+                <a+href='http://www.berrypicking.net/qualification/project/reference/Reference_Contact_Information.pdf'+hicolor='0x1d9dba'+color='0x+bde55'+style='font-size:9'>Reference</a>
+                <a+href='http://www.berrypicking.net/qualification/library/index.html'+hicolor='0x2062a7'+color='0x9f722c'+style='font-size:9'>Library</a>
+                <a+href='http://www.berrypicking.net/qualification/project/digital_library/index.html'+hicolor='0xb5be66'+color='0x94c16d'+style='font-size:9'>Digital+Library</a>
+                <a+href='http://www.berrypicking.net/qualification/project/digital_library/dspace/index.html'+hicolor='0x+e10bb'+color='0x8c2c94'+style='font-size:12'>Dspace</a>
+                <a+href='http://www.berrypicking.net/qualification/voyager/index.html'+hicolor='0xfac981'+color='0xc9b0fd'+style='font-size:9'>Voyager</a>
+                <a+href='http://www.berrypicking.net/qualification/project/vufind/index.html'+hicolor='0x730fef'+color='0xe53b22'+style='font-size:10'>VuFind</a>
+                <a+href='http://www.berrypicking.net/qualification/project/drupal/index.html'+hicolor='0x637a85'+color='0x9477ea'+style='font-size:9'>Drupal</a>
+                <a+href='http://www.berrypicking.net/qualification/project/xml_mysql/index.html'+hicolor='0x637a85'+color='0x9477ea'+style='font-size:8'>XML+and+MySQL</a>
+                <a+href='http://www.berrypicking.net/qualification/project/rdbms_data_cleansing/index.html'+hicolor='0x637a85'+color='0x9477ea'+style='font-size:9'>RDBMS</a>
+                <a+href='http://www.berrypicking.net/qualification/project/web_building/index.html'+hicolor='0x637a85'+color='0x9477ea'+style='font-size:12'>Web+Building</a>
+                <a+href='http://www.berrypicking.net/qualification/project/record_management/index.html'+hicolor='0x637a85'+color='0x9477ea'+style='font-size:13'>Record+Management</a>
+                <a+href='http://www.berrypicking.net/qualification/project/metadata/index.html'+hicolor='0x637a85'+color='0x9477ea'+style='font-size:9'>Metadata</a>
+                <a+href='http://www.berrypicking.net/qualification/project/index_design/index.html'+hicolor='0x637a85'+color='0x9477ea'+style='font-size:10'>Index+Design</a>
+                <a+href='http://www.berrypicking.net/qualification/project/information_retrieval/index.html'+hicolor='0x637a85'+color='0x9477ea'+style='font-size:12'>Information+Retrieval</a>
+                <a+href='http://www.berrypicking.net/qualification/project/statistics/index.html'+hicolor='0x637a85'+color='0x9477ea'+style='font-size:13'>Statistics</a>
+                <a+href='http://alcoholstudies.rutgers.edu/'+hicolor='0x637a85'+color='0x9477ea'+style='font-size:9'>CAS+website</a>
+                <a+href='http://www.berrypicking.net/qualification/library/library_research/index.html'+hicolor='0x637a85'+color='0x9477ea'+style='font-size:11'>Library+Research</a>
+                <a+href='http://www.berrypicking.net/qualification/library/library_orgainzation/index.html'+hicolor='0x637a85'+color='0x9477ea'+style='font-size:9'>Library+Organization</a>
+                <a+href='http://www.berrypicking.net/qualification/information_science/server/index.html'+hicolor='0x637a85' color='0x9477ea' style='font-size:12'>Server</a>
+    </tags>
+
+	" 
+wmode="transparent" allowscriptaccess="always" quality="high" bgcolor="#ffffff" name="tagcloudflash" id="tagcloudflash" type="application/x-shockwave-flash">
+</div>
+<!--Above from 685 to 717 line is the code of new tagcloud which can run in firefox 4-->

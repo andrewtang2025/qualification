@@ -1,0 +1,49 @@
+INPUT {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: Tahoma,Verdana,Arial
+}
+SELECT {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: Tahoma,Verdana,Arial
+}
+LI {
+	MARGIN-TOP: -1px; FONT-SIZE: 11px; MARGIN-BOTTOM: -1px; COLOR: #000000; MARGIN-RIGHT: 1px; FONT-FAMILY: Tahoma,Verdana,Arial
+}
+UL {
+	MARGIN-TOP: 0px; FONT-SIZE: 11px; MARGIN-BOTTOM: 0px; PADDING-BOTTOM: 0px; COLOR: #000000; MARGIN-RIGHT: 0px; FONT-FAMILY: Tahoma,Verdana,Arial
+}
+OL {
+	MARGIN-TOP: 0px; FONT-SIZE: 11px; MARGIN-BOTTOM: 0px; PADDING-BOTTOM: 0px; COLOR: #000000; MARGIN-RIGHT: 0px; FONT-FAMILY: Tahoma,Verdana,Arial
+}
+BODY {
+	FONT-SIZE: 11px; PADDING-BOTTOM: 5px; MARGIN: 0px; FONT-FAMILY: Tahoma,Verdana,Arial
+}
+BODY A {
+	COLOR: #294a7b
+}
+BODY A:hover {
+	COLOR: #000000
+}
+TD {
+	FONT-SIZE: 12px; PADDING-BOTTOM: 5px; MARGIN: 5px 10px 0px; FONT-FAMILY: Tahoma,Verdana,Arial
+}
+P {
+	FONT-SIZE: 12px; PADDING-BOTTOM: 5px; MARGIN: 5px 10px 0px; FONT-FAMILY: "宋体"
+}
+H4 {
+	FONT-SIZE: 12px; MARGIN-LEFT: 10px
+}
+.brd {
+	BORDER-RIGHT: 1px solid;
+	PADDING-RIGHT: 8pt;
+	BORDER-TOP: 1px solid;
+	PADDING-LEFT: 8pt;
+	PADDING-BOTTOM: 8pt;
+	BORDER-LEFT: 1px solid;
+	COLOR: white;
+	PADDING-TOP: 8pt;
+	BORDER-BOTTOM: 1px solid;
+	BACKGROUND-COLOR: #ffffff;
+	font-family: "宋体";
+	font-size: 12px;
+}
+PRE {
+	FONT-SIZE: 12px; MARGIN-LEFT: 10px; FONT-FAMILY: "宋体"}

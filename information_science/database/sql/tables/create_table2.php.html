@@ -1,0 +1,112 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="robots" content="noarchive">
+
+<meta name="description"
+content="You can also create a table from an existing table by copying the existing table's columns.">
+<meta name="keywords"
+content="tech on the net, sql, create a table from another table">
+<meta name="title" content="SQL: CREATE a table from another table">
+<title>SQL: CREATE a table from another table</title>
+
+<link rel="stylesheet" type="text/css" href="../stylesheets/screen.css"  media="screen" />
+<link rel="stylesheet" type="text/css" href="../stylesheets/print.css" media="print" />
+</head>
+<body>
+<table id="header" width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    
+    <td align="left"></td>
+  </tr>
+</table>
+
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+
+    <td align="left"><div id="content">
+	
+        
+        <h1>SQL: CREATE a table from another table</h1>
+        <hr>
+        <p>You can also create a table from an existing table by copying the existing table's columns.</p>
+        <p>It is important to note that when creating a table in this way, the new table will be populated with the records from the existing table (based on the SELECT Statement).</p>
+        <br>
+        <h2>Syntax #1 - Copying all columns from another table</h2>
+        <p>The basic syntax is:</p>
+        <blockquote class="definition">
+          <p>CREATE TABLE new_table<br>
+&nbsp; AS (SELECT * FROM old_table);</p>
+        </blockquote>
+        <br>
+        <p class="example_heading">For example:</p>
+        <blockquote class="sql_command">
+          <p>CREATE TABLE suppliers<br>
+&nbsp; AS (SELECT *<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FROM companies<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; WHERE id &gt; 1000);</p>
+        </blockquote>
+        <p>This would create a new table called <b>suppliers</b> that included all columns from the <b>companies</b> table.</p>
+        <p>If there were records in the <b>companies</b> table, then the new suppliers table would also contain the records selected by the SELECT statement.</p>
+        <br>
+        <h2>Syntax #2 - Copying selected columns from another table</h2>
+        <p>The basic syntax is:</p>
+        <blockquote class="definition">
+          <p>CREATE TABLE new_table<br>
+&nbsp; AS (SELECT column_1, column2, ... column_n FROM old_table);</p>
+        </blockquote>
+        <br>
+        <p class="example_heading">For example:</p>
+        <blockquote class="sql_command">
+          <p>CREATE TABLE suppliers<br>
+&nbsp; AS (SELECT id, address, city, state, zip<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FROM companies<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; WHERE id &gt; 1000);</p>
+        </blockquote>
+        <p>This would create a new table called <b>suppliers</b>, but the new table would only include the specified columns from the <b>companies</b> table.</p>
+        <p>Again, if there were records in the <b>companies</b> table, then the new suppliers table would also contain the records selected by the SELECT statement.</p>
+        <br>
+        <h2>Syntax #3 - Copying selected columns from multiple tables</h2>
+        <p>The basic syntax is:</p>
+        <blockquote class="definition">
+          <p>CREATE TABLE new_table<br>
+&nbsp; AS (SELECT column_1, column2, ... column_n<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FROM old_table_1, old_table_2, ... old_table_n);</p>
+        </blockquote>
+        <br>
+        <p class="example_heading">For example:</p>
+        <blockquote class="sql_command">
+          <p>CREATE TABLE suppliers<br>
+&nbsp; AS (SELECT companies.id, companies.address, categories.cat_type<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FROM companies, categories<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; WHERE companies.id = categories.id<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AND companies.id &gt; 1000);</p>
+        </blockquote>
+        <p>This would create a new table called <b>suppliers</b> based on columns from both the <b>companies</b> and <b>categories</b> tables.</p>
+        <br>
+        <p><i>Acknowledgements</i>: We'd like to thank Dave M. for contributing to this solution!</p>
+        <br>
+        <h2>Frequently Asked Questions</h2>
+        <hr>
+        <p><b>Question</b>: How can I create a table from another table without copying any values from the old table?</p>
+        <p><b>Answer</b>: To do this, the basic syntax is:</p>
+        <blockquote class="definition">
+          <p>CREATE TABLE new_table<br>
+            &nbsp; AS (SELECT * FROM old_table WHERE 1=2);</p>
+        </blockquote>
+        <p class="example_heading">For example:</p>
+        <blockquote class="sql_command">
+          <p>CREATE TABLE suppliers<br>
+            &nbsp; AS (SELECT * FROM companies WHERE 1=2);</p>
+        </blockquote>
+        <p>This would create a new table called <b>suppliers</b> that included all columns from the <b>companies</b> table, but no data from the <b>companies</b> table.</p>
+        <p><i>Acknowledgements</i>: We'd like to thank Daniel W. for providing this solution!</p>
+    </div>
+      
+      </td>
+  </tr>
+</table>
+
+</body>
+</html>

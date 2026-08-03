@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="robots" content="noarchive">
+
+<meta name="description"
+content="The MIN function returns the minimum value of an expression.">
+<meta name="keywords"
+content="tech on the net, sql, min function">
+<meta name="title" content="SQL: MIN Function">
+<title>SQL: MIN Function</title>
+
+<link rel="stylesheet" type="text/css" href="stylesheets/screen.css"  media="screen" />
+<link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+</head>
+<body>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td align="left"><div id="content">
+	
+        
+        <h1>SQL: MIN Function</h1>
+        <hr>
+        <p>The MIN function returns the minimum value of an expression.</p>
+        <p>The syntax for the MIN function is:</p>
+        <blockquote class="definition">
+          <p>SELECT MIN(<i>expression</i> )<br>
+            FROM tables<br>
+            WHERE predicates;</p>
+        </blockquote>
+        <br>
+        <p class="example_heading">Simple Example</p>
+        <p>For example, you might wish to know the minimum salary of all employees.</p>
+        <blockquote class="sql_command">
+          <p>SELECT MIN(salary) as &quot;Lowest salary&quot;<br>
+            FROM employees;</p>
+        </blockquote>
+        <p>In this example, we've aliased the min(salary) field as &quot;Lowest salary&quot;. As a result, &quot;Lowest salary&quot; will display as the field name when the result set is returned.</p>
+        <br>
+        <p class="example_heading">Example using GROUP BY</p>
+        <p>In some cases, you will be required to use a GROUP BY clause with the MIN function.</p>
+        <p>For example, you could also use the MIN function to return the name of each department and the minimum salary in the department.</p>
+        <blockquote class="sql_command">
+          <p>SELECT department, MIN(salary) as &quot;Lowest salary&quot;<br>
+            FROM employees<br>
+            GROUP BY department;</p>
+        </blockquote>
+        <p>Because you have listed one column in your SELECT statement that is not encapsulated in the MIN function, you must use a GROUP BY clause. The department field must, therefore, be listed in the GROUP BY section.</p>
+    </div>
+</td>
+  </tr>
+</table>
+
+</body>
+</html>

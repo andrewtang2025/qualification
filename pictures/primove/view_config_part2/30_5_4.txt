@@ -1,0 +1,155 @@
+beofre using test
+rule "Primo VE Marc - Lsr01"
+	when
+		MARC is "050"."a"
+	then
+		create pnx."search"."lds01" with MARC "050"  subfields "a" delimited by ""  remove substring using regex "(?<!^).*"
+end
+
+
+rule "Primo VE Marc - Lsr01"
+	when
+		MARC is "050"."a"
+	then
+		create pnx."search"."lsr01" with MARC "050"  subfields "a"  delimited by "-" remove substring using regex "(?<!^).*"
+end
+
+rule "Primo VE - Lds01"
+	when
+		MARC is "050"."a"
+	then
+		create pnx."display"."lds01" with MARC "050"  subfields "a" delimited by ""  remove substring using regex "(?<!^).*"
+end
+
+
+
+
+*********************************************************************************
+rule "Primo VE - Lds01"
+	when
+		MARC is "050"."a"
+	then
+		create pnx."display"."lds01" with MARC "050"."a"
+end
+rule "Primo VE Marc - Lsr01"
+	when
+		MARC is "050"."a"
+	then
+		create pnx."search"."lsr01" with MARC "050"."a"
+end
+*******************************************************************************************
+
+
+Orbis Cascade Alliance  Kelley McGrath 
+
+rule "Primo VE Marc - Lsr01"
+when
+		MARC is "050"."a"
+	then
+		set TEMP"1" to MARC "050"."a"
+		# get first two characters of call number
+		replace string by string (TEMP"1","^(.{2}).*","$1")
+		# remove spaces and numbers
+		replace string by string (TEMP"1"," ","")
+		replace string by string (TEMP"1","\\d","")
+		# mark with prefix for NLM mapping
+		add prefix (TEMP"1","LCC ")
+		create pnx."search"."lsr01" with TEMP"1"
+end
+
+
+rule "Primo VE - Lds02"
+	when
+		MARC is "090"."a"
+	then
+		#create pnx."display"."lds02" with MARC "090"."a"
+set TEMP"1" to MARC "090"."a"
+replace string by string (TEMP"1","^(.{1}).*","$1")
+create pnx."search"."lds02" with TEMP"1"
+end
+
+
+
+
+*******************************
+rule "Primo VE Marc - Lsr02"
+	when
+		MARC is "050"."a" 
+	then
+		#create pnx."display"."lds02" with MARC "090"."a"
+set TEMP"1" to MARC "050"."a"
+replace string by string (TEMP"1","^(.{1}).*","$1")
+add suffix (TEMP"1"," - Philosophy ")
+create pnx."search"."lsr02" with TEMP"1"
+end
+
+rule "Primo VE Marc - Lsr02_1"
+	when
+		MARC is "090"."a"
+	then
+		#create pnx."display"."lds02" with MARC "090"."a"
+set TEMP"1" to MARC "090"."a"
+replace string by string (TEMP"1","^(.{1}).*","$1")
+add suffix (TEMP"1"," - Philosophy ")
+create pnx."search"."lsr02" with TEMP"1"
+end
+
+*************************************************************
+
+090    $$a KF123 $$b .J56 2001
+
+050    $$a HK123 $$b .M44 2001
+
+*******************************************************
+
+Note:Working when both 050 and 090 field existed in the bib and only picking up the 050 field. Andy 02_07_2023    LSR
+
+rule "Primo VE Marc - Lsr02"
+	when
+		MARC is "050"."a" 
+	then
+		#create pnx."display"."lds02" with MARC "090"."a"
+set TEMP"1" to MARC "050"."a"
+replace string by string (TEMP"1","^(.{1}).*","$1")
+add suffix (TEMP"1"," - Philosophy ")
+create pnx."search"."lsr02" with TEMP"1"
+end
+
+rule "Primo VE Marc - Lsr02_1"
+	when
+		MARC is "090"."a" AND NOT MARC "050" has any "a"
+	then
+		#create pnx."display"."lds02" with MARC "090"."a"
+set TEMP"1" to MARC "090"."a"
+replace string by string (TEMP"1","^(.{1}).*","$1")
+add suffix (TEMP"1"," - Philosophy ")
+create pnx."search"."lsr02" with TEMP"1"
+end
+
+********************************************************************************************
+Note:Working when both 050 and 090 field existed in the bib and only picking up the 050 field. Andy 02_07_2023   LDS
+rule "Primo VE - Lds02"
+	when
+		MARC is "090"."a"
+	then
+		#create pnx."display"."lds02" with MARC "090"."a"
+set TEMP"1" to MARC "090"."a"
+replace string by string (TEMP"1","^(.{1}).*","$1")
+create pnx."display"."lds02" with TEMP"1"
+end
+**************************************************************************************
+
+
+rule "Primo VE Marc - Lsr02"
+	when
+		MARC is "050"."a" 
+	then
+                create pnx."search"."lsr02" with MARC "050"  subfields "a"  delimited by "-" remove substring using regex "(?<!^).*"
+end
+
+rule "Primo VE Marc - Lsr02_1"
+	when
+		MARC is "090"."a" AND NOT MARC "050" has any "a"
+	then
+               create pnx."display"."lsr02" with MARC "090"  subfields "a" delimited by "-"  remove substring using regex "(?<!^).*"
+end

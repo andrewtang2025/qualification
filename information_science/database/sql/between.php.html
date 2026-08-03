@@ -1,0 +1,97 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="robots" content="noarchive">
+
+<meta name="description"
+content="The BETWEEN condition allows you to retrieve values within a range.">
+<meta name="keywords"
+content="tech on the net, sql, between condition">
+<meta name="title" content="SQL: BETWEEN Condition">
+<title>SQL: BETWEEN Condition</title>
+
+<link rel="stylesheet" type="text/css" href="stylesheets/screen.css"  media="screen" />
+<link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+</head>
+<body>
+<table id="header" width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    
+    
+  </tr>
+</table>
+
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+
+    <td align="left"><div id="content">
+	
+        
+        <h1>SQL: BETWEEN Condition</h1>
+        <hr>
+        <p>The BETWEEN condition allows you to retrieve values within a range.</p>
+        <p>The syntax for the BETWEEN condition is:</p>
+        <blockquote class="definition">
+          <p>SELECT columns<br>
+            FROM tables<br>
+            WHERE column1 between value1 and value2;</p>
+        </blockquote>
+        <p>This SQL statement will return the records where column1 is within the range of value1 and value2 (inclusive). The BETWEEN function can be used in any valid SQL statement - select, insert, update, or delete.</p>
+        <br>
+        <p class="example_heading">Example #1 - Numbers</p>
+        <p>The following is an SQL statement that uses the BETWEEN function:</p>
+        <blockquote class="sql_command">
+          <p>SELECT *<br>
+            FROM suppliers<br>
+            WHERE supplier_id between 5000 AND 5010;</p>
+        </blockquote>
+        <p>This would return all rows where the <i>supplier_id</i> is between 5000 and 5010, inclusive. It is equivalent to the following SQL statement:</p>
+        <blockquote class="sql_command">
+          <p>SELECT *<br>
+            FROM suppliers<br>
+            WHERE supplier_id &gt;= 5000<br>
+            AND supplier_id &lt;= 5010;</p>
+        </blockquote>
+        <br>
+        <p class="example_heading">Example #2 - Dates</p>
+        <p>You can also use the BETWEEN function with dates.</p>
+        <blockquote class="sql_command">
+          <p>SELECT *<br>
+            FROM orders<br>
+            WHERE order_date between to_date ('2003/01/01', 'yyyy/mm/dd')<br>
+            AND to_date ('2003/12/31', 'yyyy/mm/dd');</p>
+        </blockquote>
+        <p>This SQL statement would return all orders where the <i>order_date</i> is between Jan 1, 2003 and Dec 31, 2003 (inclusive).</p>
+        <p>It would be equivalent to the following SQL statement:</p>
+        <blockquote class="sql_command">
+          <p>SELECT *<br>
+            FROM orders<br>
+            WHERE order_date &gt;= to_date('2003/01/01', 'yyyy/mm/dd')<br>
+            AND order_date &lt;= to_date('2003/12/31','yyyy/mm/dd');</p>
+        </blockquote>
+        <br>
+        <p class="example_heading">Example #3 - NOT BETWEEN</p>
+        <p>The BETWEEN function can also be combined with the NOT operator.</p>
+        <p>For example,</p>
+        <blockquote class="sql_command">
+          <p>SELECT *<br>
+            FROM suppliers<br>
+            WHERE supplier_id not between 5000 and 5500;</p>
+        </blockquote>
+        <p>This would be equivalent to the following SQL:</p>
+        <blockquote class="sql_command">
+          <p>SELECT *<br>
+            FROM suppliers<br>
+            WHERE supplier_id &lt; 5000<br>
+            OR supplier_id &gt; 5500;</p>
+        </blockquote>
+        <p>In this example, the result set would exclude all <i>supplier_id</i> values between the range of 5000 and 5500 (inclusive).</p>
+    </div>
+      
+</td>
+  </tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+a:link { color: #336699; font-weight: bold; font-size: 12px; text-decoration: none; }
+a:active { color: #336699; font-weight: bold; font-size: 12px; text-decoration: none; }
+a:visited { color: #336699; font-weight: bold; font-size: 12px; text-decoration: none; }
+a:hover { color:#4A6593; font-weight: bold; font-size: 12px; text-decoration: underline; }
+
+body { font-family: Arial, Helvetica, sans-serif; font-size: 12px; margin: 0 0 0 0; background-color: #FFFFFF; }
+h1 { font-size: 16px; font-weight: bold; color: #666666; }
+h2 { font-size: 14px; font-weight: bold; color: #666666; }
+h3 { font-size: 12px; font-weight: bold; color: #666666; }
+ol li { line-height: 150%; }
+td { font-size: 12px; }
+
+#header, #logo1, #logo2, #topnav, #search, #menu, #breadcrumb, #left_ad, #bottom_ad, #footer { display: none; }
+
+#content { font-size: 12px; margin-left: 20px; margin-right: 20px; margin-top: 10px; margin-bottom: 20px; }
+
+.th_left_top { font-size: 12px; background-color: #7391BE; text-align: left; vertical-align: top; color: #FFF; }
+.th_center_top { font-size: 12px; background-color: #7391BE; text-align: center; vertical-align: top; color: #FFF; }
+.tr_left_top { font-size: 12px; text-align: left; vertical-align: top; background-color: #F5F5F5; }
+.tr_center_top { font-size: 12px; text-align: center; vertical-align: top; background-color: #F5F5F5; }
+
+.syntax { font-weight: bold; font-size: 12px; color: #000000; border-style: solid; border-width: 1px; border-color: #CCC; background-color: #E2E3E3; margin-left: 50px; margin-right: 80px; padding-left: 20px; padding-right: 20px; min-width: 500px; }
+
+.code_example { font-weight: bold; font-size: 12px; color: #000000; border-style: solid; border-width: 1px; border-color: #CCC; background-color: #F9FBF2; margin-left: 50px; margin-right: 80px; padding-left: 20px; padding-right: 20px; min-width: 500px; }
+
+.function_table { border: 1px solid #999; }
+.function_example { font-weight: bold; font-size: 12px; color: #2E5348; }
+.function_desc { font-weight: normal; font-size: 12px; color: #000000; line-height: 120%; }
+
+.parameters_tbl { font-weight: normal; font-size: 12px; color: #000000; line-height: 120%; }
+
+.code { font-weight: bold; font-size: 12px; color: #2E5348; }
+.definition { font-weight: bold; font-size: 12px; color: #2E5348; }
+.exam_answers { }
+.exam_question { font-weight: bold; }
+.instructions { font-weight: bold; font-size: 12px; color: #2E5348; }
+.joke { font-size: 12px; font-weight: bold; color: #2E5348; }
+.note { font-size: 12px; color: black; }
+.parm_values { font-weight: normal; font-size: 12px; color: #000000; line-height: 120%; }
+.small_note { font-size: 11px; }
+.smap_h1 { background-color: #FFFFCC; margin: 0 0 10px 10px; padding-top: 6px; padding-bottom: 6px; padding-left: 6px; border: 1px solid #999999; }
+.smap_h2 { background-color: #E7ECF2; margin: 0 0 10px 10px; padding-top: 6px; padding-bottom: 6px; padding-left: 6px; border: 1px solid #999999; }
+.sql_command { font-weight: bold; font-size: 12px; color: #2E5348; }
+.tutorial_next { padding-right: 40px; }
+.tutorial_prev { padding-right: 40px; }
+.url { font-size: 12px; }
+.example_heading { font-weight: bold; font-size: 12px; color: #008040; }
+.oracle_error_tbl { font-weight: normal; font-size: 12px; color: #000000; line-height: 120%; }
+.oracle_error_tr { font-size: 12px; text-align: left; vertical-align: top; }
+.oracle_error { font-weight: bold; font-size: 12px; color: #008040; margin-top: 0; }
+.practice_exercise { font-weight: bold; font-size: 12px; color: #990000; }
+
+.versions { font-style: italic; color: #630; margin-bottom: 25px; }

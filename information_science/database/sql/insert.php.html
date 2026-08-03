@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="robots" content="noarchive">
+
+<meta name="description"
+content="The INSERT statement allows you to insert a single record or multiple records into a table.">
+<meta name="keywords"
+content="tech on the net, sql, insert statement">
+<meta name="title" content="SQL: INSERT Statement">
+<title>SQL: INSERT Statement</title>
+
+<link rel="stylesheet" type="text/css" href="stylesheets/screen.css"  media="screen" />
+<link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+</head>
+<body>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td align="left"><div id="content">
+      <h1>SQL: INSERT Statement</h1>
+        <hr>
+        <p>The INSERT statement allows you to insert a single record or multiple records into a table.</p>
+        <p>The syntax for the INSERT statement is:</p>
+        <blockquote class="definition">
+          <p>INSERT INTO table<br>
+            (column-1, column-2, ... column-n)<br>
+            VALUES<br>
+            (value-1, value-2, ... value-n);</p>
+        </blockquote>
+        <br>
+        <p class="example_heading">Example #1 - Simple example</p>
+        <p>Let's take a look at a very simple example.</p>
+        <blockquote class="sql_command">
+          <p>INSERT INTO suppliers<br>
+            (supplier_id, supplier_name)<br>
+            VALUES<br>
+            (24553, 'IBM');</p>
+        </blockquote>
+        <p>This would result in one record being inserted into the suppliers table. This new record would have a supplier_id of 24553 and a supplier_name of IBM.</p>
+        <br>
+        <p class="example_heading">Example #2 - More complex example</p>
+        <p>You can also perform more complicated inserts using sub-selects.</p>
+        <p>For example:</p>
+        <blockquote class="sql_command">
+          <p>INSERT INTO suppliers<br>
+            (supplier_id, supplier_name)<br>
+            SELECT account_no, name<br>
+            FROM customers<br>
+            WHERE city = 'Newark';</p>
+        </blockquote>
+        <p>By placing a &quot;select&quot; in the insert statement, you can perform multiples inserts quickly.</p>
+        <p>With this type of insert, you may wish to check for the number of rows being inserted. You can determine the number of rows that will be inserted by running the following SQL statement <b>before</b> performing the insert.</p>
+        <blockquote class="sql_command">
+          <p>SELECT count(*)<br>
+            FROM customers<br>
+            WHERE city = 'Newark';</p>
+        </blockquote>
+        <br>
+        <h2>Frequently Asked Questions</h2>
+        <hr>
+        <p><b>Question</b>:&nbsp; I am setting up a database with clients. I know that you use the &quot;insert&quot; statement to insert information in the database, but how do I make sure that I do not enter the same client information again?</p>
+        <p><b>Answer</b>:&nbsp; You can make sure that you do not insert duplicate information by using the EXISTS condition.</p>
+        <p>For example, if you had a table named <i>clients</i> with a primary key of <i>client_id</i>, you could use the following statement:</p>
+        <blockquote class="sql_command">
+          <p>INSERT INTO clients<br>
+            (client_id, client_name, client_type)<br>
+            SELECT supplier_id, supplier_name, 'advertising'<br>
+            FROM suppliers<br>
+            WHERE not exists (select * from clients<br>
+            where clients.client_id = suppliers.supplier_id);</p>
+        </blockquote>
+        <p>This statement inserts multiple records with a subselect.</p>
+        <p>If you wanted to insert a single record, you could use the following statement:</p>
+        <blockquote class="sql_command">
+          <p>INSERT INTO clients<br>
+            (client_id, client_name, client_type)<br>
+            SELECT 10345, 'IBM', 'advertising'<br>
+            FROM dual<br>
+            WHERE not exists (select * from clients<br>
+            where clients.client_id = 10345);</p>
+        </blockquote>
+        <p>The use of the <b>dual</b> table allows you to enter your values in a select statement, even though the values are not currently stored in a table.</p>
+        <p>Learn more about the <a href="exists.php.html">EXISTS condition</a>.</p>
+        <hr>
+        <p><b>Question</b>:&nbsp; How can I insert multiple rows of explicit data in one SQL command in Oracle?</p>
+        <p><b>Answer</b>:&nbsp; The following is an example of how you might insert 3 rows into the <i>suppliers</i> table in Oracle.</p>
+        <blockquote class="sql_command">
+	      <p>INSERT ALL<br>
+          &nbsp;&nbsp; INTO suppliers (supplier_id, supplier_name) VALUES (1000, 'IBM')<br>
+          &nbsp;&nbsp; INTO suppliers (supplier_id, supplier_name) VALUES (2000, 'Microsoft')<br>
+          &nbsp;&nbsp; INTO suppliers (supplier_id, supplier_name) VALUES (3000, 'Google')<br>
+          SELECT * FROM dual;</p>
+        </blockquote>
+    </div>
+      
+</td>
+  </tr>
+</table>
+
+</body>
+</html>

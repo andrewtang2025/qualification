@@ -1,0 +1,160 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+        "http://www.w3.org/TR/1998/REC-html40-19980424/loose.dtd">
+<html lang="cs">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+	<title>Color schemes - free editor</title>
+	<link rel="stylesheet" href="stylfree.css" type="text/css">
+
+<script type="text/javascript" src="colorblind.js"></script>
+<script type="text/javascript">
+<!--
+
+function objGet(x) {
+	if (typeof x != 'string') return x;
+	else if (Boolean(document.getElementById)) return document.getElementById(x);
+	else if (Boolean(document.all)) return eval('document.all.'+x);
+	else return null;
+}
+
+function objSetStyle (obj,prop,val) {
+	var o = objGet(obj);
+	if (o && o.style) {
+		eval ('o.style.'+prop+'="'+val+'"');
+		return true;
+		}
+	else return false;
+	}
+
+function objDisplay (obj,on,type) {
+	if (on && !type) type = 'block';
+	return objSetStyle(obj,'display',(on) ? type:'none');
+	}
+
+function dec2hex(n) {
+	var s = n.toString(16);
+	if (s.length<2) s = '0'+s;
+	return s.toUpperCase();
+	}
+function hex2dec(n) {
+	return parseInt(n,16);
+	}
+function col2Gray(r,g,b) {
+	var lum = Math.round( r*0.299 + g*0.587 + b*0.114 );
+	return dec2hex(lum)+dec2hex(lum)+dec2hex(lum);
+	}
+
+function getFormValue(name) { return objGet(name).value; }
+function setFormValue(name,val) { objGet(name).value = val; }
+
+function switchBlindlessMode() {
+	colorblindMode = getFormValue('cbmodeswitcher');
+	drawAllSamples();
+	}
+
+function setColor(n) {
+	o = objGet('color'+n);
+	c = getFormValue('color'+n+'val');
+	if (!c.match('[0-9a-fA-F]{6}')) alert('Chybna hodnota!');
+	else {
+		if (colorblindMode) {
+			r = hex2dec(c.substr(0,2));
+			g = hex2dec(c.substr(2,2));
+			b = hex2dec(c.substr(4,2));
+			if (colorblindMode==7) c = col2Gray(r,g,b);
+			else c = getColorBlindColor(r,g,b,colorblindMode);
+			}
+		color[n] = c;
+		}
+	}
+
+function drawSample(n) {
+	setColor(n);
+	objSetStyle('color'+n,'background','#'+color[n]);
+	objSetStyle('color'+n+'v','background','#'+color[n]);
+	for (var i=0;i<4;i++) objSetStyle('txt'+i+''+n,'color','#'+color[n]);
+	}
+function drawAllSamples() {
+	for (var i=0;i<4;i++) drawSample(i);
+	}
+
+var color = new Array(4);
+var colorblindMode = '';
+
+window.onload = Init;
+function Init() {
+	drawAllSamples();
+	}
+
+//-->
+</script>
+
+</head>
+
+<body>
+
+<div class="center">
+
+<div id="colsample">
+	<div id="color0">
+		<div id="txt00">Lorem ipsum</div>
+		<div id="txt01">Lorem ipsum</div>
+		<div id="txt02">Lorem ipsum</div>
+		<div id="txt03">Lorem ipsum</div>
+	</div>
+	<div id="color1">
+		<div id="txt10">Lorem ipsum</div>
+		<div id="txt11">Lorem ipsum</div>
+		<div id="txt12">Lorem ipsum</div>
+		<div id="txt13">Lorem ipsum</div>
+	</div>
+	<div id="color2">
+		<div id="txt20">Lorem ipsum</div>
+		<div id="txt21">Lorem ipsum</div>
+		<div id="txt22">Lorem ipsum</div>
+		<div id="txt23">Lorem ipsum</div>
+	</div>
+	<div id="color3">
+		<div id="txt30">Lorem ipsum</div>
+		<div id="txt31">Lorem ipsum</div>
+		<div id="txt32">Lorem ipsum</div>
+		<div id="txt33">Lorem ipsum</div>
+	</div>
+	<div id="color0v"></div>
+	<div id="color1v"></div>
+	<div id="color2v"></div>
+	<div id="color3v"></div>
+	<div id="colorBW"></div>
+	<div id="textBlack">Qui tacet concentire videtur</div>
+	<div id="textWhite">Qui tacet concentire videtur</div>
+
+	<input id='color0val' type='text' value='FF8000' size='8' maxlength='6' onchange='drawSample(0)' />
+	<input id='color1val' type='text' value='0066B2' size='8' maxlength='6' onchange='drawSample(1)' />
+	<input id='color2val' type='text' value='FFB200' size='8' maxlength='6' onchange='drawSample(2)' />
+	<input id='color3val' type='text' value='2E2EB2' size='8' maxlength='6' onchange='drawSample(3)' />
+
+</div>
+</div>
+
+<form>
+
+	<select id="cbmodeswitcher" onchange="switchBlindlessMode()">
+		<option value="">Normal vision (cca 85,5 % of population)</option>
+		<option value="1">Protanopy (1 % of men)</option>
+		<option value="2">Deuteranopy (1 % of men)</option>
+		<option value="3">Tritanopy (cca 0,003 % of population)</option>
+		<option value="4">Protanomaly (1 % of men)</option>
+		<option value="5">Deuteranomaly (5 % men, 0.4 % women)</option>
+		<option value="6">Tritanomaly (as good as 0 %)</option>
+		<option value="7">Full colorbindness (0,005% of population)</option>
+		<option value="8">Atypical monochromatism</option>
+	</select>
+
+	<p><a href="index-en.html">Color schemes</a></p>
+
+</form>
+
+
+
+</body>
+</html>

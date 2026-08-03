@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="robots" content="noarchive">
+
+<meta name="description"
+content="The HAVING clause is used in combination with the GROUP BY clause. It can be used in a SELECT statement to filter the records that a GROUP BY returns">
+<meta name="keywords"
+content="tech on the net, sql, having clause">
+<meta name="title" content="SQL: HAVING Clause">
+<title>SQL: HAVING Clause</title>
+
+<link rel="stylesheet" type="text/css" href="stylesheets/screen.css"  media="screen" />
+<link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+</head>
+<body>
+<table id="header" width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    
+    
+  </tr>
+</table>
+
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+
+    <td align="left"><div id="content">
+	
+        
+        <h1>SQL: HAVING Clause</h1>
+        <hr>
+        <p>The HAVING clause is used in combination with the GROUP BY clause. It can be used in a SELECT statement to filter the records that a GROUP BY returns.</p>
+        <p>The syntax for the HAVING clause is:</p>
+        <blockquote class="definition">
+          <p>SELECT column1, column2, ... column_n, aggregate_function (expression)<br>
+            FROM tables<br>
+            WHERE predicates<br>
+            GROUP BY column1, column2, ... column_n<br>
+            HAVING condition1 ... condition_n;</p>
+        </blockquote>
+        <p><i>aggregate_function</i> can be a function such as <a href="sum.php.html">SUM</a>, <a href="count.php.html">COUNT</a>, <a href="min.php.html">MIN</a>, or <a href="max.php.html">MAX</a>.</p>
+        <br>
+        <p class="example_heading">Example using the SUM function</p>
+        <p>For example, you could also use the SUM function to return the name of the department and the total sales (in the associated department). The HAVING clause will filter the results so that only departments with sales greater than $1000 will be returned.</p>
+        <blockquote class="sql_command">
+          <p>SELECT department, SUM(sales) as &quot;Total sales&quot;<br>
+            FROM order_details<br>
+            GROUP BY department<br>
+            HAVING SUM(sales) &gt; 1000;</p>
+        </blockquote>
+        <br>
+        <p class="example_heading">Example using the COUNT function</p>
+        <p>For example, you could use the COUNT function to return the name of the department and the number of employees (in the associated department) that make over $25,000 / year. The HAVING clause will filter the results so that only departments with more than 10 employees will be returned.</p>
+        <blockquote class="sql_command">
+          <p>SELECT department, COUNT(*) as &quot;Number of employees&quot;<br>
+            FROM employees<br>
+            WHERE salary &gt; 25000<br>
+            GROUP BY department<br>
+            HAVING COUNT(*) &gt; 10;</p>
+        </blockquote>
+        <br>
+        <p class="example_heading">Example using the MIN function</p>
+        <p>For example, you could also use the MIN function to return the name of each department and the minimum salary in the department. The HAVING clause will return only those departments where the starting salary is $35,000.</p>
+        <blockquote class="sql_command">
+          <p>SELECT department, MIN(salary) as &quot;Lowest salary&quot;<br>
+            FROM employees<br>
+            GROUP BY department<br>
+            HAVING MIN(salary) = 35000;</p>
+        </blockquote>
+        <br>
+        <p class="example_heading">Example using the MAX function</p>
+        <p>For example, you could also use the MAX function to return the name of each department and the maximum salary in the department. The HAVING clause will return only those departments whose maximum salary is less than $50,000.</p>
+        <blockquote class="sql_command">
+          <p>SELECT department, MAX(salary) as &quot;Highest salary&quot;<br>
+            FROM employees<br>
+            GROUP BY department<br>
+            HAVING MAX(salary) &lt; 50000;</p>
+        </blockquote>
+    </div>
+      
+</td>
+  </tr>
+</table>
+
+</body>
+</html>

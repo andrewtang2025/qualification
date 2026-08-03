@@ -1,0 +1,97 @@
+<?php
+$handle = @fopen('target2.txt', "r");  //file cannot be bigger than 30m
+
+if ($handle) { 
+   while (!feof($handle)) { 
+       $lines[] = fgets($handle, 16384); //16384 is the size of each line can contain.
+   } 
+  // $linenumber= count($lines);¡¡¡¡//get the total lines of a text file
+ // $xxx=count($lines);
+ // $ddd=strlen($lines);
+//  print "count length:".count($lines);
+//  print "string length:".strlen($lines);
+   fclose($handle); 
+} 
+
+
+
+echo "------------------------------------------------------\r\n";
+$ii=0;
+for ($ii=0;$ii<count($lines);$ii++)
+	{
+		$first2letter=substr($lines[$ii],0,2);
+		$marctag=substr($lines[$ii],1,3);
+		$id=substr($lines[$ii],6,6);
+
+		if ($marctag=="LDR" && substr($lines[$ii], 11,3)=="cam")
+		{
+			$biblinenumber=$ii; //every bib record first line number
+			echo "bib line number:".$biblinenumber;
+			echo "\r\n";
+		}
+		
+		if ($first2letter=="\r\n")
+		{
+
+			$emptylinenumber=$ii;  //empty line number is recorded every thime.
+			echo "empty line number is: ". $emptylinenumber;
+			echo "\r\n";
+				$jj=1;
+			for ($jj=1;$jj<15;$jj++)
+				{
+					if (trim(substr($lines[$ii-$jj],1,3))=="LDR" && trim(substr($lines[$ii-$jj],11,3))=="cx")
+					{
+						$beginmfhd=$emptylinenumber-$jj;
+						echo "begin mfhd:".$beginmfhd;
+						echo "     jj:".$jj;
+						echo "\r\n";
+						array_splice($lines, $beginmfhd, $jj+1,"");
+						break;
+
+					}
+				}
+		}
+		
+	}	
+		
+
+	/*	if ($marctag=="LDR" && trim(substr($lines[$ii], 11,3))=="cx")
+		{
+			$mfhdlinenumber=$ii;  
+			echo "mfhd line number:".$mfhdlinenumber;
+			echo "\r\n";
+						$jj=1;
+				for ($jj=1;$jj<15;$jj++)
+				{
+					if (substr($lines[$ii+$jj],0,2)=="\r\n")
+					{
+						$endmfhd=$ii+$jj;
+						array_splice($lines, $ii, $jj,"");
+						break;
+
+					}
+				}
+		
+		}
+		
+	}*/
+	
+	
+	
+	
+
+//echo "\r\n--------------------------------------------------------------------------------\r\n";
+/*foreach($lines as $line)
+{
+    echo($line);
+}*/
+
+
+$file = 'target_with_noholding2.txt';
+// Write the contents back to the file
+file_put_contents($file, $lines);
+
+
+
+
+?>

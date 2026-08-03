@@ -1,0 +1,113 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="robots" content="noarchive">
+
+<meta name="description"
+content="The EXISTS condition is considered to be met if the subquery returns at least one row.">
+<meta name="keywords"
+content="tech on the net, sql, exists condition">
+<meta name="title" content="SQL: EXISTS Condition">
+<title>SQL: EXISTS Condition</title>
+
+<link rel="stylesheet" type="text/css" href="stylesheets/screen.css"  media="screen" />
+<link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+</head>
+<body>
+<table id="header" width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    
+    
+  </tr>
+</table>
+
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+
+    <td align="left"><div id="content">
+	
+        
+        <h1>SQL: EXISTS Condition</h1>
+        <hr>
+        <p>The EXISTS condition is considered &quot;to be met&quot; if the subquery returns at least one row.</p>
+        <p>The syntax for the EXISTS condition is:</p>
+        <blockquote class="definition">
+          <p>SELECT columns<br>
+            FROM tables<br>
+            WHERE EXISTS ( subquery );</p>
+        </blockquote>
+        <p>The EXISTS condition can be used in any valid SQL statement - select, insert, update, or delete.</p>
+        <br>
+        <p class="example_heading">Example #1</p>
+        <p>Let's take a look at a simple example. The following is an SQL statement that uses the EXISTS condition:</p>
+        <blockquote class="sql_command">
+          <p>SELECT *<br>
+            FROM suppliers<br>
+            WHERE EXISTS<br>
+&nbsp; (select *<br>
+&nbsp;&nbsp;&nbsp; from orders<br>
+&nbsp;&nbsp;&nbsp; where suppliers.supplier_id = orders.supplier_id);</p>
+        </blockquote>
+        <p>This select statement will return all records from the suppliers table where there is at least one record in the orders table with the same supplier_id.</p>
+        <br>
+        <p class="example_heading">Example #2 - NOT EXISTS</p>
+        <p>The EXISTS condition can also be combined with the NOT operator.</p>
+        <p>For example,</p>
+        <blockquote class="sql_command">
+          <p>SELECT *<br>
+            FROM suppliers<br>
+            WHERE not exists (select * from orders Where suppliers.supplier_id = orders.supplier_id);</p>
+        </blockquote>
+        <p>This will return all records from the suppliers table where there are <b>no</b> records in the <i>orders</i> table for the given supplier_id.</p>
+        <br>
+        <p class="example_heading">Example #3 - DELETE Statement</p>
+        <p>The following is an example of a delete statement that utilizes the EXISTS condition:</p>
+        <blockquote class="sql_command">
+          <p>DELETE FROM suppliers<br>
+            WHERE EXISTS<br>
+&nbsp; (select *<br>
+&nbsp;&nbsp;&nbsp; from orders<br>
+&nbsp;&nbsp;&nbsp; where suppliers.supplier_id = orders.supplier_id);</p>
+        </blockquote>
+        <br>
+        <p class="example_heading">Example #4 - UPDATE Statement</p>
+        <p>The following is an example of an update statement that utilizes the EXISTS condition:</p>
+        <blockquote>
+          <table class="sql_command" border="0" cellpadding="0" cellspacing="0" width="476">
+            <tr>
+              <td width="136">UPDATE suppliers</td>
+              <td width="337"></td>
+            </tr>
+            <tr valign="top">
+              <td width="136">SET supplier_name =</td>
+              <td width="337">( SELECT customers.name<br>
+                FROM customers<br>
+                WHERE customers.customer_id = suppliers.supplier_id)</td>
+            </tr>
+            <tr>
+              <td width="473" colspan="2">WHERE EXISTS<br>
+&nbsp; ( SELECT customers.name<br>
+&nbsp;&nbsp;&nbsp; FROM customers<br>
+&nbsp;&nbsp;&nbsp; WHERE customers.customer_id = suppliers.supplier_id);</td>
+            </tr>
+          </table>
+        </blockquote>
+        <br>
+        <p class="example_heading">Example #5 - INSERT Statement</p>
+        <p>The following is an example of an insert statement that utilizes the EXISTS condition:</p>
+        <blockquote class="sql_command">
+          <p>INSERT INTO suppliers<br>
+            (supplier_id, supplier_name)<br>
+            SELECT account_no, name<br>
+            FROM suppliers<br>
+            WHERE exists (select * from orders Where suppliers.supplier_id = orders.supplier_id);</p>
+        </blockquote>
+    </div>
+      
+</td>
+  </tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="robots" content="noarchive">
+
+<meta name="description"
+content="The MINUS query returns all rows in the first query that are not returned in the second query.">
+<meta name="keywords"
+content="tech on the net, sql, minus query">
+<meta name="title" content="SQL: MINUS Query">
+<title>SQL: MINUS Query</title>
+
+<link rel="stylesheet" type="text/css" href="stylesheets/screen.css"  media="screen" />
+<link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+</head>
+<body>
+<table id="header" width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    
+    
+  </tr>
+</table>
+
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+
+    <td align="left"><div id="content">
+	
+        
+        <h1>SQL: MINUS Query</h1>
+        <hr>
+        <p>The MINUS query returns all rows in the first query that are not returned in the second query.</p>
+        <p>Each SQL statement within the MINUS query must have the same number of fields in the result sets with similar data types.</p>
+        <p>The syntax for an MINUS query is:</p>
+        <blockquote class="definition">
+          <p>select field1, field2, . field_n<br>
+            from tables<br>
+            MINUS<br>
+            select field1, field2, . field_n<br>
+            from tables;</p>
+        </blockquote>
+        <br>
+        <p class="example_heading">Example #1</p>
+        <p>The following is an example of an MINUS query:</p>
+        <blockquote class="sql_command">
+          <p>select supplier_id<br>
+            from suppliers<br>
+            MINUS<br>
+            select supplier_id<br>
+            from orders;</p>
+        </blockquote>
+        <p>In this example, the SQL would return all supplier_id values that are in the suppliers table and not in the orders table. What this means is that if a supplier_id value existed in the suppliers table and also existed in the orders table, the supplier_id value would not appear in this result set.</p>
+        <br>
+        <p class="example_heading">Example #2 - With ORDER BY Clause</p>
+        <p>The following is an MINUS query that uses an ORDER BY clause:</p>
+        <blockquote class="sql_command">
+          <p>select supplier_id, supplier_name<br>
+            from suppliers<br>
+            where supplier_id &gt; 2000<br>
+            MINUS<br>
+            select company_id, company_name<br>
+            from companies<br>
+            where company_id &gt; 1000<br>
+            ORDER BY 2;</p>
+        </blockquote>
+        <p>Since the column names are different between the two &quot;select&quot; statements, it is more advantageous to reference the columns in the ORDER BY clause by their position in the result set. In this example, we've sorted the results by supplier_name / company_name in ascending order, as denoted by the &quot;ORDER BY 2&quot;.</p>
+        <p>The supplier_name / company_name fields are in position #2 in the result set.</p>
+    </div>
+      
+</td>
+  </tr>
+</table>
+
+</body>
+</html>

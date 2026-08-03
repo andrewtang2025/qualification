@@ -1,0 +1,110 @@
+﻿<!--
+    body {
+	margin:0;
+	padding:0;
+	font-family: "宋体";
+	font-size: 12px;
+	line-height: 1.5em;
+}
+img {
+border: none;
+}
+
+/*- Menu Tabs 8--------------------------- */
+
+    #title_tabs {
+	width:758px;
+	font-size:12;
+	font-weight: bold;
+	line-height:normal;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #A7A5B2;
+      }
+    #title_tabs ul {
+          margin:0;
+          padding:10px 10px 0 25px;
+		  height:23px;
+          list-style:none;
+      }
+    #title_tabs li {
+      display:inline;
+      margin:0;
+      padding:0;
+      }
+    #title_tabs a {
+      float:left;
+      background:url("http://www.tool.la/Images/tableft8.gif") no-repeat left top;
+      margin:0;
+      padding:0 0 0 4px;
+      text-decoration:none;
+      }
+    #title_tabs a span {
+      float:left;
+      display:block;
+      background:url("http://www.tool.la/Images/tabright8.gif") no-repeat right top;
+      padding:5px 15px 4px 6px;
+      color:#000000;
+      }
+    /* Commented Backslash Hack hides rule from IE5-Mac \*/
+    #title_tabs a span {float:none;}
+    /* End IE5-Mac hack */
+    #title_tabs a:hover span {
+      color:#333;
+      }
+    #title_tabs a:hover {
+      background-position:0% -42px;
+      }
+    #title_tabs a:hover span {
+      background-position:100% -42px;
+	  color:#000000;
+      }
+
+      #title_tabs #current a {
+              background-position:0% -42px;
+      }
+      #title_tabs #current a span {
+              background-position:100% -42px;
+      }
+body,td,th {
+	font-size: 12px;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-family: 宋体;
+}
+.title_div {
+	font-size: 12px;
+	line-height: 150%;
+	background-color: #f9f9f9;
+	width: 758px;
+	border-top-width: 3px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #A7A5B2;
+	border-right-color: #A7A5B2;
+	border-bottom-color: #A7A5B2;
+	border-left-color: #A7A5B2;
+}
+a:link {
+	text-decoration: none;
+	color: #333333;
+}
+a:visited {
+	text-decoration: none;
+	color: #333333;
+}
+a:hover {
+	text-decoration: underline;
+	color: #FF0000;
+}
+a:active {
+	text-decoration: none;
+	color: #333333;
+}
+-->
+.ad728x90 {margin:10px auto;}

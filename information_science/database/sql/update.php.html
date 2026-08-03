@@ -1,0 +1,329 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="robots" content="noarchive">
+
+<meta name="description"
+content="The UPDATE statement allows you to update a single record or multiple records in a table.">
+<meta name="keywords"
+content="tech on the net, sql, update statement">
+<meta name="title" content="SQL: UPDATE Statement">
+<title>SQL: UPDATE Statement</title>
+
+<link rel="stylesheet" type="text/css" href="stylesheets/screen.css"  media="screen" />
+<link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+</head>
+<body>
+<table id="header" width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    
+    
+  </tr>
+</table>
+
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+
+    <td align="left"><div id="content">
+	
+        
+        <h1>SQL: UPDATE Statement</h1>
+        <hr>
+        <p>The UPDATE statement allows you to update a single record or multiple records in a table.</p>
+        <p>The syntax for the UPDATE statement is:</p>
+        <blockquote class="definition">
+          <p>UPDATE table<br>
+            SET column = expression<br>
+            WHERE predicates;</p>
+        </blockquote>
+        <br>
+        <p class="example_heading">Example #1 - Simple example</p>
+        <p>Let's take a look at a very simple example.</p>
+        <blockquote class="sql_command">
+          <p>UPDATE suppliers<br>
+            SET name = 'HP'<br>
+            WHERE name = 'IBM';</p>
+        </blockquote>
+        <p>This statement would update all supplier names in the suppliers table from IBM to HP.</p>
+        <br>
+        <p class="example_heading">Example #2 - More complex example</p>
+        <p>You can also perform more complicated updates.</p>
+        <p>You may wish to update records in one table based on values in another table. Since you can't list more than one table in the UPDATE statement, you can use the EXISTS clause.</p>
+        <p>For example:</p>
+        <blockquote>
+          <table class="sql_command" border="0" cellpadding="0" cellspacing="0" width="476">
+            <tr>
+              <td width="136">UPDATE suppliers</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>SET supplier_name =</td>
+              <td>( SELECT customers.name<br>
+                FROM customers<br>
+                WHERE customers.customer_id = suppliers.supplier_id)</td>
+            </tr>
+            <tr valign="top">
+              <td width="473" colspan="2">WHERE EXISTS<br>
+                &nbsp; ( SELECT customers.name<br>
+                &nbsp; &nbsp; FROM customers<br>
+                &nbsp; &nbsp; WHERE customers.customer_id = suppliers.supplier_id);</td>
+            </tr>
+          </table>
+        </blockquote>
+        <p>Whenever a supplier_id matched a customer_id value, the supplier_name would be overwritten to the customer name from the customers table.</p>
+        <p>Learn more about the <a href="exists.php.html">EXISTS condition</a>.</p>
+        <br>
+        <p class="practice_exercise">Practice Exercise #1:</p>
+        <p>Based on the <i>suppliers</i> table populated with the following data, update the <i>city</i> to &quot;Santa Clara&quot; for all records whose <i>supplier_name</i> is &quot;NVIDIA&quot;.</p>
+        <blockquote class="sql_command">
+          <table class="sql_command" border="0" cellspacing="0" width="350">
+            <tr>
+              <td colspan="4">CREATE TABLE suppliers</td>
+            </tr>
+            <tr>
+              <td width="8">(</td>
+              <td width="123">supplier_id</td>
+              <td width="120">number(10)</td>
+              <td width="91">not null,</td>
+            </tr>
+            <tr>
+              <td width="8">&nbsp;</td>
+              <td width="123">supplier_name</td>
+              <td width="120">varchar2(50)</td>
+              <td width="91">not null,</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>city</td>
+              <td>varchar2(50),</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td colspan="3">CONSTRAINT suppliers_pk PRIMARY KEY (supplier_id)</td>
+            </tr>
+            <tr>
+              <td width="8">);</td>
+              <td width="123"></td>
+              <td width="120"></td>
+              <td width="91"></td>
+            </tr>
+          </table>
+          <br>
+          <p>INSERT INTO suppliers
+            (supplier_id, supplier_name,  city)<br>
+            VALUES 
+            (5001, 'Microsoft', 'New York');</p>
+          <p>INSERT INTO suppliers
+            (supplier_id, supplier_name,  city)<br>
+            VALUES 
+            (5002, 'IBM', 'Chicago');</p>
+          <p>INSERT INTO suppliers
+            (supplier_id, supplier_name,  city)<br>
+            VALUES 
+            (5003, 'Red Hat', 'Detroit');</p>
+          <p>INSERT INTO suppliers
+            (supplier_id, supplier_name,  city)<br>
+            VALUES 
+            (5004, 'NVIDIA', 'New York');</p>
+        </blockquote>
+        <p><b>Solution</b>:</p>
+        <p>The following SQL statement would perform this update.</p>
+        <blockquote class="sql_command">
+          <p>UPDATE suppliers<br>
+            SET city = 'Santa Clara'<br>
+            WHERE supplier_name = 'NVIDIA';</p>
+        </blockquote>
+        <p>The <i>suppliers</i> table would now look like this:</p>
+        <blockquote>
+          <table class="parm_values" border="1" cellspacing="0" cellpadding="4" width="377">
+            <tr class="th_left_top">
+              <th>SUPPLIER_ID</th>
+              <th>SUPPLIER_NAME</th>
+              <th>CITY</th>
+            </tr>
+            <tr class="tr_left_top">
+              <td>5001</td>
+              <td>Microsoft</td>
+              <td>New York</td>
+            </tr>
+            <tr class="tr_left_top">
+              <td>5002</td>
+              <td>IBM</td>
+              <td>Chicago</td>
+            </tr>
+            <tr class="tr_left_top">
+              <td>5003</td>
+              <td>Red Hat</td>
+              <td>Detroit</td>
+            </tr>
+            <tr class="tr_left_top">
+              <td>5004</td>
+              <td>NVIDIA</td>
+              <td>Santa Clara</td>
+            </tr>
+          </table>
+        </blockquote>
+        <br>
+        <p class="practice_exercise">Practice Exercise #2:</p>
+        <p>Based on the <i>suppliers</i> and <i>customers</i> table populated with the following data, update the <i>city</i> in the <i>suppliers</i> table with the <i>city</i> in the <i>customers</i> table when the <i>supplier_name</i> in the <i>suppliers</i> table matches the <i>customer_name</i> in the <i>customers</i> table.</p>
+        <blockquote class="sql_command">
+          <table class="sql_command" border="0" cellspacing="0" width="350">
+            <tr>
+              <td colspan="4">CREATE TABLE suppliers</td>
+            </tr>
+            <tr>
+              <td width="8">(</td>
+              <td width="123">supplier_id</td>
+              <td width="120">number(10)</td>
+              <td width="91">not null,</td>
+            </tr>
+            <tr>
+              <td width="8">&nbsp;</td>
+              <td width="123">supplier_name</td>
+              <td width="120">varchar2(50)</td>
+              <td width="91">not null,</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>city</td>
+              <td>varchar2(50),</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td colspan="3">CONSTRAINT suppliers_pk PRIMARY KEY (supplier_id)</td>
+            </tr>
+            <tr>
+              <td width="8">);</td>
+              <td width="123"></td>
+              <td width="120"></td>
+              <td width="91"></td>
+            </tr>
+          </table>
+          <br>
+          <p>INSERT INTO suppliers
+            (supplier_id, supplier_name,  city)<br>
+            VALUES 
+            (5001, 'Microsoft', 'New York');</p>
+          <p>INSERT INTO suppliers
+            (supplier_id, supplier_name,  city)<br>
+            VALUES 
+            (5002, 'IBM', 'Chicago');</p>
+          <p>INSERT INTO suppliers
+            (supplier_id, supplier_name,  city)<br>
+            VALUES 
+            (5003, 'Red Hat', 'Detroit');</p>
+          <p>INSERT INTO suppliers
+            (supplier_id, supplier_name,  city)<br>
+            VALUES 
+            (5005, 'NVIDIA', 'LA');</p>
+          <br>
+          <table class="sql_command" border="0" cellspacing="0" width="350">
+            <tr>
+              <td colspan="4">CREATE TABLE customers</td>
+            </tr>
+            <tr>
+              <td width="8">(</td>
+              <td width="123">customer_id</td>
+              <td width="120">number(10)</td>
+              <td width="91">not null,</td>
+            </tr>
+            <tr>
+              <td width="8">&nbsp;</td>
+              <td width="123">customer_name</td>
+              <td width="120">varchar2(50)</td>
+              <td width="91">not null,</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>city</td>
+              <td>varchar2(50),</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td colspan="3">CONSTRAINT customers_pk PRIMARY KEY (customer_id)</td>
+            </tr>
+            <tr>
+              <td width="8">);</td>
+              <td width="123"></td>
+              <td width="120"></td>
+              <td width="91"></td>
+            </tr>
+          </table>
+          <br>
+          <p>INSERT INTO customers
+            (customer_id, customer_name,  city)<br>
+            VALUES 
+            (7001, 'Microsoft', 'San Francisco');</p>
+          <p>INSERT INTO customers
+            (customer_id, customer_name,  city)<br>
+            VALUES 
+            (7002, 'IBM', 'Toronto');</p>
+          <p>INSERT INTO customers
+            (customer_id, customer_name,  city)<br>
+            VALUES 
+            (7003, 'Red Hat', 'Newark');</p>
+        </blockquote>
+        <p><b>Solution</b>:</p>
+        <p>The following SQL statement would perform this update.</p>
+        <blockquote class="sql_command">
+          <table class="sql_command" border="0" cellpadding="0" cellspacing="0" width="521">
+            <tr>
+              <td width="122">UPDATE suppliers</td>
+              <td width="399"></td>
+            </tr>
+            <tr valign="top">
+              <td>SET city =</td>
+              <td>( SELECT customers.city<br>
+                FROM customers<br>
+                WHERE customers.customer_name = suppliers.supplier_name)</td>
+            </tr>
+            <tr>
+              <td colspan="2">WHERE EXISTS<br>
+                &nbsp; ( SELECT customers.city<br>
+                &nbsp; &nbsp; FROM customers<br>
+              &nbsp; &nbsp; WHERE customers.customer_name = suppliers.supplier_name);</td>
+            </tr>
+          </table>
+        </blockquote>
+        <p>The <i>suppliers</i> table would now look like this:</p>
+        <blockquote>
+          <table class="parm_values" border="1" cellspacing="0" cellpadding="4" width="377">
+            <tr class="th_left_top">
+              <th>SUPPLIER_ID</th>
+              <th>SUPPLIER_NAME</th>
+              <th>CITY</th>
+            </tr>
+            <tr class="tr_left_top">
+              <td>5001</td>
+              <td>Microsoft</td>
+              <td>San Francisco</td>
+            </tr>
+            <tr class="tr_left_top">
+              <td>5002</td>
+              <td>IBM</td>
+              <td>Toronto</td>
+            </tr>
+            <tr class="tr_left_top">
+              <td>5003</td>
+              <td>Red Hat</td>
+              <td>Newark</td>
+            </tr>
+            <tr class="tr_left_top">
+              <td>5004</td>
+              <td>NVIDIA</td>
+              <td>LA</td>
+            </tr>
+          </table>
+        </blockquote>
+    </div>
+      
+</td>
+  </tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="robots" content="noarchive">
+
+<meta name="description"
+content="The UNION query allows you to combine the result sets of 2 or more select queries.">
+<meta name="keywords"
+content="tech on the net, sql, union query">
+<meta name="title" content="SQL: UNION Query">
+<title>SQL: UNION Query</title>
+
+<link rel="stylesheet" type="text/css" href="stylesheets/screen.css"  media="screen" />
+<link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+</head>
+<body>
+<table id="header" width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    
+    
+  </tr>
+</table>
+
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+
+    <td align="left"><div id="content">
+	
+        
+        <h1>SQL: UNION Query</h1>
+        <hr>
+        <p>The UNION query allows you to combine the result sets of 2 or more &quot;select&quot; queries. It removes duplicate rows between the various &quot;select&quot; statements.</p>
+        <p>Each SQL statement within the UNION query must have the same number of fields in the result sets with similar data types.</p>
+        <p>The syntax for a UNION query is:</p>
+        <blockquote class="definition">
+          <p>select field1, field2, . field_n<br>
+            from tables<br>
+            UNION<br>
+            select field1, field2, . field_n<br>
+            from tables;</p>
+        </blockquote>
+        <br>
+        <p class="example_heading">Example #1</p>
+        <p>The following is an example of a UNION query:</p>
+        <blockquote class="sql_command">
+          <p>select supplier_id<br>
+            from suppliers<br>
+            UNION<br>
+            select supplier_id<br>
+            from orders;</p>
+        </blockquote>
+        <p>In this example, if a supplier_id appeared in both the suppliers and orders table, it would appear once in your result set. The UNION removes duplicates.</p>
+        <br>
+        <p class="example_heading">Example #2 - With ORDER BY Clause</p>
+        <p>The following is a UNION query that uses an ORDER BY clause:</p>
+        <blockquote class="sql_command">
+          <p>select supplier_id, supplier_name<br>
+            from suppliers<br>
+            where supplier_id &gt; 2000<br>
+            UNION<br>
+            select company_id, company_name<br>
+            from companies<br>
+            where company_id &gt; 1000<br>
+            ORDER BY 2;</p>
+        </blockquote>
+        <p>Since the column names are different between the two &quot;select&quot; statements, it is more advantageous to reference the columns in the ORDER BY clause by their position in the result set. In this example, we've sorted the results by supplier_name / company_name in ascending order, as denoted by the &quot;ORDER BY 2&quot;.</p>
+        <p>The supplier_name / company_name fields are in position #2 in the result set.</p>
+        <br>
+        <h2>Frequently Asked Questions</h2>
+        <hr>
+        <p><b>Question</b>:&nbsp; I need to compare two dates and return the <i>count</i> of a field based on the date values. For example, I have a date field in a table called last updated date. I have to check if trunc(last_updated_date &gt;= trun(sysdate-13).</p>
+        <p><b>Answer</b>:&nbsp; Since you are using the COUNT function which is an aggregate function, we'd recommend using a UNION query. For example, you could try the following:</p>
+        <blockquote class="sql_command">
+          <p>SELECT a.code as Code, a.name as Name, count(b.Ncode)<br>
+            FROM cdmaster a, nmmaster b<br>
+            WHERE a.code = b.code<br>
+&nbsp;and a.status = 1<br>
+&nbsp;and b.status = 1<br>
+&nbsp;and b.Ncode &lt;&gt; 'a10'<br>
+&nbsp;and trunc(last_updated_date) &lt;= trunc(sysdate-13)<br>
+            group by a.code, a.name<br>
+            UNION<br>
+            SELECT a.code as Code, a.name as Name, count(b.Ncode)<br>
+            FROM cdmaster a, nmmaster b<br>
+            WHERE a.code = b.code<br>
+&nbsp;and a.status = 1<br>
+&nbsp;and b.status = 1<br>
+&nbsp;and b.Ncode &lt;&gt; 'a10'<br>
+&nbsp;and trunc(last_updated_date) &gt; trunc(sysdate-13)<br>
+            group by a.code, a.name;</p>
+        </blockquote>
+        <p>The UNION query allows you to perform a COUNT based on one set of criteria.</p>
+        <blockquote>
+          <p>trunc(last_updated_date) &lt;= trunc(sysdate-13)</p>
+        </blockquote>
+        <p>As well as perform a COUNT based on another set of criteria.</p>
+        <blockquote>
+          <p>trunc(last_updated_date) &gt; trunc(sysdate-13)</p>
+        </blockquote>
+    </div>
+      
+</td>
+  </tr>
+</table>
+
+</body>
+</html>

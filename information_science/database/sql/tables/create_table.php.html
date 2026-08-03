@@ -1,0 +1,228 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="robots" content="noarchive">
+
+<meta name="description"
+content="The CREATE TABLE statement allows you to create and define a table.">
+<meta name="keywords"
+content="tech on the net, sql, create table statement">
+<meta name="title" content="SQL: CREATE TABLE Statement">
+<title>SQL: CREATE TABLE Statement</title>
+
+<link rel="stylesheet" type="text/css" href="../stylesheets/screen.css"  media="screen" />
+<link rel="stylesheet" type="text/css" href="../stylesheets/print.css" media="print" />
+</head>
+<body>
+<table id="header" width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    
+    <td align="left"></td>
+  </tr>
+</table>
+
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+
+    <td align="left"><div id="content">
+	
+        
+        <h1>SQL: CREATE TABLE Statement</h1>
+        <hr>
+        <p>The CREATE TABLE statement allows you to create and define a table.</p>
+        <p>The basic syntax for a CREATE TABLE statement is:</p>
+        <blockquote class="definition">
+          <p>CREATE TABLE table_name<br>
+            ( column1 datatype null/not null,<br>
+&nbsp; column2 datatype null/not null,<br>
+&nbsp; ...<br>
+            );</p>
+        </blockquote>
+        <p>Each column must have a datatype. The column should either be defined as &quot;null&quot; or &quot;not null&quot; and if this value is left blank, the database assumes &quot;null&quot; as the default.</p>
+        <br>
+        <p class="example_heading">For example:</p>
+        <blockquote>
+          <table class="sql_command" border="0" cellspacing="0" width="297">
+            <tr>
+              <td colspan="4">CREATE TABLE suppliers</td>
+            </tr>
+            <tr>
+              <td width="10">(</td>
+              <td width="107">supplier_id</td>
+              <td width="83">number(10)</td>
+              <td width="89">not null,</td>
+            </tr>
+            <tr>
+              <td width="10">&nbsp;</td>
+              <td width="107">supplier_name</td>
+              <td width="83">varchar2(50)</td>
+              <td width="89">not null,</td>
+            </tr>
+            <tr>
+              <td width="10">&nbsp;</td>
+              <td width="107">contact_name</td>
+              <td width="83">varchar2(50)</td>
+              <td width="89"></td>
+            </tr>
+            <tr>
+              <td width="10">);</td>
+              <td width="107"></td>
+              <td width="83"></td>
+              <td width="89"></td>
+            </tr>
+          </table>
+        </blockquote>
+        <br>
+        <p class="practice_exercise">Practice Exercise #1:</p>
+        <p>Create a <i>customers</i> table that stores customer ID, name, and address information. The customer ID should be the <a href="http://www.techonthenet.com/oracle/primary_keys.php">primary key</a> for the table.</p>
+        <p><b>Solution</b>:</p>
+        <p>The CREATE TABLE statement for the <i>customers</i> table is:</p>
+        <blockquote>
+          <table class="sql_command" border="0" cellspacing="0" width="350">
+            <tr>
+              <td colspan="4">CREATE TABLE customers</td>
+            </tr>
+            <tr>
+              <td width="8">(</td>
+              <td width="123">customer_id</td>
+              <td width="120">number(10)</td>
+              <td width="91">not null,</td>
+            </tr>
+            <tr>
+              <td width="8">&nbsp;</td>
+              <td width="123">customer_name</td>
+              <td width="120">varchar2(50)</td>
+              <td width="91">not null,</td>
+            </tr>
+            <tr>
+              <td width="8">&nbsp;</td>
+              <td width="123">address</td>
+              <td width="120">varchar2(50),</td>
+              <td width="91"></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>city</td>
+              <td>varchar2(50),</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>state</td>
+              <td>varchar2(25),</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>zip_code</td>
+              <td>varchar2(10),</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td colspan="3">CONSTRAINT customers_pk PRIMARY KEY (customer_id)</td>
+            </tr>
+            <tr>
+              <td width="8">);</td>
+              <td width="123"></td>
+              <td width="120"></td>
+              <td width="91"></td>
+            </tr>
+          </table>
+        </blockquote>
+        <br>
+        <p class="practice_exercise">Practice Exercise #2:</p>
+        <p>Based on the <i>departments</i> table below, create an <i>employees</i> table that stores employee number, employee name, department, and salary information. The <a href="http://www.techonthenet.com/oracle/primary_keys.php">primary key</a> for the <i>employees</i> table should be the employee number. Create a <a href="http://www.techonthenet.com/oracle/foreign_keys/foreign_keys.php">foreign key</a> on the <i>employees</i> table that references the <i>departments</i> table based on the department_id field.</p>
+        <blockquote>
+          <table class="sql_command" border="0" cellspacing="0" width="385">
+            <tr>
+              <td colspan="4">CREATE TABLE departments</td>
+            </tr>
+            <tr>
+              <td width="8">(</td>
+              <td width="123">department_id</td>
+              <td width="120">number(10)</td>
+              <td width="126">not null,</td>
+            </tr>
+            <tr>
+              <td width="8">&nbsp;</td>
+              <td width="123">department_name</td>
+              <td width="120">varchar2(50)</td>
+              <td width="126">not null,</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td colspan="3">CONSTRAINT departments_pk PRIMARY KEY (department_id)</td>
+            </tr>
+            <tr>
+              <td width="8">);</td>
+              <td width="123"></td>
+              <td width="120"></td>
+              <td width="126"></td>
+            </tr>
+          </table>
+        </blockquote>
+        <p><b>Solution</b>:</p>
+        <p>The CREATE TABLE statement for the <i>employees</i> table is:</p>
+        <blockquote>
+          <table class="sql_command" border="0" cellspacing="0" width="407">
+            <tr>
+              <td colspan="4">CREATE TABLE employees</td>
+            </tr>
+            <tr>
+              <td width="8">(</td>
+              <td width="123">employee_number</td>
+              <td width="120">number(10)</td>
+              <td width="148">not null,</td>
+            </tr>
+            <tr>
+              <td width="8">&nbsp;</td>
+              <td width="123">employee_name</td>
+              <td width="120">varchar2(50)</td>
+              <td width="148">not null,</td>
+            </tr>
+            <tr>
+              <td width="8">&nbsp;</td>
+              <td width="123">department_id</td>
+              <td width="120">number(10),</td>
+              <td width="148"></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>salary</td>
+              <td>number(6),</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td colspan="3">CONSTRAINT employees_pk PRIMARY KEY (employee_number),</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td colspan="3">CONSTRAINT fk_departments</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td colspan="3">&nbsp; FOREIGN KEY (department_id)</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td colspan="3">&nbsp; REFERENCES departments(department_id)</td>
+            </tr>
+            <tr>
+              <td width="8">);</td>
+              <td width="123"></td>
+              <td width="120"></td>
+              <td width="148"></td>
+            </tr>
+          </table>
+        </blockquote>
+    </div>
+      
+      </td>
+  </tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+body,td,th {
+	font-size: 12px;
+}
+body {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+a:link {
+	color: #333333;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #333333;
+}
+a:hover {
+	text-decoration: none;
+	color: #FF0000;
+}
+a:active {
+	text-decoration: none;
+	color: #333333;
+}
+A {
+	TEXT-DECORATION: none
+}
+A:link {
+	FONT-SIZE: 12px; COLOR: #333333
+}
+A:visited {
+	FONT-SIZE: 12px; COLOR: #333333
+}
+A:hover {
+	FONT-SIZE: 12px; COLOR: #ff0000
+}
+A:active {
+	FONT-SIZE: 12px; COLOR: #ff0000
+}
+
+.top_td3 {
+	line-height: 20px;
+	font-size: 12px;
+	color: #333333;
+}
+/*版权样式*/
+.copyright a:hover	{ color:#ff0000; text-decoration:none; BORDER-BOTTOM: #000000 1px dashed}
+.copyright a			{line-height:18px;	font-size:12px; color:#333333}
